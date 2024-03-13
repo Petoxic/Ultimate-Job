@@ -238,6 +238,95 @@ RectTransform:
   m_AnchoredPosition: {x: -758, y: 373}
   m_SizeDelta: {x: 300, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &257253634
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 53274711342019736, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917313472361915848, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: isTalking
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917313472361915848, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: wordSpeed
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917313472361915848, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 1544520250}
+    - target: {fileID: 2917313472361915848, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: dialoguePanel
+      value: 
+      objectReference: {fileID: 2296737}
+    - target: {fileID: 2917313472361915848, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027515653562962395, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.221
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027515653562962395, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.424
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027515653562962395, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027515653562962395, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027515653562962395, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027515653562962395, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027515653562962395, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027515653562962395, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027515653562962395, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027515653562962395, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419913523111105754, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_Name
+      value: Customer (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419913523111105754, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_TagString
+      value: Customer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7985770706506706958, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_UseFullKinematicContacts
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
 --- !u!1 &479052297
 GameObject:
   m_ObjectHideFlags: 0
@@ -6713,6 +6802,10 @@ PrefabInstance:
       propertyPath: dialogue.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4608724493181382566, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_Size.x
+      value: 0.2666667
+      objectReference: {fileID: 0}
     - target: {fileID: 5027515653562962395, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.7
@@ -6873,4 +6966,5 @@ SceneRoots:
   - {fileID: 993522017}
   - {fileID: 1892207229031695595}
   - {fileID: 405646598164116670}
+  - {fileID: 257253634}
   - {fileID: 1205844177}

@@ -130,9 +130,9 @@ public class PlayerScript : MonoBehaviour
                 }
             }
         } 
-        // else {
-        //     playerInteract.InteractDown();
-        // }
+        else {
+            playerInteract.InteractDown();
+        }
     }
 
     public void EndInteract() {
