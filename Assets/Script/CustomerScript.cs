@@ -96,6 +96,7 @@ public class CustomerScript : MonoBehaviour
 
     private void OnCollisionEnter2D()
     {
+        print(isCollide);
         isCollide = true;
     }
 
