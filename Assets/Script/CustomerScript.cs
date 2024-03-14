@@ -9,6 +9,7 @@ public class CustomerScript : MonoBehaviour
     public GameObject dialoguePanel;
     public Text dialogueText;
     public string[] dialogue;
+    [SerializeField] private Slider timerSlider;
     private int index = 0;
     public float wordSpeed = 0.1f;
     public bool isTalking = false;
@@ -16,6 +17,17 @@ public class CustomerScript : MonoBehaviour
     public bool isFinishDialogue = false;
     private bool isOrderReceived = false;
     private bool isFoodReceived = false;
+
+    void Start()
+    {
+        StartCoroutine(TimerDelay());
+    }
+
+    private IEnumerator TimerDelay()
+    {
+        yield return new WaitForSeconds(3);
+        timerSlider.gameObject.SetActive(true);
+    }
 
     IEnumerator Typing()
     {
@@ -50,26 +62,23 @@ public class CustomerScript : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && isCollide)
-        {
-            OnInteract();
-        }
         if (dialogueText.text == dialogue[index])
         {
             isTalking = false;
         }
     }
 
-    private void OnInteract()
+    public void OnInteract()
     {
         if (!isOrderReceived)
         {
-            Debug.Log("order received");
             isOrderReceived = true;
+            timerSlider.gameObject.SetActive(false);
+            StopCoroutine(TimerDelay());
+            StartCoroutine(TimerDelay());
         }
         else
         {
-
             if (!isTalking)
             {
                 isTalking = true;
@@ -80,8 +89,6 @@ public class CustomerScript : MonoBehaviour
 
     private void InteractAction()
     {
-
-
         if (dialoguePanel.activeInHierarchy)
         {
             NextLine();
@@ -91,7 +98,6 @@ public class CustomerScript : MonoBehaviour
             dialoguePanel.SetActive(true);
             StartCoroutine(Typing());
         }
-
     }
 
     private void OnCollisionEnter2D()

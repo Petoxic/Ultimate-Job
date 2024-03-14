@@ -11,40 +11,53 @@ public class PlayerInteract : MonoBehaviour
     {
         interactOffset = transform.position;
     }
-    public void InteractRight() {
+    public void InteractRight()
+    {
         print("interact right");
         interactCollider.enabled = true;
         transform.position = new Vector2(interactOffset.x + 0.2f, interactOffset.y + 0.2f);
     }
 
-    public void InteractLeft() {
-        print("interact left");
+    public void InteractLeft()
+    {
+        // print("interact left");
         interactCollider.enabled = true;
         transform.position = new Vector2(interactOffset.x - 0.2f, interactOffset.y + 0.2f);
     }
 
-    public void InteractUp() {
-        print("interact up");
+    public void InteractUp()
+    {
+        // print("interact up");
         interactCollider.enabled = true;
         transform.position = new Vector2(interactOffset.x, interactOffset.y * -1);
     }
 
-    public void InteractDown() {
-        print("interact down");
+    public void InteractDown()
+    {
+        // print("interact down");
         interactCollider.enabled = true;
         transform.position = interactOffset;
     }
 
-    public void StopInteract() {
-        print("endd");
+    public void StopInteract()
+    {
+        // print("endd");
         interactCollider.enabled = false;
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        print(interactOffset);
-        print("test"+ other.tag + other.name);
-        if(other.tag == "Customer") {
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        // print(interactOffset);
+        print("test" + other.tag + other.name);
+        if (other.tag == "Customer")
+        {
             CustomerScript customer = other.GetComponent<CustomerScript>();
+            customer.OnInteract();
+        }
+        else if (other.tag == "Kitchen")
+        {
+            KitchenScript kitchen = other.GetComponent<KitchenScript>();
+            kitchen.OnInteract();
         }
     }
 }
