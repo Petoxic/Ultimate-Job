@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Customer
   - Kitchen
+  - Food
   layers:
   - Default
   - TransparentFX

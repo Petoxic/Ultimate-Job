@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class KitchenScript : InteractableObject
+public class KitchenScript : MonoBehaviour
 {
-    protected override void InteractAction()
-    {
-        Debug.Log("Interact with " + name);
+    [SerializeField] private Slider timerSlider;
+
+    public void OnInteract() {
+        timerSlider.gameObject.SetActive(true);
     }
 }
