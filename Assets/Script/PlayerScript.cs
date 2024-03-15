@@ -15,7 +15,7 @@ public class PlayerScript : MonoBehaviour
     public float collisionOffset = 0.02f;
     public ContactFilter2D movementFilter;
     public PlayerInteract playerInteract;
-    private List<string> orderList = new List<string>();
+    public List<string> orderList = new List<string>();
 
     Vector2 movementInput;
     Rigidbody2D rb;
@@ -177,5 +177,9 @@ public class PlayerScript : MonoBehaviour
     public void AddOrder(string order)
     {
         orderList.Add(order);
+    }
+
+    public void ClearOrderList() {
+        orderList.Clear();
     }
 }

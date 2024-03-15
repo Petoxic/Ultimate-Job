@@ -7,8 +7,31 @@ using UnityEngine.UI;
 public class KitchenScript : MonoBehaviour
 {
     [SerializeField] private Slider timerSlider;
+    private PlayerScript player;
+    private List<string> orderList = new List<string>();
 
-    public void OnInteract() {
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
+        orderList.Add("2");
+        orderList.Add("2");
+        orderList.Add("2");
+        orderList.Add("2");
+    }
+
+    void Update()
+    {
+        if (orderList.Count != 0 && !timerSlider.gameObject.activeSelf)
+        {
+            timerSlider.gameObject.SetActive(true);
+            orderList.RemoveAt(0);
+        }
+    }
+
+    public void OnInteract()
+    {
+        orderList.AddRange(player.orderList);
+        player.ClearOrderList();
         timerSlider.gameObject.SetActive(true);
     }
 }

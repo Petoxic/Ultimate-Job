@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class KitchenTimerScript : MonoBehaviour
 {
     [SerializeField] private Slider timerSlider;
-    [SerializeField] private float countdownTime = 10f;
+    [SerializeField] private float countdownTime = 5f;
 
     void OnEnable()
     {
