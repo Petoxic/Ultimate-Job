@@ -13,15 +13,11 @@ public class KitchenScript : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
-        orderList.Add("2");
-        orderList.Add("2");
-        orderList.Add("2");
-        orderList.Add("2");
     }
 
     void Update()
     {
-        if (orderList.Count != 0 && !timerSlider.gameObject.activeSelf)
+        if (orderList.Count > 0 && !timerSlider.gameObject.activeSelf)
         {
             timerSlider.gameObject.SetActive(true);
             orderList.RemoveAt(0);
@@ -32,6 +28,5 @@ public class KitchenScript : MonoBehaviour
     {
         orderList.AddRange(player.orderList);
         player.ClearOrderList();
-        timerSlider.gameObject.SetActive(true);
     }
 }
