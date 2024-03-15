@@ -9,17 +9,19 @@ public class CustomerScript : MonoBehaviour
     public GameObject dialoguePanel;
     public Text dialogueText;
     public string[] dialogue;
+    public Text objectName;
     [SerializeField] private Slider timerSlider;
     private int index = 0;
     public float wordSpeed = 0.1f;
     public bool isTalking = false;
-    public bool isCollide = false;
     public bool isFinishDialogue = false;
     private bool isOrderReceived = false;
     private bool isFoodReceived = false;
+    private PlayerScript player;
 
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
         StartCoroutine(TimerDelay());
     }
 
@@ -76,6 +78,7 @@ public class CustomerScript : MonoBehaviour
             timerSlider.gameObject.SetActive(false);
             StopCoroutine(TimerDelay());
             StartCoroutine(TimerDelay());
+            player.AddOrder("burger");
         }
         else
         {
@@ -89,6 +92,8 @@ public class CustomerScript : MonoBehaviour
 
     private void InteractAction()
     {
+        // todo: fix this bug: name not show on dialog name
+        // objectName.text = gameObject.name;
         if (dialoguePanel.activeInHierarchy)
         {
             NextLine();
@@ -98,16 +103,5 @@ public class CustomerScript : MonoBehaviour
             dialoguePanel.SetActive(true);
             StartCoroutine(Typing());
         }
-    }
-
-    private void OnCollisionEnter2D()
-    {
-        print(isCollide);
-        isCollide = true;
-    }
-
-    private void OnCollisionExit2D()
-    {
-        isCollide = false;
     }
 }

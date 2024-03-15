@@ -6,15 +6,16 @@ using UnityEngine.InputSystem;
 
 public class PlayerScript : MonoBehaviour
 {
-    public enum InteractDirection {
+    public enum InteractDirection
+    {
         up, down, left, right
     }
     public InteractDirection interactDirection;
-    
     public float moveSpeed = 1f;
     public float collisionOffset = 0.02f;
     public ContactFilter2D movementFilter;
     public PlayerInteract playerInteract;
+    private List<string> orderList = new List<string>();
 
     Vector2 movementInput;
     Rigidbody2D rb;
@@ -30,37 +31,51 @@ public class PlayerScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(canMove) {
+        if (canMove)
+        {
             bool success = false;
-            if(movementInput != Vector2.zero) {
+            if (movementInput != Vector2.zero)
+            {
                 success = TryMove(movementInput);
-                
-                if(!success) {
+
+                if (!success)
+                {
                     success = TryMove(new Vector2(movementInput.x, 0));
                 }
-                if(!success) {
+                if (!success)
+                {
                     success = TryMove(new Vector2(0, movementInput.y));
                 }
                 animator.SetBool("isMoving", true);
-            } else {
+            }
+            else
+            {
                 animator.SetBool("isMoving", false);
                 animator.SetInteger("moving", 0);
             }
 
 
-            if(success && movementInput.x != 0.0f) {
-                if(movementInput.x > 0) {
+            if (success && movementInput.x != 0.0f)
+            {
+                if (movementInput.x > 0)
+                {
                     animator.SetInteger("moving", 4);
-                } else if(movementInput.x < 0){
+                }
+                else if (movementInput.x < 0)
+                {
                     animator.SetInteger("moving", 2);
                 }
 
-            } 
+            }
 
-            if(success && movementInput.y != 0.0f) {
-                if(movementInput.y > 0) {
+            if (success && movementInput.y != 0.0f)
+            {
+                if (movementInput.y > 0)
+                {
                     animator.SetInteger("moving", 3);
-                } else {
+                }
+                else
+                {
                     animator.SetInteger("moving", 1);
                 }
             }
@@ -69,12 +84,15 @@ public class PlayerScript : MonoBehaviour
 
     }
 
-    void OnMove(InputValue movementValue) {
+    void OnMove(InputValue movementValue)
+    {
         movementInput = movementValue.Get<Vector2>();
     }
 
-    private bool TryMove(Vector2 direction) {
-        if(direction != Vector2.zero) {
+    private bool TryMove(Vector2 direction)
+    {
+        if (direction != Vector2.zero)
+        {
             int count = rb.Cast(
                 movementInput,
                 movementFilter,
@@ -82,63 +100,82 @@ public class PlayerScript : MonoBehaviour
                 moveSpeed * Time.fixedDeltaTime + collisionOffset
             );
 
-            if(count == 0) {
+            if (count == 0)
+            {
                 rb.MovePosition(rb.position + movementInput * moveSpeed * Time.fixedDeltaTime);
                 return true;
-            } else {
+            }
+            else
+            {
                 return false;
             }
-        } else {
+        }
+        else
+        {
             return false;
         }
     }
 
-    public void OnInteract() {
+    public void OnInteract()
+    {
         LockMovement();
 
-        if(movementInput != Vector2.zero) {
-            if(movementInput.x != 0.0) {
-                if(movementInput.x > 0) {
+        if (movementInput != Vector2.zero)
+        {
+            if (movementInput.x != 0.0)
+            {
+                if (movementInput.x > 0)
+                {
                     playerInteract.InteractRight();
-                } else if(movementInput.x < 0){
+                }
+                else if (movementInput.x < 0)
+                {
                     playerInteract.InteractLeft();
                 }
 
-            } 
+            }
 
-            if(movementInput.y != 0.0) {
-                if(movementInput.y > 0) {
+            if (movementInput.y != 0.0)
+            {
+                if (movementInput.y > 0)
+                {
                     playerInteract.InteractUp();
-                } else {
+                }
+                else
+                {
                     playerInteract.InteractDown();
                 }
             }
-        } 
-        else {
+        }
+        else
+        {
             playerInteract.InteractDown();
         }
     }
 
-    public void EndInteract() {
+    public void EndInteract()
+    {
         UnlockMovement();
         playerInteract.StopInteract();
     }
 
-    void OnFire() {
+    void OnFire()
+    {
         animator.SetTrigger("interact");
     }
 
-    public void LockMovement() {
+    public void LockMovement()
+    {
         canMove = false;
     }
 
-    public void UnlockMovement() {
+    public void UnlockMovement()
+    {
         canMove = true;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void AddOrder(string order)
     {
-        Debug.Log("โอ๊ย " + name + " hit " + collision.gameObject.name);
+        orderList.Add(order);
     }
-
 }

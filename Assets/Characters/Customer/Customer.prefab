@@ -493,10 +493,10 @@ MonoBehaviour:
   dialoguePanel: {fileID: 0}
   dialogueText: {fileID: 0}
   dialogue: []
+  objectName: {fileID: 0}
   timerSlider: {fileID: 8994171279990757786}
   wordSpeed: 0.1
   isTalking: 0
-  isCollide: 0
   isFinishDialogue: 0
 --- !u!1 &6809283800304545345
 GameObject:
