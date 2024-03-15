@@ -5,11 +5,13 @@ using UnityEngine;
 public class PlayerInteract : MonoBehaviour
 {
     public Collider2D interactCollider;
-    public Vector2 interactOffset;
+    private PlayerScript player;
+    Vector2 interactOffset;
 
     private void Start()
     {
         interactOffset = transform.position;
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
     }
     public void InteractRight()
     {
@@ -48,7 +50,7 @@ public class PlayerInteract : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         // print(interactOffset);
-        print("test" + other.tag + other.name);
+        // print("test" + other.tag + other.name);
         if (other.tag == "Customer")
         {
             CustomerScript customer = other.GetComponent<CustomerScript>();

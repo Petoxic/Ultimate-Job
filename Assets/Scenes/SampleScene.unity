@@ -328,7 +328,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6419913523111105754, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: m_Name
-      value: Customer (1)
+      value: Kanin
       objectReference: {fileID: 0}
     - target: {fileID: 6419913523111105754, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: m_TagString
@@ -841,7 +841,7 @@ RectTransform:
   m_Father: {fileID: 465489339}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0.685, y: 1}
   m_AnchoredPosition: {x: 4.8895, y: 0}
   m_SizeDelta: {x: 19.7787, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6489,7 +6489,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &1572142842
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6667,6 +6667,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1696811392}
   - component: {fileID: 1696811393}
+  - component: {fileID: 1696811394}
   m_Layer: 5
   m_Name: KitchenTimer
   m_TagString: Untagged
@@ -6742,10 +6743,24 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0.685
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1696811394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696811391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a70116809f2a473b8ac9587ec63dc60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerSlider: {fileID: 1696811393}
+  countdownTime: 2
 --- !u!1 &1820922541
 GameObject:
   m_ObjectHideFlags: 0
@@ -7199,7 +7214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6419913523111105754, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: m_Name
-      value: Customer
+      value: Namo
       objectReference: {fileID: 0}
     - target: {fileID: 6419913523111105754, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: m_TagString
@@ -7227,7 +7242,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2591230629355187473, guid: a747064e094664c79b326331acfebe8e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2730961272479356374, guid: a747064e094664c79b326331acfebe8e, type: 3}
       propertyPath: m_BodyType
