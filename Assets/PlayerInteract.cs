@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerInteract : MonoBehaviour
 {
     public Collider2D interactCollider;
-    Vector2 interactOffset;
+    public Vector2 interactOffset;
 
     private void Start()
     {
@@ -15,28 +15,28 @@ public class PlayerInteract : MonoBehaviour
     {
         print("interact right");
         interactCollider.enabled = true;
-        transform.position = new Vector2(interactOffset.x + 0.2f, interactOffset.y + 0.2f);
+        transform.localPosition = new Vector3(interactOffset.x + 0.2f, interactOffset.y + 0.2f);
     }
 
     public void InteractLeft()
     {
         // print("interact left");
         interactCollider.enabled = true;
-        transform.position = new Vector2(interactOffset.x - 0.2f, interactOffset.y + 0.2f);
+        transform.localPosition = new Vector3(interactOffset.x - 0.2f, interactOffset.y + 0.2f);
     }
 
     public void InteractUp()
     {
         // print("interact up");
         interactCollider.enabled = true;
-        transform.position = new Vector2(interactOffset.x, interactOffset.y * -1);
+        transform.localPosition = new Vector3(interactOffset.x, interactOffset.y * -1);
     }
 
     public void InteractDown()
     {
         // print("interact down");
         interactCollider.enabled = true;
-        transform.position = interactOffset;
+        transform.localPosition = interactOffset;
     }
 
     public void StopInteract()

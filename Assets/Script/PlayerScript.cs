@@ -9,24 +9,8 @@ public class PlayerScript : MonoBehaviour
     public enum InteractDirection {
         up, down, left, right
     }
-
     public InteractDirection interactDirection;
-    // public void Interact() {
-    //     switch(interactDirection) {
-    //         case InteractDirection.up:
-    //             InteractUp();
-    //             break;
-    //         case InteractDirection.down:
-    //             InteractDown();
-    //             break;
-    //         case InteractDirection.left:
-    //             InteractLeft();
-    //             break;
-    //         case InteractDirection.right:
-    //             InteractRight();
-    //             break;
-    //     }
-    // }
+    
     public float moveSpeed = 1f;
     public float collisionOffset = 0.02f;
     public ContactFilter2D movementFilter;
