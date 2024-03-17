@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,19 +8,35 @@ public class GrabController : MonoBehaviour
     public Transform grabDetect;
     public Transform foodHolder;
     public float rayDist;
+    private PlayerScript player;
+
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
+    }
 
     void Update()
     {
         RaycastHit2D grabCheck = Physics2D.Raycast(grabDetect.position, Vector2.right * transform.localScale, rayDist);
-        print("test " + grabCheck.collider.tag);
-        if(grabCheck.collider != null && grabCheck.collider.tag == "Food") {
-            if (Input.GetKey(KeyCode.G)) {
-                grabCheck.collider.gameObject.transform.parent = foodHolder;
-                grabCheck.collider.gameObject.transform.position = foodHolder.position;
-                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
-            } else {
-                grabCheck.collider.gameObject.transform.parent = null;
-                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;                
+        // print("test " + grabCheck.collider.tag);
+        Collider2D grabbedObject = grabCheck.collider;
+        if (grabbedObject != null && grabbedObject.tag == "Food")
+        {
+            if (Input.GetKey(KeyCode.G))
+            {
+                grabbedObject.gameObject.transform.parent = foodHolder;
+                grabbedObject.gameObject.transform.position = foodHolder.position;
+                grabbedObject.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+                grabbedObject.enabled = false;
+                int foodId = grabbedObject.GetComponent<FoodScript>().foodId;
+                player.isHoldingFood = true;
+                player.holdingFoodId = foodId;
+            }
+            else
+            {
+                grabbedObject.gameObject.transform.parent = null;
+                grabbedObject.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+                grabbedObject.enabled = true;
             }
         }
     }

@@ -5,13 +5,11 @@ using UnityEngine;
 public class PlayerInteract : MonoBehaviour
 {
     public Collider2D interactCollider;
-    private PlayerScript player;
     Vector2 interactOffset;
 
     private void Start()
     {
         interactOffset = transform.position;
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
     }
     public void InteractRight()
     {
@@ -60,6 +58,10 @@ public class PlayerInteract : MonoBehaviour
         {
             KitchenScript kitchen = other.GetComponent<KitchenScript>();
             kitchen.OnInteract();
+        }
+        else if (other.tag == "Food")
+        {
+            // kitchen remove food && player take food
         }
     }
 }
