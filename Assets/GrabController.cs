@@ -17,9 +17,11 @@ public class GrabController : MonoBehaviour
                 grabCheck.collider.gameObject.transform.parent = foodHolder;
                 grabCheck.collider.gameObject.transform.position = foodHolder.position;
                 grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+                grabCheck.collider.enabled = false;
             } else {
                 grabCheck.collider.gameObject.transform.parent = null;
-                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;                
+                grabCheck.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;              
+                grabCheck.collider.enabled = true;  
             }
         }
     }
