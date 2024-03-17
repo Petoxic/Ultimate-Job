@@ -11,7 +11,7 @@ public class GrabController : MonoBehaviour
     void Update()
     {
         RaycastHit2D grabCheck = Physics2D.Raycast(grabDetect.position, Vector2.right * transform.localScale, rayDist);
-        // print("test " + grabCheck.collider.tag);
+        print("test " + grabCheck.collider.tag);
         if(grabCheck.collider != null && grabCheck.collider.tag == "Food") {
             if (Input.GetKey(KeyCode.G)) {
                 grabCheck.collider.gameObject.transform.parent = foodHolder;
