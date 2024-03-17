@@ -88,9 +88,14 @@ public class CustomerScript : MonoBehaviour
             StartCoroutine(WaitDelay());
             player.AddOrder(foodId);
         }
-        else if (!isFoodReceived)
+        else if (!isFoodReceived && player.isHoldingFood)
         {
-            // todo: money gained
+            if (player.holdingFoodId == foodId) {
+                isFoodReceived = true;
+                player.isHoldingFood = false;
+                StopCoroutine(WaitDelay());
+                // todo: money gained, destroy object
+            }
         }
         else
         {

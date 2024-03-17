@@ -55,12 +55,16 @@ public class KitchenScript : MonoBehaviour
                 if (i == 0)
                 {
                     GameObject food = Instantiate(foodPrefab, new Vector3((float)1.205, (float)0.08, 0), Quaternion.identity);
-                    food.GetComponent<FoodScript>().spriteRenderer.sprite = sprites[foodId];
+                    FoodScript foodScript = food.GetComponent<FoodScript>();
+                    foodScript.spriteRenderer.sprite = sprites[foodId];
+                    foodScript.foodId = foodId;
                 }
                 else
                 {
                     GameObject food = Instantiate(foodPrefab, new Vector3((float)1.205, (float)0.254, 0), Quaternion.identity);
-                    food.GetComponent<FoodScript>().spriteRenderer.sprite = sprites[foodId];
+                    FoodScript foodScript = food.GetComponent<FoodScript>();
+                    foodScript.spriteRenderer.sprite = sprites[foodId];
+                    foodScript.foodId = foodId;
                 }
                 return;
             }
