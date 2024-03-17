@@ -94,7 +94,8 @@ public class CustomerScript : MonoBehaviour
                 isFoodReceived = true;
                 player.isHoldingFood = false;
                 StopCoroutine(WaitDelay());
-                // todo: money gained, destroy object
+                // todo: destroy object
+                DataManager.AddMoney(10);
             }
         }
         else
