@@ -7,12 +7,18 @@ public class KitchenTimerScript : MonoBehaviour
 {
     [SerializeField] private Slider timerSlider;
     [SerializeField] private float countdownTime = 2f;
-    [SerializeField] private KitchenScript kitchen;
+    private KitchenScript kitchen;
+    public int currentFoodId = 0;
 
     void OnEnable()
     {
         timerSlider.maxValue = countdownTime;
         timerSlider.value = countdownTime;
+    }
+
+    void Start()
+    {
+        kitchen = GameObject.FindGameObjectWithTag("Kitchen").GetComponent<KitchenScript>();
     }
 
     void Update()
@@ -23,7 +29,7 @@ public class KitchenTimerScript : MonoBehaviour
             if (timerSlider.value == 0)
             {
                 timerSlider.gameObject.SetActive(false);
-                // kitchen.ServeOrder();
+                kitchen.ServeOrder(currentFoodId);
             }
         }
     }
