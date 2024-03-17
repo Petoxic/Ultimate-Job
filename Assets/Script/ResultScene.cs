@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ResultScreen : MonoBehaviour
+public class ResultMenu : MonoBehaviour
 {
-    public void Setup(int[] objectives)
+    public void ToArrestingScene()
     {
-        gameObject.SetActive(true);
+        SceneManager.LoadScene("ArrestingScene");
     }
 }

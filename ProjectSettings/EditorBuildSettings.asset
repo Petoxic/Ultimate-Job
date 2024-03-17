@@ -7,10 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/NightScene.unity
-    guid: 1631558f40105c74481ea90e1564f9b6
-  - enabled: 1
-    path: Assets/Scenes/TestScene.unity
-    guid: 7f14c877926444e4ca095059ee860652
+    guid: 1ab9172ab40cac141bfd1dd993bd9653
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
@@ -20,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ArrestingScene.unity
     guid: 746448775593ad24891537881d8d44d2
+  - enabled: 1
+    path: Assets/Scenes/DayScene.unity
+    guid: 026d7815d47c7234cbecbfa51f9ddf8d
   m_configObjects: {}
