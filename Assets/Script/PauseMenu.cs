@@ -44,10 +44,16 @@ public class PauseMenu : MonoBehaviour
         isPause = false;
     }
 
+    public void GoToSetting()
+    {
+        SceneManager.LoadScene("SettingScene");
+        isPause = false;
+    }
+
     public void GoToMainMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("NightScene");
+        SceneManager.LoadScene("MainMenu");
         isPause = false;
     }
 
