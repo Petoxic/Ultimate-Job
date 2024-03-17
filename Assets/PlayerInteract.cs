@@ -6,12 +6,14 @@ public class PlayerInteract : MonoBehaviour
 {
     public Collider2D interactCollider;
     private PlayerScript player;
+    private KitchenScript kitchen;
     Vector2 interactOffset;
 
     private void Start()
     {
         interactOffset = transform.position;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
+        kitchen = GameObject.FindGameObjectWithTag("Kitchen").GetComponent<KitchenScript>();
     }
     public void InteractRight()
     {
@@ -60,6 +62,10 @@ public class PlayerInteract : MonoBehaviour
         {
             KitchenScript kitchen = other.GetComponent<KitchenScript>();
             kitchen.OnInteract();
+        }
+        else if (other.tag == "Food")
+        {
+            // kitchen remove food && player take food
         }
     }
 }

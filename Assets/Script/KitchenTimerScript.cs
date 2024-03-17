@@ -7,6 +7,7 @@ public class KitchenTimerScript : MonoBehaviour
 {
     [SerializeField] private Slider timerSlider;
     [SerializeField] private float countdownTime = 2f;
+    [SerializeField] private KitchenScript kitchen;
 
     void OnEnable()
     {
@@ -22,6 +23,7 @@ public class KitchenTimerScript : MonoBehaviour
             if (timerSlider.value == 0)
             {
                 timerSlider.gameObject.SetActive(false);
+                // kitchen.ServeOrder();
             }
         }
     }
