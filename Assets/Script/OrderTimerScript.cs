@@ -12,6 +12,7 @@ public class OrderTimerScript : MonoBehaviour
     [SerializeField] private Image foodImage;
     private Sprite[] sprites;
     private CustomerScript customerScript;
+    [SerializeField] private GameObject customer;
 
     void OnEnable()
     {
@@ -36,7 +37,7 @@ public class OrderTimerScript : MonoBehaviour
             timerSlider.value -= Time.deltaTime;
             if (timerSlider.value == 0)
             {
-                orderBubble.SetActive(false);
+                customer.SetActive(false);
             }
         }
     }

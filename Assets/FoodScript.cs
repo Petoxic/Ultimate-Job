@@ -5,4 +5,5 @@ using UnityEngine;
 public class FoodScript : MonoBehaviour
 {
     public SpriteRenderer spriteRenderer;
+    public int foodId;
 }

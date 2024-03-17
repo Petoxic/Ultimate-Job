@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -16,6 +17,8 @@ public class PlayerScript : MonoBehaviour
     public ContactFilter2D movementFilter;
     public PlayerInteract playerInteract;
     public List<int> orderList = new List<int>();
+    public bool isHoldingFood;
+    public int holdingFoodId;
 
     Vector2 movementInput;
     Rigidbody2D rb;
