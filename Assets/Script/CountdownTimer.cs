@@ -7,7 +7,7 @@ public class CountdownTimer : MonoBehaviour
 {
 
     // Init for test only
-    private float timeUntilSceneEnds = 5f;
+    private float timeUntilSceneEnds = 1000000000000f;
     private float timeWhenSceneEnds;
 
     void Start()
