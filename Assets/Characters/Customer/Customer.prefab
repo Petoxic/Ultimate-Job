@@ -218,6 +218,7 @@ MonoBehaviour:
   orderBubble: {fileID: 727244648953110688}
   timerSlider: {fileID: 8792137713003179367}
   foodImage: {fileID: 4269996465863229393}
+  customer: {fileID: 6419913523111105754}
 --- !u!1 &2354955725267540569
 GameObject:
   m_ObjectHideFlags: 0
