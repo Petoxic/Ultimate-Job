@@ -44,7 +44,6 @@ public class KitchenScript : MonoBehaviour
         return servingCount == servingCountMax;
     }
 
-    // todo: link with ing
     public void ServeOrder(int foodId)
     {
         for (int i = 0; i < servingCountMax; i++)
