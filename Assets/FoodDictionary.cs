@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FoodDictionary : MonoBehaviour
+public static class FoodDictionary
 {
-    public Dictionary<FoodType, string> foodPath = new Dictionary<FoodType, string>(){
+    public static Dictionary<FoodType, string> foodPath = new Dictionary<FoodType, string>(){
         {FoodType.STEAK, "food-OCAL_40"},
         {FoodType.CHICKEN, "food-OCAL_41"},
         {FoodType.EGG, "food-OCAL_42"},

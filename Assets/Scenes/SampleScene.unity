@@ -250,6 +250,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1401093685718696361, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2917313472361915848, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: isTalking
       value: 0
@@ -277,6 +281,18 @@ PrefabInstance:
     - target: {fileID: 2917313472361915848, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: dialogue.Array.data[1]
       value: This is dialogue 1.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2931369547594874098, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2971841106530163720, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2971841106530163720, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5027515653562962395, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6840,6 +6856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerSlider: {fileID: 1696811393}
   countdownTime: 2
+  kitchen: {fileID: 0}
 --- !u!1 &1820922541
 GameObject:
   m_ObjectHideFlags: 0
@@ -7271,6 +7288,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1401093685718696361, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2917313472361915848, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: wordSpeed
       value: 0.06
@@ -7294,6 +7315,18 @@ PrefabInstance:
     - target: {fileID: 2917313472361915848, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: dialogue.Array.data[1]
       value: This is text 1.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2931369547594874098, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2971841106530163720, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2971841106530163720, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4608724493181382566, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: m_Size.x

@@ -9,8 +9,7 @@ public class KitchenScript : MonoBehaviour
 {
     [SerializeField] private Slider timerSlider;
     private PlayerScript player;
-    private List<string> orderList = new List<string>();
-    // todo: list of prefab object (change obj type in servingSlot)
+    private List<int> orderList = new List<int>();
     private static int servingCountMax = 2;
     private List<int> servingSlot = new List<int>(servingCountMax);
     private int servingCount = 0;
@@ -22,7 +21,6 @@ public class KitchenScript : MonoBehaviour
 
     void Update()
     {
-        // todo: check if servingSlot is not fully occupied
         if (orderList.Count > 0 && !timerSlider.gameObject.activeSelf && !IsServingSlotFull())
         {
             timerSlider.gameObject.SetActive(true);

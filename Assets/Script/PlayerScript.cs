@@ -15,7 +15,7 @@ public class PlayerScript : MonoBehaviour
     public float collisionOffset = 0.02f;
     public ContactFilter2D movementFilter;
     public PlayerInteract playerInteract;
-    public List<string> orderList = new List<string>();
+    public List<int> orderList = new List<int>();
 
     Vector2 movementInput;
     Rigidbody2D rb;
@@ -174,12 +174,13 @@ public class PlayerScript : MonoBehaviour
         canMove = true;
     }
 
-    public void AddOrder(string order)
+    public void AddOrder(int foodId)
     {
-        orderList.Add(order);
+        orderList.Add(foodId);
     }
 
-    public void ClearOrderList() {
+    public void ClearOrderList()
+    {
         orderList.Clear();
     }
 }

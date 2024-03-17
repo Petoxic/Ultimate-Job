@@ -4,21 +4,21 @@ using UnityEngine;
 
 public enum FoodType
 {
-    STEAK,
-    CHICKEN,
-    EGG,
-    BOILED_EGG,
-    FRIED_EGG,
-    TURKEY,
-    DOUBLE_CHICKEN,
-    SUSHI_ROLL_1,
-    SUSHI_ROLL_2,
-    SUSHI_SHRIMP,
-    SUSHI_TUNA,
-    SUSHI_SALMON,
-    SUSHI_EGG,
-    SUSHI_SHELL,
-    SUSHI_EEL,
-    CUPCAKE,
-    DONUT
+    STEAK = 40,
+    CHICKEN = 41,
+    EGG = 42,
+    BOILED_EGG = 43,
+    FRIED_EGG = 44,
+    TURKEY = 45,
+    DOUBLE_CHICKEN = 46,
+    SUSHI_ROLL_1 = 47,
+    SUSHI_ROLL_2 = 48,
+    SUSHI_SHRIMP = 49,
+    SUSHI_TUNA = 50,
+    SUSHI_SALMON = 51,
+    SUSHI_EGG = 52,
+    SUSHI_SHELL = 53,
+    SUSHI_EEL = 54,
+    CUPCAKE = 55,
+    DONUT = 56
 }
