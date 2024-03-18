@@ -20,13 +20,12 @@ public class GrabController : MonoBehaviour
         RaycastHit2D grabCheck = Physics2D.Raycast(grabDetect.position, Vector2.right * transform.localScale, rayDist);
         // print("test " + grabCheck.collider.tag);
         Collider2D grabbedObject = grabCheck.collider;
-        if (grabbedObject != null && grabbedObject.tag == "Food")
+        if (grabbedObject != null && grabbedObject.tag == "Food" && !player.isHoldingFood)
         {
             if (Input.GetKey(KeyCode.G))
             {
                 grabbedObject.gameObject.transform.parent = foodHolder;
                 grabbedObject.gameObject.transform.position = foodHolder.position;
-                grabbedObject.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
                 grabbedObject.enabled = false;
                 int foodId = grabbedObject.GetComponent<FoodScript>().foodId;
                 player.isHoldingFood = true;
@@ -35,7 +34,6 @@ public class GrabController : MonoBehaviour
             else
             {
                 grabbedObject.gameObject.transform.parent = null;
-                grabbedObject.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
                 grabbedObject.enabled = true;
             }
         }

@@ -60,5 +60,9 @@ public class PlayerInteract : MonoBehaviour
         {
             // kitchen remove food && player take food
         }
+        else if (other.tag == "Bin") {
+            BinScript bin = other.GetComponent<BinScript>();
+            bin.OnInteract();
+        }
     }
 }
