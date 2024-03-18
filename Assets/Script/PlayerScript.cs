@@ -155,9 +155,12 @@ public class PlayerScript : MonoBehaviour
         orderList.Add(foodId);
     }
 
-    public void ServeOrder(int foodId){
+    public void ServeOrder(int foodId)
+    {
         orderList.RemoveAll(id => id == foodId);
-        GameObject foundItem = GameObject.Find("Food(Clone)");
+        // todo: fix bug all food was gone after serve
+        GameObject holdObject = gameObject.transform.Find("HoldObject").gameObject;
+        GameObject foundItem = holdObject.transform.Find("Food(Clone)").gameObject;
         Destroy(foundItem);
     }
 
