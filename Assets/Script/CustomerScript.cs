@@ -103,6 +103,7 @@ public class CustomerScript : MonoBehaviour
                     player.isHoldingFood = false;
                     StopCoroutine(WaitDelay());
                     // todo: destroy object
+                    player.ServeOrder(foodId);
                     DataManager.AddMoney(10);
                 }
             }

@@ -63,10 +63,12 @@ public class PlayerScript : MonoBehaviour
                 if (movementInput.x > 0)
                 {
                     animator.SetInteger("moving", 4);
+                    playerInteract.faceRight();
                 }
                 else if (movementInput.x < 0)
                 {
                     animator.SetInteger("moving", 2);
+                    playerInteract.faceLeft();
                 }
 
             }
@@ -76,10 +78,12 @@ public class PlayerScript : MonoBehaviour
                 if (movementInput.y > 0)
                 {
                     animator.SetInteger("moving", 3);
+                    playerInteract.faceUp();
                 }
                 else
                 {
                     animator.SetInteger("moving", 1);
+                    playerInteract.faceDown();
                 }
             }
         }
@@ -122,38 +126,7 @@ public class PlayerScript : MonoBehaviour
     public void OnInteract()
     {
         LockMovement();
-
-        if (movementInput != Vector2.zero)
-        {
-            if (movementInput.x != 0.0)
-            {
-                if (movementInput.x > 0)
-                {
-                    playerInteract.InteractRight();
-                }
-                else if (movementInput.x < 0)
-                {
-                    playerInteract.InteractLeft();
-                }
-
-            }
-
-            if (movementInput.y != 0.0)
-            {
-                if (movementInput.y > 0)
-                {
-                    playerInteract.InteractUp();
-                }
-                else
-                {
-                    playerInteract.InteractDown();
-                }
-            }
-        }
-        else
-        {
-            playerInteract.InteractDown();
-        }
+        playerInteract.Interact();
     }
 
     public void EndInteract()
@@ -180,6 +153,12 @@ public class PlayerScript : MonoBehaviour
     public void AddOrder(int foodId)
     {
         orderList.Add(foodId);
+    }
+
+    public void ServeOrder(int foodId){
+        orderList.RemoveAll(id => id == foodId);
+        GameObject foundItem = GameObject.Find("Food(Clone)");
+        Destroy(foundItem);
     }
 
     public void ClearOrderList()

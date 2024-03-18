@@ -24,7 +24,6 @@ public class OrderTimerScript : MonoBehaviour
     {
         customerScript = GetComponentInParent<CustomerScript>();
         sprites = Resources.LoadAll<Sprite>("food-OCAL");
-
         int foodId = UnityEngine.Random.Range(40, 57);
         foodImage.sprite = sprites[foodId];
         customerScript.setFoodId(foodId);

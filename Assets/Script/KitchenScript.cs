@@ -57,6 +57,7 @@ public class KitchenScript : MonoBehaviour
                     GameObject food = Instantiate(foodPrefab, new Vector3((float)1.205, (float)0.08, 0), Quaternion.identity);
                     FoodScript foodScript = food.GetComponent<FoodScript>();
                     foodScript.spriteRenderer.sprite = sprites[foodId];
+                    foodScript.spriteRenderer.sortingOrder = 5;
                     foodScript.foodId = foodId;
                 }
                 else

@@ -11,37 +11,34 @@ public class PlayerInteract : MonoBehaviour
     {
         interactOffset = transform.position;
     }
-    public void InteractRight()
+
+    public void Interact()
     {
-        print("interact right");
         interactCollider.enabled = true;
+    }
+
+    public void faceRight()
+    {
         transform.localPosition = new Vector3(interactOffset.x + 0.2f, interactOffset.y + 0.2f);
     }
 
-    public void InteractLeft()
+    public void faceLeft()
     {
-        // print("interact left");
-        interactCollider.enabled = true;
         transform.localPosition = new Vector3(interactOffset.x - 0.2f, interactOffset.y + 0.2f);
     }
 
-    public void InteractUp()
+    public void faceUp()
     {
-        // print("interact up");
-        interactCollider.enabled = true;
         transform.localPosition = new Vector3(interactOffset.x, interactOffset.y * -1);
     }
 
-    public void InteractDown()
+    public void faceDown()
     {
-        // print("interact down");
-        interactCollider.enabled = true;
         transform.localPosition = interactOffset;
     }
 
     public void StopInteract()
     {
-        // print("endd");
         interactCollider.enabled = false;
     }
 
