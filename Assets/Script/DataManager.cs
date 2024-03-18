@@ -11,6 +11,7 @@ public class DataManager : MonoBehaviour
     public static HashSet<string> suspectList = new HashSet<string>();
     public static List<bool> isObjectiveCompleted = new List<bool> { false, false, false };
     public static int plateServed = 0;
+    public static string selectedSuspectName = "";
 
     public static void AddMoney(int money)
     {

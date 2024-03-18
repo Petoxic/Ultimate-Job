@@ -9,40 +9,50 @@ public class changeColor : MonoBehaviour
     public Text colorchangingFont1;
     public Text colorchangingFont2;
     public Text colorchangingFont3;
-    List<bool> names = new List<bool>() { true, true, true };
-
 
     // Start is called before the first frame update
     void Start()
     {
-        if  (names[0] && names[1] && names[2]){
+        if (DataManager.isObjectiveCompleted[0] && DataManager.isObjectiveCompleted[1] && DataManager.isObjectiveCompleted[2])
+        {
             header.text = "Done!";
-        }else{
+        }
+        else
+        {
             header.text = "Game Over!";
         }
-        if(names[0]){
+        if (DataManager.isObjectiveCompleted[0])
+        {
             colorchangingFont1.color = Color.yellow;
-        }else{
+        }
+        else
+        {
             colorchangingFont1.color = Color.red;
         }
-        if(names[1]){
+        if (DataManager.isObjectiveCompleted[1])
+        {
             colorchangingFont2.color = Color.yellow;
-        }else{
+        }
+        else
+        {
             colorchangingFont2.color = Color.red;
         }
-        if(names[2]){
+        if (DataManager.isObjectiveCompleted[2])
+        {
             colorchangingFont3.color = Color.yellow;
-        }else{
+        }
+        else
+        {
             colorchangingFont3.color = Color.red;
         }
 
-        
-          
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
