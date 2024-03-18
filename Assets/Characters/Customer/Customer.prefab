@@ -659,7 +659,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customer: {fileID: 6419913523111105754}
   timerSlider: {fileID: 8994171279990757786}
-  countdownTime: 10
+  countdownTime: 1200
 --- !u!1 &5741892030038817441
 GameObject:
   m_ObjectHideFlags: 0
