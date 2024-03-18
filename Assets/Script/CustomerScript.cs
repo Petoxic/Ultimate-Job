@@ -118,8 +118,7 @@ public class CustomerScript : MonoBehaviour
 
     private void InteractAction()
     {
-        // todo: fix this bug: name not show on dialog name
-        // objectName.text = gameObject.name;
+        objectName.text = gameObject.name;
         if (dialoguePanel.activeInHierarchy)
         {
             NextLine();
