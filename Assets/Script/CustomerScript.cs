@@ -60,6 +60,7 @@ public class CustomerScript : MonoBehaviour
         }
         else
         {
+            DataManager.AddSuspectList(gameObject.name);
             ResetText();
         }
     }
@@ -88,6 +89,7 @@ public class CustomerScript : MonoBehaviour
             if (!isOrderReceived)
             {
                 isOrderReceived = true;
+                DataManager.AddPlateServed();
                 orderBubble.gameObject.SetActive(false);
                 StopCoroutine(OrderDelay());
                 StartCoroutine(WaitDelay());
