@@ -26,7 +26,6 @@ public class GrabController : MonoBehaviour
             {
                 grabbedObject.gameObject.transform.parent = foodHolder;
                 grabbedObject.gameObject.transform.position = foodHolder.position;
-                grabbedObject.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
                 grabbedObject.enabled = false;
                 int foodId = grabbedObject.GetComponent<FoodScript>().foodId;
                 player.isHoldingFood = true;
@@ -35,7 +34,6 @@ public class GrabController : MonoBehaviour
             else
             {
                 grabbedObject.gameObject.transform.parent = null;
-                grabbedObject.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
                 grabbedObject.enabled = true;
             }
         }

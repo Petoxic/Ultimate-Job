@@ -7,7 +7,7 @@ public class CustomerTimerScript : MonoBehaviour
 {
     [SerializeField] private GameObject customer;
     [SerializeField] private Slider timerSlider;
-    [SerializeField] private float countdownTime = 1200f;
+    [SerializeField] private float countdownTime = 10f;
 
     void OnEnable()
     {

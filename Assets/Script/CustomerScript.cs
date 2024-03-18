@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -38,6 +39,12 @@ public class CustomerScript : MonoBehaviour
     private IEnumerator WaitDelay()
     {
         yield return new WaitForSeconds(5);
+        timerSlider.gameObject.SetActive(true);
+    }
+
+    private IEnumerator EatDelay()
+    {
+        yield return new WaitForSeconds(3);
         timerSlider.gameObject.SetActive(true);
     }
 
@@ -89,7 +96,6 @@ public class CustomerScript : MonoBehaviour
             if (!isOrderReceived)
             {
                 isOrderReceived = true;
-                DataManager.AddPlateServed();
                 orderBubble.gameObject.SetActive(false);
                 StartCoroutine(WaitDelay());
                 player.AddOrder(foodId);
@@ -103,6 +109,8 @@ public class CustomerScript : MonoBehaviour
                     timerSlider.gameObject.SetActive(false);
                     player.ServeOrder(foodId);
                     DataManager.AddMoney(10);
+                    DataManager.AddPlateServed();
+                    StartCoroutine(EatDelay());
                 }
             }
             else
@@ -118,8 +126,7 @@ public class CustomerScript : MonoBehaviour
 
     private void InteractAction()
     {
-        // todo: fix this bug: name not show on dialog name
-        // objectName.text = gameObject.name;
+        objectName.text = gameObject.name;
         if (dialoguePanel.activeInHierarchy)
         {
             NextLine();
