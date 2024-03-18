@@ -9,16 +9,14 @@ public class ButtonMangement : MonoBehaviour
     public GameObject confirmationPanel;
     public GameObject stillNotSureButton;
 
-    List<string> names = new List<string>() { "George", "Isora", "J3cha" };
-
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < names.Count; i++)
+        foreach (string name in DataManager.suspectList)
         {
             GameObject btn = (GameObject)Instantiate(buttonTemplate);
             btn.transform.SetParent(scrollViewPanel.transform);
-            btn.transform.GetChild(0).GetComponent<UnityEngine.UI.Text>().text = names[i];
+            btn.transform.GetChild(0).GetComponent<UnityEngine.UI.Text>().text = name;
             btn.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(delegate
             {
                 DataManager.selectedSuspectName = btn.transform.GetChild(0).GetComponent<UnityEngine.UI.Text>().text;
