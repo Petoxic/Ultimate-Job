@@ -362,6 +362,10 @@ PrefabInstance:
       propertyPath: m_UseFullKinematicContacts
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8369749054694074718, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: countdownTime
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8420,6 +8424,10 @@ PrefabInstance:
     - target: {fileID: 6869579559746169517, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8369749054694074718, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: countdownTime
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

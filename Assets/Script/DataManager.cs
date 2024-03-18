@@ -7,10 +7,15 @@ using UnityEngine.UI;
 public class DataManager : MonoBehaviour
 {
     public static int totalMoney = 0;
-    public static string moneyText = "Total money: 0";
+    public static string moneyText;
     public static HashSet<string> suspectList = new HashSet<string>();
     public static List<bool> isObjectiveCompleted = new List<bool> { false, false, false };
     public static int plateServed = 0;
+
+    void Start()
+    {
+        moneyText = "Total money: 0";
+    }
 
     public static void AddMoney(int money)
     {
