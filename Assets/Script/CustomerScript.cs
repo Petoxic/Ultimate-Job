@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -38,6 +39,12 @@ public class CustomerScript : MonoBehaviour
     private IEnumerator WaitDelay()
     {
         yield return new WaitForSeconds(5);
+        timerSlider.gameObject.SetActive(true);
+    }
+
+    private IEnumerator EatDelay()
+    {
+        yield return new WaitForSeconds(3);
         timerSlider.gameObject.SetActive(true);
     }
 
@@ -103,6 +110,7 @@ public class CustomerScript : MonoBehaviour
                     timerSlider.gameObject.SetActive(false);
                     player.ServeOrder(foodId);
                     DataManager.AddMoney(10);
+                    StartCoroutine(EatDelay());
                 }
             }
             else
