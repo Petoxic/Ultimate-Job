@@ -14,6 +14,9 @@ public class ObjectiveScript : MonoBehaviour
         objective_1 = GameObject.Find("ObjectiveText_1").gameObject.GetComponent<Text>();
         objective_2 = GameObject.Find("ObjectiveText_2").gameObject.GetComponent<Text>();
         objective_3 = GameObject.Find("ObjectiveText_3").gameObject.GetComponent<Text>();
+        objective_1.text = "Money: " + DataManager.totalMoney + "/20";
+        objective_2.text = "People talked: " + DataManager.suspectList.Count + "/2";
+        objective_3.text = "Dish served: " + DataManager.plateServed + "/2";
     }
 
     void Update()

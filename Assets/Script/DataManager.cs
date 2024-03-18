@@ -6,15 +6,19 @@ using UnityEngine.UI;
 
 public class DataManager : MonoBehaviour
 {
-    public static int totalMoney = 0;
+    public static int totalMoney;
     public static string moneyText;
-    public static HashSet<string> suspectList = new HashSet<string>();
-    public static List<bool> isObjectiveCompleted = new List<bool> { false, false, false };
-    public static int plateServed = 0;
+    public static HashSet<string> suspectList;
+    public static List<bool> isObjectiveCompleted;
+    public static int plateServed;
 
     void Start()
     {
+        totalMoney = 0;
         moneyText = "Total money: 0";
+        suspectList = new HashSet<string>();
+        isObjectiveCompleted = new List<bool> { false, false, false };
+        plateServed = 0;
     }
 
     public static void AddMoney(int money)
