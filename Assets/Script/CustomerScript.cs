@@ -89,7 +89,6 @@ public class CustomerScript : MonoBehaviour
             if (!isOrderReceived)
             {
                 isOrderReceived = true;
-                DataManager.AddPlateServed();
                 orderBubble.gameObject.SetActive(false);
                 StartCoroutine(WaitDelay());
                 player.AddOrder(foodId);
@@ -103,6 +102,7 @@ public class CustomerScript : MonoBehaviour
                     timerSlider.gameObject.SetActive(false);
                     player.ServeOrder(foodId);
                     DataManager.AddMoney(10);
+                    DataManager.AddPlateServed();
                 }
             }
             else
