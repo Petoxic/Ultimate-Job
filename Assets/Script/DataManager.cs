@@ -9,7 +9,7 @@ public class DataManager : MonoBehaviour
     public static int totalMoney;
     public static string moneyText;
     public static HashSet<string> suspectList;
-    public static List<bool> isObjectiveCompleted { };
+    public static List<bool> isObjectiveCompleted;
     public static int plateServed;
 
     void Start()

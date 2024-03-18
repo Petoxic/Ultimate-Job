@@ -10,7 +10,10 @@ public class BinScript : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
     }
     public void OnInteract() {
-        DataManager.AddMoney(-5);
-        player.ServeOrder(player.holdingFoodId);
+        if(player.isHoldingFood) {
+            DataManager.AddMoney(-5);
+            player.ServeOrder(player.holdingFoodId);
+            player.isHoldingFood = false;
+        }
     }
 }
