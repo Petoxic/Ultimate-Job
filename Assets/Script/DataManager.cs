@@ -9,7 +9,7 @@ public class DataManager : MonoBehaviour
     public static int totalMoney;
     public static string moneyText;
     public static HashSet<string> suspectList;
-    public static List<bool> isObjectiveCompleted;
+    public static List<bool> isObjectiveCompleted { };
     public static int plateServed;
 
     void Start()
@@ -20,6 +20,8 @@ public class DataManager : MonoBehaviour
         isObjectiveCompleted = new List<bool> { false, false, false };
         plateServed = 0;
     }
+    public static string selectedSuspectName = "";
+    public static float timeUntilSceneEnds = 120f;
 
     public static void AddMoney(int money)
     {

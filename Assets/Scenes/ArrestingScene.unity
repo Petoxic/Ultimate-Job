@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &191586542
 RectTransform:
   m_ObjectHideFlags: 0
@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 198088231}
   - component: {fileID: 198088230}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: RestartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -282,7 +282,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 198088231}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2081970906}
+        m_TargetAssemblyTypeName: GameOverController, Assembly-CSharp
+        m_MethodName: ToRestart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &198088231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,7 +345,7 @@ GameObject:
   - component: {fileID: 298008237}
   - component: {fileID: 298008236}
   m_Layer: 5
-  m_Name: Suspected list
+  m_Name: SuspectedList
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -355,7 +367,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 331}
+  m_AnchoredPosition: {x: 0, y: 460}
   m_SizeDelta: {x: 575.6561, y: 140.1179}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &298008236
@@ -496,7 +508,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &320550880
 RectTransform:
   m_ObjectHideFlags: 0
@@ -660,12 +672,12 @@ GameObject:
   - component: {fileID: 575670996}
   - component: {fileID: 575670995}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: ConfirmationPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &575670994
 RectTransform:
   m_ObjectHideFlags: 0
@@ -739,7 +751,7 @@ GameObject:
   - component: {fileID: 690326294}
   - component: {fileID: 690326293}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: NextMissionButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -808,7 +820,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 690326294}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2081970906}
+        m_TargetAssemblyTypeName: GameOverController, Assembly-CSharp
+        m_MethodName: ToNextMission
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &690326294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -860,7 +884,7 @@ GameObject:
   - component: {fileID: 724870866}
   - component: {fileID: 724870865}
   m_Layer: 5
-  m_Name: Button (Legacy) (1)
+  m_Name: NoButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -929,7 +953,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 724870866}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2081970905}
+        m_TargetAssemblyTypeName: ArrestSucceed, Assembly-CSharp
+        m_MethodName: NoClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &724870866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1090,6 +1126,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrollViewPanel: {fileID: 907352041}
   buttonTemplate: {fileID: 8198218369661822023, guid: 0ee797ede18744e4fb79ae1b0ac22888, type: 3}
+  confirmationPanel: {fileID: 575670993}
+  stillNotSureButton: {fileID: 1444581103}
 --- !u!1 &752669531
 GameObject:
   m_ObjectHideFlags: 0
@@ -1457,9 +1495,9 @@ MonoBehaviour:
   m_Padding:
     m_Left: 0
     m_Right: 0
-    m_Top: 0
+    m_Top: 50
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 1
   m_Spacing: 10
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
@@ -1714,7 +1752,7 @@ GameObject:
   - component: {fileID: 1444581106}
   - component: {fileID: 1444581105}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: StillNotSureButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1737,7 +1775,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 526.4675, y: 331}
+  m_AnchoredPosition: {x: 534, y: 460}
   m_SizeDelta: {x: 323.5865, y: 81.3585}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1444581105
@@ -1783,7 +1821,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1444581106}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2081970906}
+        m_TargetAssemblyTypeName: GameOverController, Assembly-CSharp
+        m_MethodName: StillNotSure
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1444581106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1835,7 +1885,7 @@ GameObject:
   - component: {fileID: 1529966430}
   - component: {fileID: 1529966429}
   m_Layer: 5
-  m_Name: Button (Legacy)
+  m_Name: YesButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1904,7 +1954,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1529966430}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2081970905}
+        m_TargetAssemblyTypeName: ArrestSucceed, Assembly-CSharp
+        m_MethodName: YesClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1529966430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2311,6 +2373,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2081970901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2081970903}
+  - component: {fileID: 2081970904}
+  - component: {fileID: 2081970905}
+  - component: {fileID: 2081970906}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2081970903
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081970901}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 196.7313, y: 210.41188, z: -1.1069402}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2081970904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081970901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931ffb53160b94443a8fe607e10b94ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  confirmationPanel: {fileID: 575670993}
+--- !u!114 &2081970905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081970901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b2e154fdb86cc044b3a1e8ebb1db64a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOver: {fileID: 320550879}
+  gameWin: {fileID: 191586541}
+  confirmationPanel: {fileID: 575670993}
+  stillNotSureButton: {fileID: 1444581103}
+--- !u!114 &2081970906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081970901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3555afe0ae1f2484abed3bdb78a294ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2318,3 +2455,4 @@ SceneRoots:
   - {fileID: 502778471}
   - {fileID: 749138228}
   - {fileID: 1974296858}
+  - {fileID: 2081970903}
