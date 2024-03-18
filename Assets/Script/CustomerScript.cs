@@ -17,6 +17,7 @@ public class CustomerScript : MonoBehaviour
     public bool isTalking = false;
     public bool isFinishDialogue = false;
     private bool isOrderReceived = false;
+    private bool isInteractable = false;
     private bool isFoodReceived = false;
     private PlayerScript player;
     private int foodId;
@@ -31,6 +32,7 @@ public class CustomerScript : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         orderBubble.gameObject.SetActive(true);
+        isInteractable = true;
     }
 
     private IEnumerator WaitDelay()
@@ -58,6 +60,7 @@ public class CustomerScript : MonoBehaviour
         }
         else
         {
+            DataManager.AddSuspectList(gameObject.name);
             ResetText();
         }
     }
@@ -80,30 +83,36 @@ public class CustomerScript : MonoBehaviour
 
     public void OnInteract()
     {
-        if (!isOrderReceived)
+        if (isInteractable)
         {
-            isOrderReceived = true;
-            orderBubble.gameObject.SetActive(false);
-            StopCoroutine(OrderDelay());
-            StartCoroutine(WaitDelay());
-            player.AddOrder(foodId);
-        }
-        else if (!isFoodReceived && player.isHoldingFood)
-        {
-            if (player.holdingFoodId == foodId) {
-                isFoodReceived = true;
-                player.isHoldingFood = false;
-                StopCoroutine(WaitDelay());
-                // todo: destroy object
-                DataManager.AddMoney(10);
-            }
-        }
-        else
-        {
-            if (!isTalking)
+
+            if (!isOrderReceived)
             {
-                isTalking = true;
-                InteractAction();
+                isOrderReceived = true;
+                DataManager.AddPlateServed();
+                orderBubble.gameObject.SetActive(false);
+                StopCoroutine(OrderDelay());
+                StartCoroutine(WaitDelay());
+                player.AddOrder(foodId);
+            }
+            else if (!isFoodReceived && player.isHoldingFood)
+            {
+                if (player.holdingFoodId == foodId)
+                {
+                    isFoodReceived = true;
+                    player.isHoldingFood = false;
+                    StopCoroutine(WaitDelay());
+                    // todo: destroy object
+                    DataManager.AddMoney(10);
+                }
+            }
+            else
+            {
+                if (!isTalking)
+                {
+                    isTalking = true;
+                    InteractAction();
+                }
             }
         }
     }
