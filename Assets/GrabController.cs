@@ -19,8 +19,7 @@ public class GrabController : MonoBehaviour
 
     void Update()
     {
-        RaycastHit2D grabCheck = Physics2D.Raycast(grabDetect.position, Vector2.right * transform.localScale, rayDist);
-        // print("test " + grabCheck.collider.tag);
+        RaycastHit2D grabCheck = Physics2D.Raycast(grabDetect.position - new Vector3(0.2f, 0.0f, 0.0f), Vector2.right * transform.localScale, rayDist);
         Collider2D grabbedObject = grabCheck.collider;
         if (grabbedObject != null && grabbedObject.tag == "Food" && !player.isHoldingFood)
         {

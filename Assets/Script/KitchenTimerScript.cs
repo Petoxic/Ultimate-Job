@@ -24,7 +24,7 @@ public class KitchenTimerScript : MonoBehaviour
 
     void Update()
     {
-        if (timerSlider.gameObject.activeSelf)
+        if (timerSlider.gameObject.activeSelf && !DataManager.startTalking)
         {
             timerSlider.value -= Time.deltaTime;
             if (timerSlider.value == 0)

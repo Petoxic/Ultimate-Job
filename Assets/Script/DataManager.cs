@@ -12,13 +12,16 @@ public class DataManager : MonoBehaviour
     public static List<bool> isObjectiveCompleted;
     public static int plateServed;
 
+    public static bool startTalking;
+
     void Start()
     {
         totalMoney = 0;
         moneyText = "Total money: 0";
         suspectList = new HashSet<string>();
-        isObjectiveCompleted = new List<bool> { true, true, true };
+        isObjectiveCompleted = new List<bool> { false, false, false };
         plateServed = 0;
+        startTalking = false;
     }
     public static string selectedSuspectName = "";
     public static float timeUntilSceneEnds = 45f;
