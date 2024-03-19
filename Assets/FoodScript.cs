@@ -6,4 +6,5 @@ public class FoodScript : MonoBehaviour
 {
     public SpriteRenderer spriteRenderer;
     public int foodId;
+    public int foodInstanceId;
 }

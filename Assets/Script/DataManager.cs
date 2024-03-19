@@ -21,7 +21,7 @@ public class DataManager : MonoBehaviour
         plateServed = 0;
     }
     public static string selectedSuspectName = "";
-    public static float timeUntilSceneEnds = 30f;
+    public static float timeUntilSceneEnds = 45f;
 
     public static void AddMoney(int money)
     {
