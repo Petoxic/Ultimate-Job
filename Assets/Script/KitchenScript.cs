@@ -27,7 +27,6 @@ public class KitchenScript : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("order buffer " + orderBuffer);
         Debug.Log("order buffer count " + orderBuffer.Count);
         if (orderBuffer.Count > 0 && !timerSlider.gameObject.activeSelf && !IsServingSlotFull())
         {
