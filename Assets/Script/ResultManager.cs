@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class changeColor : MonoBehaviour
+public class ResultManager : MonoBehaviour
 {
     public Text header;
     public Text colorchangingFont1;
