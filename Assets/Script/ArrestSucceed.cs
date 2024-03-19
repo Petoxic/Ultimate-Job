@@ -18,7 +18,7 @@ public class ArrestSucceed : MonoBehaviour
 
     public void YesClicked()
     {
-        if (DataManager.selectedSuspectName == "J3cha")
+        if (DataManager.selectedSuspectName == "Namo")
         {
             gameWin.SetActive(true);
             gameOver.SetActive(false);

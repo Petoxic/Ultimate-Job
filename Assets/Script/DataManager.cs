@@ -17,11 +17,11 @@ public class DataManager : MonoBehaviour
         totalMoney = 0;
         moneyText = "Total money: 0";
         suspectList = new HashSet<string>();
-        isObjectiveCompleted = new List<bool> { false, false, false };
+        isObjectiveCompleted = new List<bool> { true, true, true };
         plateServed = 0;
     }
     public static string selectedSuspectName = "";
-    public static float timeUntilSceneEnds = 120f;
+    public static float timeUntilSceneEnds = 30f;
 
     public static void AddMoney(int money)
     {
