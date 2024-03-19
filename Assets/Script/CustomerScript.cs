@@ -26,25 +26,21 @@ public class CustomerScript : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
-        StartCoroutine(OrderDelay());
     }
 
-    private IEnumerator OrderDelay()
+    public void OrderDelay()
     {
-        yield return new WaitForSeconds(3);
-        orderBubble.gameObject.SetActive(true);
+        orderBubble.SetActive(true);
         isInteractable = true;
     }
 
-    private IEnumerator WaitDelay()
+    private void WaitDelay()
     {
-        yield return new WaitForSeconds(5);
         timerSlider.gameObject.SetActive(true);
     }
 
-    private IEnumerator EatDelay()
+    private void EatDelay()
     {
-        yield return new WaitForSeconds(3);
         timerSlider.gameObject.SetActive(true);
     }
 
@@ -92,12 +88,11 @@ public class CustomerScript : MonoBehaviour
     {
         if (isInteractable)
         {
-
             if (!isOrderReceived)
             {
                 isOrderReceived = true;
-                orderBubble.gameObject.SetActive(false);
-                StartCoroutine(WaitDelay());
+                orderBubble.SetActive(false);
+                WaitDelay();
                 player.AddOrder(foodId);
             }
             else if (!isFoodReceived && player.isHoldingFood)
@@ -110,7 +105,7 @@ public class CustomerScript : MonoBehaviour
                     player.ServeOrder(foodId);
                     DataManager.AddMoney(10);
                     DataManager.AddPlateServed();
-                    StartCoroutine(EatDelay());
+                    EatDelay();
                 }
             }
             else
