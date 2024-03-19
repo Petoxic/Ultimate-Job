@@ -9,14 +9,18 @@ public class CountdownTimer : MonoBehaviour
 
     void Start()
     {
-        timeWhenSceneEnds = Time.time + DataManager.timeUntilSceneEnds;
+        timeWhenSceneEnds = DataManager.timeUntilSceneEnds;
     }
 
     void Update()
     {
-        if (timeWhenSceneEnds <= Time.time)
+        if (!DataManager.startTalking)
         {
-            SceneManager.LoadScene("ResultScene");
+            timeWhenSceneEnds -= Time.deltaTime;
+            if (timeWhenSceneEnds <= 0)
+            {
+                SceneManager.LoadScene("ResultScene");
+            }
         }
     }
 }

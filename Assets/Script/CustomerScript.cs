@@ -78,6 +78,7 @@ public class CustomerScript : MonoBehaviour
         dialogueIndex = 0;
         dialoguePanel.SetActive(false);
         isTalking = false;
+        DataManager.startTalking = false;
     }
 
     private void Update()
@@ -133,6 +134,7 @@ public class CustomerScript : MonoBehaviour
         }
         else
         {
+            DataManager.startTalking = true;
             dialoguePanel.SetActive(true);
             StartCoroutine(Typing());
         }
