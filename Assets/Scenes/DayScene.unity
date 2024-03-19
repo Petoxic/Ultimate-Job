@@ -8533,7 +8533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabDetect: {fileID: 1105919467}
   foodHolder: {fileID: 2024412586}
-  rayDist: 0.1
+  rayDist: 0.2
 --- !u!1001 &1964535378
 PrefabInstance:
   m_ObjectHideFlags: 0
