@@ -26,6 +26,10 @@ public class CustomerScript : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
+        GameObject canvas = GameObject.FindGameObjectWithTag("Canvas");
+        dialoguePanel = canvas.transform.Find("DialogPanel").gameObject;
+        dialogueText = dialoguePanel.transform.Find("Dialog").gameObject.GetComponent<Text>();
+        objectName = dialoguePanel.transform.Find("Name").gameObject.GetComponent<Text>();
     }
 
     public void OrderDelay()

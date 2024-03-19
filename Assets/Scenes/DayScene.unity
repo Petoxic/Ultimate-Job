@@ -609,11 +609,11 @@ PrefabInstance:
     - target: {fileID: 2917313472361915848, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: dialogueText
       value: 
-      objectReference: {fileID: 1544520250}
+      objectReference: {fileID: 0}
     - target: {fileID: 2917313472361915848, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: dialoguePanel
       value: 
-      objectReference: {fileID: 2296737}
+      objectReference: {fileID: 0}
     - target: {fileID: 2917313472361915848, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: dialogue.Array.size
       value: 2
@@ -9248,7 +9248,7 @@ GameObject:
   - component: {fileID: 1895759546}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Canvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9672,15 +9672,15 @@ PrefabInstance:
     - target: {fileID: 2917313472361915848, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: objectName
       value: 
-      objectReference: {fileID: 1572142841}
+      objectReference: {fileID: 0}
     - target: {fileID: 2917313472361915848, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: dialogueText
       value: 
-      objectReference: {fileID: 1544520250}
+      objectReference: {fileID: 0}
     - target: {fileID: 2917313472361915848, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: dialoguePanel
       value: 
-      objectReference: {fileID: 2296737}
+      objectReference: {fileID: 0}
     - target: {fileID: 2917313472361915848, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: dialogue.Array.size
       value: 2

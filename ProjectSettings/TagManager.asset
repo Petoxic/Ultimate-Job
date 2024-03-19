@@ -9,6 +9,7 @@ TagManager:
   - Food
   - Bin
   - Chair
+  - Canvas
   layers:
   - Default
   - TransparentFX
