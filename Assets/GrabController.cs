@@ -34,7 +34,7 @@ public class GrabController : MonoBehaviour
                 player.isHoldingFood = true;
                 player.holdingFoodId = foodId;
 
-                // Reduce the food count in the kitchen
+                // Remove food from kitchen
                 kitchenScript.PickUpOneFood(foodScript.foodInstanceId);
             }
             else
