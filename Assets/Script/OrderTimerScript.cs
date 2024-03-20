@@ -8,7 +8,7 @@ public class OrderTimerScript : MonoBehaviour
 {
     [SerializeField] private GameObject orderBubble;
     [SerializeField] private Slider timerSlider;
-    private float countdownTime = 10f;
+    private float countdownTime = 20f;
     [SerializeField] private Image foodImage;
     private Sprite[] sprites;
     private CustomerScript customerScript;

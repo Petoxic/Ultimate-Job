@@ -159,8 +159,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 44.915527, y: -356.4332}
-  m_SizeDelta: {x: -413.7314, y: -927.9251}
+  m_AnchoredPosition: {x: 44.915527, y: -246.23535}
+  m_SizeDelta: {x: -413.7314, y: -707.52936}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2296739
 MonoBehaviour:
@@ -620,11 +620,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2917313472361915848, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: This is dialogue 0.
+      value: You won't believe the day I had yesterday, I went out to buy a simple
+        carrot for our family dinner, and somehow ended up at the nightclub instead
+        of heading straight home.
       objectReference: {fileID: 0}
     - target: {fileID: 2917313472361915848, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: dialogue.Array.data[1]
-      value: This is dialogue 1.
+      value: When I finally made it home, ready to show off my prize carrot, it was
+        nowhere to be found! Vanished into thin air.
       objectReference: {fileID: 0}
     - target: {fileID: 2931369547594874098, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: m_AnchorMax.y
@@ -760,11 +763,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2917313472361915848, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: This is dialogue 0.
+      value: It's me! Quick-witted, mischievous, and always ready to entertain.
       objectReference: {fileID: 0}
     - target: {fileID: 2917313472361915848, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: dialogue.Array.data[1]
-      value: This is dialogue 1.
+      value: "I\u2019ve heard someone gossip that I like to tease customers for fun.
+        What do you think of me?"
       objectReference: {fileID: 0}
     - target: {fileID: 2931369547594874098, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: m_AnchorMax.y
@@ -9025,7 +9029,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 154.3617, y: -2}
-  m_SizeDelta: {x: 1052.5673, y: 142.1562}
+  m_SizeDelta: {x: 1052.5673, y: 300.1562}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1544520250
 MonoBehaviour:
@@ -10231,11 +10235,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2917313472361915848, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: This is text 0.
+      value: Yesterday, I sang this beautiful song at the club, and let me tell you,
+        I was belting it out like a pro. But afterwards, I felt completely drained,
+        like I'd run a marathon or something.
       objectReference: {fileID: 0}
     - target: {fileID: 2917313472361915848, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: dialogue.Array.data[1]
-      value: This is text 1.
+      value: Possibly, but here's the weird part. When I woke up this morning, I
+        swear my microphone felt bigger.
       objectReference: {fileID: 0}
     - target: {fileID: 2931369547594874098, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: m_AnchorMax.y
