@@ -17,11 +17,14 @@ public class CustomerScript : MonoBehaviour
     public float wordSpeed = 0.1f;
     public bool isTalking = false;
     public bool isFinishDialogue = false;
-    private bool isOrderReceived = false;
+    public bool isOrderReceived = false;
     private bool isInteractable = false;
-    private bool isFoodReceived = false;
+    public bool isFoodReceived = false;
     private PlayerScript player;
     private int foodId;
+    public int foodAmount;
+    public int dialogueChoice = 0;
+    private string[][] dialogueArray = (string[][])CustomerData.customerData[1]["dialogue"];
 
     void Start()
     {
@@ -30,6 +33,11 @@ public class CustomerScript : MonoBehaviour
         dialoguePanel = canvas.transform.Find("DialogPanel").gameObject;
         dialogueText = dialoguePanel.transform.Find("Dialog").gameObject.GetComponent<Text>();
         objectName = dialoguePanel.transform.Find("Name").gameObject.GetComponent<Text>();
+
+        gameObject.name = (string)CustomerData.customerData[1]["name"];
+        dialogueArray = (string[][])CustomerData.customerData[1]["dialogue"];
+        dialogue = dialogueArray[dialogueChoice];
+        foodAmount = (int)CustomerData.customerData[1]["foodAmount"];
     }
 
     public void OrderDelay()
@@ -67,6 +75,7 @@ public class CustomerScript : MonoBehaviour
         }
         else
         {
+            dialogueIndex = 0;
             DataManager.AddSuspectList(gameObject.name);
             ResetText();
         }
@@ -142,5 +151,10 @@ public class CustomerScript : MonoBehaviour
     public void setFoodId(int id)
     {
         foodId = id;
+    }
+
+    public void updateDialogueChoice()
+    {
+        dialogue = dialogueArray[dialogueChoice];
     }
 }
