@@ -10,8 +10,10 @@ public class CustomerData : MonoBehaviour
             {"dialogue", new string[][] {
                 new string[] {
                     "Yesterday, I sang this beautiful song at the club, and let me tell you, I was belting it out like a pro. But afterwards, I felt completely drained, like I'd run a marathon or something.",
-                    "Possibly, but here's the weird part. When I woke up this morning, I swear my microphone felt bigger."
                 },
+                new string[] {
+                    "Possibly, but here's the weird part. When I woke up this morning, I swear my microphone felt bigger."
+                }
             }},
             {"foodAmount", 2},
         }},
