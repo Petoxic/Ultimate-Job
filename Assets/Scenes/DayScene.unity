@@ -683,6 +683,10 @@ PrefabInstance:
       value: Kanin
       objectReference: {fileID: 0}
     - target: {fileID: 6419913523111105754, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6419913523111105754, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: m_TagString
       value: Customer
       objectReference: {fileID: 0}
@@ -8337,6 +8341,7 @@ GameObject:
   - component: {fileID: 1276266461}
   - component: {fileID: 1276266460}
   - component: {fileID: 1276266463}
+  - component: {fileID: 1276266464}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -8397,6 +8402,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1201852708}
   isPause: 0
+--- !u!114 &1276266464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276266459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59ffa0910a60844b68f46c14fc605f24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foodPrefab: {fileID: 6419913523111105754, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
 --- !u!1 &1308635278
 GameObject:
   m_ObjectHideFlags: 0
