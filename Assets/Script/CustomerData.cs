@@ -7,8 +7,6 @@ using UnityEngine;
 
 public class CustomerData : MonoBehaviour
 {
-    public static List<int> customerQueue;
-    public static int queuePos = 0;
     public static Dictionary<int, Dictionary<string, object>> customerData = new Dictionary<int, Dictionary<string, object>>{
         {1, new Dictionary<string, object> {
             {"name", "Namo"},
@@ -44,9 +42,11 @@ public class CustomerData : MonoBehaviour
         }},
     };
 
-    void Start()
-    {
-        customerQueue = Enumerable.Range(0, customerData.Count).ToList();
+    public static List<int> customerQueue = Enumerable.Range(1, customerData.Count).ToList();
+    public static int queuePos = 0;
+
+    void Start() {
+        queuePos = 0;
     }
 
     public static int getCustomerQueue()

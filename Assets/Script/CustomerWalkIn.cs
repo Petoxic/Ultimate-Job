@@ -9,6 +9,8 @@ public class CustomerWalkIn : MonoBehaviour
     // [SerializeField] private GameObject target; // Chair customer will sit on
     [SerializeField] private float startingX = (float)-0.231; // Customer starting position x
     [SerializeField] private float startingY = (float)-1.266; // Customer starting position y
+    // todo : make chair position no magic value
+    private Vector2 mockChairPosition = new Vector2((float)-0.2413124, (float)-0.3858845);
     // Customer starts walking to chair from out of the map
     private bool isSitting = false;
     private CustomerScript customerScript;
@@ -25,10 +27,10 @@ public class CustomerWalkIn : MonoBehaviour
     {
         if (isSpawned && !isSitting)
             // if (target.transform.position.x != gameObject.transform.position.x || target.transform.position.y != gameObject.transform.position.y)
-            if (gameObject.transform.position.x != -0.2413124 || gameObject.transform.position.y != -0.3858845)
+            if (gameObject.transform.position.x != mockChairPosition.x || gameObject.transform.position.y != mockChairPosition.y)
             {
                 // gameObject.transform.position = Vector2.MoveTowards(gameObject.transform.position, target.transform.position, speed);
-                gameObject.transform.position = Vector2.MoveTowards(gameObject.transform.position, new Vector2((float)-0.2413124, (float)-0.3858845), speed);
+                gameObject.transform.position = Vector2.MoveTowards(gameObject.transform.position, mockChairPosition, speed);
             }
             else
             {
