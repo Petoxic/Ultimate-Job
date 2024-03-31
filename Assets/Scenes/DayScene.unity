@@ -4884,7 +4884,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1f158874b54a7eb30bd43c63b797d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 237255317}
   startingX: -0.768
   startingY: -1.267
   spawnDelay: 4
@@ -8112,7 +8111,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1f158874b54a7eb30bd43c63b797d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 53180792}
   startingX: -0.231
   startingY: -1.266
   spawnDelay: 2
@@ -8342,6 +8340,7 @@ GameObject:
   - component: {fileID: 1276266460}
   - component: {fileID: 1276266463}
   - component: {fileID: 1276266464}
+  - component: {fileID: 1276266465}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -8415,6 +8414,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foodPrefab: {fileID: 6419913523111105754, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+--- !u!114 &1276266465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276266459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c15943ef38bec430e846ecb7b65a8e2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1308635278
 GameObject:
   m_ObjectHideFlags: 0
@@ -9163,7 +9174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6c1f158874b54a7eb30bd43c63b797d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1234177871}
   startingX: 1.33
   startingY: -1.568
   spawnDelay: 20
