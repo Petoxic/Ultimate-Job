@@ -34,10 +34,11 @@ public class CustomerScript : MonoBehaviour
         dialogueText = dialoguePanel.transform.Find("Dialog").gameObject.GetComponent<Text>();
         objectName = dialoguePanel.transform.Find("Name").gameObject.GetComponent<Text>();
 
-        gameObject.name = (string)CustomerData.customerData[1]["name"];
-        dialogueArray = (string[][])CustomerData.customerData[1]["dialogue"];
+        int queue = CustomerData.getCustomerQueue();
+        gameObject.name = (string)CustomerData.customerData[queue]["name"];
+        dialogueArray = (string[][])CustomerData.customerData[queue]["dialogue"];
         dialogue = dialogueArray[dialogueChoice];
-        foodAmount = (int)CustomerData.customerData[1]["foodAmount"];
+        foodAmount = (int)CustomerData.customerData[queue]["foodAmount"];
     }
 
     public void OrderDelay()
