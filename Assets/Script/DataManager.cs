@@ -13,6 +13,8 @@ public class DataManager : MonoBehaviour
     public static int plateServed;
     public static int day;
     public static int caseNumber;
+    public static int todayMoney;
+    public static int todayTalked;
     
 
     public static bool startTalking;
@@ -26,6 +28,8 @@ public class DataManager : MonoBehaviour
         plateServed = 0;
         day = 1;
         caseNumber = 1;
+        todayMoney = 0;
+        todayTalked = 0;
         startTalking = false;
     }
     public static string selectedSuspectName = "";
@@ -34,12 +38,17 @@ public class DataManager : MonoBehaviour
     public static void AddMoney(int money)
     {
         totalMoney += money;
+        todayMoney += money;
         moneyText = "$ " + totalMoney;
         checkObjective();
     }
 
     public static void AddSuspectList(string suspect)
     {
+        if (!suspectList.Contains(suspect))
+        {
+            todayTalked += 1;
+        }
         suspectList.Add(suspect);
         checkObjective();
     }
@@ -72,6 +81,8 @@ public class DataManager : MonoBehaviour
 
     public static void ResetObjective()
     {
+        todayMoney = 0;
+        todayTalked = 0;
         isObjectiveCompleted = new List<bool> { false, false, false };
     }
 

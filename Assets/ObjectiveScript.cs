@@ -21,8 +21,8 @@ public class ObjectiveScript : MonoBehaviour
 
     void Update()
     {
-        objective_1.text = "Money: " + DataManager.totalMoney + "/20";
-        objective_2.text = "People talked: " + DataManager.suspectList.Count + "/2";
-        objective_3.text = "Dish served: " + DataManager.plateServed + "/2";
+        objective_1.text = "Money: " + DataManager.todayMoney + "/20"; //today money
+        objective_2.text = "People talked: " + DataManager.todayTalked + "/2"; //today talked
+        objective_3.text = "Dish served: " + DataManager.plateServed + "/2"; //today served
     }
 }

@@ -41,6 +41,7 @@ public class CustomerData : MonoBehaviour
         // //     }},
         // //     {"foodAmount", 1},
         // };
+    };
     
 
     public static List<int> customerQueue = Enumerable.Range(1, customerData.Count).ToList();
