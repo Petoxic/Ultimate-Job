@@ -7,7 +7,7 @@ public class CustomerSpawningScript : MonoBehaviour
     private int customerCount = CustomerData.customerData.Count;
     private float spawnDelay = 5.0f;
     private bool isReadyToSpawn = false;
-    [SerializeField] private GameObject foodPrefab;
+    [SerializeField] private GameObject customerPrefab;
 
     private IEnumerator SpawnDelay()
     {
@@ -25,7 +25,7 @@ public class CustomerSpawningScript : MonoBehaviour
         if (isReadyToSpawn && customerCount > 0)
         {
             isReadyToSpawn = false;
-            Instantiate(foodPrefab, new Vector3((float)-0.231, (float)-1.266, 0), Quaternion.identity);
+            Instantiate(customerPrefab, new Vector3((float)-0.231, (float)-1.266, 0), Quaternion.identity);
             StartCoroutine(SpawnDelay());
             customerCount -= 1;
         }
