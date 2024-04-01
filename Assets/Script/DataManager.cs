@@ -20,7 +20,7 @@ public class DataManager : MonoBehaviour
     void Start()
     {
         totalMoney = 0;
-        moneyText = "Total money: 0";
+        moneyText = "$ 0";
         suspectList = new HashSet<string>();
         isObjectiveCompleted = new List<bool> { true, true, true };
         plateServed = 0;
@@ -34,7 +34,7 @@ public class DataManager : MonoBehaviour
     public static void AddMoney(int money)
     {
         totalMoney += money;
-        moneyText = "Total money: " + totalMoney;
+        moneyText = "$ " + totalMoney;
         checkObjective();
     }
 
