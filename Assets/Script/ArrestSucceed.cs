@@ -13,7 +13,7 @@ public class ArrestSucceed : MonoBehaviour
     {
         gameOver.SetActive(false);
         gameWin.SetActive(false);
-        stillNotSureButton.SetActive(false);
+        stillNotSureButton.SetActive(true);
     }
 
     public void YesClicked()

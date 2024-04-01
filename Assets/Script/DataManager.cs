@@ -11,8 +11,8 @@ public class DataManager : MonoBehaviour
     public static HashSet<string> suspectList;
     public static List<bool> isObjectiveCompleted;
     public static int plateServed;
-    public static int day = 1;
-    public static int caseNumber = 1;
+    public static int day;
+    public static int caseNumber;
     
 
     public static bool startTalking;
@@ -22,8 +22,10 @@ public class DataManager : MonoBehaviour
         totalMoney = 0;
         moneyText = "Total money: 0";
         suspectList = new HashSet<string>();
-        isObjectiveCompleted = new List<bool> { false, false, false };
+        isObjectiveCompleted = new List<bool> { true, true, true };
         plateServed = 0;
+        day = 1;
+        caseNumber = 1;
         startTalking = false;
     }
     public static string selectedSuspectName = "";
@@ -84,4 +86,17 @@ public class DataManager : MonoBehaviour
         caseNumber = 1;
         startTalking = false;
     }
+
+    public static void ResetToFirstNight()
+    {
+        totalMoney = 0;
+        moneyText = "Total money: 0";
+        suspectList = new HashSet<string>();
+        isObjectiveCompleted = new List<bool> { false, false, false };
+        plateServed = 0;
+        day = 1;
+        startTalking = false;
+    }
+
+
 }

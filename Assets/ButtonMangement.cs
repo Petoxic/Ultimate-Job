@@ -12,6 +12,7 @@ public class ButtonMangement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        stillNotSureButton.SetActive(true);
         foreach (string name in DataManager.suspectList)
         {
             GameObject btn = (GameObject)Instantiate(buttonTemplate);
@@ -29,7 +30,6 @@ public class ButtonMangement : MonoBehaviour
 
     public void GoToConfirmation()
     {
-        Debug.Log(DataManager.selectedSuspectName);
         confirmationPanel.SetActive(true);
         stillNotSureButton.SetActive(false);
     }
