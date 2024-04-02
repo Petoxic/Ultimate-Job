@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1dc508abff11414b9251ee92a1833b0, type: 3}
   m_Name: Metal Table
   m_EditorClassIdentifier: 
+  ID: 3
   title: Ping Pong
   description: The classic table that you can found from KaoMunKai's restaurant,
     better pair with plastic chair
   basePrice: 12
+  size: {x: 1, y: 1}
+  Prefab: {fileID: 0}

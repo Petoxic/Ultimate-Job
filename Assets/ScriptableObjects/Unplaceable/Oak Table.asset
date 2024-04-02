@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1dc508abff11414b9251ee92a1833b0, type: 3}
   m_Name: Oak Table
   m_EditorClassIdentifier: 
+  ID: 4
   title: Oak Table
   description: Look good
   basePrice: 17
+  size: {x: 1, y: 1}
+  Prefab: {fileID: 0}

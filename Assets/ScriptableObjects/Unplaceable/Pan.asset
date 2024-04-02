@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1dc508abff11414b9251ee92a1833b0, type: 3}
   m_Name: Pan
   m_EditorClassIdentifier: 
+  ID: 5
   title: Pan
   description: Just a simple Pan
   basePrice: 3
+  size: {x: 1, y: 1}
+  Prefab: {fileID: 0}
