@@ -18,7 +18,7 @@ public class DataManager : MonoBehaviour
 
     void Start()
     {
-        totalMoney = 0;
+        totalMoney = 100;
         moneyText = "$ 0";
         suspectList = new HashSet<string>();
         isObjectiveCompleted = new List<bool> { false, false, false };

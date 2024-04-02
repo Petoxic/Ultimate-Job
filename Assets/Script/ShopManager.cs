@@ -1,36 +1,93 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class ShopManager : MonoBehaviour
 {
-    public int coins;
-    public TMP_Text coinUI;
+    public GameObject shopMenu;
     public ShopItemSO[] shopItemsSO;
     public GameObject[] shopPanelsGO;
     public ShopTemplate[] shopPanels;
-    // public Button[] myPurchaseButtons;
+    public Button[] myPurchaseButtons;
+    public bool isOpenShop;
+
+    private List<Object[]> shopObjects = new List<Object[]>();
 
     void Start()
     {
-        for (int i = 0; i < shopItemsSO.Length; i++)
-        {
-            shopPanelsGO[i].SetActive(true);
-        }
-        coinUI.text = "Coins: " + coins.ToString();
+        shopMenu.SetActive(false);
+        isOpenShop = false;
+
         LoadPanels();
+        CheckPurchaseable();
     }
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            if (isOpenShop)
+            {
+                CloseShopMenu();
+            }
+            else
+            {
+                OpenShopMenu();
+            }
+        }
 
     }
 
-    public void AddCoins()
+    public void OpenShopMenu()
     {
-        coins++;
-        coinUI.text = "Coins: " + coins.ToString();
+        shopMenu.SetActive(true);
+        for (int i = 0; i < shopItemsSO.Length; i++)
+        {
+            shopPanelsGO[i].SetActive(true);
+        }
+        Time.timeScale = 0f;
+        isOpenShop = true;
+        CheckPurchaseable();
+    }
+
+    public void CloseShopMenu()
+    {
+        shopMenu.SetActive(false);
+        for (int i = 0; i < shopItemsSO.Length; i++)
+        {
+            shopPanelsGO[i].SetActive(false);
+        }
+        Time.timeScale = 1f;
+        isOpenShop = false;
+    }
+
+    public void CheckPurchaseable()
+    {
+        for (int i = 0; i < shopItemsSO.Length; i++)
+        {
+            if (DataManager.totalMoney >= shopItemsSO[i].basePrice)
+            {
+                myPurchaseButtons[i].interactable = true;
+            }
+            else
+            {
+                myPurchaseButtons[i].interactable = false;
+            }
+        }
+    }
+
+    public void PurchaseItem(int buttonNumber)
+    {
+        if (DataManager.totalMoney >= shopItemsSO[buttonNumber].basePrice)
+        {
+            DataManager.totalMoney = DataManager.totalMoney - shopItemsSO[buttonNumber].basePrice;
+            CheckPurchaseable();
+
+            // Do something related to your item
+
+        }
     }
 
     public void LoadPanels()
@@ -42,5 +99,4 @@ public class ShopManager : MonoBehaviour
             shopPanels[i].priceText.text = "Coins: " + shopItemsSO[i].basePrice.ToString();
         }
     }
-
 }
