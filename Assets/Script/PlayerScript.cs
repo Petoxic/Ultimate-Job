@@ -19,7 +19,7 @@ public class PlayerScript : MonoBehaviour
     public float collisionOffset = 0.02f;
     // public ContactFilter2D movementFilter;
     public PlayerInteract playerInteract;
-    public List<int> orderList = new List<int>();
+    public List<int> orderList = new();
     public bool isHoldingFood;
     public int holdingFoodId;
 
@@ -53,6 +53,7 @@ public class PlayerScript : MonoBehaviour
 
             animator.SetBool(AnimatorParameters.IsMoving, true);
 
+            // Face the player to the direction of movement 
             if (movementInput.x > 0)
             {
                 playerInteract.FaceRight();

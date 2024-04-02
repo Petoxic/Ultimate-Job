@@ -46,21 +46,21 @@ public class PlayerInteract : MonoBehaviour
     {
         // print(interactOffset);
         // print("test" + other.tag + other.name);
-        if (other.tag == "Customer")
+        if (other.CompareTag("Customer"))
         {
             CustomerScript customer = other.GetComponent<CustomerScript>();
             customer.OnInteract();
         }
-        else if (other.tag == "Kitchen")
+        else if (other.CompareTag("Kitchen"))
         {
             KitchenScript kitchen = other.GetComponent<KitchenScript>();
             kitchen.OnInteract();
         }
-        else if (other.tag == "Food")
+        else if (other.CompareTag("Food"))
         {
             // kitchen remove food && player take food
         }
-        else if (other.tag == "Bin")
+        else if (other.CompareTag("Bin"))
         {
             BinScript bin = other.GetComponent<BinScript>();
             bin.OnInteract();
