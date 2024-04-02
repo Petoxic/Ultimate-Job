@@ -7,13 +7,11 @@ public class ArrestSucceed : MonoBehaviour
     public GameObject gameOver;
     public GameObject gameWin;
     public GameObject confirmationPanel;
-    public GameObject stillNotSureButton;
 
     void Start()
     {
         gameOver.SetActive(false);
         gameWin.SetActive(false);
-        stillNotSureButton.SetActive(false);
     }
 
     public void YesClicked()
@@ -32,7 +30,6 @@ public class ArrestSucceed : MonoBehaviour
 
     public void NoClicked()
     {
-        stillNotSureButton.SetActive(true);
         confirmationPanel.SetActive(false);
     }
 }

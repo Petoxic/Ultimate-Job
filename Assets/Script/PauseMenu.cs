@@ -44,6 +44,12 @@ public class PauseMenu : MonoBehaviour
         isPause = false;
     }
 
+    public void Arrest()
+    {
+        SceneManager.LoadScene("ArrestingScene", LoadSceneMode.Additive);
+        isPause = false;
+    }
+
     public void GoToSetting()
     {
         SceneManager.LoadScene("SettingScene");

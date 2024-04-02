@@ -22,7 +22,6 @@ public class CustomerTimerScript : MonoBehaviour
     {
         if (timerSlider.gameObject.activeSelf && !DataManager.startTalking)
         {
-            Debug.Log("reducing");
             timerSlider.value -= Time.deltaTime;
             if (timerSlider.value == 0)
             {

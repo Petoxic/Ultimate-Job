@@ -13,8 +13,7 @@ public class DataManager : MonoBehaviour
     public static int plateServed;
     public static int day = 1;
     public static int caseNumber = 1;
-    
-
+    public static bool isGameEnd = false;
     public static bool startTalking;
 
     void Start()

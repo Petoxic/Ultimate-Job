@@ -19,6 +19,7 @@ public class CountdownTimer : MonoBehaviour
             timeWhenSceneEnds -= Time.deltaTime;
             if (timeWhenSceneEnds <= 0)
             {
+                DataManager.isGameEnd = true;
                 SceneManager.LoadScene("ResultScene");
             }
         }

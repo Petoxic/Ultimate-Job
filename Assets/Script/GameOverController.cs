@@ -28,10 +28,4 @@ public class GameOverController : MonoBehaviour
         // Next Case, Night 1
         SceneManager.LoadScene("NightScene");
     }
-
-    public void StillNotSure()
-    {
-        // Same Case, Next Night
-        SceneManager.LoadScene("NightScene");
-    }
 }
