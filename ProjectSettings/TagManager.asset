@@ -10,6 +10,7 @@ TagManager:
   - Bin
   - Chair
   - Canvas
+  - TablesAndChairs
   layers:
   - Default
   - TransparentFX
