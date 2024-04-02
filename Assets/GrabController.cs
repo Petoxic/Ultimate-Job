@@ -9,16 +9,17 @@ public class GrabController : MonoBehaviour
     public Transform foodHolder;
     public float rayDist;
     private PlayerScript player;
+    private KitchenScript kitchenScript;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
+        kitchenScript = GameObject.FindGameObjectWithTag("Kitchen").GetComponent<KitchenScript>();
     }
 
     void Update()
     {
-        RaycastHit2D grabCheck = Physics2D.Raycast(grabDetect.position, Vector2.right * transform.localScale, rayDist);
-        // print("test " + grabCheck.collider.tag);
+        RaycastHit2D grabCheck = Physics2D.Raycast(grabDetect.position - new Vector3(0.2f, 0.0f, 0.0f), Vector2.right * transform.localScale, rayDist);
         Collider2D grabbedObject = grabCheck.collider;
         if (grabbedObject != null && grabbedObject.tag == "Food" && !player.isHoldingFood)
         {
@@ -27,9 +28,14 @@ public class GrabController : MonoBehaviour
                 grabbedObject.gameObject.transform.parent = foodHolder;
                 grabbedObject.gameObject.transform.position = foodHolder.position;
                 grabbedObject.enabled = false;
-                int foodId = grabbedObject.GetComponent<FoodScript>().foodId;
+
+                FoodScript foodScript = grabbedObject.GetComponent<FoodScript>();
+                int foodId = foodScript.foodId;
                 player.isHoldingFood = true;
                 player.holdingFoodId = foodId;
+
+                // Remove food from kitchen
+                kitchenScript.PickUpOneFood(foodScript.foodInstanceId);
             }
             else
             {

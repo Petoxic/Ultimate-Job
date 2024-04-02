@@ -8,7 +8,7 @@ public class OrderTimerScript : MonoBehaviour
 {
     [SerializeField] private GameObject orderBubble;
     [SerializeField] private Slider timerSlider;
-    private float countdownTime = 10f;
+    private float countdownTime = 20f;
     [SerializeField] private Image foodImage;
     private Sprite[] sprites;
     private CustomerScript customerScript;
@@ -18,10 +18,7 @@ public class OrderTimerScript : MonoBehaviour
     {
         timerSlider.maxValue = countdownTime;
         timerSlider.value = countdownTime;
-    }
 
-    void Start()
-    {
         customerScript = GetComponentInParent<CustomerScript>();
         sprites = Resources.LoadAll<Sprite>("food-OCAL");
         int foodId = UnityEngine.Random.Range(40, 57);

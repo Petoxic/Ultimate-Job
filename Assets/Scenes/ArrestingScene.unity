@@ -1127,7 +1127,7 @@ MonoBehaviour:
   scrollViewPanel: {fileID: 907352041}
   buttonTemplate: {fileID: 8198218369661822023, guid: 0ee797ede18744e4fb79ae1b0ac22888, type: 3}
   confirmationPanel: {fileID: 575670993}
-  stillNotSureButton: {fileID: 1444581103}
+  stillNotSureButton: {fileID: 1444581105}
 --- !u!1 &752669531
 GameObject:
   m_ObjectHideFlags: 0
@@ -1821,19 +1821,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1444581106}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2081970906}
-        m_TargetAssemblyTypeName: GameOverController, Assembly-CSharp
-        m_MethodName: StillNotSure
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1444581106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2435,7 +2423,6 @@ MonoBehaviour:
   gameOver: {fileID: 320550879}
   gameWin: {fileID: 191586541}
   confirmationPanel: {fileID: 575670993}
-  stillNotSureButton: {fileID: 1444581103}
 --- !u!114 &2081970906
 MonoBehaviour:
   m_ObjectHideFlags: 0

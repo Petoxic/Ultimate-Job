@@ -659,7 +659,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customer: {fileID: 6419913523111105754}
   timerSlider: {fileID: 8994171279990757786}
-  countdownTime: 1200
+  countdownTime: 20
 --- !u!1 &5741892030038817441
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,6 +776,7 @@ GameObject:
   - component: {fileID: 7985770706506706958}
   - component: {fileID: 4608724493181382566}
   - component: {fileID: 2917313472361915848}
+  - component: {fileID: 2573237894102051188}
   m_Layer: 0
   m_Name: Customer
   m_TagString: Customer
@@ -944,6 +945,25 @@ MonoBehaviour:
   wordSpeed: 0.1
   isTalking: 0
   isFinishDialogue: 0
+  isOrderReceived: 0
+  isFoodReceived: 0
+  foodAmount: 0
+  dialogueChoice: 0
+--- !u!114 &2573237894102051188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6419913523111105754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6c1f158874b54a7eb30bd43c63b797d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingX: -0.231
+  startingY: -1.266
+  spawnDelay: 0
 --- !u!1 &6809283800304545345
 GameObject:
   m_ObjectHideFlags: 0

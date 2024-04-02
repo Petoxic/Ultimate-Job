@@ -11,25 +11,27 @@ public class DataManager : MonoBehaviour
     public static HashSet<string> suspectList;
     public static List<bool> isObjectiveCompleted;
     public static int plateServed;
-
+    public static int day = 1;
+    public static int caseNumber = 1;
+    public static bool isGameEnd = false;
     public static bool startTalking;
 
     void Start()
     {
         totalMoney = 0;
-        moneyText = "Total money: 0";
+        moneyText = "$ 0";
         suspectList = new HashSet<string>();
         isObjectiveCompleted = new List<bool> { false, false, false };
         plateServed = 0;
         startTalking = false;
     }
     public static string selectedSuspectName = "";
-    public static float timeUntilSceneEnds = 30f;
+    public static float timeUntilSceneEnds = 45f;
 
     public static void AddMoney(int money)
     {
         totalMoney += money;
-        moneyText = "Total money: " + totalMoney;
+        moneyText = "$ " + totalMoney;
         checkObjective();
     }
 
@@ -63,5 +65,22 @@ public class DataManager : MonoBehaviour
         {
             isObjectiveCompleted[2] = true;
         }
+    }
+
+    public static void ResetObjective()
+    {
+        isObjectiveCompleted = new List<bool> { false, false, false };
+    }
+
+    public static void ResetData()
+    {
+        totalMoney = 0;
+        moneyText = "Total money: 0";
+        suspectList = new HashSet<string>();
+        isObjectiveCompleted = new List<bool> { false, false, false };
+        plateServed = 0;
+        day = 1;
+        caseNumber = 1;
+        startTalking = false;
     }
 }

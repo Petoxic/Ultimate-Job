@@ -17,11 +17,14 @@ public class CustomerScript : MonoBehaviour
     public float wordSpeed = 0.1f;
     public bool isTalking = false;
     public bool isFinishDialogue = false;
-    private bool isOrderReceived = false;
+    public bool isOrderReceived = false;
     private bool isInteractable = false;
-    private bool isFoodReceived = false;
+    public bool isFoodReceived = false;
     private PlayerScript player;
     private int foodId;
+    public int foodAmount;
+    public int dialogueChoice = 0;
+    private string[][] dialogueArray = (string[][])CustomerData.customerData[1]["dialogue"];
 
     void Start()
     {
@@ -30,25 +33,27 @@ public class CustomerScript : MonoBehaviour
         dialoguePanel = canvas.transform.Find("DialogPanel").gameObject;
         dialogueText = dialoguePanel.transform.Find("Dialog").gameObject.GetComponent<Text>();
         objectName = dialoguePanel.transform.Find("Name").gameObject.GetComponent<Text>();
-        StartCoroutine(OrderDelay());
+
+        int queue = CustomerData.getCustomerQueue();
+        gameObject.name = (string)CustomerData.customerData[queue]["name"];
+        dialogueArray = (string[][])CustomerData.customerData[queue]["dialogue"];
+        dialogue = dialogueArray[dialogueChoice];
+        foodAmount = (int)CustomerData.customerData[queue]["foodAmount"];
     }
 
-    private IEnumerator OrderDelay()
+    public void OrderDelay()
     {
-        yield return new WaitForSeconds(3);
-        orderBubble.gameObject.SetActive(true);
+        orderBubble.SetActive(true);
         isInteractable = true;
     }
 
-    private IEnumerator WaitDelay()
+    private void WaitDelay()
     {
-        yield return new WaitForSeconds(5);
         timerSlider.gameObject.SetActive(true);
     }
 
-    private IEnumerator EatDelay()
+    private void EatDelay()
     {
-        yield return new WaitForSeconds(3);
         timerSlider.gameObject.SetActive(true);
     }
 
@@ -71,6 +76,7 @@ public class CustomerScript : MonoBehaviour
         }
         else
         {
+            dialogueIndex = 0;
             DataManager.AddSuspectList(gameObject.name);
             ResetText();
         }
@@ -97,12 +103,11 @@ public class CustomerScript : MonoBehaviour
     {
         if (isInteractable)
         {
-
             if (!isOrderReceived)
             {
                 isOrderReceived = true;
-                orderBubble.gameObject.SetActive(false);
-                StartCoroutine(WaitDelay());
+                orderBubble.SetActive(false);
+                WaitDelay();
                 player.AddOrder(foodId);
             }
             else if (!isFoodReceived && player.isHoldingFood)
@@ -115,7 +120,7 @@ public class CustomerScript : MonoBehaviour
                     player.ServeOrder(foodId);
                     DataManager.AddMoney(10);
                     DataManager.AddPlateServed();
-                    StartCoroutine(EatDelay());
+                    EatDelay();
                 }
             }
             else
@@ -147,5 +152,10 @@ public class CustomerScript : MonoBehaviour
     public void setFoodId(int id)
     {
         foodId = id;
+    }
+
+    public void updateDialogueChoice()
+    {
+        dialogue = dialogueArray[dialogueChoice];
     }
 }

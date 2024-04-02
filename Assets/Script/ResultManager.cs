@@ -30,6 +30,8 @@ public class ResultManager : MonoBehaviour
 
             notSureButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(delegate
             {
+                DataManager.day += 1;
+                DataManager.ResetObjective();
                 GoToNextNightScene();
             });
 
@@ -47,6 +49,7 @@ public class ResultManager : MonoBehaviour
 
             notSureButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(delegate
             {
+                DataManager.ResetData();
                 GoToMainMenu();
             });
 

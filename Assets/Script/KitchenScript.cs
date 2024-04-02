@@ -10,10 +10,12 @@ public class KitchenScript : MonoBehaviour
 {
     [SerializeField] private Slider timerSlider;
     private PlayerScript player;
-    private List<int> orderList = new List<int>();
-    private static int servingCountMax = 2;
-    private List<bool> isServingSlotAvailable = Enumerable.Repeat(true, servingCountMax).ToList();
-    private int servingCount = 0;
+    private static readonly int ordersCountMax = 2;
+    private readonly List<int> orderBuffer = new();
+    private readonly List<int> orderSlots = Enumerable.Repeat(-1, ordersCountMax).ToList();
+    private const float orderSlotX = 1.205f;
+    private const float firstOrderSlotY = 0.08f;
+    private const float orderSlotGap = 0.174f;
     [SerializeField] private GameObject foodPrefab;
     private Sprite[] sprites;
 
@@ -25,48 +27,69 @@ public class KitchenScript : MonoBehaviour
 
     void Update()
     {
-        if (orderList.Count > 0 && !timerSlider.gameObject.activeSelf && !IsServingSlotFull())
+        if (orderBuffer.Count > 0 && !timerSlider.gameObject.activeSelf && !IsServingSlotFull())
         {
-            timerSlider.gameObject.GetComponent<KitchenTimerScript>().currentFoodId = orderList[0];
+            timerSlider.gameObject.GetComponent<KitchenTimerScript>().currentFoodId = orderBuffer[0];
             timerSlider.gameObject.SetActive(true);
-            orderList.RemoveAt(0);
+            orderBuffer.RemoveAt(0);
         }
     }
 
     public void OnInteract()
     {
-        orderList.AddRange(player.orderList);
+        orderBuffer.AddRange(player.orderList);
         player.ClearOrderList();
+    }
+
+    public int ReadyOrdersCount()
+    {
+        int count = 0;
+        foreach (int order in orderSlots)
+        {
+            if (order != -1)
+            {
+                count += 1;
+            }
+        }
+
+        return count;
     }
 
     public bool IsServingSlotFull()
     {
-        return servingCount == servingCountMax;
+        Debug.Log("serving count " + ReadyOrdersCount());
+        return ReadyOrdersCount() == ordersCountMax;
     }
 
-    public void ServeOrder(int foodId)
+    public void FinishOrder(int foodId)
     {
-        for (int i = 0; i < servingCountMax; i++)
+        for (int i = 0; i < ordersCountMax; i++)
         {
-            if (isServingSlotAvailable[i] == true)
+            if (orderSlots[i] == -1)
             {
-                isServingSlotAvailable[i] = false;
-                servingCount += 1;
-                if (i == 0)
-                {
-                    GameObject food = Instantiate(foodPrefab, new Vector3((float)1.205, (float)0.08, 0), Quaternion.identity);
-                    FoodScript foodScript = food.GetComponent<FoodScript>();
-                    foodScript.spriteRenderer.sprite = sprites[foodId];
-                    foodScript.spriteRenderer.sortingOrder = 5;
-                    foodScript.foodId = foodId;
-                }
-                else
-                {
-                    GameObject food = Instantiate(foodPrefab, new Vector3((float)1.205, (float)0.254, 0), Quaternion.identity);
-                    FoodScript foodScript = food.GetComponent<FoodScript>();
-                    foodScript.spriteRenderer.sprite = sprites[foodId];
-                    foodScript.foodId = foodId;
-                }
+                GameObject food = Instantiate(foodPrefab, new Vector3(orderSlotX, firstOrderSlotY + i * orderSlotGap, 0), Quaternion.identity);
+                FoodScript foodScript = food.GetComponent<FoodScript>();
+                foodScript.spriteRenderer.sprite = sprites[foodId];
+                foodScript.spriteRenderer.sortingOrder = 5;
+                foodScript.foodId = foodId;
+                foodScript.foodInstanceId = food.GetInstanceID();
+
+                Debug.Log("adding food instance id " + food.GetInstanceID());
+                orderSlots[i] = food.GetInstanceID();
+
+                return;
+            }
+        }
+    }
+
+    public void PickUpOneFood(int foodInstanceId)
+    {
+        Debug.Log("removing food instance id " + foodInstanceId);
+        for (int i = 0; i < ordersCountMax; i++)
+        {
+            if (orderSlots[i] == foodInstanceId)
+            {
+                orderSlots[i] = -1;
                 return;
             }
         }

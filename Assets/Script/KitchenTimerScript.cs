@@ -12,6 +12,7 @@ public class KitchenTimerScript : MonoBehaviour
 
     void OnEnable()
     {
+        Debug.Log("OnEnable " + currentFoodId);
         timerSlider.maxValue = countdownTime;
         timerSlider.value = countdownTime;
     }
@@ -29,7 +30,7 @@ public class KitchenTimerScript : MonoBehaviour
             if (timerSlider.value == 0)
             {
                 timerSlider.gameObject.SetActive(false);
-                kitchen.ServeOrder(currentFoodId);
+                kitchen.FinishOrder(currentFoodId);
             }
         }
     }
