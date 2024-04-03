@@ -7,6 +7,7 @@ public class ArrestSucceed : MonoBehaviour
     public GameObject gameOver;
     public GameObject gameWin;
     public GameObject confirmationPanel;
+    public GameObject stillNotSureButton;
 
     void Start()
     {
