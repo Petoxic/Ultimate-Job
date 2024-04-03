@@ -8,10 +8,10 @@ public class PlacementSystem : MonoBehaviour
     [SerializeField] private ShopInputManager shopInputManager;
     [SerializeField] private Grid grid;
 
-    [SerializeField] private ShopItemSO database;
+    [SerializeField] private ShopItemSO[] shopItemsSO;
     private int selectedObjectIndex = -1;
 
-    [SerializeField] private GameObject gridVisualization;
+    public static bool isPlacement;
 
     private void Start()
     {
@@ -20,14 +20,14 @@ public class PlacementSystem : MonoBehaviour
 
     public void StartPlacement(int ID)
     {
+        // ShopManager.shopMenu.SetActive(false);
         StopPlacement();
-        selectedObjectIndex = database.FindIndex(data => data.ID == ID);
+        selectedObjectIndex = shopItemsSO[ID].ID;
         if (selectedObjectIndex < 0)
         {
             Debug.LogError($"No ID found {ID}");
             return;
         }
-        gridVisualization.SetActive(true);
         cellIndicator.SetActive(true);
         shopInputManager.OnClicked += PlaceStructure;
         shopInputManager.OnExit += StopPlacement;
@@ -41,14 +41,13 @@ public class PlacementSystem : MonoBehaviour
         }
         Vector3 mousePosition = shopInputManager.GetSelectedMapPosition();
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
-        GameObject newObject = Instantiate(database.ID.Prefab);
+        GameObject newObject = Instantiate(shopItemsSO[selectedObjectIndex].Prefab);
         newObject.transform.position = grid.CellToWorld(gridPosition);
     }
 
     private void StopPlacement()
     {
         selectedObjectIndex = -1;
-        gridVisualization.SetActive(false);
         cellIndicator.SetActive(false);
         shopInputManager.OnClicked -= PlaceStructure;
         shopInputManager.OnExit -= StopPlacement;
@@ -56,10 +55,10 @@ public class PlacementSystem : MonoBehaviour
 
     private void Update()
     {
-        if (selectedObjectIndex < 0)
-        {
-            return;
-        }
+        // if (selectedObjectIndex < 0)
+        // {
+        //     return;
+        // }
         Vector3 mousePosition = shopInputManager.GetSelectedMapPosition();
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
         mouseIndicator.transform.position = mousePosition;

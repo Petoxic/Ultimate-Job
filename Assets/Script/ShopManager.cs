@@ -37,7 +37,6 @@ public class ShopManager : MonoBehaviour
                 OpenShopMenu();
             }
         }
-
     }
 
     public void OpenShopMenu()
@@ -82,11 +81,12 @@ public class ShopManager : MonoBehaviour
     {
         if (DataManager.totalMoney >= shopItemsSO[buttonNumber].basePrice)
         {
-            DataManager.totalMoney = DataManager.totalMoney - shopItemsSO[buttonNumber].basePrice;
+            DataManager.SubMoney(shopItemsSO[buttonNumber].basePrice);
+            CloseShopMenu();
             CheckPurchaseable();
 
             // Do something related to your item
-
+            
         }
     }
 

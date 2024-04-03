@@ -543,7 +543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4135840106229369579, guid: 293bc57d7a8514246bd3d0f055c83272, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4135840106229369579, guid: 293bc57d7a8514246bd3d0f055c83272, type: 3}
       propertyPath: m_LocalRotation.w
@@ -576,6 +576,10 @@ PrefabInstance:
     - target: {fileID: 5801251043297025422, guid: 293bc57d7a8514246bd3d0f055c83272, type: 3}
       propertyPath: m_Name
       value: CursorIndicatorParent
+      objectReference: {fileID: 0}
+    - target: {fileID: 5801251043297025422, guid: 293bc57d7a8514246bd3d0f055c83272, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -756,7 +760,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2027958005407065988, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
   m_PrefabInstance: {fileID: 226042637}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 552219788}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c5e0eb9516d65d4cb1c4dfdff5df521, type: 3}
@@ -1926,6 +1930,11 @@ MonoBehaviour:
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0
+--- !u!1 &552219788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 411205002513412100, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
+  m_PrefabInstance: {fileID: 226042637}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &621406323
 GameObject:
   m_ObjectHideFlags: 0
@@ -3823,6 +3832,8 @@ MonoBehaviour:
   cellIndicator: {fileID: 1369403064}
   shopInputManager: {fileID: 2102714319}
   grid: {fileID: 1205844176}
+  shopItemsSO:
+  - {fileID: 11400000, guid: a397f1e0b0f47e444bb2f384498b596b, type: 2}
 --- !u!1 &782586458
 GameObject:
   m_ObjectHideFlags: 0
@@ -9259,10 +9270,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4464828883988453878, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4464828883988453878, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464828883988453878, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4464828883988453878, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
@@ -9270,7 +9285,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1827907913}
     - target: {fileID: 4464828883988453878, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 693048425}
+    - target: {fileID: 4464828883988453878, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464828883988453878, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4464828883988453878, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
@@ -9278,8 +9301,16 @@ PrefabInstance:
       value: PurchaseItem
       objectReference: {fileID: 0}
     - target: {fileID: 4464828883988453878, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: StartPlacement
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464828883988453878, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: ShopManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464828883988453878, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PlacementSystem, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4464828883988453878, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
@@ -9287,6 +9318,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4464828883988453878, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4464828883988453878, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4496285747474663570, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
@@ -9585,6 +9620,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 62d310bc50ad62b4da12abac0f3c04c4, type: 2}
   - {fileID: 11400000, guid: d581440c5b0da454aa9bf16899ed2a25, type: 2}
   - {fileID: 11400000, guid: 14226616b57bd3844af91542db06cf67, type: 2}
+  - {fileID: 11400000, guid: a397f1e0b0f47e444bb2f384498b596b, type: 2}
   shopPanelsGO:
   - {fileID: 1676790050}
   - {fileID: 1362868340}
@@ -9596,7 +9632,7 @@ MonoBehaviour:
   - {fileID: 154807790}
   - {fileID: 73002871}
   - {fileID: 1620096240}
-  - {fileID: 0}
+  - {fileID: 552219788}
   shopPanels:
   - {fileID: 1676790054}
   - {fileID: 938989212}
@@ -10479,7 +10515,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Header
+  m_text: Shop
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10488,8 +10524,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10512,7 +10548,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535

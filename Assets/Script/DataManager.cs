@@ -18,12 +18,13 @@ public class DataManager : MonoBehaviour
 
     void Start()
     {
-        totalMoney = 100;
+        totalMoney = 0;
         moneyText = "$ 0";
         suspectList = new HashSet<string>();
         isObjectiveCompleted = new List<bool> { false, false, false };
         plateServed = 0;
         startTalking = false;
+        AddMoney(100);
     }
     public static string selectedSuspectName = "";
     public static float timeUntilSceneEnds = 45f;
@@ -31,6 +32,13 @@ public class DataManager : MonoBehaviour
     public static void AddMoney(int money)
     {
         totalMoney += money;
+        moneyText = "$ " + totalMoney;
+        checkObjective();
+    }
+
+    public static void SubMoney(int money)
+    {
+        totalMoney -= money;
         moneyText = "$ " + totalMoney;
         checkObjective();
     }
