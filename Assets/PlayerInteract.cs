@@ -17,22 +17,22 @@ public class PlayerInteract : MonoBehaviour
         interactCollider.enabled = true;
     }
 
-    public void faceRight()
+    public void FaceRight()
     {
         transform.localPosition = new Vector3(interactOffset.x + 0.2f, interactOffset.y + 0.2f);
     }
 
-    public void faceLeft()
+    public void FaceLeft()
     {
         transform.localPosition = new Vector3(interactOffset.x - 0.2f, interactOffset.y + 0.2f);
     }
 
-    public void faceUp()
+    public void FaceUp()
     {
         transform.localPosition = new Vector3(interactOffset.x, interactOffset.y * -1);
     }
 
-    public void faceDown()
+    public void FaceDown()
     {
         transform.localPosition = interactOffset;
     }
@@ -46,21 +46,22 @@ public class PlayerInteract : MonoBehaviour
     {
         // print(interactOffset);
         // print("test" + other.tag + other.name);
-        if (other.tag == "Customer")
+        if (other.CompareTag("Customer"))
         {
             CustomerScript customer = other.GetComponent<CustomerScript>();
             customer.OnInteract();
         }
-        else if (other.tag == "Kitchen")
+        else if (other.CompareTag("Kitchen"))
         {
             KitchenScript kitchen = other.GetComponent<KitchenScript>();
             kitchen.OnInteract();
         }
-        else if (other.tag == "Food")
+        else if (other.CompareTag("Food"))
         {
             // kitchen remove food && player take food
         }
-        else if (other.tag == "Bin") {
+        else if (other.CompareTag("Bin"))
+        {
             BinScript bin = other.GetComponent<BinScript>();
             bin.OnInteract();
         }

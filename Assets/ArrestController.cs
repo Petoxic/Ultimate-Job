@@ -1,18 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class ButtonMangement : MonoBehaviour
+public class ArrestController : MonoBehaviour
 {
     public GameObject scrollViewPanel;
     public GameObject buttonTemplate;
     public GameObject confirmationPanel;
-    public GameObject stillNotSureButton;
+    public Button stillNotSureButton;
 
     // Start is called before the first frame update
     void Start()
     {
-        stillNotSureButton.SetActive(true);
+        stillNotSureButton.onClick.AddListener(delegate
+        {
+            StillNotSure();
+        });
+
         foreach (string name in DataManager.suspectList)
         {
             GameObject btn = (GameObject)Instantiate(buttonTemplate);
@@ -30,13 +36,27 @@ public class ButtonMangement : MonoBehaviour
 
     public void GoToConfirmation()
     {
+        Debug.Log(DataManager.selectedSuspectName);
         confirmationPanel.SetActive(true);
-        stillNotSureButton.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void StillNotSure()
     {
-
+        if (DataManager.isGameEnd)
+        {
+            // Go to next day
+            DataManager.day += 1;
+            DataManager.ResetObjective();
+            SceneManager.LoadScene("NightScene");
+        }
+        else
+        {
+            // Resume the game
+            AsyncOperation asyncOperation = SceneManager.UnloadSceneAsync("ArrestingScene");
+            if (asyncOperation == null)
+            {
+                Debug.LogError("Failed to unload scene");
+            }
+        }
     }
 }

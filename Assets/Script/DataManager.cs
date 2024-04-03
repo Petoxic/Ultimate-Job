@@ -15,8 +15,7 @@ public class DataManager : MonoBehaviour
     public static int caseNumber;
     public static int todayMoney;
     public static int todayTalked;
-    
-
+    public static bool isGameEnd = false;
     public static bool startTalking;
 
     void Start()
