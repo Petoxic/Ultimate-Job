@@ -19,6 +19,7 @@ public class GameOverController : MonoBehaviour
         // Clear Data in DataManagement
 
         // Same Case, Night 1
+        DataManager.ResetToFirstNight();
         SceneManager.LoadScene("NightScene");
 
     }
@@ -26,6 +27,15 @@ public class GameOverController : MonoBehaviour
     public void ToNextMission()
     {
         // Next Case, Night 1
+        DataManager.caseNumber += 1;
+        SceneManager.LoadScene("NightScene");
+    }
+
+    public void StillNotSure()
+    {
+        // Same Case, Next Night
+        DataManager.ResetObjective();
+        DataManager.day += 1;
         SceneManager.LoadScene("NightScene");
     }
 }
