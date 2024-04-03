@@ -6,11 +6,7 @@ using UnityEngine;
 public class CustomerWalkIn : MonoBehaviour
 {
     private readonly float speed = 0.02f;
-    // [SerializeField] private GameObject target; // Chair customer will sit on
-    [SerializeField] private float startingX = (float)-0.231; // Customer starting position x
-    [SerializeField] private float startingY = (float)-1.266; // Customer starting position y
-    // todo : make chair position no magic value
-    private Vector2 mockChairPosition = new Vector2((float)-0.2413124, (float)-0.3858845);
+    private Vector2 chairPosition;
     // Customer starts walking to chair from out of the map
     private bool isSitting = false;
     private CustomerScript customerScript;
@@ -18,19 +14,21 @@ public class CustomerWalkIn : MonoBehaviour
     private bool isSpawned = false;
     void Awake()
     {
+        int chairIdx = MapData.getChairPos();
+        var (x, y) = MapData.chairPosition[chairIdx];
+        chairPosition = new Vector2((float)x, (float)y);
+
         customerScript = gameObject.GetComponent<CustomerScript>();
-        gameObject.transform.position = new Vector2(startingX, startingY);
+        gameObject.transform.position = MapData.outsideMapPosition;
         StartCoroutine(SpawnDelay());
     }
     // Customer walks to the chair
     void Update()
     {
         if (isSpawned && !isSitting)
-            // if (target.transform.position.x != gameObject.transform.position.x || target.transform.position.y != gameObject.transform.position.y)
-            if (gameObject.transform.position.x != mockChairPosition.x || gameObject.transform.position.y != mockChairPosition.y)
+            if (gameObject.transform.position.x != chairPosition.x || gameObject.transform.position.y != chairPosition.y)
             {
-                // gameObject.transform.position = Vector2.MoveTowards(gameObject.transform.position, target.transform.position, speed);
-                gameObject.transform.position = Vector2.MoveTowards(gameObject.transform.position, mockChairPosition, speed);
+                gameObject.transform.position = Vector2.MoveTowards(gameObject.transform.position, chairPosition, speed);
             }
             else
             {
