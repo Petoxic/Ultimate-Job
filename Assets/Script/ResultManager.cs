@@ -96,7 +96,7 @@ public class ResultManager : MonoBehaviour
 
     public void GoToFirstNightScene()
     {
-        DataManager.ResetToFirstNight();
+        DataManager.ResetToFirstNightIfLose();
         SceneManager.LoadScene("NightScene");
     }
 

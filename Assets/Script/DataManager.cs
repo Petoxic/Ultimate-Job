@@ -97,10 +97,19 @@ public class DataManager : MonoBehaviour
         startTalking = false;
     }
 
-    public static void ResetToFirstNight()
+    public static void ResetToFirstNightIfLose()
     {
         totalMoney = 0;
         moneyText = "Total money: 0";
+        suspectList = new HashSet<string>();
+        isObjectiveCompleted = new List<bool> { false, false, false };
+        plateServed = 0;
+        day = 1;
+        startTalking = false;
+    }
+
+    public static void ResetToFirstNightIfWin()
+    {
         suspectList = new HashSet<string>();
         isObjectiveCompleted = new List<bool> { false, false, false };
         plateServed = 0;
