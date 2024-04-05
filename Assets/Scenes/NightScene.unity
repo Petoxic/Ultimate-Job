@@ -8695,6 +8695,7 @@ GameObject:
   - component: {fileID: 1426373237}
   - component: {fileID: 1426373236}
   - component: {fileID: 1426373238}
+  - component: {fileID: 1426373239}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged

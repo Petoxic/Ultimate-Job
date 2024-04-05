@@ -2423,6 +2423,7 @@ MonoBehaviour:
   gameOver: {fileID: 320550879}
   gameWin: {fileID: 191586541}
   confirmationPanel: {fileID: 575670993}
+  stillNotSureButton: {fileID: 1444581103}
 --- !u!114 &2081970906
 MonoBehaviour:
   m_ObjectHideFlags: 0

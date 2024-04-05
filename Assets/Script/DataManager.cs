@@ -11,8 +11,10 @@ public class DataManager : MonoBehaviour
     public static HashSet<string> suspectList;
     public static List<bool> isObjectiveCompleted;
     public static int plateServed;
-    public static int day = 1;
-    public static int caseNumber = 1;
+    public static int day;
+    public static int caseNumber;
+    public static int todayMoney;
+    public static int todayTalked;
     public static bool isGameEnd = false;
     public static bool startTalking;
 
@@ -21,8 +23,12 @@ public class DataManager : MonoBehaviour
         totalMoney = 0;
         moneyText = "$ 0";
         suspectList = new HashSet<string>();
-        isObjectiveCompleted = new List<bool> { false, false, false };
+        isObjectiveCompleted = new List<bool> { true, true, true };
         plateServed = 0;
+        day = 1;
+        caseNumber = 1;
+        todayMoney = 0;
+        todayTalked = 0;
         startTalking = false;
         AddMoney(100);
     }
@@ -32,6 +38,7 @@ public class DataManager : MonoBehaviour
     public static void AddMoney(int money)
     {
         totalMoney += money;
+        todayMoney += money;
         moneyText = "$ " + totalMoney;
         checkObjective();
     }
@@ -45,6 +52,10 @@ public class DataManager : MonoBehaviour
 
     public static void AddSuspectList(string suspect)
     {
+        if (!suspectList.Contains(suspect))
+        {
+            todayTalked += 1;
+        }
         suspectList.Add(suspect);
         checkObjective();
     }
@@ -77,6 +88,8 @@ public class DataManager : MonoBehaviour
 
     public static void ResetObjective()
     {
+        todayMoney = 0;
+        todayTalked = 0;
         isObjectiveCompleted = new List<bool> { false, false, false };
     }
 
@@ -91,4 +104,26 @@ public class DataManager : MonoBehaviour
         caseNumber = 1;
         startTalking = false;
     }
+
+    public static void ResetToFirstNightIfLose()
+    {
+        totalMoney = 0;
+        moneyText = "Total money: 0";
+        suspectList = new HashSet<string>();
+        isObjectiveCompleted = new List<bool> { false, false, false };
+        plateServed = 0;
+        day = 1;
+        startTalking = false;
+    }
+
+    public static void ResetToFirstNightIfWin()
+    {
+        suspectList = new HashSet<string>();
+        isObjectiveCompleted = new List<bool> { false, false, false };
+        plateServed = 0;
+        day = 1;
+        startTalking = false;
+    }
+
+
 }

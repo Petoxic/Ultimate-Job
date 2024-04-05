@@ -2,28 +2,30 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.iOS.Xcode;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerScript : MonoBehaviour
 {
-    public enum InteractDirection
+    private static class AnimatorParameters
     {
-        up, down, left, right
+        public const string IsMoving = "IsMoving";
+        public const string X = "X";
+        public const string Y = "Y";
+        public const string Interact = "Interact";
     }
-    public InteractDirection interactDirection;
     public float moveSpeed = 1f;
     public float collisionOffset = 0.02f;
-    public ContactFilter2D movementFilter;
+    // public ContactFilter2D movementFilter;
     public PlayerInteract playerInteract;
-    public List<int> orderList = new List<int>();
+    public List<int> orderList = new();
     public bool isHoldingFood;
     public int holdingFoodId;
 
     Vector2 movementInput;
     Rigidbody2D rb;
     Animator animator;
-    List<RaycastHit2D> castCollision = new List<RaycastHit2D>();
     bool canMove = true;
 
     void Start()
@@ -36,90 +38,42 @@ public class PlayerScript : MonoBehaviour
     {
         if (canMove)
         {
-            bool success = false;
-            if (movementInput != Vector2.zero)
-            {
-                success = TryMove(movementInput);
-
-                if (!success)
-                {
-                    success = TryMove(new Vector2(movementInput.x, 0));
-                }
-                if (!success)
-                {
-                    success = TryMove(new Vector2(0, movementInput.y));
-                }
-                animator.SetBool("isMoving", true);
-            }
-            else
-            {
-                animator.SetBool("isMoving", false);
-                animator.SetInteger("moving", 0);
-            }
-
-
-            if (success && movementInput.x != 0.0f)
-            {
-                if (movementInput.x > 0)
-                {
-                    animator.SetInteger("moving", 4);
-                    playerInteract.faceRight();
-                }
-                else if (movementInput.x < 0)
-                {
-                    animator.SetInteger("moving", 2);
-                    playerInteract.faceLeft();
-                }
-
-            }
-
-            if (success && movementInput.y != 0.0f)
-            {
-                if (movementInput.y > 0)
-                {
-                    animator.SetInteger("moving", 3);
-                    playerInteract.faceUp();
-                }
-                else
-                {
-                    animator.SetInteger("moving", 1);
-                    playerInteract.faceDown();
-                }
-            }
+            rb.MovePosition(rb.position + moveSpeed * Time.fixedDeltaTime * movementInput);
         }
-
-
     }
 
     void OnMove(InputValue movementValue)
     {
         movementInput = movementValue.Get<Vector2>();
-    }
 
-    private bool TryMove(Vector2 direction)
-    {
-        if (direction != Vector2.zero)
+        if (movementInput != Vector2.zero)
         {
-            int count = rb.Cast(
-                movementInput,
-                movementFilter,
-                castCollision,
-                moveSpeed * Time.fixedDeltaTime + collisionOffset
-            );
+            animator.SetFloat(AnimatorParameters.X, movementInput.x);
+            animator.SetFloat(AnimatorParameters.Y, movementInput.y);
 
-            if (count == 0)
+            animator.SetBool(AnimatorParameters.IsMoving, true);
+
+            // Face the player to the direction of movement 
+            if (movementInput.x > 0)
             {
-                rb.MovePosition(rb.position + movementInput * moveSpeed * Time.fixedDeltaTime);
-                return true;
+                playerInteract.FaceRight();
             }
-            else
+            else if (movementInput.x < 0)
             {
-                return false;
+                playerInteract.FaceLeft();
+            }
+            else if (movementInput.y > 0)
+            {
+                playerInteract.FaceUp();
+            }
+            else if (movementInput.y < 0)
+            {
+                playerInteract.FaceDown();
             }
         }
         else
         {
-            return false;
+            animator.SetBool(AnimatorParameters.IsMoving, false);
         }
     }
 
@@ -137,15 +91,15 @@ public class PlayerScript : MonoBehaviour
 
     void OnFire()
     {
-        animator.SetTrigger("interact");
+        animator.SetTrigger(AnimatorParameters.Interact);
     }
 
-    public void LockMovement()
+    private void LockMovement()
     {
         canMove = false;
     }
 
-    public void UnlockMovement()
+    private void UnlockMovement()
     {
         canMove = true;
     }

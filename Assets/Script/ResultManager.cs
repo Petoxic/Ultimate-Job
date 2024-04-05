@@ -30,8 +30,7 @@ public class ResultManager : MonoBehaviour
 
             notSureButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(delegate
             {
-                DataManager.day += 1;
-                DataManager.ResetObjective();
+                
                 GoToNextNightScene();
             });
 
@@ -90,11 +89,14 @@ public class ResultManager : MonoBehaviour
 
     public void GoToNextNightScene()
     {
+        DataManager.day += 1;
+        DataManager.ResetObjective();
         SceneManager.LoadScene("NightScene");
     }
 
     public void GoToFirstNightScene()
     {
+        DataManager.ResetToFirstNightIfLose();
         SceneManager.LoadScene("NightScene");
     }
 
