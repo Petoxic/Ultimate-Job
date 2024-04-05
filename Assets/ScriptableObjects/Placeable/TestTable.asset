@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1dc508abff11414b9251ee92a1833b0, type: 3}
   m_Name: TestTable
   m_EditorClassIdentifier: 
+  ID: 0
   title: TestTable
   description: For testing
-  basePrice: 1
+  basePrice: 52
   size: {x: 2, y: 2}
   Prefab: {fileID: 5957378325222286661, guid: df4abc6e583891941af25a1197cc2be7, type: 3}

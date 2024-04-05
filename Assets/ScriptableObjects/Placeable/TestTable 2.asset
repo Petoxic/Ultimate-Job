@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1dc508abff11414b9251ee92a1833b0, type: 3}
-  m_Name: Gucci Shoes
+  m_Name: TestTable 2
   m_EditorClassIdentifier: 
-  ID: 6
-  title: Gucci Shoes
-  description: Harder Better Faster Stronger
-  basePrice: 3
-  size: {x: 1, y: 1}
-  Prefab: {fileID: 0}
+  ID: 1
+  title: TestTable2
+  description: For testing
+  basePrice: 34
+  size: {x: 2, y: 2}
+  Prefab: {fileID: 5957378325222286661, guid: df4abc6e583891941af25a1197cc2be7, type: 3}

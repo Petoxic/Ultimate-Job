@@ -13,8 +13,6 @@ public class ShopManager : MonoBehaviour
     public Button[] myPurchaseButtons;
     public bool isOpenShop;
 
-    private List<Object[]> shopObjects = new List<Object[]>();
-
     void Start()
     {
         shopMenu.SetActive(false);
@@ -81,12 +79,12 @@ public class ShopManager : MonoBehaviour
     {
         if (DataManager.totalMoney >= shopItemsSO[buttonNumber].basePrice)
         {
-            DataManager.SubMoney(shopItemsSO[buttonNumber].basePrice);
+            // DataManager.SubMoney(shopItemsSO[buttonNumber].basePrice);
             CloseShopMenu();
             CheckPurchaseable();
 
             // Do something related to your item
-            
+
         }
     }
 
