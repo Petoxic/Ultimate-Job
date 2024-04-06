@@ -534,12 +534,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 1972013217}
     m_Modifications:
     - target: {fileID: 4135840106229369579, guid: 293bc57d7a8514246bd3d0f055c83272, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4135840106229369579, guid: 293bc57d7a8514246bd3d0f055c83272, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4135840106229369579, guid: 293bc57d7a8514246bd3d0f055c83272, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.453
+      value: 0.473
       objectReference: {fileID: 0}
     - target: {fileID: 4135840106229369579, guid: 293bc57d7a8514246bd3d0f055c83272, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.442
+      value: -0.4352
       objectReference: {fileID: 0}
     - target: {fileID: 4135840106229369579, guid: 293bc57d7a8514246bd3d0f055c83272, type: 3}
       propertyPath: m_LocalPosition.z
@@ -571,6 +579,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4135840106229369579, guid: 293bc57d7a8514246bd3d0f055c83272, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4135840106229369579, guid: 293bc57d7a8514246bd3d0f055c83272, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4190300461143536630, guid: 293bc57d7a8514246bd3d0f055c83272, type: 3}
+      propertyPath: m_SpriteSortPoint
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5801251043297025422, guid: 293bc57d7a8514246bd3d0f055c83272, type: 3}
@@ -905,6 +921,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 227570834}
   m_CullTransparentMesh: 1
+--- !u!1 &270409159
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 270409160}
+  - component: {fileID: 270409161}
+  m_Layer: 0
+  m_Name: PreviewSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &270409160
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270409159}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1972013217}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &270409161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270409159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17fa97d63d4972049b737544bf94b16f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previewYOffset: 0.06
+  cellIndicator: {fileID: 1369403064}
+  previewMaterialsPrefab: {fileID: 2100000, guid: 9070f0638b9c14f41a5c5f54cbab8adf, type: 2}
 --- !u!1 &275020846
 GameObject:
   m_ObjectHideFlags: 0
@@ -3829,13 +3892,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseIndicator: {fileID: 1343762160}
-  cellIndicator: {fileID: 1369403064}
   shopInputManager: {fileID: 2102714319}
   grid: {fileID: 1205844176}
   shopItemsSO:
   - {fileID: 11400000, guid: a397f1e0b0f47e444bb2f384498b596b, type: 2}
   - {fileID: 11400000, guid: 8dc935b714443684ea8cee4a83e2c233, type: 2}
   selectedObjectIndex: -1
+  preview: {fileID: 270409161}
 --- !u!1 &782586458
 GameObject:
   m_ObjectHideFlags: 0
@@ -8695,7 +8758,6 @@ GameObject:
   - component: {fileID: 1426373237}
   - component: {fileID: 1426373236}
   - component: {fileID: 1426373238}
-  - component: {fileID: 1426373239}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -10315,9 +10377,10 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1369403066}
+  - {fileID: 1343762161}
   - {fileID: 2102714318}
   - {fileID: 693048424}
-  - {fileID: 1343762161}
+  - {fileID: 270409160}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2015811646

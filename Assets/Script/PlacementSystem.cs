@@ -6,20 +6,27 @@ using UnityEngine.EventSystems;
 
 public class PlacementSystem : MonoBehaviour
 {
-    [SerializeField] private GameObject mouseIndicator, cellIndicator;
+    [SerializeField] private GameObject mouseIndicator;
     [SerializeField] private ShopInputManager shopInputManager;
     [SerializeField] private Grid grid;
 
     [SerializeField] public ShopItemSO[] shopItemsSO;
     public int selectedObjectIndex = -1;
-
     public static bool isPlacement;
     public event Action OnClicked, OnExit;
+
+    private GridData furnitureData;
+    private List<GameObject> placedGameObjects = new();
+
+    [SerializeField] private PreviewSystem preview;
+
+    private Vector3Int lastDetectedPosition = Vector3Int.zero;
 
     private void Start()
     {
         isPlacement = false;
         StopPlacement();
+        furnitureData = new();
     }
 
     public void Update()
@@ -39,24 +46,31 @@ public class PlacementSystem : MonoBehaviour
             DataManager.SubMoney(shopItemsSO[selectedObjectIndex].basePrice);
             OnClicked?.Invoke();
         }
-        if (isPlacement && (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.B)))
+        if (isPlacement && Input.GetKeyDown(KeyCode.Escape))
         {
             OnExit?.Invoke();
         }
 
         Vector3 mousePosition = shopInputManager.GetSelectedMapPosition();
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
-        mouseIndicator.transform.position = mousePosition;
-        cellIndicator.transform.position = grid.CellToWorld(gridPosition);
+        if (lastDetectedPosition != gridPosition)
+        {
+            bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
+
+            mouseIndicator.transform.position = mousePosition;
+            preview.UpdatePosition(grid.CellToWorld(gridPosition), placementValidity);
+            lastDetectedPosition = gridPosition;
+        }
     }
 
     public void StopPlacement()
     {
         isPlacement = false;
         selectedObjectIndex = -1;
-        cellIndicator.SetActive(false);
-        OnClicked -= PlaceStructure;
-        OnExit -= StopPlacement;
+        preview.StopShowingPlacementReview();
+        this.OnClicked -= PlaceStructure;
+        this.OnExit -= StopPlacement;
+        lastDetectedPosition = Vector3Int.zero;
     }
 
     public void StartPlacement(int ID)
@@ -69,9 +83,9 @@ public class PlacementSystem : MonoBehaviour
             Debug.LogError($"No ID found {ID}");
             return;
         }
-        cellIndicator.SetActive(true);
-        OnClicked += PlaceStructure;
-        OnExit += StopPlacement;
+        preview.StartShowingPlacementReview(shopItemsSO[ID].Prefab, shopItemsSO[ID].size);
+        this.OnClicked += PlaceStructure;
+        this.OnExit += StopPlacement;
     }
 
     public void PlaceStructure()
@@ -82,8 +96,31 @@ public class PlacementSystem : MonoBehaviour
         }
         Vector3 mousePosition = shopInputManager.GetSelectedMapPosition();
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
+
+        bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
+        if (!placementValidity)
+        {
+            return;
+        }
+
         GameObject newObject = Instantiate(shopItemsSO[selectedObjectIndex].Prefab);
         newObject.transform.position = grid.CellToWorld(gridPosition);
+        placedGameObjects.Add(newObject);
+        GridData selectedData = furnitureData;
+        selectedData.AddObjectAt(gridPosition,
+                                shopItemsSO[selectedObjectIndex].size,
+                                shopItemsSO[selectedObjectIndex].ID,
+                                placedGameObjects.Count - 1);
+        preview.UpdatePosition(grid.CellToWorld(gridPosition), false);
+    }
 
+    private bool CheckPlacementValidity(Vector3Int gridPosition, int selectedObjectIndex)
+    {
+        if (selectedObjectIndex < 0)
+        {
+            return false;
+        }
+        GridData selectedData = furnitureData;
+        return selectedData.CanPlaceObjectAt(gridPosition, shopItemsSO[selectedObjectIndex].size);
     }
 }
