@@ -15,6 +15,6 @@ MonoBehaviour:
   ID: 0
   title: TestTable
   description: For testing
-  basePrice: 52
+  basePrice: 3
   size: {x: 2, y: 2}
   Prefab: {fileID: 5957378325222286661, guid: df4abc6e583891941af25a1197cc2be7, type: 3}

@@ -13,6 +13,7 @@ public class PlacementSystem : MonoBehaviour
     [SerializeField] public ShopItemSO[] shopItemsSO;
     public int selectedObjectIndex = -1;
     public static bool isPlacement;
+    public static bool placementValidity;
     public event Action OnClicked, OnExit;
 
     private GridData furnitureData;
@@ -38,13 +39,16 @@ public class PlacementSystem : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (DataManager.totalMoney < shopItemsSO[selectedObjectIndex].basePrice)
+            if (placementValidity)
             {
-                Debug.Log("Your money is not enough");
-                return;
+                if (DataManager.totalMoney < shopItemsSO[selectedObjectIndex].basePrice)
+                {
+                    Debug.Log("Your money is not enough");
+                    return;
+                }
+                DataManager.SubMoney(shopItemsSO[selectedObjectIndex].basePrice);
+                OnClicked?.Invoke();
             }
-            DataManager.SubMoney(shopItemsSO[selectedObjectIndex].basePrice);
-            OnClicked?.Invoke();
         }
         if (isPlacement && Input.GetKeyDown(KeyCode.Escape))
         {
@@ -55,7 +59,7 @@ public class PlacementSystem : MonoBehaviour
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
         if (lastDetectedPosition != gridPosition)
         {
-            bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
+            placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
 
             mouseIndicator.transform.position = mousePosition;
             preview.UpdatePosition(grid.CellToWorld(gridPosition), placementValidity);
@@ -97,7 +101,7 @@ public class PlacementSystem : MonoBehaviour
         Vector3 mousePosition = shopInputManager.GetSelectedMapPosition();
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
 
-        bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
+        placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
         if (!placementValidity)
         {
             return;
