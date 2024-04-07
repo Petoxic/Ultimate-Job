@@ -11,7 +11,7 @@ public class ShopManager : MonoBehaviour
     public GameObject[] shopPanelsGO;
     public ShopTemplate[] shopPanels;
     public Button[] myPurchaseButtons;
-    public bool isOpenShop;
+    public static bool isOpenShop;
 
     void Start()
     {
