@@ -18,6 +18,7 @@ public class DataManager : MonoBehaviour
     public static bool isGameEnd = false;
     public static bool startTalking;
     public static float cellSize;
+    public static Dictionary<int, List<Vector3Int>> placedObjectsData;
 
     void Start()
     {
@@ -32,6 +33,7 @@ public class DataManager : MonoBehaviour
         todayTalked = 0;
         startTalking = false;
         cellSize = 0.16f;
+        placedObjectsData = new Dictionary<int, List<Vector3Int>> { };
         AddMoney(100);
     }
     public static string selectedSuspectName = "";
@@ -126,6 +128,5 @@ public class DataManager : MonoBehaviour
         day = 1;
         startTalking = false;
     }
-
 
 }

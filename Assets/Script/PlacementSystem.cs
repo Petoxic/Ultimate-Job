@@ -3,12 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Tilemaps;
 
 public class PlacementSystem : MonoBehaviour
 {
     [SerializeField] private GameObject mouseIndicator;
     [SerializeField] private ShopInputManager shopInputManager;
     [SerializeField] private Grid grid;
+    [SerializeField] private Tilemap tilemap;
 
     [SerializeField] public ShopItemSO[] shopItemsSO;
     public int selectedObjectIndex = -1;
@@ -28,6 +30,7 @@ public class PlacementSystem : MonoBehaviour
         isPlacement = false;
         StopPlacement();
         furnitureData = new();
+        Debug.Log(tilemap.GetComponent<Tilemap>().size);
     }
 
     public void Update()
