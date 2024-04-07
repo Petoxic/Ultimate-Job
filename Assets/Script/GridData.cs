@@ -19,6 +19,8 @@ public class GridData
             }
             placedObjects[pos] = data;
         }
+        Debug.Log(gridPosition);
+        Debug.Log(placedObjectIndex);
     }
 
     private List<Vector3Int> CalculatePositions(Vector3Int gridPosition, Vector2Int objectSize)
