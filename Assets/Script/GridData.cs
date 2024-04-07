@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class GridData
 {
@@ -43,6 +44,19 @@ public class GridData
 
     public bool CanPlaceObjectAt(Vector3Int gridPosition, Vector2Int objectSize)
     {
+        // Check if object out of map
+        int xHalfGridSize = PlacementSystem.gridSize.x / 2;
+        int yHalfGridSize = PlacementSystem.gridSize.y / 2;
+        if (gridPosition.x + xHalfGridSize > PlacementSystem.gridSize.x - objectSize.x
+            || gridPosition.x + xHalfGridSize < 0
+            || gridPosition.y + yHalfGridSize > PlacementSystem.gridSize.y
+            || gridPosition.y + yHalfGridSize < yHalfGridSize - objectSize.y
+            || gridPosition.y + yHalfGridSize > PlacementSystem.wallGridPosition)
+        {
+            return false;
+        }
+
+        // Check if object will occupied by another object
         List<Vector3Int> positionToOccupy = CalculatePositions(gridPosition, objectSize);
         foreach (var pos in positionToOccupy)
         {
