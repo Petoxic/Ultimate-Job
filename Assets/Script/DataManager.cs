@@ -17,6 +17,7 @@ public class DataManager : MonoBehaviour
     public static int todayTalked;
     public static bool isGameEnd = false;
     public static bool startTalking;
+    public static float cellSize;
 
     void Start()
     {
@@ -30,6 +31,8 @@ public class DataManager : MonoBehaviour
         todayMoney = 0;
         todayTalked = 0;
         startTalking = false;
+        cellSize = 0.16f;
+        AddMoney(100);
     }
     public static string selectedSuspectName = "";
     public static float timeUntilSceneEnds = 45f;
@@ -38,6 +41,13 @@ public class DataManager : MonoBehaviour
     {
         totalMoney += money;
         todayMoney += money;
+        moneyText = "$ " + totalMoney;
+        checkObjective();
+    }
+
+    public static void SubMoney(int money)
+    {
+        totalMoney -= money;
         moneyText = "$ " + totalMoney;
         checkObjective();
     }
