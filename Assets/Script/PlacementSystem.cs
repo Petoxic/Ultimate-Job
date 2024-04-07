@@ -50,7 +50,7 @@ public class PlacementSystem : MonoBehaviour
                 OnClicked?.Invoke();
             }
         }
-        if (isPlacement && Input.GetKeyDown(KeyCode.Escape))
+        if (isPlacement && Input.GetKeyDown(KeyCode.B))
         {
             OnExit?.Invoke();
         }

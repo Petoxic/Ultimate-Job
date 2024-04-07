@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="5" height="3" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="7">
  <tileset firstgid="1" source="ultimatejob.tsx"/>
- <layer id="1" name="Tile Layer 1" width="5" height="3">
-  <data encoding="csv">
-0,0,0,0,0,
-0,0,0,0,0,
-0,0,0,0,0
-</data>
- </layer>
- <objectgroup id="2" name="Object Layer 1"/>
  <layer id="3" name="Collisions" width="5" height="3">
   <properties>
    <property name="unity:sortingLayer" value="Default"/>
@@ -19,7 +11,4 @@
 0,92,93,94,0
 </data>
  </layer>
- <objectgroup id="4" name="CollisionMask">
-  <object id="6" x="-0.5" y="-1" width="81" height="49"/>
- </objectgroup>
 </map>

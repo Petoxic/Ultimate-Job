@@ -17,4 +17,4 @@ MonoBehaviour:
   description: For testing
   basePrice: 5
   size: {x: 2, y: 2}
-  Prefab: {fileID: 5957378325222286661, guid: df4abc6e583891941af25a1197cc2be7, type: 3}
+  Prefab: {fileID: -8166878007169690821, guid: 365d8dc581b7a0942bfa188a995d0233, type: 3}
