@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="5" height="3" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="7">
+ <tileset firstgid="1" source="ultimatejob.tsx"/>
+ <layer id="3" name="Collisions" width="5" height="3">
+  <properties>
+   <property name="unity:sortingLayer" value="Default"/>
+  </properties>
+  <data encoding="csv">
+63,60,61,62,64,
+79,76,77,78,80,
+0,92,93,94,0
+</data>
+ </layer>
+</map>
