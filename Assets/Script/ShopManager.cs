@@ -95,6 +95,7 @@ public class ShopManager : MonoBehaviour
             shopPanels[i].titleText.text = shopItemsSO[i].title;
             shopPanels[i].descriptionText.text = shopItemsSO[i].description;
             shopPanels[i].priceText.text = "Coins: " + shopItemsSO[i].basePrice.ToString();
+            shopPanels[i].itemImage = shopItemsSO[i].itemImage;
         }
     }
 }

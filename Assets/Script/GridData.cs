@@ -80,9 +80,6 @@ public class PlacementData
     public List<Vector3Int> occupiedPositions;
     public int ID { get; private set; }
     public int PlacedObjectIndex { get; private set; }
-    public Vector3Int gridPosition { get; private set; }
-    public Vector3Int leftChairPosition { get; private set; }
-    public Vector3Int rightChairPosition { get; private set; }
 
     public PlacementData(List<Vector3Int> occupiedPosition, int id, int placedObjectIndex)
     {
