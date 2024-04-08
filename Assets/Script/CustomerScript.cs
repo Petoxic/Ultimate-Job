@@ -34,6 +34,7 @@ public class CustomerScript : MonoBehaviour
         dialogueText = dialoguePanel.transform.Find("Dialog").gameObject.GetComponent<Text>();
         objectName = dialoguePanel.transform.Find("Name").gameObject.GetComponent<Text>();
 
+       
         int queue = CustomerData.getCustomerQueue();
         gameObject.name = (string)CustomerData.customerData[queue]["name"];
         dialogueArray = (string[][])CustomerData.customerData[queue]["dialogue"];

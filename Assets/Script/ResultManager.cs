@@ -19,8 +19,15 @@ public class ResultManager : MonoBehaviour
     {
         if (DataManager.isObjectiveCompleted[0] && DataManager.isObjectiveCompleted[1] && DataManager.isObjectiveCompleted[2])
         {
+            if (DataManager.day == 3)
+            {
+                notSureButton.SetActive(false);
+                foundCriminalButton.transform.GetChild(0).GetComponent<UnityEngine.UI.Text>().text = "I think I found CRIMINAL";
+            }else{
+                foundCriminalButton.transform.GetChild(0).GetComponent<UnityEngine.UI.Text>().text = "I found CRIMINAL";
+            }
             header.text = "Done!";
-            foundCriminalButton.transform.GetChild(0).GetComponent<UnityEngine.UI.Text>().text = "I think I found CRIMINAL";
+            
             notSureButton.transform.GetChild(0).GetComponent<UnityEngine.UI.Text>().text = "Not sure";
 
             foundCriminalButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(delegate
