@@ -200,8 +200,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 700.00006, y: 427}
-  m_SizeDelta: {x: 500, y: 110}
+  m_AnchoredPosition: {x: 660, y: 427}
+  m_SizeDelta: {x: 600, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &108640453
 MonoBehaviour:
@@ -2648,7 +2648,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 40, y: -20}
-  m_SizeDelta: {x: 500, y: 110}
+  m_SizeDelta: {x: 600, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &581399910
 MonoBehaviour:
@@ -3256,8 +3256,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseIndicator: {fileID: 1343762160}
   shopInputManager: {fileID: 2102714319}
-  grid: {fileID: 0}
-  tilemap: {fileID: 0}
+  grid: {fileID: 487298052}
+  tilemap: {fileID: 1764547061}
   shopItemsSO:
   - {fileID: 11400000, guid: a397f1e0b0f47e444bb2f384498b596b, type: 2}
   - {fileID: 11400000, guid: 8dc935b714443684ea8cee4a83e2c233, type: 2}
@@ -7022,7 +7022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 892ac199a602f274686005814d8d97b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NightText: {fileID: 0}
+  NightText: {fileID: 581399908}
 --- !u!114 &1444514656 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4464828883988453878, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
