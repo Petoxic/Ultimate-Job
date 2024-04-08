@@ -28,7 +28,7 @@ public class PlacementSystem : MonoBehaviour
 
     private void Start()
     {
-        wallGridPosition = 8;
+        wallGridPosition = 12;
         isPlacement = false;
         StopPlacement();
         furnitureData = new();

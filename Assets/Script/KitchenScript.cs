@@ -13,8 +13,8 @@ public class KitchenScript : MonoBehaviour
     private static readonly int ordersCountMax = 2;
     private readonly List<int> orderBuffer = new();
     private readonly List<int> orderSlots = Enumerable.Repeat(-1, ordersCountMax).ToList();
-    private const float orderSlotX = 1.205f;
-    private const float firstOrderSlotY = 0.08f;
+    private const float orderSlotX = 1.52f;
+    private const float firstOrderSlotY = 0.4f;
     private const float orderSlotGap = 0.174f;
     [SerializeField] private GameObject foodPrefab;
     private Sprite[] sprites;
