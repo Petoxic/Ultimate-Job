@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class GridData
 {
@@ -10,17 +11,22 @@ public class GridData
     public void AddObjectAt(Vector3Int gridPosition, Vector2Int objectSize, int ID, int placedObjectIndex)
     {
         List<Vector3Int> positionToOccupy = CalculatePositions(gridPosition, objectSize);
-        PlacementData data = new PlacementData(positionToOccupy, ID, placedObjectIndex);
+        PlacementData placementData = new PlacementData(positionToOccupy, ID, placedObjectIndex);
+
+        Vector3Int leftChairPosition = CalculateChairPositions(gridPosition, 0, -1);
+        Vector3Int rightChairPosition = CalculateChairPositions(gridPosition, objectSize.x - 1, -1);
+
+        List<Vector3Int> tableWithChairPosition = new List<Vector3Int> { gridPosition, leftChairPosition, rightChairPosition };
+        DataManager.placedObjectsData[placedObjectIndex] = tableWithChairPosition;
+
         foreach (var pos in positionToOccupy)
         {
             if (placedObjects.ContainsKey(pos))
             {
                 throw new Exception($"Dictionary already contains this cell position {pos}");
             }
-            placedObjects[pos] = data;
+            placedObjects[pos] = placementData;
         }
-        Debug.Log(gridPosition);
-        Debug.Log(placedObjectIndex);
     }
 
     private List<Vector3Int> CalculatePositions(Vector3Int gridPosition, Vector2Int objectSize)
@@ -38,6 +44,19 @@ public class GridData
 
     public bool CanPlaceObjectAt(Vector3Int gridPosition, Vector2Int objectSize)
     {
+        // Check if object out of map
+        int xHalfGridSize = PlacementSystem.gridSize.x / 2;
+        int yHalfGridSize = PlacementSystem.gridSize.y / 2;
+        if (gridPosition.x + xHalfGridSize > PlacementSystem.gridSize.x - objectSize.x
+            || gridPosition.x + xHalfGridSize < 0
+            || gridPosition.y + yHalfGridSize > PlacementSystem.gridSize.y
+            || gridPosition.y + yHalfGridSize < yHalfGridSize - objectSize.y
+            || gridPosition.y + yHalfGridSize > PlacementSystem.wallGridPosition)
+        {
+            return false;
+        }
+
+        // Check if object will occupied by another object
         List<Vector3Int> positionToOccupy = CalculatePositions(gridPosition, objectSize);
         foreach (var pos in positionToOccupy)
         {
@@ -48,6 +67,12 @@ public class GridData
         }
         return true;
     }
+
+    public Vector3Int CalculateChairPositions(Vector3Int gridPosition, int xToChair, int yToChair)
+    {
+        Vector3Int chairPosition = new Vector3Int(gridPosition.x + xToChair, gridPosition.y + yToChair, 0);
+        return chairPosition;
+    }
 }
 
 public class PlacementData
@@ -55,6 +80,9 @@ public class PlacementData
     public List<Vector3Int> occupiedPositions;
     public int ID { get; private set; }
     public int PlacedObjectIndex { get; private set; }
+    public Vector3Int gridPosition { get; private set; }
+    public Vector3Int leftChairPosition { get; private set; }
+    public Vector3Int rightChairPosition { get; private set; }
 
     public PlacementData(List<Vector3Int> occupiedPosition, int id, int placedObjectIndex)
     {
@@ -62,5 +90,4 @@ public class PlacementData
         ID = id;
         PlacedObjectIndex = placedObjectIndex;
     }
-
 }

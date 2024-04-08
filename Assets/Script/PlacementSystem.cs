@@ -3,31 +3,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Tilemaps;
 
 public class PlacementSystem : MonoBehaviour
 {
     [SerializeField] private GameObject mouseIndicator;
     [SerializeField] private ShopInputManager shopInputManager;
     [SerializeField] private Grid grid;
-
-    [SerializeField] public ShopItemSO[] shopItemsSO;
-    public int selectedObjectIndex = -1;
-    public static bool isPlacement;
-    public static bool placementValidity;
-    public event Action OnClicked, OnExit;
-
-    private GridData furnitureData;
-    private List<GameObject> placedGameObjects = new();
-
+    [SerializeField] private Tilemap tilemap;
+    [SerializeField] private ShopItemSO[] shopItemsSO;
     [SerializeField] private PreviewSystem preview;
 
+    public int selectedObjectIndex = -1;
+
+    public static int wallGridPosition;
+    public static bool isPlacement;
+    public static bool placementValidity;
+    public static Vector3Int gridSize;
+
+    public event Action OnClicked, OnExit;
+    private GridData furnitureData;
+    private List<GameObject> placedGameObjects = new();
     private Vector3Int lastDetectedPosition = Vector3Int.zero;
 
     private void Start()
     {
+        wallGridPosition = 12;
         isPlacement = false;
         StopPlacement();
         furnitureData = new();
+        gridSize = tilemap.GetComponent<Tilemap>().size;
     }
 
     public void Update()
