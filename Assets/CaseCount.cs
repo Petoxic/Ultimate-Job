@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NightCount : MonoBehaviour
+public class CaseCount : MonoBehaviour
 {
-    public GameObject NightText;
+    public GameObject CaseText;
     // Start is called before the first frame update
     void Start()
     {
-        NightText.GetComponent<UnityEngine.UI.Text>().text = "Night " + DataManager.day;
-
+        CaseText.GetComponent<UnityEngine.UI.Text>().text = "Case " + DataManager.caseNumber;
     }
 
     // Update is called once per frame

@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class CustomerSpawningScript : MonoBehaviour
 {
-    private static List<int> customerCountPerDay = new List<int>{3,3,4};
-    private int customerCount = customerCountPerDay[DataManager.day-1];
+    private int customerCount = CustomerData.customerData.Count;
     private float spawnDelay = 5.0f;
     private bool isReadyToSpawn = false;
     [SerializeField] private GameObject customerPrefab;

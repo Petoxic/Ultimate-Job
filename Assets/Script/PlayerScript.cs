@@ -36,7 +36,7 @@ public class PlayerScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (canMove && !DataManager.startTalking)
+        if (canMove)
         {
             rb.MovePosition(rb.position + moveSpeed * Time.fixedDeltaTime * movementInput);
         }
@@ -46,7 +46,7 @@ public class PlayerScript : MonoBehaviour
     {
         movementInput = movementValue.Get<Vector2>();
 
-        if (movementInput != Vector2.zero && !DataManager.startTalking)
+        if (movementInput != Vector2.zero)
         {
             animator.SetFloat(AnimatorParameters.X, movementInput.x);
             animator.SetFloat(AnimatorParameters.Y, movementInput.y);

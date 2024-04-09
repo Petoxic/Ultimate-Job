@@ -16,14 +16,6 @@ public class CustomerWalkIn : MonoBehaviour
     {
         int chairIdx = MapData.getChairPos();
         var (x, y) = MapData.chairPosition[chairIdx];
-        if (DataManager.placedObjectsData.Count > 0)
-        {
-            chairIdx = Random.Range(0, DataManager.placedObjectsData.Count);
-            int leftOrRight = Random.Range(1, 3);
-            x = DataManager.placedObjectsData[chairIdx][leftOrRight].x;
-            y = DataManager.placedObjectsData[chairIdx][leftOrRight].y;
-
-        }
         chairPosition = new Vector2((float)x, (float)y);
 
         customerScript = gameObject.GetComponent<CustomerScript>();

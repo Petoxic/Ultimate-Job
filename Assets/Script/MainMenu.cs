@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void StartButton()
     {
-        SceneManager.LoadScene("TutorialScene");
+        SceneManager.LoadScene("NightScene");
     }
 
     public void SettingButton()
