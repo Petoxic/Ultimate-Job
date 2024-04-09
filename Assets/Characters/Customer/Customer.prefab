@@ -1054,7 +1054,8 @@ MonoBehaviour:
   objectName: {fileID: 0}
   talkBubble: {fileID: 463201435453354521}
   orderBubble: {fileID: 727244648953110688}
-  wordSpeed: 0.1
+  talkingImage: {fileID: 2637992141234068183}
+  wordSpeed: 0.0000001
   isTalking: 0
   isFinishDialogue: 0
   isOrderReceived: 0
@@ -1074,7 +1075,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnDelay: 0
-  grid: {fileID: 0}
 --- !u!1 &7477269200878655860
 GameObject:
   m_ObjectHideFlags: 0
