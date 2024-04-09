@@ -1055,7 +1055,7 @@ MonoBehaviour:
   talkBubble: {fileID: 463201435453354521}
   orderBubble: {fileID: 727244648953110688}
   talkingImage: {fileID: 2637992141234068183}
-  wordSpeed: 0.0000001
+  wordSpeed: 0.1
   isTalking: 0
   isFinishDialogue: 0
   isOrderReceived: 0
