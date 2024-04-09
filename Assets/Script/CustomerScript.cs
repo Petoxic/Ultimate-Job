@@ -78,6 +78,7 @@ public class CustomerScript : MonoBehaviour
         else
         {
             dialogueIndex = 0;
+            wordSpeed = 0.1f;
             DataManager.AddSuspectList(gameObject.name);
             ResetText();
         }
@@ -130,6 +131,8 @@ public class CustomerScript : MonoBehaviour
                 {
                     isTalking = true;
                     InteractAction();
+                } else {
+                    wordSpeed = 0.00000001f;
                 }
             }
         }
