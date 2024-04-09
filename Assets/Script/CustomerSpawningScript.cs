@@ -5,7 +5,7 @@ using UnityEngine;
 public class CustomerSpawningScript : MonoBehaviour
 {
     private static List<int> customerCountPerDay = new List<int>{3,3,4};
-    private int customerCount = customerCountPerDay[DataManager.day-1];
+    private int customerCount ;
     private float spawnDelay = 5.0f;
     private bool isReadyToSpawn = false;
     [SerializeField] private GameObject customerPrefab;
@@ -23,6 +23,7 @@ public class CustomerSpawningScript : MonoBehaviour
 
     void Update()
     {
+        customerCount = min(customerCountPerDay[DataManager.day-1],DataManager.placedObjectsData.Count);
         if (isReadyToSpawn && customerCount > 0)
         {
             isReadyToSpawn = false;
@@ -30,5 +31,11 @@ public class CustomerSpawningScript : MonoBehaviour
             StartCoroutine(SpawnDelay());
             customerCount -= 1;
         }
+    }
+
+    //find min
+    public static int min(int a, int b)
+    {
+        return a < b ? a : b;
     }
 }

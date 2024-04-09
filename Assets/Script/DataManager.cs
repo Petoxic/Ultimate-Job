@@ -32,12 +32,12 @@ public class DataManager : MonoBehaviour
         plateServed = 0;
         day = 1;
         caseNumber = 1;
-        todayMoney = 0;
         todayTalked = 0;
         startTalking = false;
         cellSize = 0.16f;
         placedObjectsData = new Dictionary<int, List<Vector2Int>> { };
         AddMoney(100);
+        todayMoney = 0;
     }
     public static string selectedSuspectName = "";
     public static float timeUntilSceneEnds = 45f;
@@ -110,6 +110,7 @@ public class DataManager : MonoBehaviour
         day = 1;
         caseNumber = 1;
         startTalking = false;
+        ResetObjective();
     }
 
     public static void ResetToFirstNightIfLose()
@@ -118,18 +119,18 @@ public class DataManager : MonoBehaviour
         moneyText = "Total money: 0";
         suspectList = new HashSet<string>();
         isObjectiveCompleted = new List<bool> { false, false, false };
-        plateServed = 0;
         day = 1;
         startTalking = false;
+        ResetObjective();
     }
 
     public static void ResetToFirstNightIfWin()
     {
         suspectList = new HashSet<string>();
         isObjectiveCompleted = new List<bool> { false, false, false };
-        plateServed = 0;
         day = 1;
         startTalking = false;
+        ResetObjective();
     }
 
 }
