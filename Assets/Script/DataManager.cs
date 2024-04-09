@@ -28,7 +28,7 @@ public class DataManager : MonoBehaviour
         moneyText = "$ 0";
         appearedCharactors = new HashSet<string>();
         suspectList = new HashSet<string>();
-        isObjectiveCompleted = new List<bool> { true, true, true };
+        isObjectiveCompleted = new List<bool> { false, false, false };
         plateServed = 0;
         day = 1;
         caseNumber = 1;
@@ -79,11 +79,11 @@ public class DataManager : MonoBehaviour
             2. talk with >= 2 people
             3. serve >= 2 people
         */
-        if (totalMoney >= 20)
+        if (todayMoney >= 20)
         {
             isObjectiveCompleted[0] = true;
         }
-        if (suspectList.Count >= 2)
+        if (todayTalked >= 2)
         {
             isObjectiveCompleted[1] = true;
         }

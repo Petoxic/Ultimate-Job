@@ -26,6 +26,7 @@ public class CustomerScript : MonoBehaviour
     public int foodAmount;
     public int dialogueChoice = 0;
     private string[][] dialogueArray = (string[][])CustomerData.customerData[1]["dialogue"];
+    public SpriteRenderer spriteRenderer;
 
     void Start()
     {
@@ -40,6 +41,8 @@ public class CustomerScript : MonoBehaviour
         dialogueArray = (string[][])CustomerData.customerData[queue]["dialogue"];
         dialogue = dialogueArray[dialogueChoice];
         foodAmount = (int)CustomerData.customerData[queue]["foodAmount"];
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = Resources.Load<Sprite>("Custoner/"+ gameObject.name );
     }
 
     public void OrderDelay()

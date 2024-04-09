@@ -18,12 +18,12 @@ public class CustomerSpawningScript : MonoBehaviour
 
     void Start()
     {
+        customerCount = min(customerCountPerDay[DataManager.day-1],DataManager.placedObjectsData.Count*2);
         StartCoroutine(SpawnDelay());
     }
 
     void Update()
     {
-        customerCount = min(customerCountPerDay[DataManager.day-1],DataManager.placedObjectsData.Count);
         if (isReadyToSpawn && customerCount > 0)
         {
             isReadyToSpawn = false;
