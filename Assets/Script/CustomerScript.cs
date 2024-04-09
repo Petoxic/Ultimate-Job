@@ -13,6 +13,7 @@ public class CustomerScript : MonoBehaviour
     public Text objectName;
     [SerializeField] private GameObject talkBubble;
     [SerializeField] private GameObject orderBubble;
+    [SerializeField] private GameObject talkingImage;
     private int dialogueIndex = 0;
     public float wordSpeed = 0.1f;
     public bool isTalking = false;
@@ -34,7 +35,6 @@ public class CustomerScript : MonoBehaviour
         dialogueText = dialoguePanel.transform.Find("Dialog").gameObject.GetComponent<Text>();
         objectName = dialoguePanel.transform.Find("Name").gameObject.GetComponent<Text>();
 
-       
         int queue = CustomerData.getCustomerQueue();
         gameObject.name = (string)CustomerData.customerData[queue]["name"];
         dialogueArray = (string[][])CustomerData.customerData[queue]["dialogue"];
@@ -79,6 +79,7 @@ public class CustomerScript : MonoBehaviour
         {
             dialogueIndex = 0;
             DataManager.AddSuspectList(gameObject.name);
+            talkingImage.SetActive(false);
             ResetText();
         }
     }
@@ -110,6 +111,7 @@ public class CustomerScript : MonoBehaviour
                 orderBubble.SetActive(false);
                 WaitDelay();
                 player.AddOrder(foodId);
+                talkingImage.SetActive(true);
             }
             else if (!isFoodReceived && player.isHoldingFood)
             {
