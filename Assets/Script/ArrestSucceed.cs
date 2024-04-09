@@ -13,7 +13,11 @@ public class ArrestSucceed : MonoBehaviour
     {
         gameOver.SetActive(false);
         gameWin.SetActive(false);
-        stillNotSureButton.SetActive(true);
+        if (DataManager.day == 3 && DataManager.caseNumber == 1){
+            stillNotSureButton.SetActive(false);
+        }else{
+            stillNotSureButton.SetActive(true);
+        }
     }
 
     public void YesClicked()

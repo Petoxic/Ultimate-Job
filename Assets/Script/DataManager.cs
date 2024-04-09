@@ -18,12 +18,14 @@ public class DataManager : MonoBehaviour
     public static bool isGameEnd = false;
     public static bool startTalking;
     public static float cellSize;
+    public static HashSet<string> appearedCharactors;
     public static Dictionary<int, List<Vector3Int>> placedObjectsData;
 
     void Start()
     {
         totalMoney = 0;
         moneyText = "$ 0";
+        appearedCharactors = new HashSet<string>();
         suspectList = new HashSet<string>();
         isObjectiveCompleted = new List<bool> { true, true, true };
         plateServed = 0;

@@ -11,7 +11,7 @@ public class CustomerScript : MonoBehaviour
     public Text dialogueText;
     public string[] dialogue;
     public Text objectName;
-    [SerializeField] private Slider timerSlider;
+    [SerializeField] private GameObject talkBubble;
     [SerializeField] private GameObject orderBubble;
     private int dialogueIndex = 0;
     public float wordSpeed = 0.1f;
@@ -34,6 +34,7 @@ public class CustomerScript : MonoBehaviour
         dialogueText = dialoguePanel.transform.Find("Dialog").gameObject.GetComponent<Text>();
         objectName = dialoguePanel.transform.Find("Name").gameObject.GetComponent<Text>();
 
+       
         int queue = CustomerData.getCustomerQueue();
         gameObject.name = (string)CustomerData.customerData[queue]["name"];
         dialogueArray = (string[][])CustomerData.customerData[queue]["dialogue"];
@@ -49,12 +50,12 @@ public class CustomerScript : MonoBehaviour
 
     private void WaitDelay()
     {
-        timerSlider.gameObject.SetActive(true);
+        talkBubble.gameObject.SetActive(true);
     }
 
     private void EatDelay()
     {
-        timerSlider.gameObject.SetActive(true);
+        talkBubble.gameObject.SetActive(true);
     }
 
     IEnumerator Typing()
@@ -116,7 +117,7 @@ public class CustomerScript : MonoBehaviour
                 {
                     isFoodReceived = true;
                     player.isHoldingFood = false;
-                    timerSlider.gameObject.SetActive(false);
+                    talkBubble.gameObject.SetActive(false);
                     player.ServeOrder(foodId);
                     DataManager.AddMoney(10);
                     DataManager.AddPlateServed();
