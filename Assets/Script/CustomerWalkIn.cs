@@ -12,6 +12,8 @@ public class CustomerWalkIn : MonoBehaviour
     private CustomerScript customerScript;
     [SerializeField] private float spawnDelay;
     private bool isSpawned = false;
+    private Vector3Int gridChairPosition;
+
     void Awake()
     {
         int chairIdx = MapData.getChairPos();
@@ -19,12 +21,12 @@ public class CustomerWalkIn : MonoBehaviour
         if (DataManager.placedObjectsData.Count > 0)
         {
             chairIdx = Random.Range(0, DataManager.placedObjectsData.Count);
-            int leftOrRight = Random.Range(1, 3);
+            int leftOrRight = Random.Range(0, 2);
             x = DataManager.placedObjectsData[chairIdx][leftOrRight].x;
             y = DataManager.placedObjectsData[chairIdx][leftOrRight].y;
-
         }
-        chairPosition = new Vector2((float)x, (float)y);
+
+        gridChairPosition = new Vector3Int((int)x, (int)y, 0);
 
         customerScript = gameObject.GetComponent<CustomerScript>();
         gameObject.transform.position = MapData.outsideMapPosition;
@@ -34,9 +36,10 @@ public class CustomerWalkIn : MonoBehaviour
     void Update()
     {
         if (isSpawned && !isSitting)
-            if (gameObject.transform.position.x != chairPosition.x || gameObject.transform.position.y != chairPosition.y)
+            if (gameObject.transform.position.x != MapData.grid.CellToWorld(gridChairPosition).x
+                || gameObject.transform.position.y != MapData.grid.CellToWorld(gridChairPosition).y)
             {
-                gameObject.transform.position = Vector2.MoveTowards(gameObject.transform.position, chairPosition, speed);
+                gameObject.transform.position = Vector2.MoveTowards(gameObject.transform.position, MapData.grid.CellToWorld(gridChairPosition), speed);
             }
             else
             {

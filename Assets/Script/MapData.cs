@@ -17,9 +17,13 @@ public class MapData : MonoBehaviour
 
     public static int queuePos = 0;
 
+    [SerializeField] public Grid gridInput;
+    public static Grid grid;
+
     void Start()
     {
         queuePos = 0;
+        grid = gridInput;
     }
 
     public static int getChairPos()

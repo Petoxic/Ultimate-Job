@@ -13,10 +13,10 @@ public class GridData
         List<Vector3Int> positionToOccupy = CalculatePositions(gridPosition, objectSize);
         PlacementData placementData = new PlacementData(positionToOccupy, ID, placedObjectIndex);
 
-        Vector3Int leftChairPosition = CalculateChairPositions(gridPosition, 0, -1);
-        Vector3Int rightChairPosition = CalculateChairPositions(gridPosition, objectSize.x - 1, -1);
+        Vector2Int leftChairPosition = CalculateChairPositions(gridPosition, 0, -1);
+        Vector2Int rightChairPosition = CalculateChairPositions(gridPosition, objectSize.x - 1, -1);
 
-        List<Vector3Int> tableWithChairPosition = new List<Vector3Int> { gridPosition, leftChairPosition, rightChairPosition };
+        List<Vector2Int> tableWithChairPosition = new List<Vector2Int> { leftChairPosition, rightChairPosition };
         DataManager.placedObjectsData[placedObjectIndex] = tableWithChairPosition;
 
         foreach (var pos in positionToOccupy)
@@ -68,9 +68,9 @@ public class GridData
         return true;
     }
 
-    public Vector3Int CalculateChairPositions(Vector3Int gridPosition, int xToChair, int yToChair)
+    public Vector2Int CalculateChairPositions(Vector3Int gridPosition, int xToChair, int yToChair)
     {
-        Vector3Int chairPosition = new Vector3Int(gridPosition.x + xToChair, gridPosition.y + yToChair, 0);
+        Vector2Int chairPosition = new Vector2Int((int)(gridPosition.x + xToChair), (int)(gridPosition.y + yToChair));
         return chairPosition;
     }
 }

@@ -888,7 +888,7 @@ GameObject:
   - component: {fileID: 7985770706506706958}
   - component: {fileID: 4608724493181382566}
   - component: {fileID: 2917313472361915848}
-  - component: {fileID: 2573237894102051188}
+  - component: {fileID: 8791594969538238860}
   m_Layer: 0
   m_Name: Customer
   m_TagString: Customer
@@ -1061,7 +1061,7 @@ MonoBehaviour:
   isFoodReceived: 0
   foodAmount: 0
   dialogueChoice: 0
---- !u!114 &2573237894102051188
+--- !u!114 &8791594969538238860
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1074,6 +1074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnDelay: 0
+  grid: {fileID: 0}
 --- !u!1 &7477269200878655860
 GameObject:
   m_ObjectHideFlags: 0
