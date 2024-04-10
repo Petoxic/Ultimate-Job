@@ -43,7 +43,7 @@ public class CustomerData : MonoBehaviour
                 new string[] {
                     "The theft has shaken us all. The necklace was the centerpiece of our exhibit.",
                     "We've implemented strict security protocols, but it seems someone slipped through the cracks."
-                }, 
+                },
             }},
             {"foodAmount", 1},
         }},
@@ -112,11 +112,6 @@ public class CustomerData : MonoBehaviour
     public static List<int> queue = Enumerable.Range(1, customerData.Count).ToList();
     public static int[] customerQueue = ShuffleArray(queue);
     public static int queuePos = 0;
-
-    void Start()
-    {
-        queuePos = 0;
-    }
 
     public static int getCustomerQueue()
     {

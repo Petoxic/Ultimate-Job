@@ -13,20 +13,36 @@ public class CustomerWalkIn : MonoBehaviour
     [SerializeField] private float spawnDelay;
     private bool isSpawned = false;
     private Vector3Int gridChairPosition;
+    private double x, y;
+
+    public static int tableIdx;
+    public static int leftOrRight;
 
     void Awake()
     {
-        int chairIdx = MapData.getChairPos();
-        var (x, y) = MapData.chairPosition[chairIdx];
         if (DataManager.placedObjectsData.Count > 0)
         {
-            chairIdx = Random.Range(0, DataManager.placedObjectsData.Count);
-            int leftOrRight = Random.Range(0, 2);
-            x = DataManager.placedObjectsData[chairIdx][leftOrRight].x;
-            y = DataManager.placedObjectsData[chairIdx][leftOrRight].y;
+            if (tableIdx == DataManager.placedObjectsData.Count)
+            {
+                tableIdx = 0;
+            }
+
+            Debug.Log(DataManager.placedObjectsData.Count + " " + tableIdx + " " + leftOrRight);
+            x = DataManager.placedObjectsData[tableIdx][leftOrRight].x;
+            y = DataManager.placedObjectsData[tableIdx][leftOrRight].y;
+            if (leftOrRight == 1)
+            {
+                leftOrRight--;
+                tableIdx++;
+            }
+            else
+            {
+                leftOrRight++;
+            }
         }
 
         gridChairPosition = new Vector3Int((int)x, (int)y, 0);
+        Debug.Log("Grid Position: " + gridChairPosition);
 
         customerScript = gameObject.GetComponent<CustomerScript>();
         gameObject.transform.position = MapData.outsideMapPosition;

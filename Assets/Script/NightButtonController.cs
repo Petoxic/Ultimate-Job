@@ -9,7 +9,14 @@ public class GoToNextScene : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.LoadScene("DayScene");
+            if (DataManager.placedObjectsData.Count > 0)
+            {
+                SceneManager.LoadScene("DayScene");
+            }
+            else
+            {
+                Debug.Log("You should buy at least 1 table to start!");
+            }
         }
     }
 }

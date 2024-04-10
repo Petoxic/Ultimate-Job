@@ -19,11 +19,24 @@ public class MapData : MonoBehaviour
 
     [SerializeField] public Grid gridInput;
     public static Grid grid;
+    public int selectedObjectIndex;
+
+    [SerializeField] private ShopItemSO[] shopItemsSO;
 
     void Start()
     {
+        selectedObjectIndex = 0;
         queuePos = 0;
         grid = gridInput;
+
+        for (int i = 0; i < DataManager.placedObjectsData.Count; i++)
+        {
+            Vector3Int chairPos = new Vector3Int(DataManager.placedObjectsData[i][2].x,
+                                                DataManager.placedObjectsData[i][2].y,
+                                                0);
+            GameObject newPlacedObject = Instantiate(shopItemsSO[selectedObjectIndex].Prefab);
+            newPlacedObject.transform.position = grid.CellToWorld(chairPos);
+        }
     }
 
     public static int getChairPos()

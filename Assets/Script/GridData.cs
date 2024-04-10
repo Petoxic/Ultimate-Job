@@ -15,8 +15,9 @@ public class GridData
 
         Vector2Int leftChairPosition = CalculateChairPositions(gridPosition, 0, -1);
         Vector2Int rightChairPosition = CalculateChairPositions(gridPosition, objectSize.x - 1, -1);
+        Vector2Int topLeftChairPosition = new Vector2Int(gridPosition.x, gridPosition.y);
 
-        List<Vector2Int> tableWithChairPosition = new List<Vector2Int> { leftChairPosition, rightChairPosition };
+        List<Vector2Int> tableWithChairPosition = new List<Vector2Int> { leftChairPosition, rightChairPosition, topLeftChairPosition };
         DataManager.placedObjectsData[placedObjectIndex] = tableWithChairPosition;
 
         foreach (var pos in positionToOccupy)
@@ -80,9 +81,6 @@ public class PlacementData
     public List<Vector3Int> occupiedPositions;
     public int ID { get; private set; }
     public int PlacedObjectIndex { get; private set; }
-    public Vector3Int gridPosition { get; private set; }
-    public Vector3Int leftChairPosition { get; private set; }
-    public Vector3Int rightChairPosition { get; private set; }
 
     public PlacementData(List<Vector3Int> occupiedPosition, int id, int placedObjectIndex)
     {

@@ -21,7 +21,6 @@ public class DataManager : MonoBehaviour
     public static HashSet<string> appearedCharactors;
     public static Dictionary<int, List<Vector2Int>> placedObjectsData;
 
-
     void Start()
     {
         totalMoney = 0;
@@ -36,7 +35,7 @@ public class DataManager : MonoBehaviour
         startTalking = false;
         cellSize = 0.16f;
         placedObjectsData = new Dictionary<int, List<Vector2Int>> { };
-        AddMoney(100);
+        AddMoney(20);
         todayMoney = 0;
     }
     public static string selectedSuspectName = "";
@@ -97,13 +96,14 @@ public class DataManager : MonoBehaviour
     {
         todayMoney = 0;
         todayTalked = 0;
+        plateServed = 0;
         isObjectiveCompleted = new List<bool> { false, false, false };
     }
 
     public static void ResetData()
     {
-        totalMoney = 0;
-        moneyText = "Total money: 0";
+        totalMoney = 20;
+        moneyText = "$ " + totalMoney;
         suspectList = new HashSet<string>();
         isObjectiveCompleted = new List<bool> { false, false, false };
         plateServed = 0;
@@ -115,8 +115,8 @@ public class DataManager : MonoBehaviour
 
     public static void ResetToFirstNightIfLose()
     {
-        totalMoney = 0;
-        moneyText = "Total money: 0";
+        totalMoney = 20;
+        moneyText = "$ " + totalMoney;
         suspectList = new HashSet<string>();
         isObjectiveCompleted = new List<bool> { false, false, false };
         day = 1;

@@ -20,6 +20,7 @@ public class PlacementSystem : MonoBehaviour
     public static bool isPlacement;
     public static bool placementValidity;
     public static Vector3Int gridSize;
+    public static GameObject newObject;
 
     public event Action OnClicked, OnExit;
     private GridData furnitureData;
@@ -112,14 +113,14 @@ public class PlacementSystem : MonoBehaviour
             return;
         }
 
-        GameObject newObject = Instantiate(shopItemsSO[selectedObjectIndex].Prefab);
+        newObject = Instantiate(shopItemsSO[selectedObjectIndex].Prefab);
         newObject.transform.position = grid.CellToWorld(gridPosition);
         placedGameObjects.Add(newObject);
         GridData selectedData = furnitureData;
         selectedData.AddObjectAt(gridPosition,
                                 shopItemsSO[selectedObjectIndex].size,
                                 shopItemsSO[selectedObjectIndex].ID,
-                                placedGameObjects.Count - 1);
+                                DataManager.placedObjectsData.Count);
         preview.UpdatePosition(grid.CellToWorld(gridPosition), false);
     }
 
