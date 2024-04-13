@@ -6,9 +6,11 @@ public class PlayerInteract : MonoBehaviour
 {
     public Collider2D interactCollider;
     Vector2 interactOffset;
+    private PlayerScript playerScript;
 
     private void Start()
     {
+        playerScript = GetComponentInParent<PlayerScript>();
         interactOffset = transform.position;
     }
 
@@ -55,6 +57,7 @@ public class PlayerInteract : MonoBehaviour
         {
             KitchenScript kitchen = other.GetComponent<KitchenScript>();
             kitchen.OnInteract();
+            playerScript.PlaceOrder();
         }
         else if (other.CompareTag("Food"))
         {

@@ -28,6 +28,8 @@ public class PlayerScript : MonoBehaviour
     Animator animator;
     bool canMove = true;
 
+    [SerializeField] private GameObject orderNote;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -106,7 +108,13 @@ public class PlayerScript : MonoBehaviour
 
     public void AddOrder(int foodId)
     {
+        orderNote.SetActive(true);
         orderList.Add(foodId);
+    }
+
+    public void PlaceOrder()
+    {
+        orderNote.SetActive(false);
     }
 
     public void ServeOrder(int foodId)
