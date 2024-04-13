@@ -6,16 +6,15 @@ using UnityEngine.UI;
 public class CustomerTimerScript : MonoBehaviour
 {
     [SerializeField] private GameObject customer;
-    [SerializeField] private Slider timerSlider;
-    [SerializeField] private float countdownTime = 20f;
     private CustomerScript customerScript;
-
+    [SerializeField] private Slider timerSlider;
+    [SerializeField] private Image iconImage;
     void OnEnable()
     {
-        timerSlider.maxValue = countdownTime;
-        timerSlider.value = countdownTime;
-
         customerScript = customer.GetComponent<CustomerScript>();
+
+        timerSlider.maxValue = customerScript.waitingForFoodTime;
+        timerSlider.value = customerScript.waitingForFoodTime;
     }
 
     void Update()
@@ -33,7 +32,7 @@ public class CustomerTimerScript : MonoBehaviour
                 {
                     customerScript.foodAmount -= 1;
                     customerScript.dialogueChoice += 1;
-                    customerScript.updateDialogueChoice();
+                    customerScript.UpdateDialogueChoice();
                     customerScript.OrderDelay();
                     gameObject.SetActive(false);
                     customerScript.isOrderReceived = false;
@@ -41,5 +40,10 @@ public class CustomerTimerScript : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void SetIconImage(Sprite sprite)
+    {
+        iconImage.sprite = sprite;
     }
 }

@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class CustomerScript : MonoBehaviour
 {
+    public readonly float waitingToOrderTime = 20f;
+    public readonly float waitingForFoodTime = 20f;
     public GameObject dialoguePanel;
     public Text dialogueText;
     public string[] dialogue;
@@ -14,6 +16,7 @@ public class CustomerScript : MonoBehaviour
     [SerializeField] private GameObject talkBubble;
     [SerializeField] private GameObject orderBubble;
     [SerializeField] private GameObject talkingImage;
+    [SerializeField] private CustomerTimerScript customerTimerScript;
     private int dialogueIndex = 0;
     public float wordSpeed = 0.1f;
     public bool isTalking = false;
@@ -22,8 +25,10 @@ public class CustomerScript : MonoBehaviour
     private bool isInteractable = false;
     public bool isFoodReceived = false;
     private PlayerScript player;
+    private Sprite[] foodSprites;
     private int foodId;
     public int foodAmount;
+    private Sprite eatingSprite;
     public int dialogueChoice = 0;
     private string[][] dialogueArray = (string[][])CustomerData.customerData[1]["dialogue"];
     public SpriteRenderer spriteRenderer;
@@ -42,7 +47,14 @@ public class CustomerScript : MonoBehaviour
         dialogue = dialogueArray[dialogueChoice];
         foodAmount = (int)CustomerData.customerData[queue]["foodAmount"];
         spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = Resources.Load<Sprite>("Custoner/"+ gameObject.name );
+        spriteRenderer.sprite = Resources.Load<Sprite>("Custoner/" + gameObject.name);
+
+        customerTimerScript = GetComponentInChildren<CustomerTimerScript>(true);
+
+        foodSprites = Resources.LoadAll<Sprite>("food-OCAL");
+        foodId = UnityEngine.Random.Range(40, 57);
+
+        eatingSprite = Resources.Load<Sprite>("eating-icon");
     }
 
     public void OrderDelay()
@@ -53,12 +65,15 @@ public class CustomerScript : MonoBehaviour
 
     private void WaitDelay()
     {
-        talkBubble.gameObject.SetActive(true);
+        talkBubble.SetActive(true);
+        customerTimerScript.SetIconImage(foodSprites[foodId]);
     }
 
     private void EatDelay()
     {
-        talkBubble.gameObject.SetActive(true);
+        talkBubble.SetActive(true);
+        // change icon to eating
+        customerTimerScript.SetIconImage(eatingSprite);
     }
 
     IEnumerator Typing()
@@ -123,7 +138,7 @@ public class CustomerScript : MonoBehaviour
                 {
                     isFoodReceived = true;
                     player.isHoldingFood = false;
-                    talkBubble.gameObject.SetActive(false);
+                    talkBubble.SetActive(false);
                     player.ServeOrder(foodId);
                     DataManager.AddMoney(10);
                     DataManager.AddPlateServed();
@@ -136,7 +151,9 @@ public class CustomerScript : MonoBehaviour
                 {
                     isTalking = true;
                     InteractAction();
-                } else {
+                }
+                else
+                {
                     wordSpeed = 0.00000001f;
                 }
             }
@@ -157,13 +174,11 @@ public class CustomerScript : MonoBehaviour
             StartCoroutine(Typing());
         }
     }
-
-    public void setFoodId(int id)
+    public Sprite GetFoodSprite()
     {
-        foodId = id;
+        return foodSprites[foodId];
     }
-
-    public void updateDialogueChoice()
+    public void UpdateDialogueChoice()
     {
         dialogue = dialogueArray[dialogueChoice];
     }

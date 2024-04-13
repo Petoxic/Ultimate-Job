@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class CustomerSpawningScript : MonoBehaviour
 {
-    private static List<int> customerCountPerDay = new List<int>{3,3,4};
-    private int customerCount ;
-    private float spawnDelay = 5.0f;
+    private static readonly List<int> customerCountPerDay = new() { 3, 3, 4 };
+    private int customerCount;
+    private readonly float spawnDelay = 5.0f;
     private bool isReadyToSpawn = false;
     [SerializeField] private GameObject customerPrefab;
 
@@ -18,7 +18,7 @@ public class CustomerSpawningScript : MonoBehaviour
 
     void Start()
     {
-        customerCount = min(customerCountPerDay[DataManager.day-1],DataManager.placedObjectsData.Count*2);
+        customerCount = min(customerCountPerDay[DataManager.day - 1], DataManager.placedObjectsData.Count * 2);
         StartCoroutine(SpawnDelay());
     }
 
