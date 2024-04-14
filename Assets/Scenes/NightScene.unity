@@ -1091,7 +1091,7 @@ PrefabInstance:
     - target: {fileID: 4947382462734264777, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e3e06ccf4c1541a40bd6ed3031ca8332, type: 3}
+      objectReference: {fileID: 21300000, guid: 829b820192274854889cdecb27169f9f, type: 3}
     - target: {fileID: 8740952141092403351, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0.000012398
@@ -3214,6 +3214,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a397f1e0b0f47e444bb2f384498b596b, type: 2}
   - {fileID: 11400000, guid: 8dc935b714443684ea8cee4a83e2c233, type: 2}
   - {fileID: 11400000, guid: f7b6d940fe0a4e54bb37e4765dddc655, type: 2}
+  - {fileID: 11400000, guid: 613ba5c3d42b2ac4aae04c9aaf4480fa, type: 2}
   preview: {fileID: 270409161}
   selectedObjectIndex: -1
 --- !u!1 &782586458
@@ -4707,7 +4708,7 @@ PrefabInstance:
     - target: {fileID: 4947382462734264777, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: b58d400054d503d42b6f41ff2af45a84, type: 3}
+      objectReference: {fileID: 21300000, guid: 660999ea18eae6a41bc44d5eb2c8cee9, type: 3}
     - target: {fileID: 8740952141092403351, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0.000012398
@@ -6109,6 +6110,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 25.000015
       objectReference: {fileID: 0}
+    - target: {fileID: 4947382462734264777, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 149d9cfa1ac84f3498a7b0bf36399bdd, type: 3}
     - target: {fileID: 8740952141092403351, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0.000012398
@@ -7424,6 +7429,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 25.000015
       objectReference: {fileID: 0}
+    - target: {fileID: 4947382462734264777, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9e41b12d15cc55d4bb1f0c80c231138d, type: 3}
     - target: {fileID: 8740952141092403351, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0.000012398
@@ -12540,6 +12549,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a397f1e0b0f47e444bb2f384498b596b, type: 2}
   - {fileID: 11400000, guid: 8dc935b714443684ea8cee4a83e2c233, type: 2}
   - {fileID: 11400000, guid: f7b6d940fe0a4e54bb37e4765dddc655, type: 2}
+  - {fileID: 11400000, guid: b860685f9e1293d40892b3ee0c1e3243, type: 2}
+  - {fileID: 11400000, guid: 613ba5c3d42b2ac4aae04c9aaf4480fa, type: 2}
   shopPanelsGO:
   - {fileID: 1676790050}
   - {fileID: 1362868340}
@@ -14253,7 +14264,7 @@ PrefabInstance:
     - target: {fileID: 4947382462734264777, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: bd4c55976b6142a47854d3005f234b52, type: 3}
+      objectReference: {fileID: 21300000, guid: 4355340380266a847ab8840e9a17cf69, type: 3}
     - target: {fileID: 8740952141092403351, guid: 202dff78527816e4aa56545ca130fecb, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0.000012398

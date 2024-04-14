@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1dc508abff11414b9251ee92a1833b0, type: 3}
-  m_Name: TestTable3
+  m_Name: OakTable
   m_EditorClassIdentifier: 
-  ID: 2
-  title: TestTable3
-  description: For teestispgk;dfjb;ksxfgdjmn;/'klfgsj/nk;jfgs/kln;mfg/l;n
-  basePrice: 5
-  size: {x: 5, y: 3}
-  Prefab: {fileID: 5658147079943838245, guid: d81cda2746c188f41a5fb15352b3e693, type: 3}
+  ID: 0
+  title: OakTable
+  description: Modern oak table. Good for the fresh start-up
+  basePrice: 3
+  size: {x: 5, y: 2}
+  Prefab: {fileID: -8166878007169690821, guid: 365d8dc581b7a0942bfa188a995d0233, type: 3}

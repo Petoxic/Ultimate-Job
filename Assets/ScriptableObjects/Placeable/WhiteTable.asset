@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1dc508abff11414b9251ee92a1833b0, type: 3}
-  m_Name: TestTable 2
+  m_Name: WhiteTable
   m_EditorClassIdentifier: 
   ID: 1
-  title: TestTable2
-  description: For testing
+  title: White Table
+  description: Minimal minijai
   basePrice: 5
-  size: {x: 2, y: 2}
-  Prefab: {fileID: -8166878007169690821, guid: 365d8dc581b7a0942bfa188a995d0233, type: 3}
+  size: {x: 6, y: 2}
+  Prefab: {fileID: 2097981387743012609, guid: 65a86c7222c5c2449a7e8d845886d2da, type: 3}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="8" height="4" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" source="dark-wood.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="8" height="4">
+  <data encoding="csv">
+0,0,463,464,465,466,0,0,
+479,480,495,496,497,498,479,480,
+511,512,527,528,529,530,511,512,
+0,0,559,560,561,562,0,0
+</data>
+ </layer>
+</map>
