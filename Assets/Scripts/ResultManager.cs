@@ -26,7 +26,7 @@ public class ResultManager : MonoBehaviour
             }else{
                 foundCriminalButton.transform.GetChild(0).GetComponent<UnityEngine.UI.Text>().text = "I found CRIMINAL";
             }
-            header.text = "Done!";
+            header.text = "Objective Completed!";
             
             notSureButton.transform.GetChild(0).GetComponent<UnityEngine.UI.Text>().text = "Not sure";
 
@@ -44,7 +44,7 @@ public class ResultManager : MonoBehaviour
         }
         else
         {
-            header.text = "Game Over!";
+            header.text = "Objective Failed!";
             foundCriminalButton.transform.GetChild(0).GetComponent<UnityEngine.UI.Text>().text = "Restart";
             notSureButton.transform.GetChild(0).GetComponent<UnityEngine.UI.Text>().text = "Back to main menu";
 
