@@ -7,6 +7,9 @@ public class CustomerWalkIn : MonoBehaviour
 {
     private readonly float speed = 0.02f;
     private Vector2 chairPosition;
+    private Vector3 topLeftPosition;
+    private Vector3 gridCellSize;
+    private Vector2 centerPosition;
     // Customer starts walking to chair from out of the map
     private bool isSitting = false;
     private CustomerScript customerScript;
@@ -52,10 +55,14 @@ public class CustomerWalkIn : MonoBehaviour
     void Update()
     {
         if (isSpawned && !isSitting)
-            if (gameObject.transform.position.x != MapData.grid.CellToWorld(gridChairPosition).x
-                || gameObject.transform.position.y != MapData.grid.CellToWorld(gridChairPosition).y)
+        {
+            topLeftPosition = MapData.grid.CellToWorld(gridChairPosition);
+            gridCellSize = MapData.grid.cellSize;
+            if (gameObject.transform.position.x != topLeftPosition.x
+                || gameObject.transform.position.y != topLeftPosition.y)
             {
-                gameObject.transform.position = Vector2.MoveTowards(gameObject.transform.position, MapData.grid.CellToWorld(gridChairPosition), speed);
+                centerPosition = new Vector2(topLeftPosition.x + gridCellSize.x / 2, topLeftPosition.y);
+                gameObject.transform.position = Vector2.MoveTowards(gameObject.transform.position, centerPosition, speed);
             }
             else
             {
@@ -63,6 +70,7 @@ public class CustomerWalkIn : MonoBehaviour
                 customerScript.OrderDelay();
                 isSitting = true;
             }
+        }
     }
     private IEnumerator SpawnDelay()
     {

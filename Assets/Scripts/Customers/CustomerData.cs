@@ -113,9 +113,16 @@ public class CustomerData : MonoBehaviour
     public static int[] customerQueue = ShuffleArray(queue);
     public static int queuePos = 0;
 
+    void Start()
+    {
+        if (DataManager.day == 1)
+        {
+            queuePos = 0;
+        }
+    }
+
     public static int getCustomerQueue()
     {
-
         return customerQueue[queuePos++];
     }
 

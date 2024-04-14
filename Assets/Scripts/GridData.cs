@@ -59,7 +59,8 @@ public class GridData
         }
 
         // Check if object will occupied by another object
-        List<Vector3Int> positionToOccupy = CalculatePositions(gridPosition, objectSize);
+        Vector2Int objectSizeRestrict = new Vector2Int(objectSize.x + 1, objectSize.y + 1);
+        List<Vector3Int> positionToOccupy = CalculatePositions(gridPosition, objectSizeRestrict);
         foreach (var pos in positionToOccupy)
         {
             if (placedObjects.ContainsKey(pos))
