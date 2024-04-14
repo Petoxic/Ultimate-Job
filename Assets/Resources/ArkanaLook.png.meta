@@ -1,0 +1,2072 @@
+fileFormatVersion: 2
+guid: 5e52b1124492f4eb588a4736cc1da9ab
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ArkanaLook_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 465
+        width: 71
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba3df5b31717467dbb7fe72522f73b6
+      internalID: -390350954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 455
+        width: 118
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d92d80ac5234c2ba961ddef56850be
+      internalID: 1569329332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 455
+        width: 118
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7171cd209420b493d81be0453767f567
+      internalID: -1269106568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 73
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 078dd52f65a8742faab1b2ea8b59c909
+      internalID: 639641484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_4
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 435
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 688087a6ed406497c8e3e3f9dd94619d
+      internalID: -1846238607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_5
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 435
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb70e86f383b446c869a364537760cd
+      internalID: -1544425081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_6
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 433
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27bb2736a866c4a469ced70ec3577484
+      internalID: -912532766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_7
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 435
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b5482df27261454f914aba461ed1d58
+      internalID: 1142126427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_8
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 435
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df0dc8618f8942a9abe28b700094197
+      internalID: 521962063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 369
+        width: 71
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1de869da036a41cab058a6a058e2ea3
+      internalID: -933421223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_10
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 301
+        width: 131
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b4200a23b174d2f8c46030fe410f30
+      internalID: -259921099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_11
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 301
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09da07166b57f4966a1186f77bbe9d44
+      internalID: 2024391647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 321
+        width: 71
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1691b75ba2772452aaa7138326583275
+      internalID: -931453153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_13
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 288
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f87c85baeea4b6b8df461c0c70a33b
+      internalID: -1144240209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_14
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 283
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd8fc7fa6f404b9a8c76232a93873e8
+      internalID: 941479717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 254
+        width: 42
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1fc76fa04b1446c2b5fcc8e0d08d055
+      internalID: -805613253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_16
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 279
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9214661a1e2547e2a6a98d476a5e934
+      internalID: -733131514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_17
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 254
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6213689b007a343dbadf4b93aa6a8f83
+      internalID: -1308387405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_18
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 274
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d16b881217b93455288250592b36b934
+      internalID: 1661664464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_19
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 274
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39f8902c6f53427893f7768b46b3bc3
+      internalID: -788146605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_20
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 274
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d4012ad735e4f2a8280287ea0bbb54
+      internalID: 1412779592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_21
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 274
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e5466263dcb4b3e9d2ab685fad3ea4
+      internalID: 1648630617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_22
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 274
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ecb6d22261844857ae328f2e74eeb08
+      internalID: 1178944577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_23
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 274
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c42457cca5e7465cbf3cef44dbe4833
+      internalID: 161521539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_24
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 270
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946587ec12c4a45b08684791080406df
+      internalID: -119223244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_25
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 263
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd8e840f15414dcb87983d1bf2b2cf7
+      internalID: 397082150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_26
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 263
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ab5aeea279c451cb8a55045efe431a
+      internalID: 862153766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_27
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 263
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79033953670a417b82d527ee3aeb696
+      internalID: 463007515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_28
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 264
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e019e602fb94c59b4c205d198dd47d
+      internalID: 453857307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_29
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 264
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a4f89237a0d4092b9d2a2d83a20f45
+      internalID: 1739055248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_30
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 264
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a72d882511c4fe3a40d75702235c23
+      internalID: -1053061306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_31
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 261
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206f6b276114e45cd97d1d61429793a4
+      internalID: 66042793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_32
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 236
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad16c3de03ad4e46b6c94f8ba4d0628
+      internalID: 1447955188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_33
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 231
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25403fba98d24b4f9eb6de35fa76b04
+      internalID: -1550597486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_34
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 235
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ee956aaf2254067b2e06b548c2d765
+      internalID: -1675723238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_35
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 142
+        width: 52
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0fbd5360d54a418a80ed13f721e7ac6
+      internalID: -2068083961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_36
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 212
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c2b3a15be1f741e59ecd7df1322cc1e
+      internalID: 999852921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_37
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 207
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b4b8b91f04e4bbaa9f577a1b68c975
+      internalID: 1597096793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_38
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 211
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bff7a8b18953464484d4fb127d19383
+      internalID: -393839364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_39
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 188
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6b1093c6a994c2da3a6897a738be98
+      internalID: -472945739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_40
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 182
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7bd9b41b59784bafaa7772fe3de5b36
+      internalID: -485912820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_41
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 185
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0460c357bab4448fbb6a5983ccae81dc
+      internalID: 284248584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_42
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 164
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15f95bf966ee47aba22b49af5d219f3
+      internalID: -1712523698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_43
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 159
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6a68369fd9a4943b07d77aff84b321
+      internalID: 916849986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_44
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 163
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8419edd704042c5b503ee1c7ea5dab
+      internalID: 1554884388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_45
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 163
+        width: 112
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f5f536ad2bf40a1bc276274e498571
+      internalID: -1808710023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_46
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 157
+        width: 124
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b27ed4d01b804305b5195ee7115619b
+      internalID: 674186222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 148
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5177ce7e6986b473aaae385cb5e9a063
+      internalID: 379687014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_48
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 143
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b427720f2eb47c88b27b5059b089d7
+      internalID: -1932793097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_49
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 143
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ce069ed9bb444d7bfed31e5eee74d9
+      internalID: -1018439353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_50
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 144
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0507083b7edf4e18855578547c4f400
+      internalID: -1111591580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_51
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be71cf000efea41a080ef457f7098de0
+      internalID: -1103959912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_52
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 138
+        width: 112
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6788803655d864fe38f93b42700b29c3
+      internalID: -2127057477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_53
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 132
+        width: 124
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4e192c3711d4be3b70a85cf9669cce
+      internalID: 1927906532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 137
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5acc42c5fac8c412fb03a095c7e82d65
+      internalID: 1353786953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_55
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 127
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab55d3bbdf9704971973da8b39e08f6c
+      internalID: -639842375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_56
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 127
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e09d532d6ebc497cb1afdc82ac6b1de
+      internalID: 884987566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_57
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 129
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88f12af72a844cc0977586f33a5dd4c
+      internalID: 1188270810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_58
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 129
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6e229da1df64e27a948ad5d1a5bb9f
+      internalID: 513239747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_59
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 129
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79967a4acd2e14bcab791981863d298d
+      internalID: -1700256235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 126
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d48b3b3ec3f94328b1a7c2d94a3e3ce
+      internalID: -14304249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_61
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 114
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cddcb76b3189c4d82a24874ed0cabb95
+      internalID: -1182109872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_62
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 114
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d0db6bddcb754101b84cf3bc97cad12
+      internalID: -1393544359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_63
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 114
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f8020ec5b174957b0d21fdd778db06
+      internalID: 951156533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_64
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 109
+        width: 261
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b747b70ae48741afa72fbcdbd7223b6
+      internalID: 746764069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 105
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4fc6ad5535d46039d80a278f0acbce
+      internalID: -360059520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_66
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 95
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4a4fc1dc21a4adda33ce50a5e926fd
+      internalID: 744126403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_67
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 111
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533f3e08204c94be0a121447823850aa
+      internalID: 186762211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_68
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 95
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5d684888c6649e0a6e2db4de526db2
+      internalID: 1707620157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_69
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 111
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d0d50f8e22c46718ddff4afc909d13
+      internalID: -1041245562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_70
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 99
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 311bdf52d0f5d4e9d971b18c91c9f60b
+      internalID: -1815070598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_71
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 99
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24ce72136f784d4d8a986adc8225fe3
+      internalID: 1222634752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_72
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 99
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b412164b85e45e9993cb04343f624c
+      internalID: -610630060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_73
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 66
+        width: 281
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f090c0f8c54ce4ac8b987dae10d99ed5
+      internalID: -1663583442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_74
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 60
+        width: 43
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f03fa15e8ab430488cafd6baa229c9
+      internalID: 1119742386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_75
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 59
+        width: 43
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b435035918044d939de3b622179f630
+      internalID: 1792345562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_76
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 60
+        width: 43
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5073d940ddefd4bf88280ac620704f40
+      internalID: 1636763030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_77
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 59
+        width: 43
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32f02192b1a4f4ae2a3da7aca670da44
+      internalID: -926477092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_78
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 43
+        width: 261
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff595fa9aee0441480bb3cf6e3bcf6a
+      internalID: 1570270310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_79
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 23
+        width: 43
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97044840593648c1bb3e1ec6a5ff91e
+      internalID: -1232423873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_80
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 23
+        width: 43
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0d26350c6764c6b9dbbbf18bbb620b
+      internalID: 1952663042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_81
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 50
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e299249cc1e41ee83b5c8a8536f04b
+      internalID: 846191322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_82
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 50
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3653552e699f4419289770cd3e499482
+      internalID: 265524528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_83
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dab9c6a084494ab48e66b2d4eeb9f7a
+      internalID: -1000177219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_84
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 0
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f885b5117ceaa41d8915d89b7324d842
+      internalID: 1332169867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_85
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96503ce8ccc59466cba26aa905fff099
+      internalID: -188649995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_86
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb4bb272b87f44bdb7055e1b43a269a
+      internalID: -464179356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_87
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 0
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6147b75aec3f4608a4dc60e4084a0d6
+      internalID: 1904723303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ArkanaLook_88
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 0
+        width: 281
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c6f73d20b844be0af86c936cfec16c
+      internalID: 33141427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ArkanaLook_0: -390350954
+      ArkanaLook_1: 1569329332
+      ArkanaLook_10: -259921099
+      ArkanaLook_11: 2024391647
+      ArkanaLook_12: -931453153
+      ArkanaLook_13: -1144240209
+      ArkanaLook_14: 941479717
+      ArkanaLook_15: -805613253
+      ArkanaLook_16: -733131514
+      ArkanaLook_17: -1308387405
+      ArkanaLook_18: 1661664464
+      ArkanaLook_19: -788146605
+      ArkanaLook_2: -1269106568
+      ArkanaLook_20: 1412779592
+      ArkanaLook_21: 1648630617
+      ArkanaLook_22: 1178944577
+      ArkanaLook_23: 161521539
+      ArkanaLook_24: -119223244
+      ArkanaLook_25: 397082150
+      ArkanaLook_26: 862153766
+      ArkanaLook_27: 463007515
+      ArkanaLook_28: 453857307
+      ArkanaLook_29: 1739055248
+      ArkanaLook_3: 639641484
+      ArkanaLook_30: -1053061306
+      ArkanaLook_31: 66042793
+      ArkanaLook_32: 1447955188
+      ArkanaLook_33: -1550597486
+      ArkanaLook_34: -1675723238
+      ArkanaLook_35: -2068083961
+      ArkanaLook_36: 999852921
+      ArkanaLook_37: 1597096793
+      ArkanaLook_38: -393839364
+      ArkanaLook_39: -472945739
+      ArkanaLook_4: -1846238607
+      ArkanaLook_40: -485912820
+      ArkanaLook_41: 284248584
+      ArkanaLook_42: -1712523698
+      ArkanaLook_43: 916849986
+      ArkanaLook_44: 1554884388
+      ArkanaLook_45: -1808710023
+      ArkanaLook_46: 674186222
+      ArkanaLook_47: 379687014
+      ArkanaLook_48: -1932793097
+      ArkanaLook_49: -1018439353
+      ArkanaLook_5: -1544425081
+      ArkanaLook_50: -1111591580
+      ArkanaLook_51: -1103959912
+      ArkanaLook_52: -2127057477
+      ArkanaLook_53: 1927906532
+      ArkanaLook_54: 1353786953
+      ArkanaLook_55: -639842375
+      ArkanaLook_56: 884987566
+      ArkanaLook_57: 1188270810
+      ArkanaLook_58: 513239747
+      ArkanaLook_59: -1700256235
+      ArkanaLook_6: -912532766
+      ArkanaLook_60: -14304249
+      ArkanaLook_61: -1182109872
+      ArkanaLook_62: -1393544359
+      ArkanaLook_63: 951156533
+      ArkanaLook_64: 746764069
+      ArkanaLook_65: -360059520
+      ArkanaLook_66: 744126403
+      ArkanaLook_67: 186762211
+      ArkanaLook_68: 1707620157
+      ArkanaLook_69: -1041245562
+      ArkanaLook_7: 1142126427
+      ArkanaLook_70: -1815070598
+      ArkanaLook_71: 1222634752
+      ArkanaLook_72: -610630060
+      ArkanaLook_73: -1663583442
+      ArkanaLook_74: 1119742386
+      ArkanaLook_75: 1792345562
+      ArkanaLook_76: 1636763030
+      ArkanaLook_77: -926477092
+      ArkanaLook_78: 1570270310
+      ArkanaLook_79: -1232423873
+      ArkanaLook_8: 521962063
+      ArkanaLook_80: 1952663042
+      ArkanaLook_81: 846191322
+      ArkanaLook_82: 265524528
+      ArkanaLook_83: -1000177219
+      ArkanaLook_84: 1332169867
+      ArkanaLook_85: -188649995
+      ArkanaLook_86: -464179356
+      ArkanaLook_87: 1904723303
+      ArkanaLook_88: 33141427
+      ArkanaLook_9: -933421223
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

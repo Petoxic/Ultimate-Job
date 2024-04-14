@@ -1,0 +1,2072 @@
+fileFormatVersion: 2
+guid: 42eaa45f006634332a4d8ff46f77fff6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: white-wood_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 813
+        width: 128
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbfc4cca29dc44f2293e93443ccf527e
+      internalID: -1490847289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 928
+        width: 416
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b5f9bd8da0b440ab77f00a97ea3d8b
+      internalID: 1960719797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_2
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 870
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5aa7fcb36527485ab21980f77956e43
+      internalID: 842528821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 800
+        width: 192
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5efa959e4ad4ab7b519edb7014d01b
+      internalID: 187781392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_4
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 912
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626fa4b9097104cdf8e355dcda60c98b
+      internalID: -1055348744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_5
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 920
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd3dcac55bc44fa59f1c72887fd633e
+      internalID: -604663248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_6
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 903
+        width: 28
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 892b0bd08ba044c999be4b2ddd8300c1
+      internalID: 1927257496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_7
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 903
+        width: 28
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf317ce7a7024452b91ee80460e11a8
+      internalID: -1923097233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_8
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 904
+        width: 28
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3619779105e84a84a353c2c877d7633
+      internalID: 1510237460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_9
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 903
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f46b387a93de48528452d4d6c9a0aab
+      internalID: -1350987566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_10
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 903
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 671cd019596cb4107814ea24a2687c24
+      internalID: -730211742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_11
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 608
+        width: 118
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2126f1266e42a4fe69de4702b8e0f2bf
+      internalID: -1511487735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_12
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 800
+        width: 242
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07f9b918093e4d1c9f37d6ba031ea28
+      internalID: 2117116177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 748
+        width: 96
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d12b1f09f7547fdaeb39e3ee04b61c
+      internalID: 1984615314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_14
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 740
+        width: 24
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7933c8cb7cb4d42ca94760288d2ac7d0
+      internalID: -1292623882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_15
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 743
+        width: 63
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e5c83fdf3ad41ec980b2da64104f2e
+      internalID: 821683372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_16
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 742
+        width: 18
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb15a8a97203c431b81f709b6830c398
+      internalID: 120137170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_17
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 772
+        width: 69
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e036ee48c3fdd41348171bd40e24e354
+      internalID: 566913326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_18
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 743
+        width: 32
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dcf160ca918a4459b8b2f3a4223542d
+      internalID: 1238593475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_19
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 772
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e63a4cf5942f4e17ba3daae54c64185
+      internalID: 1353494219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_20
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 769
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ec82a238997466cb4603efcef9d670
+      internalID: 853813749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_21
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 740
+        width: 49
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78aa20e4fdf5454e8b452e9c365d445
+      internalID: 1184136743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_22
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 741
+        width: 80
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ffe751695334988b05181fbbc72874
+      internalID: 757107778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_23
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 740
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ddf8ea3928dd4c64a6e3796fd4a9402
+      internalID: 898092818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_24
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 737
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efded2f651dbe4de7af2ce81b9716c9e
+      internalID: 947193387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 192
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ad2e3fd180e4fb1b33373426672f33
+      internalID: -1042860668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_26
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 608
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f4e5b6cc7994bf7ba13352471580ed
+      internalID: -832332284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 608
+        width: 192
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e41aaf29472403fa19ef5e25a597a4
+      internalID: 1320244493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 128
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c284cb6ffb4254e579de4083ac37801f
+      internalID: 2016404794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_29
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 480
+        width: 384
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f3c0927e55343b894dea468d463c0d
+      internalID: 427521357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_30
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 544
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ef195ead7264249bf92b8b6954f6fd
+      internalID: 2045149697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_31
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 544
+        width: 48
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc048228f6ec3464da1883f027a06a9b
+      internalID: 1721661807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 522
+        width: 64
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b978857f1a8947e985bcb6b182ad1b7
+      internalID: -1791875330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_33
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 522
+        width: 48
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4c979e63c824d10998f9709a939b54
+      internalID: -112676405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_34
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 353
+        width: 26
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43909b2d44824c60bf9dfa94ef1241a
+      internalID: -434735376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_35
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 416
+        width: 24
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9c8313290d24a89ab2bc07d4f5f102
+      internalID: -1322609596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_36
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 416
+        width: 6
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f4b7d5645e04b5ebd02d392b891623
+      internalID: 1055113408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_37
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 385
+        width: 24
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d629ce362be9e4fb0a6cd8e369a79940
+      internalID: -807578171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 416
+        width: 24
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8125f9e728ac54748b50ba935af4eef7
+      internalID: 85394151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_39
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 416
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9394f724c4b4ec2ab8c4f9d391c50f
+      internalID: 579446719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_40
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 416
+        width: 6
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da87a3935ff6145fbbc4fe2413c327ff
+      internalID: 1075070842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_41
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 416
+        width: 6
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11fd859c5826443a0a050153b488f9b8
+      internalID: -1487217357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_42
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 416
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8977909c9bd874d52a38c5c62b64a0be
+      internalID: -671684271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_43
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 416
+        width: 23
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd8e1ccede064f58bf92675108d5c26
+      internalID: 301873447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_44
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 416
+        width: 5
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d8e23d08aea40c8bfaf7f70fa151e3
+      internalID: -1952134007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_45
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 416
+        width: 5
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bed8880a5251d479d9f8d832b103a9e8
+      internalID: -541402040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_46
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 416
+        width: 23
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d591643d070483f8645e2bfb8fee1c
+      internalID: 1895926321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_47
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 449
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96fac934295b442d09e2f954a2ffa6b6
+      internalID: -1387890523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_48
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 449
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c624d674d6f4410f99a2da677544537
+      internalID: 2123792576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_49
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 416
+        width: 25
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5352169967d8a45efbbd4917bba9b95d
+      internalID: -2110252049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_50
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 417
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68157012eb04405399134e22343fd99
+      internalID: -1720403136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_51
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 417
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7b03680471c4e8bbfb6305ecbe142c
+      internalID: -862325156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 256
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a75d8b392e7f4ef0a717e4303a69394
+      internalID: 1593134799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_53
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 96
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1a87ea804bb4de3aba74593d37a918
+      internalID: -610532972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_54
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 320
+        width: 108
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19893dc7953c4ca2a42970e7114c7bf
+      internalID: -1779485084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_55
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 288
+        width: 87
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cd52d30163f49ac9143944dcdf1dbf
+      internalID: 182159113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_56
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 384
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a31873dfe784bb9946db03de34432d
+      internalID: -1439723037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_57
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 384
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec9631c42a984ec599241638bfd062e
+      internalID: 1506859668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_58
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 353
+        width: 24
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb54fa0f36244cc0adbe89c13cdef25
+      internalID: -78639818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_59
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 352
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74ca0db67fda4a699541331aa645f26
+      internalID: -1396183982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_60
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 352
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e12110e58f8c430c932f8fd305dd4c8
+      internalID: -1058311737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_61
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 288
+        width: 26
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57950b767d8514a03ae796593a5f2c1d
+      internalID: 1594952522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_62
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 288
+        width: 25
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2825473532f14faf95beba545a967d4
+      internalID: -551693251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_63
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 321
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b899e8223093b42718fa90b4c3eb5cb6
+      internalID: 988396101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_64
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 321
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff5b7398b80c47d39c9845f0ccb8d6d
+      internalID: -791694162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_65
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 288
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5cc6b0362be405193d43cbb4e08ab8
+      internalID: -602055582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_66
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 289
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d280f2910d26e4de187d78307ddff958
+      internalID: 750826147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_67
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 289
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb39b866b022648568a7781f67203081
+      internalID: 1057595568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_68
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 192
+        width: 92
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c73d74f38cd4dddb0b597b3e4fad4a
+      internalID: -1957500041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_69
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 192
+        width: 92
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d41b534ec3cd146c9a88f5d29d0eb89d
+      internalID: -630488639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_70
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 205
+        width: 18
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c59840f8eb34d0abee3f9359d7c677
+      internalID: 1379236085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_71
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 247
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c4f159b927641c79ded807f3cfc8d5
+      internalID: 459542532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_72
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 205
+        width: 18
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d3d6daf3c37406190335d02f023cd2
+      internalID: -1672526362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_73
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 200
+        width: 94
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c862f00d7f64a328453b0503225cae
+      internalID: 1759329662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_74
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 220
+        width: 12
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467097b5ba4ff418bafa9778c38d0d7c
+      internalID: 1640836228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 101
+        width: 64
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687323b28276a44f2bb756528ef80c02
+      internalID: -240372092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_76
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 65
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a79f909b3694f77be0bd741eab581b
+      internalID: -1555019679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_77
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 107
+        width: 95
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 14}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8885136ff616479da3af4a6c12d28cb
+      internalID: 493595940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_78
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 128
+        width: 80
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e442e9f859744968869f9af3460258
+      internalID: 1720447067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_79
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 96
+        width: 29
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b234cb372b4c405183c046bf016900c
+      internalID: 1729115845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_80
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 105
+        width: 21
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc22913308e354e06aef5a48fc7fd765
+      internalID: 2053530798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_81
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 96
+        width: 90
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11d56b2f4552741cbbb38fc45b4393d7
+      internalID: -2043159485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_82
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 111
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0ff0894b07a4caba02a4d73539f0ce
+      internalID: 208164868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_83
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 100
+        width: 65
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a2c8e63a4844912924d7b21eedbb54
+      internalID: -1509442553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa35a3988e4e472097f0ba0c9fbdf07
+      internalID: 486766129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_85
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 32
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48af3ae8cd3ab4926ad8a70bff7c10db
+      internalID: -1273619479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_86
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 13
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dcad278f26d94d998f2598e7b51ecf8
+      internalID: 1140697876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_87
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 13
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c94f3504e7a470da3dc6e6d97dd80c
+      internalID: 1755516935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white-wood_88
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 32
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828d436ddddb84e69ba77376189073ea
+      internalID: -362207415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      white-wood_0: -1490847289
+      white-wood_1: 1960719797
+      white-wood_10: -730211742
+      white-wood_11: -1511487735
+      white-wood_12: 2117116177
+      white-wood_13: 1984615314
+      white-wood_14: -1292623882
+      white-wood_15: 821683372
+      white-wood_16: 120137170
+      white-wood_17: 566913326
+      white-wood_18: 1238593475
+      white-wood_19: 1353494219
+      white-wood_2: 842528821
+      white-wood_20: 853813749
+      white-wood_21: 1184136743
+      white-wood_22: 757107778
+      white-wood_23: 898092818
+      white-wood_24: 947193387
+      white-wood_25: -1042860668
+      white-wood_26: -832332284
+      white-wood_27: 1320244493
+      white-wood_28: 2016404794
+      white-wood_29: 427521357
+      white-wood_3: 187781392
+      white-wood_30: 2045149697
+      white-wood_31: 1721661807
+      white-wood_32: -1791875330
+      white-wood_33: -112676405
+      white-wood_34: -434735376
+      white-wood_35: -1322609596
+      white-wood_36: 1055113408
+      white-wood_37: -807578171
+      white-wood_38: 85394151
+      white-wood_39: 579446719
+      white-wood_4: -1055348744
+      white-wood_40: 1075070842
+      white-wood_41: -1487217357
+      white-wood_42: -671684271
+      white-wood_43: 301873447
+      white-wood_44: -1952134007
+      white-wood_45: -541402040
+      white-wood_46: 1895926321
+      white-wood_47: -1387890523
+      white-wood_48: 2123792576
+      white-wood_49: -2110252049
+      white-wood_5: -604663248
+      white-wood_50: -1720403136
+      white-wood_51: -862325156
+      white-wood_52: 1593134799
+      white-wood_53: -610532972
+      white-wood_54: -1779485084
+      white-wood_55: 182159113
+      white-wood_56: -1439723037
+      white-wood_57: 1506859668
+      white-wood_58: -78639818
+      white-wood_59: -1396183982
+      white-wood_6: 1927257496
+      white-wood_60: -1058311737
+      white-wood_61: 1594952522
+      white-wood_62: -551693251
+      white-wood_63: 988396101
+      white-wood_64: -791694162
+      white-wood_65: -602055582
+      white-wood_66: 750826147
+      white-wood_67: 1057595568
+      white-wood_68: -1957500041
+      white-wood_69: -630488639
+      white-wood_7: -1923097233
+      white-wood_70: 1379236085
+      white-wood_71: 459542532
+      white-wood_72: -1672526362
+      white-wood_73: 1759329662
+      white-wood_74: 1640836228
+      white-wood_75: -240372092
+      white-wood_76: -1555019679
+      white-wood_77: 493595940
+      white-wood_78: 1720447067
+      white-wood_79: 1729115845
+      white-wood_8: 1510237460
+      white-wood_80: 2053530798
+      white-wood_81: -2043159485
+      white-wood_82: 208164868
+      white-wood_83: -1509442553
+      white-wood_84: 486766129
+      white-wood_85: -1273619479
+      white-wood_86: 1140697876
+      white-wood_87: 1755516935
+      white-wood_88: -362207415
+      white-wood_9: -1350987566
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

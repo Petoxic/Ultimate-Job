@@ -1,0 +1,2072 @@
+fileFormatVersion: 2
+guid: bd8fcb72c2a3b45268d82df3514d211f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: blonde-wood_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 813
+        width: 128
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aebd1a725ea7a4a19bfcb077d72d1a02
+      internalID: -49627257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 928
+        width: 416
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8649275efcbd84497b4f7831bce58d22
+      internalID: -2054026697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_2
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 870
+        width: 54
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c908de26b500149d1b64e8623561123e
+      internalID: -1401465503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 800
+        width: 192
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1506b43e32a204678bc96c00e009fdc8
+      internalID: -808753272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_4
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 912
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2267eb12034804603924e94b2ecf2838
+      internalID: 1359659583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_5
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 920
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d750662991c1470796d71d3325a77dc
+      internalID: -1669001995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_6
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 903
+        width: 28
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4bebda9e5084ebe8add8703a382036
+      internalID: -557395563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_7
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 903
+        width: 28
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff479d2d3e4b47498d7250ae1557de2
+      internalID: -242478867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_8
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 904
+        width: 28
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc67ace61e9c04eb092649358e62171f
+      internalID: 412764134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_9
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 903
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b52afb4ee1d4a5b8c3d8f67bcfeece
+      internalID: -240764846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_10
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 903
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95fbde424bc1e4c9693dc967e703261c
+      internalID: 17291281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_11
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 608
+        width: 118
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14c969caf7214f04a4927b7247e30b7
+      internalID: -877231165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_12
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 800
+        width: 242
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342b28f80fb95414282649e271e0ed34
+      internalID: -146017150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 748
+        width: 96
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afdbff835e05245f69ccce3686a9394f
+      internalID: -1962897999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_14
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 740
+        width: 24
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a43178c9c5e47809c2423ecfdbd831
+      internalID: 1094465326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_15
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 743
+        width: 63
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4255e4dc7274a00b1350b2f1622c3f
+      internalID: 705975056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_16
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 742
+        width: 18
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1526c3a24dc499ba63d426e69adcd1
+      internalID: 1165739809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_17
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 772
+        width: 69
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255998d8f1c70437a948abc2f314f044
+      internalID: 2132085264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_18
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 743
+        width: 32
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37e3dcc204e645d1b69f73e5264900c
+      internalID: -686255064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_19
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 772
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32b27c05b8754db683b596bdc080d7b
+      internalID: 2099665332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_20
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 769
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dceb91c964b734eb0a688fe5574ef566
+      internalID: -1854988526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_21
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 740
+        width: 49
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24ab399a6c9d43e7b5182cb0e3e682a
+      internalID: 1663212090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_22
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 741
+        width: 80
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c1516d7c40d413eba95c2444df9335
+      internalID: -812498154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_23
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 740
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3fb73d5280f34a33b87d0ea2a26c83e
+      internalID: -706159207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_24
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 737
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a38e16a0dc8c40c6bd9279dc048c7be
+      internalID: 533641287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 192
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 084232dd31cb140a0a91a237b499fca2
+      internalID: -280348768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_26
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 608
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0bd79ae2fe8d49818590c4f6fca3abf
+      internalID: -1827184370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 608
+        width: 192
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d9fd465b0764e5fac931000345915f
+      internalID: -2008947045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 128
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdde075ed34ae4cf6adfcdbcfc5d70bf
+      internalID: -484650461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_29
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 480
+        width: 384
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c6fb5450a3f4e8a913822f755c0f40
+      internalID: 47682311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_30
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 544
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4daeeb5e3cf2046f58ca8ec1ad30747b
+      internalID: -1872605412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_31
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 544
+        width: 48
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1537771943127495ba1c4bd0b5316f5e
+      internalID: 1632696317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 522
+        width: 64
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9370def80510e407bae328f79866b3a1
+      internalID: -1792864677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_33
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 522
+        width: 48
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863e4beadf4ae4bf0a9a207a932058ee
+      internalID: 2124222820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_34
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 353
+        width: 26
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8475ad7fd2ff45a6b10cceaf7092230
+      internalID: -390700783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_35
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 416
+        width: 24
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ae5c800ac9542698ef0c6a7cdf0ba5
+      internalID: 1946763874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_36
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 416
+        width: 6
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d603e30563bf949e08a2fd89c7b952b5
+      internalID: 1894684523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_37
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 385
+        width: 24
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e491fee6fd6064c7f839e53a32d973b1
+      internalID: -554865551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 416
+        width: 24
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2974d60eb008848ddb4bb69ead81b48d
+      internalID: 361888074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_39
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 416
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24eb75dd80eec4578954cc9d57f4dc54
+      internalID: 992079743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_40
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 416
+        width: 6
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069df1fa2933c4d7ca9e5c63ab3b080b
+      internalID: 184069780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_41
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 416
+        width: 6
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9598be17df4c4c40be8fd95745d32d5
+      internalID: -1946954172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_42
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 416
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b1671566565483bbf763a2a9d969cc
+      internalID: -2042983172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_43
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 416
+        width: 23
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802e127e647394b7fac6b7efd4c5a53d
+      internalID: 1030444648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_44
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 416
+        width: 5
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba17cd813164248549b0629ca7e2b353
+      internalID: -1071814718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_45
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 416
+        width: 5
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ab46cead2444627b193396b8d5c620
+      internalID: 1109407328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_46
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 416
+        width: 23
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b16772a7ffa4f069f0ebb9669b4584
+      internalID: 1455390339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_47
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 449
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2beff6a438364210af8b9b50d85a13e
+      internalID: -1318898269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_48
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 449
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc420f61e8784e4eb9e296e6344913e
+      internalID: 285817323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_49
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 416
+        width: 25
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ebc738e2c3d944ce8cb3ef753975b00
+      internalID: 527755328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_50
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 417
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59627843ed64d4b25b663c0d41e175e7
+      internalID: -822411734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_51
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 417
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ae35b2bf62f4be98d6b5ada74f4893
+      internalID: 1489312167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 256
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23aeefe93476482b91962317977fe1d
+      internalID: 516055126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_53
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 96
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305da1274f2c449aa901bafde6c76cb3
+      internalID: -1550763865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_54
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 320
+        width: 108
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ed4f69daccc4c619e7d6d71708bd8f
+      internalID: 1579892661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_55
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 288
+        width: 87
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b03f48d8639b4f4f952f127de84677e
+      internalID: -1496540845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_56
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 384
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb66fa749cae346c8a900a4b18d12ec5
+      internalID: 1375703188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_57
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 384
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595a3ab5748864bf8abbb19dffd85148
+      internalID: 1017540225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_58
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 353
+        width: 24
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97316aeef619548b6989cdd747cfdba7
+      internalID: 565050544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_59
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 352
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbec451fb9f084f9a805d154be8acd15
+      internalID: 171620550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_60
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 352
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e699259bf88eb4bfdab2ecc47f43b26d
+      internalID: 1707997119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_61
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 288
+        width: 26
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58849d7655cf4de7b894cd417d27d72
+      internalID: -806106481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_62
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 288
+        width: 25
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91eb2796f042040b69edebf9d2c8a337
+      internalID: -1716742167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_63
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 321
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0982d508dac424bb1d9dbf66796802
+      internalID: 1881374134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_64
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 321
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7bf573b39494fb5b7d345bb494c3c5
+      internalID: 84906416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_65
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 288
+        width: 44
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76d6113416f944dd90fddb2a6c1b5aa
+      internalID: 1698635595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_66
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 289
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7624bdfeac0714f5c875a8932f22db44
+      internalID: -1163441265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_67
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 289
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403dbc5fa555847d780dbb37238baa2a
+      internalID: 46820463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_68
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 192
+        width: 92
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0cdc9a215904eb7806a0a26187b055
+      internalID: -1248131074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_69
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 192
+        width: 92
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31ce5b8a3d2147e5878b89794eb6d9b
+      internalID: 889723676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_70
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 205
+        width: 18
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6b171737c694463b8fe2ac17899ba4
+      internalID: -1225310825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_71
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 247
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0739b4358a1fa42f1968ecde0c8c8362
+      internalID: 778338005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_72
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 205
+        width: 18
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8105cd13052ba4363aa4e5e42850d75f
+      internalID: -19812371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_73
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 200
+        width: 94
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d76ebdec5836493984acf13868292a5
+      internalID: 194813980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_74
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 220
+        width: 12
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ebfc9125a044eee952fd1682e8c276
+      internalID: -1659491183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 101
+        width: 64
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c076815432144e18d501419002ba64
+      internalID: 397494231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_76
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 65
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1bf6db3ea554a1082ba669010e85e9
+      internalID: 2106969387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_77
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 107
+        width: 95
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4eea3366efc457f8927fb7efb6358e
+      internalID: -1125098986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_78
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 128
+        width: 80
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697c8f8f8838545559691397ae953e33
+      internalID: -1887460763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_79
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 96
+        width: 29
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8cc3c693209c4a43805b88c8e61c4e9
+      internalID: 384989275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_80
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 105
+        width: 21
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 949436a448a2f4336b6b27f0242dd919
+      internalID: -1396039539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_81
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 96
+        width: 90
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c525c5c8228264c30b521a7f8ae7197f
+      internalID: 1093122662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_82
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 111
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80884e875bcd74378b6736655d046e14
+      internalID: 1013401944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_83
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 100
+        width: 65
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52958e43c8c154d80ae019613bf47929
+      internalID: 159118630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215ecf24b145f427685b08a5094532fd
+      internalID: -385509393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_85
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 32
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f27318f239f421499d4c66eb7ec82a
+      internalID: 1035809049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_86
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 13
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c2307fa471b4b5886ca38d3e9a049a
+      internalID: 436406252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_87
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 13
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78092fabd6c6446638f6f485092abd57
+      internalID: -1887815927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: blonde-wood_88
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 32
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c575b26a5dd94beba876449b92ba902
+      internalID: 978078270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      blonde-wood_0: -49627257
+      blonde-wood_1: -2054026697
+      blonde-wood_10: 17291281
+      blonde-wood_11: -877231165
+      blonde-wood_12: -146017150
+      blonde-wood_13: -1962897999
+      blonde-wood_14: 1094465326
+      blonde-wood_15: 705975056
+      blonde-wood_16: 1165739809
+      blonde-wood_17: 2132085264
+      blonde-wood_18: -686255064
+      blonde-wood_19: 2099665332
+      blonde-wood_2: -1401465503
+      blonde-wood_20: -1854988526
+      blonde-wood_21: 1663212090
+      blonde-wood_22: -812498154
+      blonde-wood_23: -706159207
+      blonde-wood_24: 533641287
+      blonde-wood_25: -280348768
+      blonde-wood_26: -1827184370
+      blonde-wood_27: -2008947045
+      blonde-wood_28: -484650461
+      blonde-wood_29: 47682311
+      blonde-wood_3: -808753272
+      blonde-wood_30: -1872605412
+      blonde-wood_31: 1632696317
+      blonde-wood_32: -1792864677
+      blonde-wood_33: 2124222820
+      blonde-wood_34: -390700783
+      blonde-wood_35: 1946763874
+      blonde-wood_36: 1894684523
+      blonde-wood_37: -554865551
+      blonde-wood_38: 361888074
+      blonde-wood_39: 992079743
+      blonde-wood_4: 1359659583
+      blonde-wood_40: 184069780
+      blonde-wood_41: -1946954172
+      blonde-wood_42: -2042983172
+      blonde-wood_43: 1030444648
+      blonde-wood_44: -1071814718
+      blonde-wood_45: 1109407328
+      blonde-wood_46: 1455390339
+      blonde-wood_47: -1318898269
+      blonde-wood_48: 285817323
+      blonde-wood_49: 527755328
+      blonde-wood_5: -1669001995
+      blonde-wood_50: -822411734
+      blonde-wood_51: 1489312167
+      blonde-wood_52: 516055126
+      blonde-wood_53: -1550763865
+      blonde-wood_54: 1579892661
+      blonde-wood_55: -1496540845
+      blonde-wood_56: 1375703188
+      blonde-wood_57: 1017540225
+      blonde-wood_58: 565050544
+      blonde-wood_59: 171620550
+      blonde-wood_6: -557395563
+      blonde-wood_60: 1707997119
+      blonde-wood_61: -806106481
+      blonde-wood_62: -1716742167
+      blonde-wood_63: 1881374134
+      blonde-wood_64: 84906416
+      blonde-wood_65: 1698635595
+      blonde-wood_66: -1163441265
+      blonde-wood_67: 46820463
+      blonde-wood_68: -1248131074
+      blonde-wood_69: 889723676
+      blonde-wood_7: -242478867
+      blonde-wood_70: -1225310825
+      blonde-wood_71: 778338005
+      blonde-wood_72: -19812371
+      blonde-wood_73: 194813980
+      blonde-wood_74: -1659491183
+      blonde-wood_75: 397494231
+      blonde-wood_76: 2106969387
+      blonde-wood_77: -1125098986
+      blonde-wood_78: -1887460763
+      blonde-wood_79: 384989275
+      blonde-wood_8: 412764134
+      blonde-wood_80: -1396039539
+      blonde-wood_81: 1093122662
+      blonde-wood_82: 1013401944
+      blonde-wood_83: 159118630
+      blonde-wood_84: -385509393
+      blonde-wood_85: 1035809049
+      blonde-wood_86: 436406252
+      blonde-wood_87: -1887815927
+      blonde-wood_88: 978078270
+      blonde-wood_9: -240764846
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
