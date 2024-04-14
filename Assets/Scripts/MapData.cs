@@ -34,7 +34,7 @@ public class MapData : MonoBehaviour
             Vector3Int chairPos = new Vector3Int(DataManager.placedObjectsData[i][2].x,
                                                 DataManager.placedObjectsData[i][2].y,
                                                 0);
-            GameObject newPlacedObject = Instantiate(shopItemsSO[selectedObjectIndex].Prefab);
+            GameObject newPlacedObject = Instantiate(shopItemsSO[DataManager.placedObjectsData[i][3].x].Prefab);
             newPlacedObject.transform.position = grid.CellToWorld(chairPos);
         }
     }

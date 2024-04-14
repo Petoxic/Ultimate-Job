@@ -8,7 +8,7 @@ public class GridData
 {
     public Dictionary<Vector3Int, PlacementData> placedObjects = new();
 
-    public void AddObjectAt(Vector3Int gridPosition, Vector2Int objectSize, int ID, int placedObjectIndex)
+    public void AddObjectAt(Vector3Int gridPosition, Vector2Int objectSize, int ID, int placedObjectIndex, int selectedObjectIndex)
     {
         List<Vector3Int> positionToOccupy = CalculatePositions(gridPosition, objectSize);
         PlacementData placementData = new PlacementData(positionToOccupy, ID, placedObjectIndex);
@@ -16,8 +16,9 @@ public class GridData
         Vector2Int leftChairPosition = CalculateChairPositions(gridPosition, 0, -1);
         Vector2Int rightChairPosition = CalculateChairPositions(gridPosition, objectSize.x - 1, -1);
         Vector2Int topLeftChairPosition = new Vector2Int(gridPosition.x, gridPosition.y);
+        Vector2Int selectedObjectIndexTuple = new Vector2Int(selectedObjectIndex, selectedObjectIndex);
 
-        List<Vector2Int> tableWithChairPosition = new List<Vector2Int> { leftChairPosition, rightChairPosition, topLeftChairPosition };
+        List<Vector2Int> tableWithChairPosition = new List<Vector2Int> { leftChairPosition, rightChairPosition, topLeftChairPosition, selectedObjectIndexTuple };
         DataManager.placedObjectsData[placedObjectIndex] = tableWithChairPosition;
 
         foreach (var pos in positionToOccupy)

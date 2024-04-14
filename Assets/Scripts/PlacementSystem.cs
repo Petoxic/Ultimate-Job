@@ -122,7 +122,8 @@ public class PlacementSystem : MonoBehaviour
         selectedData.AddObjectAt(gridPosition,
                                 shopItemsSO[selectedObjectIndex].size,
                                 shopItemsSO[selectedObjectIndex].ID,
-                                DataManager.placedObjectsData.Count);
+                                DataManager.placedObjectsData.Count,
+                                selectedObjectIndex);
         preview.UpdatePosition(grid.CellToWorld(gridPosition), false);
     }
 
