@@ -78,8 +78,6 @@ public class DataManager : MonoBehaviour
         */
         if (todayMoney >= 20)
         {
-
-            Debug.Log("Objective 1 completed");
             isObjectiveCompleted[0] = true;
         }
         if (todayTalked >= 2)
