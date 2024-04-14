@@ -52,7 +52,8 @@ public class GridData
             || gridPosition.x + xHalfGridSize < 0
             || gridPosition.y + yHalfGridSize > PlacementSystem.gridSize.y
             || gridPosition.y + yHalfGridSize < yHalfGridSize - objectSize.y
-            || gridPosition.y + yHalfGridSize > PlacementSystem.wallGridPosition)
+            || gridPosition.y + yHalfGridSize > PlacementSystem.wallGridPosition
+            || gridPosition.x + xHalfGridSize > PlacementSystem.kitchenGridPosition)
         {
             return false;
         }

@@ -17,6 +17,7 @@ public class PlacementSystem : MonoBehaviour
     public int selectedObjectIndex = -1;
 
     public static int wallGridPosition;
+    public static int kitchenGridPosition;
     public static bool isPlacement;
     public static bool placementValidity;
     public static Vector3Int gridSize;
@@ -29,7 +30,8 @@ public class PlacementSystem : MonoBehaviour
 
     private void Start()
     {
-        wallGridPosition = 12;
+        wallGridPosition = 11;
+        kitchenGridPosition = 16;
         isPlacement = false;
         StopPlacement();
         furnitureData = new();
