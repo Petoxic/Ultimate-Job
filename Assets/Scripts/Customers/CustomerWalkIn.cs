@@ -58,10 +58,10 @@ public class CustomerWalkIn : MonoBehaviour
         {
             topLeftPosition = MapData.grid.CellToWorld(gridChairPosition);
             gridCellSize = MapData.grid.cellSize;
-            if (gameObject.transform.position.x != topLeftPosition.x
-                || gameObject.transform.position.y != topLeftPosition.y)
+            centerPosition = new Vector2(topLeftPosition.x + gridCellSize.x / 2, topLeftPosition.y);
+            if (gameObject.transform.position.x != centerPosition.x
+                || gameObject.transform.position.y != centerPosition.y)
             {
-                centerPosition = new Vector2(topLeftPosition.x + gridCellSize.x / 2, topLeftPosition.y);
                 gameObject.transform.position = Vector2.MoveTowards(gameObject.transform.position, centerPosition, speed);
             }
             else
