@@ -23,7 +23,7 @@ public class DataManager : MonoBehaviour
 
     void Start()
     {
-        totalMoney = 0;
+        totalMoney = 20;
         moneyText = "$ 0";
         appearedCharactors = new HashSet<string>();
         suspectList = new HashSet<string>();
@@ -35,7 +35,6 @@ public class DataManager : MonoBehaviour
         startTalking = false;
         cellSize = 0.16f;
         placedObjectsData = new Dictionary<int, List<Vector2Int>> { };
-        AddMoney(20);
         todayMoney = 0;
     }
     public static string selectedSuspectName = "";
@@ -53,7 +52,6 @@ public class DataManager : MonoBehaviour
     {
         totalMoney -= money;
         moneyText = "$ " + totalMoney;
-        checkObjective();
     }
 
     public static void AddSuspectList(string suspect)
@@ -71,7 +69,7 @@ public class DataManager : MonoBehaviour
         plateServed += 1;
         checkObjective();
     }
-
+    //TODO Objective
     public static void checkObjective()
     {
         /* 1. money >= 20
@@ -80,6 +78,8 @@ public class DataManager : MonoBehaviour
         */
         if (todayMoney >= 20)
         {
+
+            Debug.Log("Objective 1 completed");
             isObjectiveCompleted[0] = true;
         }
         if (todayTalked >= 2)
