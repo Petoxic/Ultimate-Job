@@ -11079,7 +11079,7 @@ GameObject:
   - component: {fileID: 1699356757}
   - component: {fileID: 1699356756}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Clock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11124,7 +11124,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 778338005, guid: bd8fcb72c2a3b45268d82df3514d211f, type: 3}
+  m_Sprite: {fileID: -748123339, guid: 2c97a344aad8c422a8998bd21568f220, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
