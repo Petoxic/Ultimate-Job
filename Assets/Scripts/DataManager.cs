@@ -7,37 +7,44 @@ using UnityEngine.UI;
 
 public class DataManager : MonoBehaviour
 {
-    // Game settings
+    // game constants
     private const int startingMoney = 20;
     public const int totalCases = 2;
     // number of days
     public static readonly int[] totalDays = new int[] { 3, 3 };
-    // (profit, #talks, #serves) for each day
+    // (profit, #talks, #serves) objetives for each day of each case
     private static readonly (int, int, int)[][] objectives = new (int, int, int)[][] {
         new (int, int, int)[] { (20, 2, 2), (30, 3, 3), (40, 4, 4) },
         new (int, int, int)[] { (20, 2, 2), (30, 3, 3), (40, 4, 4) }
     };
     // correct suspect name for each case
     public static readonly string[] suspects = new string[totalCases] { "Mr. Oliver Ford - Suspicious-looking man", "" };
-    public static int totalMoney;
-    public static string moneyText;
+    public const float cellSize = 0.16f;
+
+
+    // game state variables
+    // used throughout the game
+    private static int totalMoney;
+    private static string moneyText;
+    public static bool startTalking;
+
+
+    // for each case
     public static HashSet<string> suspectList;
+    private static int caseNumber;
+    private static bool isDayEnded = false;
+    public static Dictionary<int, List<Vector2Int>> placedObjectsData;
+
+    // for each day
     public static bool[] isObjectiveCompleted;
     private static int day;
-    private static int caseNumber;
     private static int todayProfit;
     private static int todayTalked;
     private static int todayServed;
-    public static bool isGameEnd = false;
-    public static bool startTalking;
-    public static float cellSize;
-    public static HashSet<string> appearedCharactors;
-    public static Dictionary<int, List<Vector2Int>> placedObjectsData;
+
     void Start()
     {
-        totalMoney = startingMoney;
-        UpdateMoneyText();
-        appearedCharactors = new HashSet<string>();
+        SetTotalMoney(startingMoney);
         suspectList = new HashSet<string>();
         isObjectiveCompleted = new bool[] { false, false, false };
         todayServed = 0;
@@ -45,25 +52,22 @@ public class DataManager : MonoBehaviour
         caseNumber = 0;
         todayTalked = 0;
         startTalking = false;
-        cellSize = 0.16f;
         placedObjectsData = new Dictionary<int, List<Vector2Int>> { };
         todayProfit = 0;
-        DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(gameObject);
     }
     public static string selectedSuspectName = "";
     public static float timeUntilSceneEnds = 45f;
 
     public static void AddMoney(int money)
     {
-        totalMoney += money;
+        SetTotalMoney(totalMoney + money);
         todayProfit += money;
-        UpdateMoneyText();
     }
 
     public static void SubMoney(int money)
     {
-        totalMoney -= money;
-        UpdateMoneyText();
+        SetTotalMoney(totalMoney - money);
     }
 
     public static void AddSuspectList(string suspect)
@@ -103,10 +107,9 @@ public class DataManager : MonoBehaviour
         isObjectiveCompleted = new bool[] { false, false, false };
     }
 
-    public static void ResetData()
+    public static void RestartGame()
     {
-        totalMoney = 20;
-        UpdateMoneyText();
+        SetTotalMoney(startingMoney);
         suspectList = new HashSet<string>();
         todayServed = 0;
         caseNumber = 0;
@@ -117,8 +120,7 @@ public class DataManager : MonoBehaviour
 
     public static void ResetToFirstNightIfLose()
     {
-        totalMoney = 20;
-        UpdateMoneyText();
+        SetTotalMoney(startingMoney);
         suspectList = new HashSet<string>();
         startTalking = false;
         ResetDay();
@@ -186,8 +188,25 @@ public class DataManager : MonoBehaviour
     {
         return objectives[caseNumber][day].Item3;
     }
-    private static void UpdateMoneyText()
+    public static bool IsDayEnded()
     {
-        moneyText = "$ " + totalMoney;
+        return isDayEnded;
+    }
+    public static void SetDayEnded(bool value)
+    {
+        isDayEnded = value;
+    }
+    public static int GetTotalMoney()
+    {
+        return totalMoney;
+    }
+    private static void SetTotalMoney(int value)
+    {
+        totalMoney = value;
+        moneyText = $"$ {totalMoney}";
+    }
+    public static string GetMoneyText()
+    {
+        return moneyText;
     }
 }

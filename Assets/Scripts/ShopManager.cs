@@ -64,7 +64,7 @@ public class ShopManager : MonoBehaviour
     {
         for (int i = 0; i < shopItemsSO.Length; i++)
         {
-            if (DataManager.totalMoney >= shopItemsSO[i].basePrice)
+            if (DataManager.GetTotalMoney() >= shopItemsSO[i].basePrice)
             {
                 myPurchaseButtons[i].interactable = true;
             }
@@ -77,7 +77,7 @@ public class ShopManager : MonoBehaviour
 
     public void PurchaseItem(int buttonNumber)
     {
-        if (DataManager.totalMoney >= shopItemsSO[buttonNumber].basePrice)
+        if (DataManager.GetTotalMoney() >= shopItemsSO[buttonNumber].basePrice)
         {
             // DataManager.SubMoney(shopItemsSO[buttonNumber].basePrice);
             CloseShopMenu();

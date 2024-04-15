@@ -49,7 +49,7 @@ public class PlacementSystem : MonoBehaviour
         {
             if (placementValidity)
             {
-                if (DataManager.totalMoney < shopItemsSO[selectedObjectIndex].basePrice)
+                if (DataManager.GetTotalMoney() < shopItemsSO[selectedObjectIndex].basePrice)
                 {
                     Debug.Log("Your money is not enough");
                     return;

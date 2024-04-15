@@ -43,7 +43,7 @@ public class ArrestController : MonoBehaviour
 
     public void StillNotSure()
     {
-        if (DataManager.isGameEnd)
+        if (DataManager.IsDayEnded())
         {
             // Go to next day
             DataManager.NextDay();

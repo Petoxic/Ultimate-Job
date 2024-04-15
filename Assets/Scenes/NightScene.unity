@@ -2285,7 +2285,6 @@ GameObject:
   - component: {fileID: 494127550}
   - component: {fileID: 494127553}
   - component: {fileID: 494127552}
-  - component: {fileID: 494127551}
   m_Layer: 5
   m_Name: MoneyCount
   m_TagString: Untagged
@@ -2312,19 +2311,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 310, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &494127551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 494127549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a631fd9487554f7c94fcbbd40358a57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 494127552}
 --- !u!114 &494127552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6713,6 +6699,7 @@ GameObject:
   - component: {fileID: 1386960704}
   - component: {fileID: 1386960706}
   - component: {fileID: 1386960705}
+  - component: {fileID: 1386960707}
   m_Layer: 5
   m_Name: MoneyCountUI
   m_TagString: Untagged
@@ -6778,6 +6765,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386960703}
   m_CullTransparentMesh: 1
+--- !u!114 &1386960707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1386960703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a631fd9487554f7c94fcbbd40358a57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1403115332
 GameObject:
   m_ObjectHideFlags: 0

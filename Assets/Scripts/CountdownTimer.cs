@@ -25,7 +25,7 @@ public class CountdownTimer : MonoBehaviour
             if (timeWhenSceneEnds <= 0)
             {
                 DataManager.CheckObjective();
-                DataManager.isGameEnd = true;
+                DataManager.SetDayEnded(true);
                 SceneManager.LoadScene("ResultScene");
             }
         }

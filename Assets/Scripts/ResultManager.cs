@@ -39,7 +39,7 @@ public class ResultManager : MonoBehaviour
 
             notSureButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(delegate
             {
-                GoToNextNightScene();
+                DataManager.NextDay();
             });
 
         }
@@ -52,12 +52,12 @@ public class ResultManager : MonoBehaviour
 
             foundCriminalButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(delegate
             {
-                GoToFirstNightScene();
+                DataManager.NextDay();
             });
 
             notSureButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(delegate
             {
-                DataManager.ResetData();
+                DataManager.RestartGame();
                 GoToMainMenu();
             });
 

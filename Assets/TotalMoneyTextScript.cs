@@ -5,15 +5,16 @@ using UnityEngine.UI;
 
 public class TotalMoneyTextScript : MonoBehaviour
 {
-    [SerializeField] private Text text;
+    private Text text;
 
     void Start()
     {
-        text.text = DataManager.moneyText;
+        text = GetComponentInChildren<Text>();
+        text.text = DataManager.GetMoneyText();
     }
 
     void Update()
     {
-        text.text = DataManager.moneyText;
+        text.text = DataManager.GetMoneyText();
     }
 }
