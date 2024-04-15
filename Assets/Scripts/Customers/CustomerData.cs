@@ -10,26 +10,26 @@ public class CustomerData : MonoBehaviour
     public static Dictionary<int, Dictionary<string, object>> customers = new()
     {
         {1, new Dictionary<string, object> {
-            {"name", "Ms. Evelyn Sinclair - Wealthy socialite"},
+            {"name", "Mrs. Evelyn Sinclair - Rich lady"},
             {"dialogue", new string[][] {
                 new string[] {
-                    "Oh, darling, did you hear about the theft at the museum? Dreadful business. I simply cannot fathom who would do such a thing. It's positively scandalous!"
+                    "Oh my, did you hear? Someone swiped a necklace from the museum. Horrid stuff. Who'd do such a thing? It's just awful!"
                 }
             }},
             {"foodAmount", 1},
         }},
         {2, new Dictionary<string, object> {
-            {"name", "Mr. Daniel Blackwood - Eccentric art collector"},
+            {"name", "Mr. Daniel Blackwood - Art fan"},
             {"dialogue", new string[][] {
                 new string[] {
                     "Art thefts, you say? Fascinating! Reminds me of that daring heist in Paris back in '98.",
-                    "Ah, those were the days. If only I had been there to witness it firsthand!"
+                    "Wish I'd been there! What a story that would've been!"
                 },
             }},
             {"foodAmount", 1},
         }},
         {3, new Dictionary<string, object> {
-            {"name", "Officer Jameson - Local police officer"},
+            {"name", "Officer Jameson - Local cop"},
             {"dialogue", new string[][] {
                 new string[] {
                     "Another day, another crime scene. This city's getting worse by the minute.",
@@ -39,10 +39,10 @@ public class CustomerData : MonoBehaviour
             {"foodAmount", 1},
         }},
         {4, new Dictionary<string, object> {
-            {"name", "Mrs. Margaret Chen - Museum curator"},
+            {"name", "Mrs. Margaret Chen - Museum boss"},
             {"dialogue", new string[][] {
                 new string[] {
-                    "The theft has shaken us all. The necklace was the centerpiece of our exhibit.",
+                    "The theft has shaken us all. That necklace was the star of our show.",
                     "We've implemented strict security protocols, but it seems someone slipped through the cracks."
                 },
             }},
@@ -61,18 +61,18 @@ public class CustomerData : MonoBehaviour
             {"name", "Ms. Lily Thompson - Aspiring artist"},
             {"dialogue", new string[][] {
                 new string[] {
-                    "I can't believe someone would steal from a museum. It's despicable! Those pieces belong to everyone, not just the rich and powerful.",
-                    "If I ever caught the thief, I'd give them a piece of my mind!"
+                    "I can't believe someone would steal from a museum. It's shameful! Those pieces belong to everyone, not just the rich and powerful.",
+                    "If I ever caught the thief, they'd hear about it!"
                 },
             }},
             {"foodAmount", 1},
         }},
         {7, new Dictionary<string, object> {
-            {"name", "Dr. Henry Wallace - Forensic scientist"},
+            {"name", "Dr. Henry Wallace - Science dude"},
             {"dialogue", new string[][] {
                 new string[] {
-                    "Analyzing the crime scene was like piecing together a puzzle. Every detail counts.",
-                    "But even with all our high-tech equipment, we're struggling to find a lead. It's frustrating, to say the least."
+                    "Crime scene was like solving a puzzle. Every bit matters.",
+                    "But even with our gadgets, we're lost. It's tough."
                 },
             }},
             {"foodAmount", 1},
@@ -91,8 +91,8 @@ public class CustomerData : MonoBehaviour
             {"name", "Mr. Charles Thompson - Retired detective"},
             {"dialogue", new string[][] {
                 new string[] {
-                    "I've seen my fair share of cases in my time. This one's got me stumped.",
-                    "But mark my words, every criminal slips up eventually. It's just a matter of being patient and observant."
+                    "I've seen it all, but this one's tricky.",
+                    "Criminals slip up, though. Just gotta wait and watch. We'll get 'em."
                 },
             }},
             {"foodAmount", 1},
@@ -101,8 +101,8 @@ public class CustomerData : MonoBehaviour
             {"name", "Ms. Sophia Lee - Mysterious woman"},
             {"dialogue", new string[][] {
                 new string[] {
-                    "The necklace holds more than just monetary value. Its history is shrouded in secrets.",
-                    "Whoever took it must have had a reason beyond simple greed. But what that reason is, I cannot say."
+                    "That necklace? Holds more than just cash value. It's got a story. ",
+                    "Whoever took it had a reason, a big one. But what? No clue."
                 },
             }},
             {"foodAmount", 1},
