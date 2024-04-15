@@ -30,7 +30,7 @@ public class CustomerScript : MonoBehaviour
     public int foodAmount;
     private Sprite eatingSprite;
     public int dialogueChoice = 0;
-    private string[][] dialogueArray = (string[][])CustomerData.customers[1]["dialogue"];
+    private string[][] dialogueArray;
     public SpriteRenderer spriteRenderer;
 
     void Start()
@@ -41,11 +41,11 @@ public class CustomerScript : MonoBehaviour
         dialogueText = dialoguePanel.transform.Find("Dialog").gameObject.GetComponent<Text>();
         objectName = dialoguePanel.transform.Find("Name").gameObject.GetComponent<Text>();
 
-        int queue = CustomerData.GetCustomerQueue();
-        gameObject.name = (string)CustomerData.customers[queue]["name"];
-        dialogueArray = (string[][])CustomerData.customers[queue]["dialogue"];
+        int queue = DataManager.GetCustomerQueue();
+        gameObject.name = (string)CustomerData.GetCustomerData()[queue]["name"];
+        dialogueArray = (string[][])CustomerData.GetCustomerData()[queue]["dialogue"];
         dialogue = dialogueArray[dialogueChoice];
-        foodAmount = (int)CustomerData.customers[queue]["foodAmount"];
+        foodAmount = (int)CustomerData.GetCustomerData()[queue]["foodAmount"];
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = Resources.Load<Sprite>("Custoner/" + gameObject.name);
 

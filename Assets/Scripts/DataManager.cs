@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -18,7 +19,7 @@ public class DataManager : MonoBehaviour
         new (int, int, int)[] { (20, 2, 2), (30, 3, 3), (40, 4, 4) }
     };
     // correct suspect name for each case
-    public static readonly string[] suspects = new string[totalCases] { "Mr. Oliver Ford - Suspicious-looking man", "" };
+    public static readonly string[] suspects = new string[totalCases] { "Mr. Oliver Ford - Suspicious-looking man", "Mr. David Chase - Bank manager" };
     public const float cellSize = 0.16f;
     public const float dayTimeLimit = 45f;
 
@@ -34,6 +35,10 @@ public class DataManager : MonoBehaviour
     private static int day;
     public static HashSet<string> suspectList;
     public static Dictionary<int, List<Vector2Int>> placedObjectsData;
+    public static List<int> customerOrders;
+    public static int[] customerQueue;
+    public static int queuePos;
+
 
     // for each day
     private static bool isDayEnded;
@@ -65,6 +70,9 @@ public class DataManager : MonoBehaviour
         day = 0;
         suspectList = new HashSet<string>();
         placedObjectsData = new Dictionary<int, List<Vector2Int>> { };
+        customerOrders = Enumerable.Range(1, CustomerData.GetCustomerData().Count).ToList();
+        customerQueue = Utils.ShuffleArray(customerOrders);
+        queuePos = 0;
 
         // reset day data
         ResetDayData();
@@ -128,11 +136,6 @@ public class DataManager : MonoBehaviour
     public static bool CheckSuspect()
     {
         return suspects[caseNumber] == selectedSuspectName;
-    }
-
-    public static bool IsLastDay()
-    {
-        return day == totalDays[caseNumber] - 1;
     }
 
     public static void NextDay()
@@ -213,5 +216,10 @@ public class DataManager : MonoBehaviour
     public static string GetMoneyText()
     {
         return moneyText;
+    }
+
+    public static int GetCustomerQueue()
+    {
+        return customerQueue[queuePos++];
     }
 }

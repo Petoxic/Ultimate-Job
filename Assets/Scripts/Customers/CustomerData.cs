@@ -7,9 +7,11 @@ using UnityEngine;
 
 public class CustomerData : MonoBehaviour
 {
-    public static Dictionary<int, Dictionary<string, object>> customers = new()
+    // constant data for customers
+    private static readonly Dictionary<int, Dictionary<string, object>> customersDay1 = new()
     {
-        {1, new Dictionary<string, object> {
+        {
+            1, new Dictionary<string, object> {
             {"name", "Mrs. Evelyn Sinclair - Rich lady"},
             {"dialogue", new string[][] {
                 new string[] {
@@ -18,7 +20,8 @@ public class CustomerData : MonoBehaviour
             }},
             {"foodAmount", 1},
         }},
-        {2, new Dictionary<string, object> {
+        {
+            2, new Dictionary<string, object> {
             {"name", "Mr. Daniel Blackwood - Art fan"},
             {"dialogue", new string[][] {
                 new string[] {
@@ -28,7 +31,8 @@ public class CustomerData : MonoBehaviour
             }},
             {"foodAmount", 1},
         }},
-        {3, new Dictionary<string, object> {
+        {
+            3, new Dictionary<string, object> {
             {"name", "Officer Jameson - Local cop"},
             {"dialogue", new string[][] {
                 new string[] {
@@ -38,7 +42,8 @@ public class CustomerData : MonoBehaviour
             }},
             {"foodAmount", 1},
         }},
-        {4, new Dictionary<string, object> {
+        {
+            4, new Dictionary<string, object> {
             {"name", "Mrs. Margaret Chen - Museum boss"},
             {"dialogue", new string[][] {
                 new string[] {
@@ -48,7 +53,8 @@ public class CustomerData : MonoBehaviour
             }},
             {"foodAmount", 1},
         }},
-        {5, new Dictionary<string, object> {
+        {
+            5, new Dictionary<string, object> {
             {"name", "Mr. Oliver Ford - Suspicious-looking man"},
             {"dialogue", new string[][] {
                 new string[] {
@@ -57,7 +63,8 @@ public class CustomerData : MonoBehaviour
             }},
             {"foodAmount", 1},
         }},
-        {6, new Dictionary<string, object> {
+        {
+            6, new Dictionary<string, object> {
             {"name", "Ms. Lily Thompson - Aspiring artist"},
             {"dialogue", new string[][] {
                 new string[] {
@@ -67,7 +74,8 @@ public class CustomerData : MonoBehaviour
             }},
             {"foodAmount", 1},
         }},
-        {7, new Dictionary<string, object> {
+        {
+            7, new Dictionary<string, object> {
             {"name", "Dr. Henry Wallace - Science dude"},
             {"dialogue", new string[][] {
                 new string[] {
@@ -77,7 +85,8 @@ public class CustomerData : MonoBehaviour
             }},
             {"foodAmount", 1},
         }},
-        {8, new Dictionary<string, object> {
+        {
+            8, new Dictionary<string, object> {
             {"name", "Mrs. Beatrice Ramirez - Local gossip"},
             {"dialogue", new string[][] {
                 new string[] {
@@ -87,7 +96,8 @@ public class CustomerData : MonoBehaviour
             }},
             {"foodAmount", 1},
         }},
-        {9, new Dictionary<string, object> {
+        {
+            9, new Dictionary<string, object> {
             {"name", "Mr. Charles Thompson - Retired detective"},
             {"dialogue", new string[][] {
                 new string[] {
@@ -97,7 +107,8 @@ public class CustomerData : MonoBehaviour
             }},
             {"foodAmount", 1},
         }},
-        {10, new Dictionary<string, object> {
+        {
+            10, new Dictionary<string, object> {
             {"name", "Ms. Sophia Lee - Mysterious woman"},
             {"dialogue", new string[][] {
                 new string[] {
@@ -108,28 +119,117 @@ public class CustomerData : MonoBehaviour
             {"foodAmount", 1},
         }}
     };
-
-
-    public static List<int> queue = Enumerable.Range(1, customers.Count).ToList();
-    public static int[] customerQueue = ShuffleArray(queue);
-    public static int queuePos = 0;
-
-    void Start()
+    public static Dictionary<int, Dictionary<string, object>> customersDay2 = new()
     {
-        if (DataManager.GetDay() == 0)
         {
-            queuePos = 0;
-        }
-    }
-
-    public static int GetCustomerQueue()
+            1, new Dictionary<string, object> {
+            {"name", "Mr. Richard Banks - Wealthy businessman"},
+            {"dialogue", new string[][] {
+                new string[] {
+                    "Have you heard about the bank robbery? Simply outrageous! Who could have the audacity to pull off such a stunt? It's scandalous!"
+                }
+            }},
+            {"foodAmount", 1},
+        }},
+        {
+            2, new Dictionary<string, object> {
+            {"name", "Ms. Victoria Artman - Art enthusiast"},
+            {"dialogue", new string[][] {
+                new string[] {
+                    "Bank heists? Intriguing! Reminds me of those old Hollywood movies. If only I could witness one in real life! What a thrill it would be!"
+                },
+            }},
+            {"foodAmount", 1},
+        }},
+        {
+            3, new Dictionary<string, object> {
+            {"name", "Officer Johnson - Local law enforcement"},
+            {"dialogue", new string[][] {
+                new string[] {
+                    "Another day, another robbery. This city's turning into a den of thieves. We've got eyes everywhere, but these crooks always slip through our fingers."
+                },
+            }},
+            {"foodAmount", 1},
+        }},
+        {
+            4, new Dictionary<string, object> {
+            {"name", "Mr. David Chase - Bank manager"},
+            {"dialogue", new string[][] {
+                new string[] {
+                    "The robbery has shaken us to the core. Security measures were in place, but it seems the thieves were one step ahead. We're doing everything we can to catch them."
+                },
+            }},
+            {"foodAmount", 1},
+        }},
+        {
+            5, new Dictionary<string, object> {
+            {"name", "Ms. Olivia Fox - Suspicious individual"},
+            {"dialogue", new string[][] {
+                new string[] {
+                    "Me? Just here for the coffee. Don't mind me. Say, need any help tracking down those robbers? I might know a thing or two."
+                },
+            }},
+            {"foodAmount", 1},
+        }},
+        {
+            6, new Dictionary<string, object> {
+            {"name", "Mr. Samuel Locke - Aspiring artist"},
+            {"dialogue", new string[][] {
+                new string[] {
+                    "Robbing a bank? Disgraceful! Money belongs to everyone, not just the greedy. If I catch those thieves, they'll regret ever crossing me!"
+                },
+            }},
+            {"foodAmount", 1},
+        }},
+        {
+            7, new Dictionary<string, object> {
+            {"name", "Dr. Emily Watson - Forensic scientist"},
+            {"dialogue", new string[][] {
+                new string[] {
+                    "Analyzing the crime scene was like putting together a puzzle. Every clue counts, but even with our advanced technology, we're struggling to make sense of it all."
+                },
+            }},
+            {"foodAmount", 1},
+        }},
+        {
+            8, new Dictionary<string, object> {
+            {"name", "Mrs. Grace Parker - Local gossipmonger"},
+            {"dialogue", new string[][] {
+                new string[] {
+                    "Oh, honey, the gossip about the bank robbery is wild! Some say it was an inside job! Can you believe it? A bank employee turned rogue? Outrageous!"
+                },
+            }},
+            {"foodAmount", 1},
+        }},
+        {
+            9, new Dictionary<string, object> {
+            {"name", "Mr. Robert Holmes - Retired detective"},
+            {"dialogue", new string[][] {
+                new string[] {
+                    "I've investigated my fair share of cases, but this one's got me stumped. However, every criminal slips up eventually. It's just a matter of time."
+                },
+            }},
+            {"foodAmount", 1},
+        }},
+        {
+            10, new Dictionary<string, object> {
+            {"name", "Ms. Rachel Stone - Mystery enthusiast"},
+            {"dialogue", new string[][] {
+                new string[] {
+                    "That robbery? More than meets the eye. It's not just about the money. There's a motive behind it all. But what could it be? That's the million-dollar question."
+                },
+            }},
+            {"foodAmount", 1},
+        }}
+    };
+    private static readonly Dictionary<int, Dictionary<string, object>>[] customers = new Dictionary<int, Dictionary<string, object>>[]
     {
-        return customerQueue[queuePos++];
-    }
+        customersDay1,
+        customersDay2
+    };
 
-    public static int[] ShuffleArray(List<int> array)
+    public static Dictionary<int, Dictionary<string, object>> GetCustomerData()
     {
-        System.Random random = new();
-        return array.OrderBy(x => random.Next()).ToArray();
+        return customers[DataManager.GetCaseNumber()];
     }
 }
