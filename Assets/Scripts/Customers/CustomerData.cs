@@ -8,7 +8,7 @@ using UnityEngine;
 public class CustomerData : MonoBehaviour
 {
     // constant data for customers
-    private static readonly Dictionary<int, Dictionary<string, object>> customersDay1 = new()
+    private static readonly Dictionary<int, Dictionary<string, object>> customersCase1 = new()
     {
         {
             1, new Dictionary<string, object> {
@@ -119,7 +119,7 @@ public class CustomerData : MonoBehaviour
             {"foodAmount", 1},
         }}
     };
-    public static Dictionary<int, Dictionary<string, object>> customersDay2 = new()
+    public static Dictionary<int, Dictionary<string, object>> customersCase2 = new()
     {
         {
             1, new Dictionary<string, object> {
@@ -224,8 +224,8 @@ public class CustomerData : MonoBehaviour
     };
     private static readonly Dictionary<int, Dictionary<string, object>>[] customers = new Dictionary<int, Dictionary<string, object>>[]
     {
-        customersDay1,
-        customersDay2
+        customersCase1,
+        customersCase2
     };
 
     public static Dictionary<int, Dictionary<string, object>> GetCustomerData()
