@@ -101,6 +101,11 @@ public class DataManager : MonoBehaviour
         SetTotalMoney(totalMoney - money);
     }
 
+    public static void Refund(int money)
+    {
+        SetTotalMoney(totalMoney + money);
+    }
+
     public static void AddSuspectList(string suspect)
     {
         if (!suspectList.Contains(suspect))

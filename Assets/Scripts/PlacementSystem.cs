@@ -7,32 +7,34 @@ using UnityEngine.Tilemaps;
 
 public class PlacementSystem : MonoBehaviour
 {
-    [SerializeField] private GameObject mouseIndicator;
     [SerializeField] private ShopInputManager shopInputManager;
     [SerializeField] private Grid grid;
     [SerializeField] private Tilemap tilemap;
     [SerializeField] private ShopItemSO[] shopItemsSO;
     [SerializeField] private PreviewSystem preview;
-
-    public int selectedObjectIndex = -1;
+    [SerializeField] private ObjectPlacer objectPlacer;
 
     public static int wallGridPosition;
     public static int kitchenGridPosition;
     public static bool isPlacement;
-    public static bool placementValidity;
+    public static bool isPreview;
+    public static bool isRemoving;
     public static Vector3Int gridSize;
     public static GameObject newObject;
 
     public event Action OnClicked, OnExit;
     private GridData furnitureData;
-    private List<GameObject> placedGameObjects = new();
     private Vector3Int lastDetectedPosition = Vector3Int.zero;
+
+    IBuildingState buildingState;
 
     private void Start()
     {
         wallGridPosition = 11;
         kitchenGridPosition = 16;
         isPlacement = false;
+        isPreview = false;
+        isRemoving = false;
         StopPlacement();
         furnitureData = new();
         gridSize = tilemap.GetComponent<Tilemap>().size;
@@ -40,26 +42,32 @@ public class PlacementSystem : MonoBehaviour
 
     public void Update()
     {
-        if (selectedObjectIndex < 0)
+        if (buildingState == null)
         {
             return;
         }
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (placementValidity)
+            if (!isRemoving && PlacementState.placementValidity)
             {
-                if (DataManager.GetTotalMoney() < shopItemsSO[selectedObjectIndex].basePrice)
+                if (DataManager.GetTotalMoney() < shopItemsSO[PlacementState.selectedObjectIndex].basePrice)
                 {
                     Debug.Log("Your money is not enough");
                     return;
                 }
-                DataManager.SubMoney(shopItemsSO[selectedObjectIndex].basePrice);
+                DataManager.SubMoney(shopItemsSO[PlacementState.selectedObjectIndex].basePrice);
+                OnClicked?.Invoke();
+            }
+            if (isRemoving && RemovingState.removingValidity)
+            {
+                DataManager.Refund(shopItemsSO[PlacementState.selectedObjectIndex].basePrice);
                 OnClicked?.Invoke();
             }
         }
-        if (isPlacement && Input.GetKeyDown(KeyCode.B))
+        if (isPlacement && (Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.Escape)))
         {
+            PlacementSystem.isRemoving = false;
             OnExit?.Invoke();
         }
 
@@ -67,35 +75,47 @@ public class PlacementSystem : MonoBehaviour
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
         if (lastDetectedPosition != gridPosition)
         {
-            placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
-
-            mouseIndicator.transform.position = mousePosition;
-            preview.UpdatePosition(grid.CellToWorld(gridPosition), placementValidity);
+            buildingState.UpdateState(gridPosition);
             lastDetectedPosition = gridPosition;
         }
     }
 
     public void StopPlacement()
     {
+        if (buildingState == null)
+        {
+            return;
+        }
         isPlacement = false;
-        selectedObjectIndex = -1;
-        preview.StopShowingPlacementReview();
+        buildingState.EndState();
         this.OnClicked -= PlaceStructure;
         this.OnExit -= StopPlacement;
         lastDetectedPosition = Vector3Int.zero;
+        buildingState = null;
     }
 
     public void StartPlacement(int ID)
     {
         StopPlacement();
         isPlacement = true;
-        selectedObjectIndex = shopItemsSO[ID].ID;
-        if (selectedObjectIndex < 0)
-        {
-            Debug.LogError($"No ID found {ID}");
-            return;
-        }
-        preview.StartShowingPlacementReview(shopItemsSO[ID].Prefab, shopItemsSO[ID].size);
+        buildingState = new PlacementState(ID,
+                                        grid,
+                                        preview,
+                                        shopItemsSO,
+                                        furnitureData,
+                                        objectPlacer);
+        this.OnClicked += PlaceStructure;
+        this.OnExit += StopPlacement;
+    }
+
+    public void StartRemoving()
+    {
+        StopPlacement();
+        isRemoving = true;
+        buildingState = new RemovingState(grid,
+                                        preview,
+                                        furnitureData,
+                                        objectPlacer);
         this.OnClicked += PlaceStructure;
         this.OnExit += StopPlacement;
     }
@@ -109,31 +129,6 @@ public class PlacementSystem : MonoBehaviour
         Vector3 mousePosition = shopInputManager.GetSelectedMapPosition();
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
 
-        placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
-        if (!placementValidity)
-        {
-            return;
-        }
-
-        newObject = Instantiate(shopItemsSO[selectedObjectIndex].Prefab);
-        newObject.transform.position = grid.CellToWorld(gridPosition);
-        placedGameObjects.Add(newObject);
-        GridData selectedData = furnitureData;
-        selectedData.AddObjectAt(gridPosition,
-                                shopItemsSO[selectedObjectIndex].size,
-                                shopItemsSO[selectedObjectIndex].ID,
-                                DataManager.placedObjectsData.Count,
-                                selectedObjectIndex);
-        preview.UpdatePosition(grid.CellToWorld(gridPosition), false);
-    }
-
-    private bool CheckPlacementValidity(Vector3Int gridPosition, int selectedObjectIndex)
-    {
-        if (selectedObjectIndex < 0)
-        {
-            return false;
-        }
-        GridData selectedData = furnitureData;
-        return selectedData.CanPlaceObjectAt(gridPosition, shopItemsSO[selectedObjectIndex].size);
+        buildingState.OnAction(gridPosition);
     }
 }

@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class PreviewSystem : MonoBehaviour
 {
-    [SerializeField] private float previewYOffset = 0.06f;
+    [SerializeField] private float previewYOffset = 0f;
     [SerializeField] private GameObject cellIndicator;
     private GameObject previewObject;
     [SerializeField] private Material previewMaterialsPrefab;
@@ -20,18 +20,31 @@ public class PreviewSystem : MonoBehaviour
         cellIndicatorRenderer = cellIndicator.GetComponentInChildren<Renderer>();
     }
 
-    public void StartShowingPlacementReview(GameObject prefab, Vector2Int size)
+    public void Update()
     {
+        if (PlacementSystem.isPreview && (Input.GetKeyDown(KeyCode.Escape)))
+        {
+            StopShowingPlacementPreview();
+        }
+    }
+
+    public void StartShowingPlacementPreview(GameObject prefab, Vector2Int size)
+    {
+        PlacementSystem.isPreview = true;
         previewObject = Instantiate(prefab);
         PreparePreview(previewObject);
         PrepareCursor(size);
         cellIndicator.SetActive(true);
     }
 
-    public void StopShowingPlacementReview()
+    public void StopShowingPlacementPreview()
     {
         cellIndicator.SetActive(false);
-        Destroy(previewObject);
+        if (previewObject != null)
+        {
+            Destroy(previewObject);
+        }
+        PlacementSystem.isPreview = false;
     }
 
     public void PreparePreview(GameObject previewObject)
@@ -52,16 +65,20 @@ public class PreviewSystem : MonoBehaviour
     {
         if (size.x > 0 || size.y > 0)
         {
-            cellIndicator.transform.localScale = new Vector3(size.x * DataManager.cellSize, size.y * DataManager.cellSize, 1);
+            cellIndicator.transform.localScale = new Vector3(DataManager.cellSize, DataManager.cellSize, 1);
             cellIndicatorRenderer.material.mainTextureScale = size;
         }
     }
 
     public void UpdatePosition(Vector3 position, bool validity)
     {
-        MovePreview(position);
+        if (previewObject != null)
+        {
+            MovePreview(position);
+            ApplyFeedbackToPreview(validity);
+        }
         MoveCursor(position);
-        ApplyFeedback(validity);
+        ApplyFeedbackToCursor(validity);
     }
 
     private void MovePreview(Vector3 position)
@@ -74,11 +91,24 @@ public class PreviewSystem : MonoBehaviour
         cellIndicator.transform.position = position;
     }
 
-    private void ApplyFeedback(bool validity)
+    private void ApplyFeedbackToPreview(bool validity)
+    {
+        Color c = validity ? Color.white : Color.red;
+        c.a = 0.5f;
+        previewMaterialInstance.color = c;
+    }
+
+    private void ApplyFeedbackToCursor(bool validity)
     {
         Color c = validity ? Color.white : Color.red;
         c.a = 0.5f;
         cellIndicatorRenderer.material.color = c;
-        previewMaterialInstance.color = c;
+    }
+
+    public void StartShowingRemovePreview()
+    {
+        cellIndicator.SetActive(true);
+        PrepareCursor(Vector2Int.one);
+        ApplyFeedbackToCursor(false);
     }
 }

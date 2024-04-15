@@ -77,6 +77,24 @@ public class GridData
         Vector2Int chairPosition = new Vector2Int((int)(gridPosition.x + xToChair), (int)(gridPosition.y + yToChair));
         return chairPosition;
     }
+
+    public int GetRepresentationIndex(Vector3Int gridPosition)
+    {
+        if (!placedObjects.ContainsKey(gridPosition))
+        {
+            return -1;
+        }
+        return placedObjects[gridPosition].PlacedObjectIndex;
+    }
+
+    public int RemoveObjectAt(Vector3Int gridPosition)
+    {
+        foreach (var pos in placedObjects[gridPosition].occupiedPositions)
+        {
+            placedObjects.Remove(pos);
+        }
+        return -1;
+    }
 }
 
 public class PlacementData
