@@ -11,6 +11,7 @@ public class GoToNextScene : MonoBehaviour
         {
             if (DataManager.placedObjectsData.Count > 0)
             {
+                DataManager.isDay = true;
                 SceneManager.LoadScene("DayScene");
             }
             else

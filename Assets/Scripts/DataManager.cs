@@ -27,7 +27,7 @@ public class DataManager : MonoBehaviour
     private static int totalMoney;
     private static string moneyText;
     public static bool startTalking;
-
+    public static Vector3 playerPosition;
 
     // for each case
     public static HashSet<string> suspectList;
@@ -41,6 +41,7 @@ public class DataManager : MonoBehaviour
     private static int todayProfit;
     private static int todayTalked;
     private static int todayServed;
+    public static bool isDay;
 
     void Start()
     {
@@ -52,8 +53,10 @@ public class DataManager : MonoBehaviour
         caseNumber = 0;
         todayTalked = 0;
         startTalking = false;
+        playerPosition = new Vector3(0, 0, 0);
         placedObjectsData = new Dictionary<int, List<Vector2Int>> { };
         todayProfit = 0;
+        isDay = false;
         DontDestroyOnLoad(gameObject);
     }
     public static string selectedSuspectName = "";
