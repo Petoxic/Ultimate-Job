@@ -24,6 +24,7 @@ public class CountdownTimer : MonoBehaviour
             timer_progress_bar.fillAmount = timeWhenSceneEnds / max_time;
             if (timeWhenSceneEnds <= 0)
             {
+                DataManager.CheckObjective();
                 DataManager.isGameEnd = true;
                 SceneManager.LoadScene("ResultScene");
             }

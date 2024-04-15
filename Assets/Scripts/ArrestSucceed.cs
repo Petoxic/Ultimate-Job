@@ -13,7 +13,7 @@ public class ArrestSucceed : MonoBehaviour
     {
         gameOver.SetActive(false);
         gameWin.SetActive(false);
-        if (DataManager.day == 3 && DataManager.caseNumber == 1)
+        if (DataManager.IsLastDay())
         {
             stillNotSureButton.SetActive(false);
         }
@@ -25,7 +25,7 @@ public class ArrestSucceed : MonoBehaviour
 
     public void YesClicked()
     {
-        if (DataManager.selectedSuspectName == "Mr. Oliver Ford - Suspicious-looking man")
+        if (DataManager.CheckSuspect())
         {
             gameWin.SetActive(true);
             gameOver.SetActive(false);

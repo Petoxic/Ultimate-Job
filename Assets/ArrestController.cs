@@ -46,9 +46,7 @@ public class ArrestController : MonoBehaviour
         if (DataManager.isGameEnd)
         {
             // Go to next day
-            DataManager.day += 1;
-            DataManager.ResetObjective();
-            SceneManager.LoadScene("NightScene");
+            DataManager.NextDay();
         }
         else
         {

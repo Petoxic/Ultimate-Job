@@ -28,10 +28,10 @@ public class ResultManager : MonoBehaviour
         {
             notSureButton.SetActive(false);
             foundCriminalButton.transform.GetChild(0).GetComponent<UnityEngine.UI.Text>().text = "Criminal List";
-           
+
             header.text = "Objective Completed!";
             header.color = Color.yellow;
-            
+
             foundCriminalButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(delegate
             {
                 GoToArrestingScene();
@@ -62,18 +62,18 @@ public class ResultManager : MonoBehaviour
             });
 
         }
-        colorchangingFont1.text = "Profit: " + DataManager.todayMoney + "/20"; 
-        colorchangingFont2.text = "People talked: " + DataManager.todayTalked + "/2"; 
-        colorchangingFont3.text = "Dish served: " + DataManager.plateServed + "/2"; 
+        colorchangingFont1.text = Utils.GetProfitObjText();
+        colorchangingFont2.text = Utils.GetTalkedObjText();
+        colorchangingFont3.text = Utils.GetServedObjText();
         if (DataManager.isObjectiveCompleted[0])
         {
             colorchangingFont1.color = Color.yellow;
-            star1.sprite = sprites[sprites.Length - 1];      
+            star1.sprite = sprites[sprites.Length - 1];
         }
         else
         {
             colorchangingFont1.color = Color.red;
-            star1.sprite = sprites[sprites.Length - 2]; 
+            star1.sprite = sprites[sprites.Length - 2];
         }
         if (DataManager.isObjectiveCompleted[1])
         {
@@ -107,9 +107,7 @@ public class ResultManager : MonoBehaviour
 
     public void GoToNextNightScene()
     {
-        DataManager.day += 1;
-        DataManager.ResetObjective();
-        SceneManager.LoadScene("NightScene");
+        DataManager.NextDay();
     }
 
     public void GoToFirstNightScene()

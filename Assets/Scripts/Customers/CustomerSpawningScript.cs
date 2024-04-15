@@ -6,7 +6,7 @@ public class CustomerSpawningScript : MonoBehaviour
 {
     private static readonly List<int> customerCountPerDay = new() { 3, 3, 4 };
     private int customerCount;
-    private readonly float spawnDelay = 5.0f;
+    private readonly float spawnDelay = 5.0f; // TODO: randomize this value
     private bool isReadyToSpawn = false;
     [SerializeField] private GameObject customerPrefab;
 
@@ -18,7 +18,7 @@ public class CustomerSpawningScript : MonoBehaviour
 
     void Start()
     {
-        customerCount = min(customerCountPerDay[DataManager.day - 1], DataManager.placedObjectsData.Count * 2);
+        customerCount = Min(customerCountPerDay[DataManager.GetDay()], DataManager.placedObjectsData.Count * 2);
         StartCoroutine(SpawnDelay());
     }
 
@@ -34,7 +34,7 @@ public class CustomerSpawningScript : MonoBehaviour
     }
 
     //find min
-    public static int min(int a, int b)
+    private static int Min(int a, int b)
     {
         return a < b ? a : b;
     }

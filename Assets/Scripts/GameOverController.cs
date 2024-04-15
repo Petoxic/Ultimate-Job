@@ -27,16 +27,14 @@ public class GameOverController : MonoBehaviour
     public void ToNextMission()
     {
         // Next Case, Night 1
-        DataManager.caseNumber += 1;
+        DataManager.NextCase();
         DataManager.ResetToFirstNightIfWin();
         SceneManager.LoadScene("NightScene");
     }
 
     public void StillNotSure()
     {
-        // Same Case, Next Night
-        DataManager.ResetObjective();
-        DataManager.day += 1;
-        SceneManager.LoadScene("NightScene");
+        // Go to next day
+        DataManager.NextDay();
     }
 }

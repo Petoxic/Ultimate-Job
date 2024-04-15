@@ -7,7 +7,8 @@ using UnityEngine;
 
 public class CustomerData : MonoBehaviour
 {
-    public static Dictionary<int, Dictionary<string, object>> customerData = new Dictionary<int, Dictionary<string, object>>{
+    public static Dictionary<int, Dictionary<string, object>> customers = new()
+    {
         {1, new Dictionary<string, object> {
             {"name", "Ms. Evelyn Sinclair - Wealthy socialite"},
             {"dialogue", new string[][] {
@@ -109,26 +110,26 @@ public class CustomerData : MonoBehaviour
     };
 
 
-    public static List<int> queue = Enumerable.Range(1, customerData.Count).ToList();
+    public static List<int> queue = Enumerable.Range(1, customers.Count).ToList();
     public static int[] customerQueue = ShuffleArray(queue);
     public static int queuePos = 0;
 
     void Start()
     {
-        if (DataManager.day == 1)
+        if (DataManager.GetDay() == 0)
         {
             queuePos = 0;
         }
     }
 
-    public static int getCustomerQueue()
+    public static int GetCustomerQueue()
     {
         return customerQueue[queuePos++];
     }
 
     public static int[] ShuffleArray(List<int> array)
     {
-        System.Random random = new System.Random();
+        System.Random random = new();
         return array.OrderBy(x => random.Next()).ToArray();
     }
 }
