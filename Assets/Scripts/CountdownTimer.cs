@@ -12,8 +12,8 @@ public class CountdownTimer : MonoBehaviour
 
     void Start()
     {
-        timeWhenSceneEnds = DataManager.timeUntilSceneEnds;
-        max_time = DataManager.timeUntilSceneEnds;
+        timeWhenSceneEnds = DataManager.dayTimeLimit;
+        max_time = DataManager.dayTimeLimit;
     }
 
     void Update()

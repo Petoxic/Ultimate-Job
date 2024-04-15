@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.Video;
 
 public class ResultManager : MonoBehaviour
 {
@@ -95,9 +96,6 @@ public class ResultManager : MonoBehaviour
             colorchangingFont3.color = Color.red;
             star3.sprite = sprites[sprites.Length - 2];
         }
-
-
-
     }
 
     public void GoToArrestingScene()
@@ -105,25 +103,8 @@ public class ResultManager : MonoBehaviour
         SceneManager.LoadScene("ArrestingScene");
     }
 
-    public void GoToNextNightScene()
-    {
-        DataManager.NextDay();
-    }
-
-    public void GoToFirstNightScene()
-    {
-        DataManager.ResetToFirstNightIfLose();
-        SceneManager.LoadScene("NightScene");
-    }
-
     public void GoToMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }

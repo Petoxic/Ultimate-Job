@@ -20,44 +20,66 @@ public class DataManager : MonoBehaviour
     // correct suspect name for each case
     public static readonly string[] suspects = new string[totalCases] { "Mr. Oliver Ford - Suspicious-looking man", "" };
     public const float cellSize = 0.16f;
-
+    public const float dayTimeLimit = 45f;
 
     // game state variables
     // used throughout the game
     private static int totalMoney;
     private static string moneyText;
     public static bool startTalking;
-
+    private static int caseNumber;
+    public static string selectedSuspectName;
 
     // for each case
+    private static int day;
     public static HashSet<string> suspectList;
-    private static int caseNumber;
-    private static bool isDayEnded = false;
     public static Dictionary<int, List<Vector2Int>> placedObjectsData;
 
     // for each day
+    private static bool isDayEnded;
     public static bool[] isObjectiveCompleted;
-    private static int day;
     private static int todayProfit;
     private static int todayTalked;
     private static int todayServed;
 
     void Start()
     {
-        SetTotalMoney(startingMoney);
-        suspectList = new HashSet<string>();
-        isObjectiveCompleted = new bool[] { false, false, false };
-        todayServed = 0;
-        day = 0;
-        caseNumber = 0;
-        todayTalked = 0;
-        startTalking = false;
-        placedObjectsData = new Dictionary<int, List<Vector2Int>> { };
-        todayProfit = 0;
+        ResetGameData();
+
         DontDestroyOnLoad(gameObject);
     }
-    public static string selectedSuspectName = "";
-    public static float timeUntilSceneEnds = 45f;
+
+    private static void ResetGameData()
+    {
+        SetTotalMoney(startingMoney);
+        startTalking = false;
+        caseNumber = 0;
+        selectedSuspectName = "";
+
+        // reset case data
+        ResetCaseData();
+    }
+
+    private static void ResetCaseData()
+    {
+        day = 0;
+        suspectList = new HashSet<string>();
+        placedObjectsData = new Dictionary<int, List<Vector2Int>> { };
+
+        // reset day data
+        ResetDayData();
+    }
+
+    private static void ResetDayData()
+    {
+        isDayEnded = false;
+        isObjectiveCompleted = new bool[] { false, false, false };
+        todayProfit = 0;
+        todayTalked = 0;
+        todayServed = 0;
+
+        SceneManager.LoadScene("NightScene");
+    }
 
     public static void AddMoney(int money)
     {
@@ -83,6 +105,7 @@ public class DataManager : MonoBehaviour
     {
         todayServed += 1;
     }
+
     public static void CheckObjective()
     {
         if (todayProfit >= GetProfitObjective())
@@ -99,112 +122,94 @@ public class DataManager : MonoBehaviour
         }
     }
 
-    private static void ResetObjective()
-    {
-        todayProfit = 0;
-        todayTalked = 0;
-        todayServed = 0;
-        isObjectiveCompleted = new bool[] { false, false, false };
-    }
-
     public static void RestartGame()
     {
-        SetTotalMoney(startingMoney);
-        suspectList = new HashSet<string>();
-        todayServed = 0;
-        caseNumber = 0;
-        startTalking = false;
-        ResetDay();
-        ResetObjective();
+        ResetGameData();
     }
 
-    public static void ResetToFirstNightIfLose()
-    {
-        SetTotalMoney(startingMoney);
-        suspectList = new HashSet<string>();
-        startTalking = false;
-        ResetDay();
-        ResetObjective();
-    }
-
-    public static void ResetToFirstNightIfWin()
-    {
-        suspectList = new HashSet<string>();
-        startTalking = false;
-        ResetDay();
-        ResetObjective();
-    }
     public static bool CheckSuspect()
     {
         return suspects[caseNumber] == selectedSuspectName;
     }
+
     public static bool IsLastDay()
     {
         return day == totalDays[caseNumber] - 1;
     }
+
     public static void NextDay()
     {
         day += 1;
-        ResetObjective();
-        SceneManager.LoadScene("NightScene");
+        ResetDayData();
     }
+
     public static void NextCase()
     {
         caseNumber += 1;
+        ResetCaseData();
     }
-    public static void ResetDay()
-    {
-        day = 0;
-    }
+
     public static int GetDay()
     {
         return day;
     }
+
     public static int GetCaseNumber()
     {
         return caseNumber;
     }
+
     public static int GetTodayProfit()
     {
         return todayProfit;
     }
+
     public static int GetTodayTalked()
     {
         return todayTalked;
     }
+
     public static int GetTodayServed()
     {
         return todayServed;
     }
+
     public static int GetProfitObjective()
     {
         return objectives[caseNumber][day].Item1;
     }
+
     public static int GetTalkedObjective()
     {
         return objectives[caseNumber][day].Item2;
     }
+
     public static int GetServedObjective()
     {
         return objectives[caseNumber][day].Item3;
     }
+
     public static bool IsDayEnded()
     {
         return isDayEnded;
     }
+
     public static void SetDayEnded(bool value)
     {
         isDayEnded = value;
     }
+
     public static int GetTotalMoney()
     {
         return totalMoney;
     }
+
     private static void SetTotalMoney(int value)
     {
         totalMoney = value;
         moneyText = $"$ {totalMoney}";
     }
+
     public static string GetMoneyText()
     {
         return moneyText;
