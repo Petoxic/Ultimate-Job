@@ -36,6 +36,7 @@ public class PlayerScript : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        orderNote.SetActive(false);
 
         if (Instance != null)
         {
