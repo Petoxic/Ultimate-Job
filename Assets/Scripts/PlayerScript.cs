@@ -28,12 +28,23 @@ public class PlayerScript : MonoBehaviour
     Animator animator;
     bool canMove = true;
 
+    public static PlayerScript Instance;
+
     [SerializeField] private GameObject orderNote;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
+        if (Instance != null)
+        {
+            Destroy(this.gameObject);
+            return;
+        }
+
+        Instance = this;
+        GameObject.DontDestroyOnLoad(this.gameObject);
     }
 
     void FixedUpdate()
