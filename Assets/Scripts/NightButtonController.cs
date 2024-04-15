@@ -7,10 +7,11 @@ public class GoToNextScene : MonoBehaviour
 {
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (!ShopManager.isOpenShop && Input.GetKeyDown(KeyCode.Space))
         {
             if (DataManager.placedObjectsData.Count > 0)
             {
+                DataManager.isDay = true;
                 SceneManager.LoadScene("DayScene");
             }
             else

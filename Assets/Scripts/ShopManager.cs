@@ -35,6 +35,13 @@ public class ShopManager : MonoBehaviour
                 OpenShopMenu();
             }
         }
+        else if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (isOpenShop)
+            {
+                CloseShopMenu();
+            }
+        }
     }
 
     public void OpenShopMenu()

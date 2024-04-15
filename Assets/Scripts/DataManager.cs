@@ -38,7 +38,7 @@ public class DataManager : MonoBehaviour
     public static List<int> customerOrders;
     public static int[] customerQueue;
     public static int queuePos;
-
+    public static Vector3 playerPosition;
 
     // for each day
     private static bool isDayEnded;
@@ -46,6 +46,7 @@ public class DataManager : MonoBehaviour
     private static int todayProfit;
     private static int todayTalked;
     private static int todayServed;
+    public static bool isDay;
 
     void Start()
     {
@@ -73,6 +74,7 @@ public class DataManager : MonoBehaviour
         customerOrders = Enumerable.Range(1, CustomerData.GetCustomerData().Count).ToList();
         customerQueue = Utils.ShuffleArray(customerOrders);
         queuePos = 0;
+        playerPosition = new Vector3(0, 0, 0);
 
         // reset day data
         ResetDayData();
@@ -85,6 +87,7 @@ public class DataManager : MonoBehaviour
         todayProfit = 0;
         todayTalked = 0;
         todayServed = 0;
+        isDay = false;
     }
 
     public static void AddMoney(int money)

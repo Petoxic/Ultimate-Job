@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 // using UnityEditor.iOS.Xcode;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -30,14 +31,28 @@ public class PlayerScript : MonoBehaviour
 
     [SerializeField] private GameObject orderNote;
 
+    // public static PlayerScript Instance;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        if (DataManager.isDay == false)
+        {
+            orderNote.SetActive(false);
+        }
+
+        // Set persist player position 
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            player.transform.position = DataManager.playerPosition;
+        }
     }
 
     void FixedUpdate()
     {
+        DataManager.playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
         if (canMove && !DataManager.startTalking)
         {
             rb.MovePosition(rb.position + moveSpeed * Time.fixedDeltaTime * movementInput);
