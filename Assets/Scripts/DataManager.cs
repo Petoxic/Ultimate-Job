@@ -77,8 +77,6 @@ public class DataManager : MonoBehaviour
         todayProfit = 0;
         todayTalked = 0;
         todayServed = 0;
-
-        SceneManager.LoadScene("NightScene");
     }
 
     public static void AddMoney(int money)
@@ -141,12 +139,14 @@ public class DataManager : MonoBehaviour
     {
         day += 1;
         ResetDayData();
+        SceneManager.LoadScene("NightScene");
     }
 
     public static void NextCase()
     {
         caseNumber += 1;
         ResetCaseData();
+        SceneManager.LoadScene("NightScene");
     }
 
     public static int GetDay()
