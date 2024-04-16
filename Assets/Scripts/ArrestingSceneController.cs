@@ -105,6 +105,15 @@ public class ArrestingSceneController : MonoBehaviour
     {
         if (DataManager.CheckSuspect())
         {
+            if (DataManager.GetDay()-1 == 1){
+                DataManager.Reward(300);
+            }
+            else if (DataManager.GetDay()-1 == 2){
+                DataManager.Reward(200);
+            }
+            else if (DataManager.GetDay()-1 == 3){
+                DataManager.Reward(100);
+            }
             gameWinModal.SetActive(true);
             gameOverModal.SetActive(false);
         }
