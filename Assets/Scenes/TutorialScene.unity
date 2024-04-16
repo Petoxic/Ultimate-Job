@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1342675818613561133, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1017963552, guid: eb1366f1d7263455c918b5a339d4c51a, type: 3}
     - target: {fileID: 1841221208289934582, guid: 45c9e553e2fe64a4a9742a964854e571, type: 3}
       propertyPath: m_Value
       value: 0.695
@@ -11305,7 +11309,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a631fd9487554f7c94fcbbd40358a57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 1424402832}
 --- !u!114 &1424402832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13021,7 +13024,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1
+  orthographic size: 1.2581035
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -13046,7 +13049,7 @@ Transform:
   m_GameObject: {fileID: 1830041032}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.028, y: -0.045, z: -10}
+  m_LocalPosition: {x: 0.003, y: -0.02, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13059,14 +13062,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830041032}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_AssetsPPU: 100
-  m_RefResolutionX: 400
-  m_RefResolutionY: 225
+  m_RefResolutionX: 320
+  m_RefResolutionY: 180
   m_UpscaleRT: 0
   m_PixelSnapping: 0
   m_CropFrameX: 0
