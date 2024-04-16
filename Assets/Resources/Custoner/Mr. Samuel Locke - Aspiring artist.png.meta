@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mr. Samuel Locke - Aspiring artist_0
+      name: Mr. Samuel Locke - Aspiring artist_8
       rect:
         serializedVersion: 2
         x: 3
@@ -118,7 +118,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mr. Samuel Locke - Aspiring artist_1
+      name: Mr. Samuel Locke - Aspiring artist_3
       rect:
         serializedVersion: 2
         x: 26
@@ -160,16 +160,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mr. Samuel Locke - Aspiring artist_3
+      name: Mr. Samuel Locke - Aspiring artist_1
       rect:
         serializedVersion: 2
         x: 83
         y: 58
-        width: 59
+        width: 57
         height: 63
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 2, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -265,7 +265,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mr. Samuel Locke - Aspiring artist_8
+      name: Mr. Samuel Locke - Aspiring artist_0
       rect:
         serializedVersion: 2
         x: 26
@@ -380,18 +380,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Mr. Samuel Locke - Aspiring artist_0: 53882757
-      Mr. Samuel Locke - Aspiring artist_1: -516037523
+      Mr. Samuel Locke - Aspiring artist_0: 1221237870
+      Mr. Samuel Locke - Aspiring artist_1: -1683852198
       Mr. Samuel Locke - Aspiring artist_10: 1355789545
       Mr. Samuel Locke - Aspiring artist_11: 1238920436
       Mr. Samuel Locke - Aspiring artist_12: -1176142438
       Mr. Samuel Locke - Aspiring artist_2: 774235565
-      Mr. Samuel Locke - Aspiring artist_3: -1683852198
+      Mr. Samuel Locke - Aspiring artist_3: -516037523
       Mr. Samuel Locke - Aspiring artist_4: -1283422821
       Mr. Samuel Locke - Aspiring artist_5: 352687408
       Mr. Samuel Locke - Aspiring artist_6: 1756882189
       Mr. Samuel Locke - Aspiring artist_7: 974999498
-      Mr. Samuel Locke - Aspiring artist_8: 1221237870
+      Mr. Samuel Locke - Aspiring artist_8: 53882757
       Mr. Samuel Locke - Aspiring artist_9: 1328361708
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

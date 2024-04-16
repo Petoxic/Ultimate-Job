@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ms. Olivia Fox - Suspicious individual_0
+      name: Ms. Olivia Fox - Suspicious individual_8
       rect:
         serializedVersion: 2
         x: 6
@@ -105,7 +105,7 @@ TextureImporter:
         width: 13
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -118,7 +118,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ms. Olivia Fox - Suspicious individual_1
+      name: Ms. Olivia Fox - Suspicious individual_3
       rect:
         serializedVersion: 2
         x: 27
@@ -126,7 +126,7 @@ TextureImporter:
         width: 18
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,7 +147,7 @@ TextureImporter:
         width: 13
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,7 +160,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ms. Olivia Fox - Suspicious individual_3
+      name: Ms. Olivia Fox - Suspicious individual_1
       rect:
         serializedVersion: 2
         x: 89
@@ -168,7 +168,7 @@ TextureImporter:
         width: 39
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,7 +189,7 @@ TextureImporter:
         width: 13
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,7 +210,7 @@ TextureImporter:
         width: 13
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,7 +231,7 @@ TextureImporter:
         width: 13
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,7 +252,7 @@ TextureImporter:
         width: 12
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,7 +265,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ms. Olivia Fox - Suspicious individual_8
+      name: Ms. Olivia Fox - Suspicious individual_0
       rect:
         serializedVersion: 2
         x: 27
@@ -273,7 +273,7 @@ TextureImporter:
         width: 18
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,7 +294,7 @@ TextureImporter:
         width: 13
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -315,7 +315,7 @@ TextureImporter:
         width: 35
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -336,7 +336,7 @@ TextureImporter:
         width: 18
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -357,7 +357,7 @@ TextureImporter:
         width: 13
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -378,7 +378,7 @@ TextureImporter:
         width: 13
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -399,7 +399,7 @@ TextureImporter:
         width: 13
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -422,20 +422,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ms. Olivia Fox - Suspicious individual_0: 1786152763
-      Ms. Olivia Fox - Suspicious individual_1: 543951537
+      Ms. Olivia Fox - Suspicious individual_0: -298879837
+      Ms. Olivia Fox - Suspicious individual_1: 1775737450
       Ms. Olivia Fox - Suspicious individual_10: 678500936
       Ms. Olivia Fox - Suspicious individual_11: -1776910994
       Ms. Olivia Fox - Suspicious individual_12: 1714900776
       Ms. Olivia Fox - Suspicious individual_13: -1566194619
       Ms. Olivia Fox - Suspicious individual_14: -973213432
       Ms. Olivia Fox - Suspicious individual_2: -1704284538
-      Ms. Olivia Fox - Suspicious individual_3: 1775737450
+      Ms. Olivia Fox - Suspicious individual_3: 543951537
       Ms. Olivia Fox - Suspicious individual_4: -198571396
       Ms. Olivia Fox - Suspicious individual_5: -1955848326
       Ms. Olivia Fox - Suspicious individual_6: -1295890569
       Ms. Olivia Fox - Suspicious individual_7: -923536069
-      Ms. Olivia Fox - Suspicious individual_8: -298879837
+      Ms. Olivia Fox - Suspicious individual_8: 1786152763
       Ms. Olivia Fox - Suspicious individual_9: 1287425812
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

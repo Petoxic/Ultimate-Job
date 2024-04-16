@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mr. Richard Banks - Wealthy businessman_0
+      name: Mr. Richard Banks - Wealthy businessman_8
       rect:
         serializedVersion: 2
         x: 3
@@ -105,7 +105,7 @@ TextureImporter:
         width: 18
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -118,7 +118,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mr. Richard Banks - Wealthy businessman_1
+      name: Mr. Richard Banks - Wealthy businessman_3
       rect:
         serializedVersion: 2
         x: 27
@@ -126,7 +126,7 @@ TextureImporter:
         width: 18
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,7 +147,7 @@ TextureImporter:
         width: 18
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,7 +160,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mr. Richard Banks - Wealthy businessman_3
+      name: Mr. Richard Banks - Wealthy businessman_1
       rect:
         serializedVersion: 2
         x: 88
@@ -168,7 +168,7 @@ TextureImporter:
         width: 55
         height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,7 +189,7 @@ TextureImporter:
         width: 14
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,7 +210,7 @@ TextureImporter:
         width: 13
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,7 +231,7 @@ TextureImporter:
         width: 13
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,7 +252,7 @@ TextureImporter:
         width: 16
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,7 +265,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mr. Richard Banks - Wealthy businessman_8
+      name: Mr. Richard Banks - Wealthy businessman_0
       rect:
         serializedVersion: 2
         x: 27
@@ -273,7 +273,7 @@ TextureImporter:
         width: 18
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,7 +294,7 @@ TextureImporter:
         width: 16
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -315,7 +315,7 @@ TextureImporter:
         width: 14
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -336,7 +336,7 @@ TextureImporter:
         width: 13
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -357,7 +357,7 @@ TextureImporter:
         width: 14
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -380,19 +380,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Mr. Richard Banks - Wealthy businessman_0: -371641353
-      Mr. Richard Banks - Wealthy businessman_1: -1218748830
+      Mr. Richard Banks - Wealthy businessman_0: -476963269
+      Mr. Richard Banks - Wealthy businessman_1: 2005862510
       Mr. Richard Banks - Wealthy businessman_10: -1861952085
       Mr. Richard Banks - Wealthy businessman_11: -2015654644
       Mr. Richard Banks - Wealthy businessman_12: 938967977
       Mr. Richard Banks - Wealthy businessman_2: -1888343870
-      Mr. Richard Banks - Wealthy businessman_3: 2005862510
-      Mr. Richard Banks - Wealthy businessman_4: -1236677970
-      Mr. Richard Banks - Wealthy businessman_5: -1229414728
-      Mr. Richard Banks - Wealthy businessman_6: -1381311346
-      Mr. Richard Banks - Wealthy businessman_7: -554315275
-      Mr. Richard Banks - Wealthy businessman_8: -476963269
-      Mr. Richard Banks - Wealthy businessman_9: -1526783192
+      Mr. Richard Banks - Wealthy businessman_3: -1218748830
+      Mr. Richard Banks - Wealthy businessman_4: -1229414728
+      Mr. Richard Banks - Wealthy businessman_5: -1381311346
+      Mr. Richard Banks - Wealthy businessman_6: -554315275
+      Mr. Richard Banks - Wealthy businessman_7: -371641353
+      Mr. Richard Banks - Wealthy businessman_8: -1526783192
+      Mr. Richard Banks - Wealthy businessman_9: 2005862510
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

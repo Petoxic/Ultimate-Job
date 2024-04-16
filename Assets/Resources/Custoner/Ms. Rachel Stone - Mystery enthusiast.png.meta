@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ms. Rachel Stone - Mystery enthusiast_0
+      name: Ms. Rachel Stone - Mystery enthusiast_8
       rect:
         serializedVersion: 2
         x: 4
@@ -105,7 +105,7 @@ TextureImporter:
         width: 16
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -118,7 +118,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ms. Rachel Stone - Mystery enthusiast_1
+      name: Ms. Rachel Stone - Mystery enthusiast_3
       rect:
         serializedVersion: 2
         x: 27
@@ -126,7 +126,7 @@ TextureImporter:
         width: 17
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,7 +147,7 @@ TextureImporter:
         width: 16
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,7 +160,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ms. Rachel Stone - Mystery enthusiast_3
+      name: Ms. Rachel Stone - Mystery enthusiast_1
       rect:
         serializedVersion: 2
         x: 82
@@ -168,7 +168,7 @@ TextureImporter:
         width: 59
         height: 69
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,7 +189,7 @@ TextureImporter:
         width: 14
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,7 +210,7 @@ TextureImporter:
         width: 11
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,7 +231,7 @@ TextureImporter:
         width: 16
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,7 +252,7 @@ TextureImporter:
         width: 16
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,7 +265,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ms. Rachel Stone - Mystery enthusiast_8
+      name: Ms. Rachel Stone - Mystery enthusiast_0
       rect:
         serializedVersion: 2
         x: 28
@@ -273,7 +273,7 @@ TextureImporter:
         width: 16
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,7 +294,7 @@ TextureImporter:
         width: 17
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -315,7 +315,7 @@ TextureImporter:
         width: 40
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -336,7 +336,7 @@ TextureImporter:
         width: 16
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -357,7 +357,7 @@ TextureImporter:
         width: 13
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -378,7 +378,7 @@ TextureImporter:
         width: 15
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -401,19 +401,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Ms. Rachel Stone - Mystery enthusiast_0: 1503822111
-      Ms. Rachel Stone - Mystery enthusiast_1: -921287693
+      Ms. Rachel Stone - Mystery enthusiast_0: -1969191135
+      Ms. Rachel Stone - Mystery enthusiast_1: -280324157
       Ms. Rachel Stone - Mystery enthusiast_10: -177976506
       Ms. Rachel Stone - Mystery enthusiast_11: -1115934296
       Ms. Rachel Stone - Mystery enthusiast_12: -1401530373
       Ms. Rachel Stone - Mystery enthusiast_13: -653392102
       Ms. Rachel Stone - Mystery enthusiast_2: 625319112
-      Ms. Rachel Stone - Mystery enthusiast_3: -280324157
+      Ms. Rachel Stone - Mystery enthusiast_3: -921287693
       Ms. Rachel Stone - Mystery enthusiast_4: 90267899
       Ms. Rachel Stone - Mystery enthusiast_5: 1426039318
       Ms. Rachel Stone - Mystery enthusiast_6: -1005038855
       Ms. Rachel Stone - Mystery enthusiast_7: 204307163
-      Ms. Rachel Stone - Mystery enthusiast_8: -1969191135
+      Ms. Rachel Stone - Mystery enthusiast_8: 1503822111
       Ms. Rachel Stone - Mystery enthusiast_9: 73552721
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mr. Robert Holmes - Retired detective_0
+      name: Mr. Robert Holmes - Retired detective_8
       rect:
         serializedVersion: 2
         x: 5
@@ -118,7 +118,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mr. Robert Holmes - Retired detective_1
+      name: Mr. Robert Holmes - Retired detective_3
       rect:
         serializedVersion: 2
         x: 29
@@ -160,7 +160,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mr. Robert Holmes - Retired detective_3
+      name: Mr. Robert Holmes - Retired detective_1
       rect:
         serializedVersion: 2
         x: 80
@@ -265,7 +265,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mr. Robert Holmes - Retired detective_8
+      name: Mr. Robert Holmes - Retired detective_0
       rect:
         serializedVersion: 2
         x: 29
@@ -422,20 +422,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Mr. Robert Holmes - Retired detective_0: 1908074657
-      Mr. Robert Holmes - Retired detective_1: -1908998603
+      Mr. Robert Holmes - Retired detective_0: -1611794568
+      Mr. Robert Holmes - Retired detective_1: 154506605
       Mr. Robert Holmes - Retired detective_10: 2030333822
       Mr. Robert Holmes - Retired detective_11: 742722751
       Mr. Robert Holmes - Retired detective_12: -679704922
       Mr. Robert Holmes - Retired detective_13: 135764916
       Mr. Robert Holmes - Retired detective_14: -1049653227
       Mr. Robert Holmes - Retired detective_2: -1712420724
-      Mr. Robert Holmes - Retired detective_3: 154506605
+      Mr. Robert Holmes - Retired detective_3: -1908998603
       Mr. Robert Holmes - Retired detective_4: 507471768
       Mr. Robert Holmes - Retired detective_5: -196581437
       Mr. Robert Holmes - Retired detective_6: 1031263054
       Mr. Robert Holmes - Retired detective_7: -1585580489
-      Mr. Robert Holmes - Retired detective_8: -1611794568
+      Mr. Robert Holmes - Retired detective_8: 1908074657
       Mr. Robert Holmes - Retired detective_9: 583403867
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
