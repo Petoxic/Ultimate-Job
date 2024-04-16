@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -93,22 +93,324 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Mr. Daniel Blackwood - Art fan_8
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 95
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0610b9c3c7c8497db5930655e82e420
+      internalID: -1226936135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Daniel Blackwood - Art fan_3
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 96
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812c3d4a626c94f32af2ca9f55ad9cc8
+      internalID: -2033706623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Daniel Blackwood - Art fan_2
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 95
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32afc22b8cd2c46eb8bf58da792ff250
+      internalID: -1858887105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Daniel Blackwood - Art fan_1
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 58
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e88296352365428c8796d6b88a50c89
+      internalID: 1286446113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Daniel Blackwood - Art fan_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 63
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1dfe90677db44f7bfee2471540a1ec
+      internalID: -899335830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Daniel Blackwood - Art fan_5
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 63
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85f4f00344784dec954563bbde9ef04
+      internalID: 1525491133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Daniel Blackwood - Art fan_6
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 63
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e900f6156fa4fe7a6d050f2deb7115
+      internalID: 815641638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Daniel Blackwood - Art fan_7
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 31
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eda364926af60451bb09c2cd6263e1e5
+      internalID: 701675961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Daniel Blackwood - Art fan_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 31
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf2680af7dc04d7d9b1ecd616e711a8
+      internalID: -770982016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Daniel Blackwood - Art fan_9
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 31
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de51eaef5c60421aa8386f4b48f1044
+      internalID: -1278099536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Daniel Blackwood - Art fan_10
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 36
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2af92140df74e648e8ad47ff07530f
+      internalID: -470568395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Daniel Blackwood - Art fan_11
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 32
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ae810fe340e4a758f8991686168c80
+      internalID: 871816260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Daniel Blackwood - Art fan_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5371604f7e4430493ccbabb082c4d8
+      internalID: 201011436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Daniel Blackwood - Art fan_13
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 0
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2c98f23d724948d3b30ba510417441b
+      internalID: -577110746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Daniel Blackwood - Art fan_14
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4b0ac0c5b604333b09a9e00dfb8adc
+      internalID: -375065705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +421,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mr. Daniel Blackwood - Art fan_0: -770982016
+      Mr. Daniel Blackwood - Art fan_1: 1286446113
+      Mr. Daniel Blackwood - Art fan_10: -470568395
+      Mr. Daniel Blackwood - Art fan_11: 871816260
+      Mr. Daniel Blackwood - Art fan_12: 201011436
+      Mr. Daniel Blackwood - Art fan_13: -577110746
+      Mr. Daniel Blackwood - Art fan_14: -375065705
+      Mr. Daniel Blackwood - Art fan_2: -1858887105
+      Mr. Daniel Blackwood - Art fan_3: -2033706623
+      Mr. Daniel Blackwood - Art fan_4: -899335830
+      Mr. Daniel Blackwood - Art fan_5: 1525491133
+      Mr. Daniel Blackwood - Art fan_6: 815641638
+      Mr. Daniel Blackwood - Art fan_7: 701675961
+      Mr. Daniel Blackwood - Art fan_8: -1226936135
+      Mr. Daniel Blackwood - Art fan_9: -1278099536
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a264baba78995463497d76eefdf4a135
+guid: 2da75544c5dac42a6b6ff71b18ab59b4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 120
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -93,30 +93,248 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: char_0
+      name: Dr. Henry Wallace - Science dude_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 4
+        y: 96
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e4edb71243a431aaf360c957dcc588
+      internalID: 1225980163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dr. Henry Wallace - Science dude_3
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 96
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a226a177a07415c868655771c34820
+      internalID: 521535415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dr. Henry Wallace - Science dude_2
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 96
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2e297d4384f4937819c91a178e09b9
+      internalID: -737388239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dr. Henry Wallace - Science dude_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 55
+        width: 57
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdaa2db3833be45d8a45fed415d39ede
+      internalID: 1219401965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dr. Henry Wallace - Science dude_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 64
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655dda22932244454952786218f449c5
+      internalID: 1094482274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dr. Henry Wallace - Science dude_5
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 64
+        width: 13
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5020d9fa2835546dc8409bfb2efd010c
+      internalID: -39515891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dr. Henry Wallace - Science dude_6
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 64
+        width: 13
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0dd798ded57944eda8b841c01faa455
+      internalID: 172866784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dr. Henry Wallace - Science dude_7
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 32
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1fdfd14720b4fa598bcb9c44daf12d
+      internalID: 849753703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dr. Henry Wallace - Science dude_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 32
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe2cafcf2dff42528c6bd85d9fa7fd4
+      internalID: -1345353834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dr. Henry Wallace - Science dude_9
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 32
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81933ba88cef0458cabf1c131159c7f6
+      internalID: -805425667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dr. Henry Wallace - Science dude_10
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 31
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0666ed15ead294338a1a6eeb00a0fe9a
+      internalID: -1000601146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dr. Henry Wallace - Science dude_11
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 32
         width: 20
-        height: 21
+        height: 20
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +342,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8df0d4aac50be4aa680c95e11cd50fc3
-      internalID: -2030835349
+      spriteID: feaaf156581c84b33b4ee676da685b1f
+      internalID: 2126067092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_1
+      name: Dr. Henry Wallace - Science dude_12
       rect:
         serializedVersion: 2
-        x: 20
+        x: 6
         y: 0
-        width: 22
-        height: 21
+        width: 13
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,41 +363,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36553f058e5db4a369c5ccf782a201f8
-      internalID: -614460007
+      spriteID: bf3d7042f0507439aaae9c26df9760a8
+      internalID: -337466641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: char_2
+      name: Dr. Henry Wallace - Science dude_13
       rect:
         serializedVersion: 2
-        x: 43
+        x: 30
         y: 0
-        width: 20
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 3, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03da7d0f9ca1b4a559b93ea110efab22
-      internalID: -1868698703
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: char_3
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 19
-        height: 21
+        width: 13
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +384,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 575f30b74c595401bbfbe70484d587ff
-      internalID: -1666776374
+      spriteID: e9c729dc45d794c8189c7adca1bcf70d
+      internalID: -706172875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dr. Henry Wallace - Science dude_14
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b755f83992ae64d73b92798ce7c67bd8
+      internalID: 228985271
       vertices: []
       indices: 
       edges: []
@@ -204,10 +422,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      char_0: -2030835349
-      char_1: -614460007
-      char_2: -1868698703
-      char_3: -1666776374
+      Dr. Henry Wallace - Science dude_0: -1345353834
+      Dr. Henry Wallace - Science dude_1: 1219401965
+      Dr. Henry Wallace - Science dude_10: -1000601146
+      Dr. Henry Wallace - Science dude_11: 2126067092
+      Dr. Henry Wallace - Science dude_12: -337466641
+      Dr. Henry Wallace - Science dude_13: -706172875
+      Dr. Henry Wallace - Science dude_14: 228985271
+      Dr. Henry Wallace - Science dude_2: -737388239
+      Dr. Henry Wallace - Science dude_3: 521535415
+      Dr. Henry Wallace - Science dude_4: 1094482274
+      Dr. Henry Wallace - Science dude_5: -39515891
+      Dr. Henry Wallace - Science dude_6: 172866784
+      Dr. Henry Wallace - Science dude_7: 849753703
+      Dr. Henry Wallace - Science dude_8: 1225980163
+      Dr. Henry Wallace - Science dude_9: -805425667
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -93,22 +93,303 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Mrs. Margaret Chen - Museum boss_8
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 95
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 191792b47950e49ef83faceae4a50d98
+      internalID: -291494361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Margaret Chen - Museum boss_3
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 96
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27ade6268cd241e1b195ce066f1d106
+      internalID: -2032842772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Margaret Chen - Museum boss_2
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 95
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2435fee5d6044be28bb67a9a550422a
+      internalID: -2071500753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Margaret Chen - Museum boss_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 53
+        width: 49
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c2c22e41a74439aa2072961d160531
+      internalID: 1756947469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Margaret Chen - Museum boss_4
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 63
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67d4514ce55b4b1e9e9fd88b39dcc90
+      internalID: -434861491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Margaret Chen - Museum boss_5
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 63
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408754934608d431c91aa657766840e8
+      internalID: -117922181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Margaret Chen - Museum boss_6
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 63
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92b021f8f76f46c5a719933f84a2e82
+      internalID: 205785351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Margaret Chen - Museum boss_7
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 32
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d88139ad62a714ca0a9c2a9784a650c2
+      internalID: -881852465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Margaret Chen - Museum boss_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 31
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b399a6ca3b1854a869385b30636eab38
+      internalID: 1554644340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Margaret Chen - Museum boss_9
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 31
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e67a53985e9cb448dbaff2138f54132b
+      internalID: -631280870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Margaret Chen - Museum boss_10
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 27
+        width: 76
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f6bb400dcb91476eb02150e3e742570
+      internalID: 1517604127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Margaret Chen - Museum boss_11
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26082d089c80b4f7595efd07ed09a859
+      internalID: -1717455804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Margaret Chen - Museum boss_12
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e082f68e8d1944a72b6001296bc7492e
+      internalID: -555775134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Margaret Chen - Museum boss_13
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d65e113abb07b45d68714d0272e24ccb
+      internalID: -30304197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +400,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mrs. Margaret Chen - Museum boss_0: 1554644340
+      Mrs. Margaret Chen - Museum boss_1: 1756947469
+      Mrs. Margaret Chen - Museum boss_10: 1517604127
+      Mrs. Margaret Chen - Museum boss_11: -1717455804
+      Mrs. Margaret Chen - Museum boss_12: -555775134
+      Mrs. Margaret Chen - Museum boss_13: -30304197
+      Mrs. Margaret Chen - Museum boss_2: -2071500753
+      Mrs. Margaret Chen - Museum boss_3: -2032842772
+      Mrs. Margaret Chen - Museum boss_4: -434861491
+      Mrs. Margaret Chen - Museum boss_5: -117922181
+      Mrs. Margaret Chen - Museum boss_6: 205785351
+      Mrs. Margaret Chen - Museum boss_7: -881852465
+      Mrs. Margaret Chen - Museum boss_8: -291494361
+      Mrs. Margaret Chen - Museum boss_9: -631280870
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -93,22 +93,282 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Mr. Oliver Ford - Suspicious-looking man_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 96
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198b9f4a4b41b4b419d7035895a2a33b
+      internalID: 2027100717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Oliver Ford - Suspicious-looking man_3
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 96
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ccd8e29b7b245c39e166a03d939832
+      internalID: 290659733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Oliver Ford - Suspicious-looking man_2
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 96
+        width: 21
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77cae8dc740d84236891f61327938b5b
+      internalID: 1837956704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Oliver Ford - Suspicious-looking man_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 57
+        width: 76
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d594ba49ca664a338a8777649bbf0ca
+      internalID: 322573425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Oliver Ford - Suspicious-looking man_4
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 65
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d93d54128f91c479bac02fefbe26dc97
+      internalID: -435201403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Oliver Ford - Suspicious-looking man_5
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 64
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cf77c40528de4b569adafdb87f81748
+      internalID: -943503810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Oliver Ford - Suspicious-looking man_6
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 64
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3caadfcab1c5a40b58933ad0c0a0aa92
+      internalID: -2135338311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Oliver Ford - Suspicious-looking man_7
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 33
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb7bd1db12714dfe929f6466b485d04
+      internalID: 62496249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Oliver Ford - Suspicious-looking man_0
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 32
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37465e89d62b944cd8eb3a02875048ef
+      internalID: -744624501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Oliver Ford - Suspicious-looking man_9
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 32
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97cac6a5dcecb498986b6cc907fa979d
+      internalID: 337458237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Oliver Ford - Suspicious-looking man_10
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c88c11a1df864c1c8c4c2d00b03aa39
+      internalID: -436780720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Oliver Ford - Suspicious-looking man_11
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 0
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6905c6634a96c4a6e9c8d4bbfd2d66f8
+      internalID: 1605356451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Oliver Ford - Suspicious-looking man_12
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea8fbf502f2b435c9fbbd6a7f907123
+      internalID: -1288488185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +379,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mr. Oliver Ford - Suspicious-looking man_0: -744624501
+      Mr. Oliver Ford - Suspicious-looking man_1: 322573425
+      Mr. Oliver Ford - Suspicious-looking man_10: -436780720
+      Mr. Oliver Ford - Suspicious-looking man_11: 1605356451
+      Mr. Oliver Ford - Suspicious-looking man_12: -1288488185
+      Mr. Oliver Ford - Suspicious-looking man_2: 1837956704
+      Mr. Oliver Ford - Suspicious-looking man_3: 290659733
+      Mr. Oliver Ford - Suspicious-looking man_4: -435201403
+      Mr. Oliver Ford - Suspicious-looking man_5: -943503810
+      Mr. Oliver Ford - Suspicious-looking man_6: -2135338311
+      Mr. Oliver Ford - Suspicious-looking man_7: 62496249
+      Mr. Oliver Ford - Suspicious-looking man_8: 2027100717
+      Mr. Oliver Ford - Suspicious-looking man_9: 337458237
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 757a489d1bec44d6c9522648f9b63a73
+guid: df60ba3493a15452ba001a68bb89924f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -93,22 +93,324 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Ms. Lily Thompson - Aspiring artist_8
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 95
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660d684444fc84035abbb51d7c3c816a
+      internalID: -2017487524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ms. Lily Thompson - Aspiring artist_3
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 96
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0de14613d21c4205ad9e03f240feccf
+      internalID: 3780531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ms. Lily Thompson - Aspiring artist_2
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 95
+        width: 15
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fff13e4621ef4637bcbe2413a07792b
+      internalID: 1163310021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ms. Lily Thompson - Aspiring artist_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 58
+        width: 58
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993a4690e916b42d28de1d7f9d32876b
+      internalID: 1903510048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ms. Lily Thompson - Aspiring artist_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 64
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e417910fb5bf47b89525cf33d5fb254
+      internalID: -2072014123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ms. Lily Thompson - Aspiring artist_5
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 64
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a5245fadb2e4d32be38c2260d00a76
+      internalID: -1170979442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ms. Lily Thompson - Aspiring artist_6
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 64
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b2caf40406b4fed8ba6052170ccfa8
+      internalID: -1007942533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ms. Lily Thompson - Aspiring artist_7
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 31
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba575cf33ca14949af71f4dfdc1fc99
+      internalID: -834965558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ms. Lily Thompson - Aspiring artist_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 32
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c602a6f2b70b4ee7a1b2b9d57262aa7
+      internalID: -1229791014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ms. Lily Thompson - Aspiring artist_9
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 31
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d917c2de92aa4dd580e97193daaa34d
+      internalID: -984321160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ms. Lily Thompson - Aspiring artist_10
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 30
+        width: 51
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c516ea4186b44fea614e8f585503bc
+      internalID: -1256089300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ms. Lily Thompson - Aspiring artist_11
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 30
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9e263c026824e6d80b83c0ed7d1698
+      internalID: 1716776989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ms. Lily Thompson - Aspiring artist_12
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7c0cb28e45d4bfe9a0135767b107ca
+      internalID: 1919877179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ms. Lily Thompson - Aspiring artist_13
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 0
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b52bb02fd8aed4668a83dce0e1024a75
+      internalID: -1988529212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ms. Lily Thompson - Aspiring artist_14
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77e25370df354ffabe7f5bd749589a3
+      internalID: 645515507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +421,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ms. Lily Thompson - Aspiring artist_0: -1229791014
+      Ms. Lily Thompson - Aspiring artist_1: 1903510048
+      Ms. Lily Thompson - Aspiring artist_10: -1256089300
+      Ms. Lily Thompson - Aspiring artist_11: 1716776989
+      Ms. Lily Thompson - Aspiring artist_12: 1919877179
+      Ms. Lily Thompson - Aspiring artist_13: -1988529212
+      Ms. Lily Thompson - Aspiring artist_14: 645515507
+      Ms. Lily Thompson - Aspiring artist_2: 1163310021
+      Ms. Lily Thompson - Aspiring artist_3: 3780531
+      Ms. Lily Thompson - Aspiring artist_4: -2072014123
+      Ms. Lily Thompson - Aspiring artist_5: -1170979442
+      Ms. Lily Thompson - Aspiring artist_6: -1007942533
+      Ms. Lily Thompson - Aspiring artist_7: -834965558
+      Ms. Lily Thompson - Aspiring artist_8: -2017487524
+      Ms. Lily Thompson - Aspiring artist_9: -984321160
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
