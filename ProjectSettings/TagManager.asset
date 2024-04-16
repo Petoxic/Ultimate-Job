@@ -12,6 +12,8 @@ TagManager:
   - Canvas
   - TablesAndChairs
   - TutorialText
+  - Cutscene
+  - CutsceneText
   layers:
   - Default
   - TransparentFX

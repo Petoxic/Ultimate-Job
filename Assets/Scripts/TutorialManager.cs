@@ -61,7 +61,7 @@ public class TutorialManager : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.E) && keyText.activeSelf == true)
         {
-            SceneManager.LoadScene("NightScene");
+            SceneManager.LoadScene("PrologueCutscene");
         }
     }
 }
