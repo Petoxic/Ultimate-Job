@@ -30,6 +30,7 @@ public class ArrestingSceneController : MonoBehaviour
         });
         nextCaseButton.onClick.AddListener(delegate
         {
+            DataManager.SetPreviousCaseStartingMoney(DataManager.GetTotalMoney());
             DataManager.NextCase();
         });
         yesButton.onClick.AddListener(delegate

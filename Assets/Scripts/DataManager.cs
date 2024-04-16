@@ -26,6 +26,7 @@ public class DataManager : MonoBehaviour
     // game state variables
     // used throughout the game
     private static int totalMoney;
+    public static int previousCaseStartingMoney; //
     private static string moneyText;
     public static bool startTalking;
     private static int caseNumber;
@@ -58,6 +59,7 @@ public class DataManager : MonoBehaviour
     private static void ResetGameData()
     {
         SetTotalMoney(startingMoney);
+        previousCaseStartingMoney = startingMoney;
         startTalking = false;
         caseNumber = 0;
         selectedSuspectName = "";
@@ -229,5 +231,15 @@ public class DataManager : MonoBehaviour
     public static int GetCustomerQueue()
     {
         return customerQueue[queuePos++];
+    }
+
+    public static void ResetCase(){
+        SetTotalMoney(previousCaseStartingMoney);
+        ResetCaseData();
+        SceneManager.LoadScene("NightScene");
+    }
+
+    public static void SetPreviousCaseStartingMoney(int money){
+        previousCaseStartingMoney = money;
     }
 }

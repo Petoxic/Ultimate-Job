@@ -53,7 +53,7 @@ public class ResultManager : MonoBehaviour
 
             foundCriminalButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(delegate
             {
-                DataManager.RestartGame();
+                DataManager.ResetCase();
             });
 
             notSureButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(delegate
