@@ -67,8 +67,12 @@ public class PlacementSystem : MonoBehaviour
         }
         if (isPlacement && (Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.Escape)))
         {
-            PlacementSystem.isRemoving = false;
             OnExit?.Invoke();
+        }
+
+        if (ShopManager.isOpenShop)
+        {
+            buildingState.EndState();
         }
 
         Vector3 mousePosition = shopInputManager.GetSelectedMapPosition();

@@ -36,6 +36,7 @@ public class DataManager : MonoBehaviour
     private static int day;
     public static HashSet<string> suspectList;
     public static Dictionary<int, List<Vector2Int>> placedObjectsData;
+    public static List<GameObject> placedGameObjects;
     public static List<int> customerOrders;
     public static int[] customerQueue;
     public static int queuePos;
@@ -73,6 +74,7 @@ public class DataManager : MonoBehaviour
         day = 0;
         suspectList = new HashSet<string>();
         placedObjectsData = new Dictionary<int, List<Vector2Int>> { };
+        placedGameObjects = new();
         customerOrders = Enumerable.Range(1, CustomerData.GetCustomerData().Count).ToList();
         customerQueue = Utils.ShuffleArray(customerOrders);
         queuePos = 0;
