@@ -896,9 +896,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The latest robbery happened at the fancy "Hillcrest Museum" during a posh
-    party. A super expensive diamond necklace vanished, and everyone's a suspect
-    even the museum workers.
+  m_text: The latest robbery happened at the "Hillcrest Museum" during a posh party.
+    A super expensive diamond necklace vanished, and everyone's a suspect even the
+    museum workers.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2cea8242b71844904b44c6fac568cf99, type: 2}
   m_sharedMaterial: {fileID: -4335581677503169095, guid: 2cea8242b71844904b44c6fac568cf99, type: 2}
