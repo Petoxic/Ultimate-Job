@@ -6110,7 +6110,7 @@ GameObject:
   - component: {fileID: 690326294}
   - component: {fileID: 690326293}
   m_Layer: 5
-  m_Name: NextMissionButton
+  m_Name: GameWinButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6652,6 +6652,7 @@ MonoBehaviour:
   nextCaseButton: {fileID: 0}
   yesButton: {fileID: 0}
   noButton: {fileID: 0}
+  gameWinText: {fileID: 0}
 --- !u!1 &752669531
 GameObject:
   m_ObjectHideFlags: 0
@@ -9883,7 +9884,7 @@ GameObject:
   - component: {fileID: 1865161978}
   - component: {fileID: 1865161977}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: GameWinText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10193,6 +10194,7 @@ MonoBehaviour:
   nextCaseButton: {fileID: 690326293}
   yesButton: {fileID: 1529966429}
   noButton: {fileID: 724870865}
+  gameWinText: {fileID: 1865161977}
 --- !u!1 &2111535908
 GameObject:
   m_ObjectHideFlags: 0
