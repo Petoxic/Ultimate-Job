@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -93,22 +93,345 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Mr. Charles Thompson - Retired detective_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 95
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168775602cec14f408b106d6dfd15fde
+      internalID: -1706698246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Charles Thompson - Retired detective_3
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 95
+        width: 15
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84477ed1e045b46a78eed21fb5cd0d8b
+      internalID: -473420018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Charles Thompson - Retired detective_2
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 95
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad4f4dbd8b7ed4caea90077ee92fb28e
+      internalID: -1060132606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Charles Thompson - Retired detective_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 61
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad70c43096e9d44d09a646b48ea464c0
+      internalID: 1730064651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Charles Thompson - Retired detective_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 63
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4edaff31b0546c8ad04ef403c7a45b
+      internalID: 386107318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Charles Thompson - Retired detective_5
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 63
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfcb13375e2874652a4805de19e5ca2c
+      internalID: 229680993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Charles Thompson - Retired detective_6
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 63
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb5d6af7772744f488e63ed18bf2947
+      internalID: -1075551079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Charles Thompson - Retired detective_7
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 31
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 284b1cc02ff474024811aef533e33842
+      internalID: 21053551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Charles Thompson - Retired detective_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 31
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f02beefff1344b387ca7db2992d21f
+      internalID: -1455368567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Charles Thompson - Retired detective_9
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 31
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92dac1ebf6fc46ab9ec8678eaef31de
+      internalID: 118685987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Charles Thompson - Retired detective_10
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 31
+        width: 37
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9e827f6d26f4b44be16b012f5ad70d
+      internalID: -1048060727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Charles Thompson - Retired detective_11
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 31
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9c94f5d34f24d24b5e8a57ea17cf1f
+      internalID: -1216263867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Charles Thompson - Retired detective_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9a26a04981842729ae6192e2b19923
+      internalID: -694756783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Charles Thompson - Retired detective_13
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 0
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3229d4e4811a3429e8d9db37d56bb5b3
+      internalID: 1187699172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Charles Thompson - Retired detective_14
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 0
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4624e7009ceee49ab869949c2e0c1710
+      internalID: 1432933480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr. Charles Thompson - Retired detective_15
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 9
+        width: 38
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68d65420fede4bc4ba4d0e647f81031
+      internalID: 1574801404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +442,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mr. Charles Thompson - Retired detective_0: -1455368567
+      Mr. Charles Thompson - Retired detective_1: 1730064651
+      Mr. Charles Thompson - Retired detective_10: -1048060727
+      Mr. Charles Thompson - Retired detective_11: -1216263867
+      Mr. Charles Thompson - Retired detective_12: -694756783
+      Mr. Charles Thompson - Retired detective_13: 1187699172
+      Mr. Charles Thompson - Retired detective_14: 1432933480
+      Mr. Charles Thompson - Retired detective_15: 1574801404
+      Mr. Charles Thompson - Retired detective_2: -1060132606
+      Mr. Charles Thompson - Retired detective_3: -473420018
+      Mr. Charles Thompson - Retired detective_4: 386107318
+      Mr. Charles Thompson - Retired detective_5: 229680993
+      Mr. Charles Thompson - Retired detective_6: -1075551079
+      Mr. Charles Thompson - Retired detective_7: 21053551
+      Mr. Charles Thompson - Retired detective_8: -1706698246
+      Mr. Charles Thompson - Retired detective_9: 118685987
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

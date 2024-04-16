@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -93,22 +93,324 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Mrs. Beatrice Ramirez - Local gossip_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 95
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aba44e78b4174d5ab25af6dced840ac
+      internalID: -855117867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Beatrice Ramirez - Local gossip_3
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 95
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c20828f208aa4e9ea0c352c0bd2853f
+      internalID: -1959820935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Beatrice Ramirez - Local gossip_2
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 95
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f526053ce0914241a6698ca14b11c61
+      internalID: -786168519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Beatrice Ramirez - Local gossip_1
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 58
+        width: 43
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 760b856b0731a4c62801e7567b8ef179
+      internalID: 540532190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Beatrice Ramirez - Local gossip_4
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 64
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d490522a6724850bef6f019fbb5f32
+      internalID: -979812904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Beatrice Ramirez - Local gossip_5
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 63
+        width: 11
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49421821722f241d9b108a59fbaa8d7f
+      internalID: -1412223015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Beatrice Ramirez - Local gossip_6
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 64
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08de5331bef6a460685d029e3a7917db
+      internalID: 1218274678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Beatrice Ramirez - Local gossip_7
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 31
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4bbe706453742be99ea49e30b5f5c5
+      internalID: -969541711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Beatrice Ramirez - Local gossip_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 31
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28db1497a581f4840a92d16776dfced1
+      internalID: 1478173575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Beatrice Ramirez - Local gossip_9
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 31
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07d46b4d7c4246808fdda88617846ad
+      internalID: -28184545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Beatrice Ramirez - Local gossip_10
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 37
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cbe56396df1f4bc1b17a1d25534f028
+      internalID: 959339437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Beatrice Ramirez - Local gossip_11
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 32
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c558bb519b7d47c6beb6d5f575742b1
+      internalID: 261647057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Beatrice Ramirez - Local gossip_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f2f0dd4300b43e0b82e87698ac9633
+      internalID: 174836579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Beatrice Ramirez - Local gossip_13
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 0
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0323662c6c1534b719f2c57d6ca8bb40
+      internalID: 508066213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mrs. Beatrice Ramirez - Local gossip_14
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5612c551cde024e9eb34ea6e3bff855e
+      internalID: -563589880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +421,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mrs. Beatrice Ramirez - Local gossip_0: 1478173575
+      Mrs. Beatrice Ramirez - Local gossip_1: 540532190
+      Mrs. Beatrice Ramirez - Local gossip_10: 959339437
+      Mrs. Beatrice Ramirez - Local gossip_11: 261647057
+      Mrs. Beatrice Ramirez - Local gossip_12: 174836579
+      Mrs. Beatrice Ramirez - Local gossip_13: 508066213
+      Mrs. Beatrice Ramirez - Local gossip_14: -563589880
+      Mrs. Beatrice Ramirez - Local gossip_2: -786168519
+      Mrs. Beatrice Ramirez - Local gossip_3: -1959820935
+      Mrs. Beatrice Ramirez - Local gossip_4: -979812904
+      Mrs. Beatrice Ramirez - Local gossip_5: -1412223015
+      Mrs. Beatrice Ramirez - Local gossip_6: 1218274678
+      Mrs. Beatrice Ramirez - Local gossip_7: -969541711
+      Mrs. Beatrice Ramirez - Local gossip_8: -855117867
+      Mrs. Beatrice Ramirez - Local gossip_9: -28184545
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
