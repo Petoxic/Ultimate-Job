@@ -16,6 +16,7 @@ public class ArrestingSceneController : MonoBehaviour
     [SerializeField] private Button nextCaseButton;
     [SerializeField] private Button yesButton;
     [SerializeField] private Button noButton;
+    private Sprite[] sprites;
 
     // Start is called before the first frame update
     void Start()
@@ -47,7 +48,8 @@ public class ArrestingSceneController : MonoBehaviour
             GameObject btn = (GameObject)Instantiate(buttonTemplate);
             btn.transform.SetParent(scrollViewPanel.transform);
             btn.transform.GetChild(0).GetComponent<UnityEngine.UI.Text>().text = name;
-            btn.transform.GetChild(1).GetComponent<UnityEngine.UI.Image>().sprite = Resources.Load<Sprite>("Custoner/" + name);
+            sprites = Resources.LoadAll<Sprite>("Custoner/"+ name);
+            btn.transform.GetChild(1).GetComponent<UnityEngine.UI.Image>().sprite = sprites[1];
             btn.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(delegate
             {
                 DataManager.selectedSuspectName = btn.transform.GetChild(0).GetComponent<UnityEngine.UI.Text>().text;

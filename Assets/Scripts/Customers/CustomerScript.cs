@@ -11,6 +11,7 @@ public class CustomerScript : MonoBehaviour
     public readonly float waitingForFoodTime = 20f;
     public GameObject dialoguePanel;
     public Text dialogueText;
+    public Image dialogueImage;
     public string[] dialogue;
     public Text objectName;
     [SerializeField] private GameObject talkBubble;
@@ -32,6 +33,7 @@ public class CustomerScript : MonoBehaviour
     public int dialogueChoice = 0;
     private string[][] dialogueArray;
     public SpriteRenderer spriteRenderer;
+    private Sprite[] sprites;
 
     void Start()
     {
@@ -39,6 +41,7 @@ public class CustomerScript : MonoBehaviour
         GameObject canvas = GameObject.FindGameObjectWithTag("Canvas");
         dialoguePanel = canvas.transform.Find("DialogPanel").gameObject;
         dialogueText = dialoguePanel.transform.Find("Dialog").gameObject.GetComponent<Text>();
+        dialogueImage = dialoguePanel.transform.Find("Image").gameObject.GetComponent<Image>();
         objectName = dialoguePanel.transform.Find("Name").gameObject.GetComponent<Text>();
 
         int queue = DataManager.GetCustomerQueue();
@@ -169,6 +172,8 @@ public class CustomerScript : MonoBehaviour
         }
         else
         {
+            sprites = Resources.LoadAll<Sprite>("Custoner/"+ gameObject.name);
+            dialogueImage.sprite = sprites[1];
             DataManager.startTalking = true;
             dialoguePanel.SetActive(true);
             StartCoroutine(Typing());
