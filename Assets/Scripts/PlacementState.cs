@@ -59,7 +59,7 @@ public class PlacementState : IBuildingState
         selectedData.AddObjectAt(gridPosition,
                                 shopItemsSO[selectedObjectIndex].size,
                                 shopItemsSO[selectedObjectIndex].ID,
-                                index,
+                                DataManager.placedObjectsData.Count,
                                 selectedObjectIndex);
         previewSystem.UpdatePosition(grid.CellToWorld(gridPosition), false);
     }
