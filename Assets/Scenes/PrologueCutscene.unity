@@ -266,9 +266,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: To sniff out clues, you open a cozy restaurant called "The King's" right
-    near the museum. You hope to blend in with the locals and catch whispers that
-    might lead you to the crook.
+  m_text: To sniff out clues, Officer "King" open a cozy restaurant "The King's"
+    right near the museum. He hope to blend in with the locals and catch whispers
+    that might lead you to the crook.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2cea8242b71844904b44c6fac568cf99, type: 2}
   m_sharedMaterial: {fileID: -4335581677503169095, guid: 2cea8242b71844904b44c6fac568cf99, type: 2}
@@ -728,7 +728,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b4a7589dee07ae644807d126f6b2eb83, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 12198694e171cbb40accffa1e95f8a97, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1208,7 +1208,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -214.35773, y: -53.736877}
+  m_AnchoredPosition: {x: -300, y: -53.736877}
   m_SizeDelta: {x: 428.7154, y: 107.4738}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1482388195
@@ -1231,7 +1231,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press "Space" to skip
+  m_text: Press "Space" to continue
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2cea8242b71844904b44c6fac568cf99, type: 2}
   m_sharedMaterial: {fileID: -4335581677503169095, guid: 2cea8242b71844904b44c6fac568cf99, type: 2}
