@@ -9,6 +9,7 @@ public class CountdownTimer : MonoBehaviour
     public Image timer_progress_bar;
     private float timeWhenSceneEnds;
     private float max_time;
+    private GameObject[] customers;
 
     void Start()
     {
@@ -22,7 +23,8 @@ public class CountdownTimer : MonoBehaviour
         {
             timeWhenSceneEnds -= Time.deltaTime;
             timer_progress_bar.fillAmount = timeWhenSceneEnds / max_time;
-            if (timeWhenSceneEnds <= 0)
+            customers = GameObject.FindGameObjectsWithTag("Customer");
+            if (timeWhenSceneEnds <= 0 && customers.Length == 0)
             {
                 DataManager.isDay = false;
                 DataManager.CheckObjective();
