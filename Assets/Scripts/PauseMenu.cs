@@ -11,13 +11,14 @@ public class PauseMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        isPause = false;
         pauseMenu.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && !ShopManager.isOpenShop && !PlacementSystem.isPreview)
+        if (Input.GetKeyDown(KeyCode.Escape) && !ShopManager.isOpenShop)
         {
             if (isPause)
             {

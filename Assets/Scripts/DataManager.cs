@@ -157,9 +157,21 @@ public class DataManager : MonoBehaviour
 
     public static void NextCase()
     {
+        if (IsLastCase())
+        {
+            ResetGameData();
+            SceneManager.LoadScene("GameOver");
+            return;
+        }
+
         caseNumber += 1;
         ResetCaseData();
         SceneManager.LoadScene("NightScene");
+    }
+
+    public static bool IsLastCase()
+    {
+        return caseNumber == totalCases - 1;
     }
 
     public static int GetDay()
@@ -233,13 +245,15 @@ public class DataManager : MonoBehaviour
         return customerQueue[queuePos++];
     }
 
-    public static void ResetCase(){
+    public static void ResetCase()
+    {
         SetTotalMoney(previousCaseStartingMoney);
         ResetCaseData();
         SceneManager.LoadScene("NightScene");
     }
 
-    public static void SetPreviousCaseStartingMoney(int money){
+    public static void SetPreviousCaseStartingMoney(int money)
+    {
         previousCaseStartingMoney = money;
     }
 }

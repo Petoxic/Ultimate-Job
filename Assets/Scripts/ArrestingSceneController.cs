@@ -17,6 +17,7 @@ public class ArrestingSceneController : MonoBehaviour
     [SerializeField] private Button yesButton;
     [SerializeField] private Button noButton;
     private Sprite[] sprites;
+    [SerializeField] private Text gameWinText;
 
     // Start is called before the first frame update
     void Start()
@@ -66,6 +67,14 @@ public class ArrestingSceneController : MonoBehaviour
         // {
         //     stillNotSureButton.SetActive(true);
         // }
+    }
+
+    void Awake()
+    {
+        if (DataManager.IsLastCase())
+        {
+            gameWinText.text = "Go to final scene";
+        }
     }
 
     private void GoToConfirmation()
