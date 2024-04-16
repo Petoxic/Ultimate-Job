@@ -34,9 +34,9 @@ public class GridData
     private List<Vector3Int> CalculatePositions(Vector3Int gridPosition, Vector2Int objectSize)
     {
         List<Vector3Int> returnVal = new();
-        for (int x = 0; x < objectSize.x; x++)
+        for (int x = -1; x < objectSize.x; x++)
         {
-            for (int y = 0; y < objectSize.y; y++)
+            for (int y = -1; y < objectSize.y; y++)
             {
                 returnVal.Add(gridPosition + new Vector3Int(x, y, 0));
             }

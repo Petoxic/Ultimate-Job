@@ -58,6 +58,7 @@ public class ShopManager : MonoBehaviour
         }
         Time.timeScale = 0f;
         isOpenShop = true;
+        PlacementSystem.isRemoving = false;
         CheckPurchaseable();
     }
 

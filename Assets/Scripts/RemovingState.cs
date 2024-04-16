@@ -19,6 +19,8 @@ public class RemovingState : IBuildingState
         this.furnitureData = furnitureData;
         this.objectPlacer = objectPlacer;
 
+        ShopManager.isOpenShop = false;
+
         previewSystem.StartShowingRemovePreview();
     }
 

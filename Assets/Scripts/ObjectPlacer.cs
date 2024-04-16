@@ -4,23 +4,21 @@ using UnityEngine;
 
 public class ObjectPlacer : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> placedGameObjects = new();
-
     public int PlaceObject(GameObject prefab, Vector3 position)
     {
         GameObject newObject = Instantiate(prefab);
         newObject.transform.position = position;
-        placedGameObjects.Add(newObject);
-        return placedGameObjects.Count - 1;
+        DataManager.placedGameObjects.Add(newObject);
+        return DataManager.placedGameObjects.Count - 1;
     }
 
     public void RemoveObjectAt(int gameObjectIndex)
     {
-        if (placedGameObjects.Count <= gameObjectIndex || placedGameObjects[gameObjectIndex] == null)
+        if (DataManager.placedGameObjects.Count <= gameObjectIndex || DataManager.placedGameObjects[gameObjectIndex] == null)
         {
             return;
         }
-        Destroy(placedGameObjects[gameObjectIndex]);
-        placedGameObjects[gameObjectIndex] = null;
+        Destroy(DataManager.placedGameObjects[gameObjectIndex]);
+        DataManager.placedGameObjects[gameObjectIndex] = null;
     }
 }
