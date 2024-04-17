@@ -28,7 +28,7 @@ public class ArrestingSceneController : MonoBehaviour
         });
         restartGameButton.onClick.AddListener(delegate
         {
-            DataManager.RestartGame();
+            DataManager.ResetCase();
         });
         nextCaseButton.onClick.AddListener(delegate
         {
