@@ -14,6 +14,8 @@ TagManager:
   - TutorialText
   - Cutscene
   - CutsceneText
+  - Map1
+  - Map2
   layers:
   - Default
   - TransparentFX

@@ -29,7 +29,7 @@ public class DataManager : MonoBehaviour
     public static int previousCaseStartingMoney; //
     private static string moneyText;
     public static bool startTalking;
-    private static int caseNumber;
+    public static int caseNumber;
     public static string selectedSuspectName;
 
     // for each case
