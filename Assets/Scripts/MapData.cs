@@ -26,7 +26,6 @@ public class MapData : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("sceneeeeee");
         if (DataManager.caseNumber == 1)
         {
             grid = gridInput1;
@@ -45,15 +44,6 @@ public class MapData : MonoBehaviour
             newPlacedObject.transform.position = grid.CellToWorld(chairPos);
         }
     }
-
-    // void Update()
-    // {
-    //     if (DataManager.caseNumber == 1)
-    //     {
-    //         grid = gridInput1;
-    //         setMap(2);
-    //     }
-    // }
 
     public static void setMap(int mapNumber)
     {
