@@ -26,15 +26,18 @@ public class MapData : MonoBehaviour
 
     void Start()
     {
-        if (DataManager.caseNumber == 1)
+        if (DataManager.caseNumber == 0)
+        {
+            grid = gridInput;
+            setMap(1);
+        }
+        else if (DataManager.caseNumber == 1)
         {
             grid = gridInput1;
             setMap(2);
         }
         selectedObjectIndex = 0;
         queuePos = 0;
-        grid = gridInput;
-        setMap(1);
         for (int i = 0; i < DataManager.placedObjectsData.Count; i++)
         {
             Vector3Int chairPos = new Vector3Int(DataManager.placedObjectsData[i][2].x,

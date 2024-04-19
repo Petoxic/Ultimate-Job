@@ -32,7 +32,8 @@ public class RemovingState : IBuildingState
     public void OnAction(Vector3Int gridPosition)
     {
         GridData selectedData = null;
-        if (!furnitureData.CanPlaceObjectAt(gridPosition, Vector2Int.one))
+        PlacementSystem.isRemoving = false;
+        if (!furnitureData.CanRemoveObjectAt(gridPosition, Vector2Int.one))
         {
             selectedData = furnitureData;
         }
@@ -48,6 +49,7 @@ public class RemovingState : IBuildingState
                 Debug.Log("You SUCK!");
                 return;
             }
+            PlacementSystem.isRemoving = true;
             selectedData.RemoveObjectAt(gridPosition);
             objectPlacer.RemoveObjectAt(gameObjectIndex);
         }
@@ -57,7 +59,7 @@ public class RemovingState : IBuildingState
 
     public bool CheckIfSelectionIsValid(Vector3Int gridPosition)
     {
-        if (!furnitureData.CanPlaceObjectAt(gridPosition, Vector2Int.one))
+        if (!furnitureData.CanRemoveObjectAt(gridPosition, Vector2Int.one))
         {
             removingValidity = true;
         }

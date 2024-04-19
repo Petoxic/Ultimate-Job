@@ -1289,6 +1289,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4190300461143536630, guid: 293bc57d7a8514246bd3d0f055c83272, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4190300461143536630, guid: 293bc57d7a8514246bd3d0f055c83272, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -454030105
+      objectReference: {fileID: 0}
+    - target: {fileID: 4190300461143536630, guid: 293bc57d7a8514246bd3d0f055c83272, type: 3}
       propertyPath: m_SpriteSortPoint
       value: 0
       objectReference: {fileID: 0}
@@ -6347,7 +6355,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shopInputManager: {fileID: 2102714319}
-  grid: {fileID: 487298052}
+  gridMap1: {fileID: 487298052}
+  gridMap2: {fileID: 1587609346}
   tilemap: {fileID: 1764547061}
   shopItemsSO:
   - {fileID: 11400000, guid: a397f1e0b0f47e444bb2f384498b596b, type: 2}

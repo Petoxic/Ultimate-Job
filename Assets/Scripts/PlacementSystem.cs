@@ -8,13 +8,17 @@ using UnityEngine.Tilemaps;
 public class PlacementSystem : MonoBehaviour
 {
     [SerializeField] private ShopInputManager shopInputManager;
-    [SerializeField] private Grid grid;
+    [SerializeField] private Grid gridMap1;
+    [SerializeField] private Grid gridMap2;
     [SerializeField] private Tilemap tilemap;
     [SerializeField] private ShopItemSO[] shopItemsSO;
     [SerializeField] private PreviewSystem preview;
     [SerializeField] private ObjectPlacer objectPlacer;
 
-    public static int wallGridPosition;
+    public static int topWallGridPosition;
+    public static int bottomWallGridPosition;
+    public static int leftWallGridPosition;
+    public static int rightWallGridPosition;
     public static int kitchenGridPosition;
     public static bool isPlacement;
     public static bool isPreview;
@@ -25,19 +29,31 @@ public class PlacementSystem : MonoBehaviour
     public event Action OnClicked, OnExit;
     private GridData furnitureData;
     private Vector3Int lastDetectedPosition = Vector3Int.zero;
+    private Grid grid;
 
     IBuildingState buildingState;
 
     private void Start()
     {
-        wallGridPosition = 11;
-        kitchenGridPosition = 16;
+        topWallGridPosition = 10;
+        bottomWallGridPosition = 2;
+        leftWallGridPosition = 1;
+        rightWallGridPosition = 26;
+        kitchenGridPosition = 22;
         isPlacement = false;
         isPreview = false;
         isRemoving = false;
         StopPlacement();
         furnitureData = new();
         gridSize = tilemap.GetComponent<Tilemap>().size;
+        if (DataManager.caseNumber == 0)
+        {
+            grid = gridMap1;
+        }
+        else if (DataManager.caseNumber == 1)
+        {
+            grid = gridMap2;
+        }
     }
 
     public void Update()

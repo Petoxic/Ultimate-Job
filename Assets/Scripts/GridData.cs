@@ -44,17 +44,31 @@ public class GridData
         return returnVal;
     }
 
+    private List<Vector3Int> CalculateRemovePositions(Vector3Int gridPosition, Vector2Int objectSize)
+    {
+        List<Vector3Int> returnVal = new();
+        for (int x = -1; x < objectSize.x - 1; x++)
+        {
+            for (int y = 2; y < objectSize.y + 2; y++)
+            {
+                returnVal.Add(gridPosition + new Vector3Int(x, y, 0));
+            }
+        }
+        return returnVal;
+    }
+
     public bool CanPlaceObjectAt(Vector3Int gridPosition, Vector2Int objectSize)
     {
         // Check if object out of map
         int xHalfGridSize = PlacementSystem.gridSize.x / 2;
         int yHalfGridSize = PlacementSystem.gridSize.y / 2;
         if (gridPosition.x + xHalfGridSize > PlacementSystem.gridSize.x - objectSize.x
-            || gridPosition.x + xHalfGridSize < 0
+            || gridPosition.x + xHalfGridSize < PlacementSystem.leftWallGridPosition
             || gridPosition.y + yHalfGridSize > PlacementSystem.gridSize.y
-            || gridPosition.y + yHalfGridSize < yHalfGridSize - objectSize.y
-            || gridPosition.y + yHalfGridSize > PlacementSystem.wallGridPosition
-            || gridPosition.x + xHalfGridSize > PlacementSystem.kitchenGridPosition)
+            || gridPosition.y + yHalfGridSize < PlacementSystem.bottomWallGridPosition + objectSize.y
+            || gridPosition.y + yHalfGridSize > PlacementSystem.topWallGridPosition
+            || gridPosition.x + xHalfGridSize > PlacementSystem.rightWallGridPosition
+            || gridPosition.x + xHalfGridSize + objectSize.x > PlacementSystem.kitchenGridPosition)
         {
             return false;
         }
@@ -62,6 +76,33 @@ public class GridData
         // Check if object will occupied by another object
         Vector2Int objectSizeRestrict = new Vector2Int(objectSize.x + 1, objectSize.y + 1);
         List<Vector3Int> positionToOccupy = CalculatePositions(gridPosition, objectSizeRestrict);
+        foreach (var pos in positionToOccupy)
+        {
+            if (placedObjects.ContainsKey(pos))
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public bool CanRemoveObjectAt(Vector3Int gridPosition, Vector2Int objectSize)
+    {
+        int xHalfGridSize = PlacementSystem.gridSize.x / 2;
+        int yHalfGridSize = PlacementSystem.gridSize.y / 2;
+        if (gridPosition.x + xHalfGridSize > PlacementSystem.gridSize.x - objectSize.x
+            || gridPosition.x + xHalfGridSize < PlacementSystem.leftWallGridPosition
+            || gridPosition.y + yHalfGridSize > PlacementSystem.gridSize.y
+            || gridPosition.y + yHalfGridSize < PlacementSystem.bottomWallGridPosition + objectSize.y
+            || gridPosition.y + yHalfGridSize > PlacementSystem.topWallGridPosition
+            || gridPosition.x + xHalfGridSize > PlacementSystem.rightWallGridPosition
+            || gridPosition.x + xHalfGridSize + objectSize.x > PlacementSystem.kitchenGridPosition)
+        {
+            return true;
+        }
+
+        Vector2Int objectSizeRestrict = new Vector2Int(objectSize.x, objectSize.y);
+        List<Vector3Int> positionToOccupy = CalculateRemovePositions(gridPosition, objectSizeRestrict);
         foreach (var pos in positionToOccupy)
         {
             if (placedObjects.ContainsKey(pos))
