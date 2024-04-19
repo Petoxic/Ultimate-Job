@@ -26,6 +26,12 @@ public class MapData : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("sceneeeeee");
+        if (DataManager.caseNumber == 1)
+        {
+            grid = gridInput1;
+            setMap(2);
+        }
         selectedObjectIndex = 0;
         queuePos = 0;
         grid = gridInput;
@@ -40,15 +46,17 @@ public class MapData : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        if(DataManager.caseNumber == 1) {
-            grid = gridInput1;
-            setMap(2);
-        }
-    }
+    // void Update()
+    // {
+    //     if (DataManager.caseNumber == 1)
+    //     {
+    //         grid = gridInput1;
+    //         setMap(2);
+    //     }
+    // }
 
-    public static void setMap(int mapNumber) {
+    public static void setMap(int mapNumber)
+    {
         switch (mapNumber)
         {
             case 1:
