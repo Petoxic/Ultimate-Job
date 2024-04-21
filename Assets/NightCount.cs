@@ -8,6 +8,6 @@ public class NightCount : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        NightText.GetComponent<UnityEngine.UI.Text>().text = $"Night {DataManager.GetDay() + 1}, Case {DataManager.GetCaseNumber() + 1}";
+        NightText.GetComponent<UnityEngine.UI.Text>().text = $"Night {DataManager.GetDay() + 1}/3, Case {DataManager.GetCaseNumber() + 1}";
     }
 }

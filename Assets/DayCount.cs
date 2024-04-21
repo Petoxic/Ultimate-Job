@@ -8,6 +8,6 @@ public class DayCount : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        DayText.GetComponent<UnityEngine.UI.Text>().text = $"Day {DataManager.GetDay() + 1} /3, Case {DataManager.GetCaseNumber() + 1}";
+        DayText.GetComponent<UnityEngine.UI.Text>().text = $"Day {DataManager.GetDay() + 1}/3, Case {DataManager.GetCaseNumber() + 1}";
     }
 }
