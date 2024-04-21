@@ -1,11 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 // using UnityEditor.iOS.Xcode;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -23,6 +25,7 @@ public class PlayerScript : MonoBehaviour
     public List<int> orderList = new();
     public bool isHoldingFood;
     public int holdingFoodId;
+    [SerializeField] private GameObject floatingTextPrefab;
 
     Vector2 movementInput;
     Rigidbody2D rb;
@@ -132,12 +135,18 @@ public class PlayerScript : MonoBehaviour
         orderNote.SetActive(false);
     }
 
-    public void ServeOrder(int foodId)
+    private void ShowFloatingText(String text) {
+        var go = Instantiate(floatingTextPrefab, transform.position + new Vector3(0, 0.18f, 0), Quaternion.identity, transform);
+        go.GetComponent<TextMeshPro>().text = text;
+    }
+
+    public void ServeOrder(int foodId, String text)
     {
         orderList.RemoveAll(id => id == foodId);
         // todo: fix bug all food was gone after serve
         GameObject holdObject = gameObject.transform.Find("HoldObject").gameObject;
         GameObject foundItem = holdObject.transform.Find("Food(Clone)").gameObject;
+        ShowFloatingText(text);
         Destroy(foundItem);
     }
 

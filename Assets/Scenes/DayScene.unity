@@ -21812,6 +21812,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 181393775}
     - target: {fileID: 8085980921714918094, guid: a747064e094664c79b326331acfebe8e, type: 3}
+      propertyPath: floatingTextPrefab
+      value: 
+      objectReference: {fileID: 3254457202409974691, guid: b10db8da0b3824204a7aa75aac99831a, type: 3}
+    - target: {fileID: 8085980921714918094, guid: a747064e094664c79b326331acfebe8e, type: 3}
       propertyPath: movementFilter.useTriggers
       value: 1
       objectReference: {fileID: 0}

@@ -14,7 +14,7 @@ public class BinScript : MonoBehaviour
         if (player.isHoldingFood)
         {
             DataManager.SubMoney(5);
-            player.ServeOrder(player.holdingFoodId);
+            player.ServeOrder(player.holdingFoodId, "-5");
             player.isHoldingFood = false;
         }
     }

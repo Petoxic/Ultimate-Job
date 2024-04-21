@@ -142,7 +142,7 @@ public class CustomerScript : MonoBehaviour
                     isFoodReceived = true;
                     player.isHoldingFood = false;
                     talkBubble.SetActive(false);
-                    player.ServeOrder(foodId);
+                    player.ServeOrder(foodId, "+10");
                     DataManager.AddMoney(10);
                     DataManager.AddPlateServed();
                     EatDelay();
