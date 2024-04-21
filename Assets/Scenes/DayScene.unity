@@ -21805,7 +21805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8085980921714918094, guid: a747064e094664c79b326331acfebe8e, type: 3}
       propertyPath: moveSpeed
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8085980921714918094, guid: a747064e094664c79b326331acfebe8e, type: 3}
       propertyPath: orderNote

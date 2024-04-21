@@ -23,7 +23,7 @@ public class GrabController : MonoBehaviour
         Collider2D grabbedObject = grabCheck.collider;
         if (grabbedObject != null && grabbedObject.tag == "Food" && !player.isHoldingFood)
         {
-            if (Input.GetKey(KeyCode.G))
+            if (Input.GetKey(KeyCode.Space))
             {
                 grabbedObject.gameObject.transform.parent = foodHolder;
                 grabbedObject.gameObject.transform.position = foodHolder.position;
