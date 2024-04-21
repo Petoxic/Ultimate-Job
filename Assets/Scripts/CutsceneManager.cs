@@ -8,6 +8,7 @@ using TMPro;
 
 public class CutsceneManager : MonoBehaviour
 {
+    [SerializeField] public GameObject[] cutsceneCase;
     private GameObject[] cutsceneList;
     private GameObject[] dialogueObject;
     private int cutsceneIndex = 1;
@@ -19,7 +20,8 @@ public class CutsceneManager : MonoBehaviour
     private bool submitSkip;
 
     void Start()
-    {
+    {   
+        cutsceneCase[DataManager.caseNumber + 1].SetActive(true);   
         cutsceneList = GameObject.FindGameObjectsWithTag("Cutscene");
         dialogueObject = GameObject.FindGameObjectsWithTag("CutsceneText");
         canContinueToNextCutscene = true;
@@ -32,7 +34,7 @@ public class CutsceneManager : MonoBehaviour
             cutscene.SetActive(false);
         }
 
-        if (cutsceneList.Length != null)
+        if (cutsceneList.Length != 0)
         {
             cutsceneList[0].SetActive(true);
             dialogueText = dialogueObject[0].GetComponent<TextMeshProUGUI>();

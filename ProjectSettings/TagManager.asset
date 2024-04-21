@@ -16,6 +16,7 @@ TagManager:
   - CutsceneText
   - Map1
   - Map2
+  - CutsceneCase
   layers:
   - Default
   - TransparentFX
