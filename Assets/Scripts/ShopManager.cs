@@ -12,6 +12,7 @@ public class ShopManager : MonoBehaviour
     public ShopTemplate[] shopPanels;
     public Button[] myPurchaseButtons;
     public static bool isOpenShop;
+    public GameObject removeObjectButton;
 
     void Start()
     {
@@ -52,6 +53,7 @@ public class ShopManager : MonoBehaviour
     public void OpenShopMenu()
     {
         shopMenu.SetActive(true);
+        removeObjectButton.SetActive(false);
         for (int i = 0; i < shopItemsSO.Length; i++)
         {
             shopPanelsGO[i].SetActive(true);
@@ -65,6 +67,7 @@ public class ShopManager : MonoBehaviour
     public void CloseShopMenu()
     {
         shopMenu.SetActive(false);
+        removeObjectButton.SetActive(true);
         for (int i = 0; i < shopItemsSO.Length; i++)
         {
             shopPanelsGO[i].SetActive(false);

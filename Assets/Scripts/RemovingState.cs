@@ -11,6 +11,7 @@ public class RemovingState : IBuildingState
     ObjectPlacer objectPlacer;
 
     public static bool removingValidity;
+    public static int selectedRemoveIndex = -1;
 
     public RemovingState(Grid grid, PreviewSystem previewSystem, GridData furnitureData, ObjectPlacer objectPlacer)
     {
@@ -50,6 +51,7 @@ public class RemovingState : IBuildingState
                 return;
             }
             PlacementSystem.isRemoving = true;
+            selectedRemoveIndex = DataManager.placedObjectsData[gameObjectIndex][3].x;
             selectedData.RemoveObjectAt(gridPosition);
             objectPlacer.RemoveObjectAt(gameObjectIndex);
         }

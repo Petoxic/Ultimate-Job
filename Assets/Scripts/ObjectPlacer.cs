@@ -18,6 +18,7 @@ public class ObjectPlacer : MonoBehaviour
         {
             return;
         }
+        Debug.Log(DataManager.placedGameObjects[gameObjectIndex]);
         Destroy(DataManager.placedGameObjects[gameObjectIndex]);
         DataManager.placedGameObjects[gameObjectIndex] = null;
     }

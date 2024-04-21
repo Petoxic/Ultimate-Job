@@ -77,10 +77,14 @@ public class PlacementSystem : MonoBehaviour
             }
             if (isRemoving && RemovingState.removingValidity)
             {
-                DataManager.Refund(shopItemsSO[PlacementState.selectedObjectIndex].basePrice);
                 OnClicked?.Invoke();
             }
         }
+        if (RemovingState.selectedRemoveIndex != -1)
+            {
+                DataManager.Refund(shopItemsSO[RemovingState.selectedRemoveIndex].basePrice);
+                RemovingState.selectedRemoveIndex = -1;
+            }
         if (isPlacement && (Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.Escape)))
         {
             OnExit?.Invoke();
@@ -118,6 +122,7 @@ public class PlacementSystem : MonoBehaviour
     {
         StopPlacement();
         isPlacement = true;
+        isRemoving = false;
         buildingState = new PlacementState(ID,
                                         grid,
                                         preview,
@@ -132,6 +137,7 @@ public class PlacementSystem : MonoBehaviour
     {
         StopPlacement();
         isRemoving = true;
+        isPlacement = false;
         buildingState = new RemovingState(grid,
                                         preview,
                                         furnitureData,
