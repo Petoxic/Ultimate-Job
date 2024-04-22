@@ -9,11 +9,19 @@ public class CustomerTimerScript : MonoBehaviour
     private CustomerScript customerScript;
     [SerializeField] private Slider timerSlider;
     [SerializeField] private Image iconImage;
+    public bool isWaiting = true;
     void OnEnable()
     {
         customerScript = customer.GetComponent<CustomerScript>();
 
-        timerSlider.maxValue = customerScript.waitingForFoodTime;
+        if (isWaiting)
+        {
+            timerSlider.maxValue = customerScript.waitingForFoodTime;
+        }
+        else
+        {
+            timerSlider.maxValue = customerScript.eatingTime;
+        }
         timerSlider.value = customerScript.waitingForFoodTime;
     }
 
