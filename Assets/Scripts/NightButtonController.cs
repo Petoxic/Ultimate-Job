@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GoToNextScene : MonoBehaviour
 {
+    public static bool isStartRestrictAlert = false;
+
     void Update()
     {
         if (!UpgradeManager.isOpenUpgradeMenu && !ShopManager.isOpenShop && Input.GetKeyDown(KeyCode.Space))
@@ -16,6 +18,7 @@ public class GoToNextScene : MonoBehaviour
             }
             else
             {
+                isStartRestrictAlert = true;
                 Debug.Log("You should buy at least 1 table to start!");
             }
         }
