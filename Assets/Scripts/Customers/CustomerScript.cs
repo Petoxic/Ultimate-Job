@@ -9,6 +9,7 @@ public class CustomerScript : MonoBehaviour
 {
     public readonly float waitingToOrderTime = 20f;
     public readonly float waitingForFoodTime = 20f;
+    public readonly float eatingTime = 10f;
     public GameObject dialoguePanel;
     public Text dialogueText;
     public Image dialogueImage;
@@ -68,12 +69,14 @@ public class CustomerScript : MonoBehaviour
 
     private void WaitDelay()
     {
+        customerTimerScript.isWaiting = true;
         talkBubble.SetActive(true);
         customerTimerScript.SetIconImage(foodSprites[foodId]);
     }
 
     private void EatDelay()
     {
+        customerTimerScript.isWaiting = false;
         talkBubble.SetActive(true);
         // change icon to eating
         customerTimerScript.SetIconImage(eatingSprite);
@@ -172,7 +175,7 @@ public class CustomerScript : MonoBehaviour
         }
         else
         {
-            sprites = Resources.LoadAll<Sprite>("Custoner/"+ gameObject.name);
+            sprites = Resources.LoadAll<Sprite>("Custoner/" + gameObject.name);
             dialogueImage.sprite = sprites[1];
             DataManager.startTalking = true;
             dialoguePanel.SetActive(true);
