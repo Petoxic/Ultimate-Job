@@ -7,7 +7,7 @@ public class GoToNextScene : MonoBehaviour
 {
     void Update()
     {
-        if (!ShopManager.isOpenShop && Input.GetKeyDown(KeyCode.Space))
+        if (!UpgradeManager.isOpenUpgradeMenu && !ShopManager.isOpenShop && Input.GetKeyDown(KeyCode.Space))
         {
             if (DataManager.placedObjectsData.Count > 0)
             {

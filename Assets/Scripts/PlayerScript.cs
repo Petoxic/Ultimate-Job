@@ -58,7 +58,8 @@ public class PlayerScript : MonoBehaviour
         DataManager.playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
         if (canMove && !DataManager.startTalking)
         {
-            rb.MovePosition(rb.position + moveSpeed * Time.fixedDeltaTime * movementInput);
+            float calSpeed = moveSpeed + (DataManager.moveLevels*0.1f);
+            rb.MovePosition(rb.position + calSpeed * Time.fixedDeltaTime * movementInput);
         }
     }
 

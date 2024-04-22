@@ -13,8 +13,8 @@ public class KitchenTimerScript : MonoBehaviour
     void OnEnable()
     {
         Debug.Log("OnEnable " + currentFoodId);
-        timerSlider.maxValue = countdownTime;
-        timerSlider.value = countdownTime;
+        timerSlider.maxValue = countdownTime - (DataManager.cookingLevels * 0.1f);
+        timerSlider.value = countdownTime -  (DataManager.cookingLevels * 0.1f);
     }
 
     void Start()

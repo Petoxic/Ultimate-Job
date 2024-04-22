@@ -50,6 +50,10 @@ public class DataManager : MonoBehaviour
     private static int todayServed;
     public static bool isDay;
 
+    // game stats
+    public static int moveLevels;
+    public static int cookingLevels;
+
     void Start()
     {
         ResetGameData();
@@ -63,6 +67,9 @@ public class DataManager : MonoBehaviour
         previousCaseStartingMoney = startingMoney;
         startTalking = false;
         caseNumber = 0;
+        moveLevels = 1;
+        cookingLevels = 1;
+
         selectedSuspectName = "";
 
         // reset case data
