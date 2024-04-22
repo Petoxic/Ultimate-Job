@@ -22,10 +22,13 @@ public class ArrestingSceneController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        stillNotSureButton.onClick.AddListener(delegate
+        if (stillNotSureButton != null)
         {
-            StillNotSure();
-        });
+            stillNotSureButton.onClick.AddListener(delegate
+            {
+                StillNotSure();
+            });
+        }
         restartGameButton.onClick.AddListener(delegate
         {
             DataManager.ResetCase();
@@ -49,7 +52,7 @@ public class ArrestingSceneController : MonoBehaviour
             GameObject btn = (GameObject)Instantiate(buttonTemplate);
             btn.transform.SetParent(scrollViewPanel.transform);
             btn.transform.GetChild(0).GetComponent<UnityEngine.UI.Text>().text = name;
-            sprites = Resources.LoadAll<Sprite>("Custoner/"+ name);
+            sprites = Resources.LoadAll<Sprite>("Custoner/" + name);
             btn.transform.GetChild(1).GetComponent<UnityEngine.UI.Image>().sprite = sprites[1];
             btn.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(delegate
             {
@@ -59,11 +62,11 @@ public class ArrestingSceneController : MonoBehaviour
             btn.transform.localScale = new Vector3(1, 1, 1);
         }
 
-        if (DataManager.GetDay()==2)
+        if (DataManager.GetDay() == 2)
         {
             stillNotSureButton.gameObject.SetActive(false);
         }//
-        
+
     }
 
     void Awake()
@@ -103,15 +106,18 @@ public class ArrestingSceneController : MonoBehaviour
         if (DataManager.CheckSuspect())
         {
             string reward = "";
-            if (DataManager.GetDay()+1 == 1){
+            if (DataManager.GetDay() + 1 == 1)
+            {
                 DataManager.Reward(120);
                 reward = "120";
             }
-            else if (DataManager.GetDay()+1 == 2){
+            else if (DataManager.GetDay() + 1 == 2)
+            {
                 DataManager.Reward(70);
                 reward = "70";
             }
-            else if (DataManager.GetDay()+1 == 3){
+            else if (DataManager.GetDay() + 1 == 3)
+            {
                 DataManager.Reward(20);
                 reward = "20";
             }

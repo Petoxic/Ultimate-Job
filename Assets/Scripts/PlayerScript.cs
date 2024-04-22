@@ -58,7 +58,7 @@ public class PlayerScript : MonoBehaviour
         DataManager.playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
         if (canMove && !DataManager.startTalking)
         {
-            float calSpeed = moveSpeed + (DataManager.moveLevels*0.1f);
+            float calSpeed = moveSpeed + (DataManager.moveLevels * 0.1f);
             rb.MovePosition(rb.position + calSpeed * Time.fixedDeltaTime * movementInput);
         }
     }
@@ -112,7 +112,10 @@ public class PlayerScript : MonoBehaviour
 
     void OnFire()
     {
-        animator.SetTrigger(AnimatorParameters.Interact);
+        if (animator != null)
+        {
+            animator.SetTrigger(AnimatorParameters.Interact);
+        }
     }
 
     private void LockMovement()
@@ -136,7 +139,8 @@ public class PlayerScript : MonoBehaviour
         orderNote.SetActive(false);
     }
 
-    private void ShowFloatingText(String text) {
+    private void ShowFloatingText(String text)
+    {
         var go = Instantiate(floatingTextPrefab, transform.position + new Vector3(0, 0.18f, 0), Quaternion.identity, transform);
         go.GetComponent<TextMeshPro>().text = text;
     }

@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class KitchenScript : MonoBehaviour
 {
     [SerializeField] private Slider timerSlider;
-    private PlayerScript player;
+    private PlayerScript playerScript;
     private static readonly int ordersCountMax = 2;
     private readonly List<int> orderBuffer = new();
     private readonly List<int> orderSlots = Enumerable.Repeat(-1, ordersCountMax).ToList();
@@ -21,7 +21,11 @@ public class KitchenScript : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        if (playerObj != null)
+        {
+            playerScript = playerObj.GetComponent<PlayerScript>();
+        }
         sprites = Resources.LoadAll<Sprite>("food-OCAL");
     }
 
@@ -37,8 +41,8 @@ public class KitchenScript : MonoBehaviour
 
     public void OnInteract()
     {
-        orderBuffer.AddRange(player.orderList);
-        player.ClearOrderList();
+        orderBuffer.AddRange(playerScript.orderList);
+        playerScript.ClearOrderList();
     }
 
     public int ReadyOrdersCount()

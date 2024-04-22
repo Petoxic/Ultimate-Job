@@ -233,6 +233,7 @@ MonoBehaviour:
   customer: {fileID: 6419913523111105754}
   timerSlider: {fileID: 1841221208289934582}
   iconImage: {fileID: 1342675818613561133}
+  isWaiting: 1
 --- !u!1 &582697306844821118
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,7 +1030,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1612000302, guid: edddb57b886934457bb28a6b2d1294a0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1127,6 +1128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 0}
   dialogueText: {fileID: 0}
+  dialogueImage: {fileID: 0}
   dialogue: []
   objectName: {fileID: 0}
   talkBubble: {fileID: 463201435453354521}
