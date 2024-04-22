@@ -17,6 +17,7 @@ TagManager:
   - Map1
   - Map2
   - CutsceneCase
+  - Popup
   layers:
   - Default
   - TransparentFX
