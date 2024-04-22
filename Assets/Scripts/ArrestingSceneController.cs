@@ -59,14 +59,11 @@ public class ArrestingSceneController : MonoBehaviour
             btn.transform.localScale = new Vector3(1, 1, 1);
         }
 
-        // if (DataManager.IsLastDay())
-        // {
-        //     stillNotSureButton.SetActive(false);
-        // }
-        // else
-        // {
-        //     stillNotSureButton.SetActive(true);
-        // }
+        if (DataManager.GetDay()==2)
+        {
+            stillNotSureButton.gameObject.SetActive(false);
+        }//
+        
     }
 
     void Awake()
@@ -107,16 +104,16 @@ public class ArrestingSceneController : MonoBehaviour
         {
             string reward = "";
             if (DataManager.GetDay()+1 == 1){
-                DataManager.Reward(300);
-                reward = "300";
+                DataManager.Reward(120);
+                reward = "120";
             }
             else if (DataManager.GetDay()+1 == 2){
-                DataManager.Reward(200);
-                reward = "200";
+                DataManager.Reward(70);
+                reward = "70";
             }
             else if (DataManager.GetDay()+1 == 3){
-                DataManager.Reward(100);
-                reward = "100";
+                DataManager.Reward(20);
+                reward = "20";
             }
             gameWinModal.transform.GetChild(1).GetComponent<UnityEngine.UI.Text>().text = "reward +$" + reward;
             gameWinModal.SetActive(true);
