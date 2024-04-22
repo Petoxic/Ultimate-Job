@@ -35,6 +35,7 @@ public class CustomerTimerScript : MonoBehaviour
                 if (customerScript.foodAmount == 1)
                 {
                     customer.SetActive(false);
+                    CustomerSpawningScript.customerCountInMap -= 1;
                 }
                 else
                 {

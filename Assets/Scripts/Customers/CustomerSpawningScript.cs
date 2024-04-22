@@ -9,6 +9,7 @@ public class CustomerSpawningScript : MonoBehaviour
     private readonly float spawnDelay = 5.0f; // TODO: randomize this value
     private bool isReadyToSpawn = false;
     [SerializeField] private GameObject customerPrefab;
+    public static int customerCountInMap = 0;
 
     private IEnumerator SpawnDelay()
     {
@@ -18,16 +19,18 @@ public class CustomerSpawningScript : MonoBehaviour
 
     void Start()
     {
-        customerCount = Min(customerCountPerDay[DataManager.GetDay()], DataManager.placedObjectsData.Count * 2);
+        customerCount = customerCountPerDay[DataManager.GetDay()];
         StartCoroutine(SpawnDelay());
     }
 
     void Update()
     {
-        if (isReadyToSpawn && customerCount > 0)
+        bool isFull = customerCountInMap == DataManager.placedGameObjects.Count * 2;
+        if (isReadyToSpawn && customerCount > 0 && !isFull)
         {
             isReadyToSpawn = false;
             Instantiate(customerPrefab, new Vector3((float)-0.231, (float)-1.266, 0), Quaternion.identity);
+            customerCountInMap += 1;
             StartCoroutine(SpawnDelay());
             customerCount -= 1;
         }

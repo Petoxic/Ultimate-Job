@@ -27,6 +27,7 @@ public class WaitingToOrderTimerScript : MonoBehaviour
             timerSlider.value -= Time.deltaTime;
             if (timerSlider.value == 0)
             {
+                CustomerSpawningScript.customerCountInMap -= 1;
                 customer.SetActive(false);
             }
         }
