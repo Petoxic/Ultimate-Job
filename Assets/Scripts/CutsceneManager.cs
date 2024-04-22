@@ -21,7 +21,7 @@ public class CutsceneManager : MonoBehaviour
 
     void Start()
     {   
-        cutsceneCase[DataManager.caseNumber + 1].SetActive(true);   
+        cutsceneCase[DataManager.caseNumber].SetActive(true);   
         cutsceneList = GameObject.FindGameObjectsWithTag("Cutscene");
         dialogueObject = GameObject.FindGameObjectsWithTag("CutsceneText");
         canContinueToNextCutscene = true;
