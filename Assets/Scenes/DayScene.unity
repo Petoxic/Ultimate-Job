@@ -983,6 +983,7 @@ GameObject:
   - component: {fileID: 479052299}
   - component: {fileID: 479052302}
   - component: {fileID: 479052303}
+  - component: {fileID: 479052304}
   m_Layer: 0
   m_Name: Kitchen
   m_TagString: Kitchen
@@ -1036,7 +1037,7 @@ TilemapCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
@@ -1405,6 +1406,97 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!66 &479052304
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479052297}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 479052299}
+    m_ColliderPaths:
+    - - X: 19200000
+        Y: -3200000
+      - X: 17600000
+        Y: -3200000
+      - X: 17600000
+        Y: 0
+      - X: 20800000
+        Y: 0
+      - X: 20800000
+        Y: -4799999
+      - X: 22399998
+        Y: -4799999
+      - X: 22399998
+        Y: 3200000
+      - X: 15999999
+        Y: 3200000
+      - X: 15999999
+        Y: -4799999
+      - X: 19200000
+        Y: -4799999
+    - - X: 19200000
+        Y: -4800000
+      - X: 15999999
+        Y: -4800000
+      - X: 15999999
+        Y: -6400000
+      - X: 19200000
+        Y: -6400000
+    - - X: 22399998
+        Y: -4800000
+      - X: 20800000
+        Y: -4800000
+      - X: 20800000
+        Y: -6400000
+      - X: 22399998
+        Y: -6400000
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 1.9199709, y: -0.64}
+      - {x: 1.9199709, y: -0.32}
+      - {x: 1.76, y: -0.3199706}
+      - {x: 1.7600294, y: 0}
+      - {x: 2.08, y: -0.0000294}
+      - {x: 2.0800292, y: -0.64}
+      - {x: 2.2399998, y: -0.6399707}
+      - {x: 2.2399704, y: 0.32}
+      - {x: 1.5999999, y: 0.3199707}
+      - {x: 1.6000292, y: -0.64}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+  m_UseDelaunayMesh: 0
+  m_CompositeGameObject: {fileID: 479052297}
 --- !u!1 &488333838
 GameObject:
   m_ObjectHideFlags: 0
@@ -5074,6 +5166,7 @@ GameObject:
   - component: {fileID: 884208404}
   - component: {fileID: 884208403}
   - component: {fileID: 884208402}
+  - component: {fileID: 884208407}
   m_Layer: 0
   m_Name: Kitchen
   m_TagString: Kitchen
@@ -5168,7 +5261,7 @@ TilemapCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
@@ -5468,6 +5561,125 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!66 &884208407
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884208400}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 884208404}
+    m_ColliderPaths:
+    - - X: 19200000
+        Y: -4799999
+      - X: 19200000
+        Y: -3799999
+      - X: 17600000
+        Y: -3799999
+      - X: 17600000
+        Y: 0
+      - X: 20800000
+        Y: 0
+      - X: 20800000
+        Y: -1600000
+      - X: 22399998
+        Y: -1600000
+      - X: 22399998
+        Y: 1600000
+      - X: 20800000
+        Y: 1600000
+      - X: 20800000
+        Y: 3200000
+      - X: 17700000
+        Y: 3200000
+      - X: 17600000
+        Y: 3100000
+      - X: 17600000
+        Y: 1600000
+      - X: 15999999
+        Y: 1600000
+      - X: 15999999
+        Y: -4799999
+    - - X: 19200000
+        Y: -4800000
+      - X: 15999999
+        Y: -4800000
+      - X: 15999999
+        Y: -6400000
+      - X: 19200000
+        Y: -6400000
+    - - X: 22399998
+        Y: -6200000
+      - X: 22399998
+        Y: -5100000
+      - X: 21999998
+        Y: -4900000
+      - X: 21099998
+        Y: -4900000
+      - X: 20800000
+        Y: -5200000
+      - X: 20800000
+        Y: -6400000
+      - X: 22199998
+        Y: -6400000
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 1.9199709, y: -0.64}
+      - {x: 1.9199709, y: -0.3799999}
+      - {x: 1.76, y: -0.3799705}
+      - {x: 1.7600294, y: 0}
+      - {x: 2.08, y: -0.0000294}
+      - {x: 2.0800292, y: -0.16}
+      - {x: 2.2399998, y: -0.1599707}
+      - {x: 2.2399704, y: 0.16}
+      - {x: 2.08, y: 0.1600294}
+      - {x: 2.0799708, y: 0.32}
+      - {x: 1.7699925, y: 0.3199924}
+      - {x: 1.76, y: 0.3099892}
+      - {x: 1.7599707, y: 0.16}
+      - {x: 1.5999999, y: 0.1599707}
+      - {x: 1.6000292, y: -0.64}
+    - - {x: 2.219989, y: -0.64}
+      - {x: 2.2399998, y: -0.6199892}
+      - {x: 2.2399848, y: -0.5099924}
+      - {x: 2.199994, y: -0.49}
+      - {x: 2.1099923, y: -0.4900076}
+      - {x: 2.08, y: -0.5200108}
+      - {x: 2.0800292, y: -0.64}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+  m_UseDelaunayMesh: 0
+  m_CompositeGameObject: {fileID: 884208400}
 --- !u!1 &935734457
 GameObject:
   m_ObjectHideFlags: 0

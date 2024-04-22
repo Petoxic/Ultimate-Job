@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -899371463998054872, guid: 539cc9457de2e4f429856bea90850f8a, type: 3}
+      propertyPath: m_UsedByComposite
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3735030143106440215, guid: 539cc9457de2e4f429856bea90850f8a, type: 3}
       propertyPath: m_Name
       value: green-table
@@ -55,5 +59,123 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3721691183988690633, guid: 539cc9457de2e4f429856bea90850f8a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3272293245439427298}
+    - targetCorrespondingSourceObject: {fileID: 3721691183988690633, guid: 539cc9457de2e4f429856bea90850f8a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 537621524043305024}
   m_SourcePrefab: {fileID: -2695619058785784247, guid: 539cc9457de2e4f429856bea90850f8a, type: 3}
+--- !u!1 &3261173326837407823 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3721691183988690633, guid: 539cc9457de2e4f429856bea90850f8a, type: 3}
+  m_PrefabInstance: {fileID: 2225932381414895238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &3272293245439427298
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3261173326837407823}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!66 &537621524043305024
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3261173326837407823}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 7881532299391791278}
+    m_ColliderPaths:
+    - - X: 9491895
+        Y: 0
+      - X: 9394531
+        Y: 294
+      - X: 9394238
+        Y: 1591796
+      - X: 7998047
+        Y: 1591503
+      - X: 7997753
+        Y: 1396484
+      - X: 1591796
+        Y: 1396778
+      - X: 1591503
+        Y: 1591796
+      - X: 292968
+        Y: 1591503
+      - X: 293261
+        Y: -1591796
+      - X: 9491895
+        Y: -1591796
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 0.9491602, y: -0.1591796}
+      - {x: 0.94916034, y: 0}
+      - {x: 0.9394531, y: 0.000058600002}
+      - {x: 0.93939453, y: 0.1591796}
+      - {x: 0.7998046, y: 0.1591211}
+      - {x: 0.79974604, y: 0.13964841}
+      - {x: 0.1591796, y: 0.1397071}
+      - {x: 0.1591211, y: 0.1591796}
+      - {x: 0.0292968, y: 0.159121}
+      - {x: 0.029355401, y: -0.1591796}
+  m_VertexDistance: 0.0005
+  m_OffsetDistance: 0.00005
+  m_UseDelaunayMesh: 0
+  m_CompositeGameObject: {fileID: 3261173326837407823}
+--- !u!60 &7881532299391791278 stripped
+PolygonCollider2D:
+  m_CorrespondingSourceObject: {fileID: -899371463998054872, guid: 539cc9457de2e4f429856bea90850f8a, type: 3}
+  m_PrefabInstance: {fileID: 2225932381414895238}
+  m_PrefabAsset: {fileID: 0}
