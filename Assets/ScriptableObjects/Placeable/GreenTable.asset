@@ -15,6 +15,6 @@ MonoBehaviour:
   ID: 2
   title: Green Table?
   description: Made from green wood but not Greenwood. Wait, Is that a table?
-  basePrice: 7
+  basePrice: 12
   size: {x: 6, y: 2}
   Prefab: {fileID: 3256497896580346513, guid: 44f5721109ee25f458d9d5fb5b0becfe, type: 3}

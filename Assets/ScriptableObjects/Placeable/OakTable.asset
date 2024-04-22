@@ -15,6 +15,6 @@ MonoBehaviour:
   ID: 0
   title: OakTable
   description: Modern oak table. Good for the fresh start-up
-  basePrice: 3
+  basePrice: 10
   size: {x: 5, y: 3}
   Prefab: {fileID: -8166878007169690821, guid: 365d8dc581b7a0942bfa188a995d0233, type: 3}

@@ -62,10 +62,10 @@ public class UpgradeManager : MonoBehaviour
             switch (i)
             {
                 case 0:
-                    price = 10 + ((DataManager.moveLevels - 1) * 5);
+                    price = 10 + ((DataManager.moveLevels - 1) * 10);
                     break;
                 case 1:
-                    price = 10 + ((DataManager.cookingLevels - 1) * 5);
+                    price = 10 + ((DataManager.cookingLevels - 1) * 10);
                     break;
             }
             if (DataManager.GetTotalMoney() >= price && DataManager.GetDay() > 0)
@@ -84,7 +84,7 @@ public class UpgradeManager : MonoBehaviour
         switch (itemNumber)
         {
             case 0:
-                int price = 10 + ((DataManager.moveLevels - 1) * 5);
+                int price = 10 + ((DataManager.moveLevels - 1) * 10);
                 if (DataManager.GetTotalMoney() >= price)
                 {
                     DataManager.moveLevels += 1;
@@ -92,7 +92,7 @@ public class UpgradeManager : MonoBehaviour
                 }
                 break;
             case 1:
-                int price1 = 10 + ((DataManager.cookingLevels - 1) * 5);
+                int price1 = 10 + ((DataManager.cookingLevels - 1) * 10);
                 if (DataManager.GetTotalMoney() >= price1)
                 {
                     DataManager.cookingLevels += 1;
@@ -113,12 +113,12 @@ public class UpgradeManager : MonoBehaviour
             {
                 case 0:
                     upgradePanels[i].titleText.text = "Moving speed";
-                    upgradePanels[i].priceText.text = "Coin: " + (10 + ((DataManager.moveLevels - 1) * 5)) + " $";
+                    upgradePanels[i].priceText.text = "Coin: " + (10 + ((DataManager.moveLevels - 1) * 10)) + " $";
                     upgradePanels[i].levelText.text = "Level: " + DataManager.moveLevels;
                     break;
                 case 1:
                     upgradePanels[i].titleText.text = "Cooking speed";
-                    upgradePanels[i].priceText.text = "Coin: " + (10 + ((DataManager.cookingLevels - 1) * 5)) + " $";
+                    upgradePanels[i].priceText.text = "Coin: " + (10 + ((DataManager.cookingLevels - 1) * 10)) + " $";
                     upgradePanels[i].levelText.text = "Level: " + DataManager.cookingLevels;
                     break;
             }
