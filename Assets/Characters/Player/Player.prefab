@@ -132,24 +132,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc3ab66bffc724bcfaa4e1ffff798fd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactDirection: 3
   moveSpeed: 1
   collisionOffset: 0.02
-  movementFilter:
-    useTriggers: 1
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 1
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
   playerInteract: {fileID: 7810509262910933480}
+  orderList: 
+  isHoldingFood: 0
+  holdingFoodId: 0
+  floatingTextPrefab: {fileID: 0}
+  orderNote: {fileID: 0}
 --- !u!50 &2730961272479356374
 Rigidbody2D:
   serializedVersion: 4
@@ -287,7 +277,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4061232087574991144}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -338,4 +328,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactCollider: {fileID: 8556011809392253192}
-  interactOffset: {x: 0, y: 0}
