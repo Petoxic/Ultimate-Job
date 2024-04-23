@@ -658,7 +658,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 5.This is a customer. Press E when you see this icon to get an order.
+  m_text: 5.This is a customer. Press Space when you see this icon to get an order.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2cea8242b71844904b44c6fac568cf99, type: 2}
   m_sharedMaterial: {fileID: -4335581677503169095, guid: 2cea8242b71844904b44c6fac568cf99, type: 2}
@@ -10077,10 +10077,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '4.This is a kitchen.
 
-    Press E to send orders.
-
-    Press G to pick
-    up a dish.'
+    Press Space to send orders and pick up a dish.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2cea8242b71844904b44c6fac568cf99, type: 2}
   m_sharedMaterial: {fileID: -4335581677503169095, guid: 2cea8242b71844904b44c6fac568cf99, type: 2}
