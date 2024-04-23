@@ -79,6 +79,7 @@ public class DataManager : MonoBehaviour
 
     private static void ResetCaseData()
     {
+        Time.timeScale = 1f;
         day = 0;
         suspectList = new HashSet<string>();
         placedObjectsData = new Dictionary<int, List<Vector2Int>> { };
@@ -182,7 +183,7 @@ public class DataManager : MonoBehaviour
 
         caseNumber += 1;
         ResetCaseData();
-        SceneManager.LoadScene("NightScene");
+        SceneManager.LoadScene("PrologueCutscene");
     }
 
     public static bool IsLastCase()
