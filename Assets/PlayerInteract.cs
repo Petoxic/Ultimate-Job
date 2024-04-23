@@ -21,12 +21,12 @@ public class PlayerInteract : MonoBehaviour
 
     public void FaceRight()
     {
-        transform.localPosition = new Vector3(interactOffset.x + 0.2f, interactOffset.y + 0.2f);
+        transform.localPosition = new Vector3(interactOffset.x + 0.1f, interactOffset.y + 0.15f);
     }
 
     public void FaceLeft()
     {
-        transform.localPosition = new Vector3(interactOffset.x - 0.2f, interactOffset.y + 0.2f);
+        transform.localPosition = new Vector3(interactOffset.x - 0.1f, interactOffset.y + 0.15f);
     }
 
     public void FaceUp()
