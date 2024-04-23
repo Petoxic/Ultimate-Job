@@ -10,14 +10,16 @@ public class ArrestingSceneController : MonoBehaviour
     [SerializeField] private GameObject buttonTemplate;
     [SerializeField] private GameObject confirmationPanel;
     [SerializeField] private Button stillNotSureButton;
-    [SerializeField] private GameObject gameOverModal;
+    [SerializeField] private GameObject gameLostModal;
     [SerializeField] private Button restartGameButton;
-    [SerializeField] private GameObject gameWinModal;
+    [SerializeField] private GameObject gameWonModal;
     [SerializeField] private Button nextCaseButton;
     [SerializeField] private Button yesButton;
     [SerializeField] private Button noButton;
     private Sprite[] sprites;
     [SerializeField] private Text gameWinText;
+    [SerializeField] private Text rewardText;
+    [SerializeField] private Text conclusionText;
 
     // Start is called before the first frame update
     void Start()
@@ -29,15 +31,21 @@ public class ArrestingSceneController : MonoBehaviour
                 StillNotSure();
             });
         }
-        restartGameButton.onClick.AddListener(delegate
+        if (restartGameButton != null)
         {
-            DataManager.ResetCase();
-        });
-        nextCaseButton.onClick.AddListener(delegate
+            restartGameButton.onClick.AddListener(delegate
+            {
+                DataManager.ResetCase();
+            });
+        }
+        if (nextCaseButton != null)
         {
-            DataManager.SetPreviousCaseStartingMoney(DataManager.GetTotalMoney());
-            DataManager.NextCase();
-        });
+            nextCaseButton.onClick.AddListener(delegate
+            {
+                DataManager.SetPreviousCaseStartingMoney(DataManager.GetTotalMoney());
+                DataManager.NextCase();
+            });
+        }
         yesButton.onClick.AddListener(delegate
         {
             YesClicked();
@@ -105,6 +113,7 @@ public class ArrestingSceneController : MonoBehaviour
     {
         if (DataManager.CheckSuspect())
         {
+            Debug.Log("Correct");
             string reward = "";
             if (DataManager.GetDay() + 1 == 1)
             {
@@ -121,14 +130,15 @@ public class ArrestingSceneController : MonoBehaviour
                 DataManager.Reward(20);
                 reward = "20";
             }
-            gameWinModal.transform.GetChild(1).GetComponent<UnityEngine.UI.Text>().text = "reward +$" + reward;
-            gameWinModal.SetActive(true);
-            gameOverModal.SetActive(false);
+            rewardText.text = "Reward +$" + reward;
+            conclusionText.text = Utils.GetConclusionText();
+            gameWonModal.SetActive(true);
+            gameLostModal.SetActive(false);
         }
         else
         {
-            gameWinModal.SetActive(false);
-            gameOverModal.SetActive(true);
+            gameWonModal.SetActive(false);
+            gameLostModal.SetActive(true);
         }
     }
 

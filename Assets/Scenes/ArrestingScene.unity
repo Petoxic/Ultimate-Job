@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 191586544}
   - component: {fileID: 191586543}
   m_Layer: 5
-  m_Name: GameWinModal
+  m_Name: GameWonModal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -156,6 +156,7 @@ RectTransform:
   - {fileID: 1215578398}
   - {fileID: 1593611327}
   - {fileID: 690326292}
+  - {fileID: 669842009}
   m_Father: {fileID: 749138228}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -413,7 +414,7 @@ GameObject:
   - component: {fileID: 320550882}
   - component: {fileID: 320550881}
   m_Layer: 5
-  m_Name: GameOverModal
+  m_Name: GameLostModal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6098,6 +6099,91 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &669842008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 669842009}
+  - component: {fileID: 669842011}
+  - component: {fileID: 669842012}
+  m_Layer: 5
+  m_Name: ConclusionText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &669842009
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669842008}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 191586542}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.000034332, y: -36}
+  m_SizeDelta: {x: 1214.7336, y: 369.1758}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &669842011
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669842008}
+  m_CullTransparentMesh: 1
+--- !u!114 &669842012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669842008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 36
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: As the investigation unfolds, it's revealed that Oliver Ford, the unassuming
+    man at "The King's" was the mastermind behind the heist. Manipulating rumors
+    and using his interactions to cover his tracks, Oliver took advantage of the
+    museum party's chaos to steal the diamond necklace, exploiting his knowledge
+    of security measures learned from Mrs.Margaret Chen. Despite efforts by Officer
+    Jameson and Mr.Charles Thompson, Oliver managed to escape with the loot, leaving
+    everyone shocked by his deception.
 --- !u!1 &690326291
 GameObject:
   m_ObjectHideFlags: 0
@@ -6134,7 +6220,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -139}
+  m_AnchoredPosition: {x: -9, y: -281}
   m_SizeDelta: {x: 543.6683, y: 103.2849}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &690326293
@@ -6647,13 +6733,15 @@ MonoBehaviour:
   buttonTemplate: {fileID: 8198218369661822023, guid: 0ee797ede18744e4fb79ae1b0ac22888, type: 3}
   confirmationPanel: {fileID: 575670993}
   stillNotSureButton: {fileID: 0}
-  gameOverModal: {fileID: 0}
+  gameLostModal: {fileID: 0}
   restartGameButton: {fileID: 0}
-  gameWinModal: {fileID: 0}
+  gameWonModal: {fileID: 0}
   nextCaseButton: {fileID: 0}
   yesButton: {fileID: 0}
   noButton: {fileID: 0}
   gameWinText: {fileID: 0}
+  rewardText: {fileID: 0}
+  conclusionText: {fileID: 0}
 --- !u!1 &752669531
 GameObject:
   m_ObjectHideFlags: 0
@@ -6950,7 +7038,7 @@ GameObject:
   - component: {fileID: 842075200}
   - component: {fileID: 842075199}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: GameLostText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6972,8 +7060,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 115.23}
-  m_SizeDelta: {x: 806.6318, y: 230.4559}
+  m_AnchoredPosition: {x: -0.000015259, y: 127}
+  m_SizeDelta: {x: 846.0693, y: 230.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &842075199
 MonoBehaviour:
@@ -7008,7 +7096,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Game Over
+  m_Text: You have arrested a wrong person!
 --- !u!222 &842075200
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7304,7 +7392,7 @@ GameObject:
   - component: {fileID: 1215578400}
   - component: {fileID: 1215578399}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: Congrats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7326,8 +7414,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 220}
-  m_SizeDelta: {x: 806.6318, y: 230.4559}
+  m_AnchoredPosition: {x: 0, y: 319}
+  m_SizeDelta: {x: 346.9599, y: 95.9774}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1215578399
 MonoBehaviour:
@@ -7351,7 +7439,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 100
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -9786,7 +9874,7 @@ GameObject:
   - component: {fileID: 1593611329}
   - component: {fileID: 1593611328}
   m_Layer: 5
-  m_Name: reward
+  m_Name: Reward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9808,8 +9896,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.0000076293945}
-  m_SizeDelta: {x: 806.6318, y: 230.4559}
+  m_AnchoredPosition: {x: 0.000030518, y: 233.87}
+  m_SizeDelta: {x: 229.84, y: 74.2733}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1593611328
 MonoBehaviour:
@@ -9833,7 +9921,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 60
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -9844,7 +9932,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: reward
+  m_Text: Reward
 --- !u!222 &1593611329
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10014,7 +10102,7 @@ MonoBehaviour:
     m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 6
+    m_MinSize: 0
     m_MaxSize: 60
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -10022,7 +10110,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Next Mission
+  m_Text: Go to next mission
 --- !u!222 &1865161978
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10268,13 +10356,15 @@ MonoBehaviour:
   buttonTemplate: {fileID: 8198218369661822023, guid: 0ee797ede18744e4fb79ae1b0ac22888, type: 3}
   confirmationPanel: {fileID: 575670993}
   stillNotSureButton: {fileID: 1444581105}
-  gameOverModal: {fileID: 320550879}
+  gameLostModal: {fileID: 320550879}
   restartGameButton: {fileID: 198088230}
-  gameWinModal: {fileID: 191586541}
+  gameWonModal: {fileID: 191586541}
   nextCaseButton: {fileID: 690326293}
   yesButton: {fileID: 1529966429}
   noButton: {fileID: 724870865}
   gameWinText: {fileID: 1865161977}
+  rewardText: {fileID: 1593611328}
+  conclusionText: {fileID: 669842012}
 --- !u!1 &2111535908
 GameObject:
   m_ObjectHideFlags: 0
