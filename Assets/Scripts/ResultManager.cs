@@ -22,7 +22,7 @@ public class ResultManager : MonoBehaviour
     private Sprite[] sprites;
 
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         sprites = Resources.LoadAll<Sprite>("star");
         if (DataManager.isObjectiveCompleted[0] && DataManager.isObjectiveCompleted[1] && DataManager.isObjectiveCompleted[2])
@@ -95,6 +95,17 @@ public class ResultManager : MonoBehaviour
         {
             colorchangingFont3.color = Color.red;
             star3.sprite = sprites[sprites.Length - 2];
+        }
+
+        if (DataManager.caseNumber == 0)
+        {
+            GameObject.FindGameObjectWithTag("Map1").SetActive(true);
+            GameObject.FindGameObjectWithTag("Map2").SetActive(false);
+        }
+        else
+        {
+            GameObject.FindGameObjectWithTag("Map2").SetActive(true);
+            GameObject.FindGameObjectWithTag("Map1").SetActive(false);
         }
     }
 

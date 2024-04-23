@@ -22,7 +22,7 @@ public class ArrestingSceneController : MonoBehaviour
     [SerializeField] private Text conclusionText;
 
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         if (stillNotSureButton != null)
         {
@@ -73,7 +73,18 @@ public class ArrestingSceneController : MonoBehaviour
         if (DataManager.GetDay() == 2)
         {
             stillNotSureButton.gameObject.SetActive(false);
-        }//
+        }
+
+        if (DataManager.caseNumber == 0)
+        {
+            GameObject.FindGameObjectWithTag("Map1").SetActive(true);
+            GameObject.FindGameObjectWithTag("Map2").SetActive(false);
+        }
+        else
+        {
+            GameObject.FindGameObjectWithTag("Map2").SetActive(true);
+            GameObject.FindGameObjectWithTag("Map1").SetActive(false);
+        }
 
     }
 
