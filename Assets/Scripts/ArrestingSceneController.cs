@@ -22,7 +22,7 @@ public class ArrestingSceneController : MonoBehaviour
     [SerializeField] private Text conclusionText;
 
     // Start is called before the first frame update
-    void OnEnable()
+    void Start()
     {
         if (stillNotSureButton != null)
         {

@@ -12523,7 +12523,6 @@ GameObject:
   - component: {fileID: 749138227}
   - component: {fileID: 749138226}
   - component: {fileID: 749138225}
-  - component: {fileID: 749138229}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -12620,31 +12619,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &749138229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 749138224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02bbd13225b9ae14e965251fc9e6758d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrollViewPanel: {fileID: 907352041}
-  buttonTemplate: {fileID: 8198218369661822023, guid: 0ee797ede18744e4fb79ae1b0ac22888, type: 3}
-  confirmationPanel: {fileID: 575670993}
-  stillNotSureButton: {fileID: 0}
-  gameLostModal: {fileID: 0}
-  restartGameButton: {fileID: 0}
-  gameWonModal: {fileID: 0}
-  nextCaseButton: {fileID: 0}
-  yesButton: {fileID: 0}
-  noButton: {fileID: 0}
-  gameWinText: {fileID: 0}
-  rewardText: {fileID: 0}
-  conclusionText: {fileID: 0}
 --- !u!1 &752669531
 GameObject:
   m_ObjectHideFlags: 0

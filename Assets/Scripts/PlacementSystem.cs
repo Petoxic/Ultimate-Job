@@ -38,7 +38,7 @@ public class PlacementSystem : MonoBehaviour
 
     private void Start()
     {
-        topWallGridPosition = 10;
+        topWallGridPosition = 11;
         bottomWallGridPosition = 2;
         leftWallGridPosition = 1;
         rightWallGridPosition = 26;
