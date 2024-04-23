@@ -7692,7 +7692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shopInputManager: {fileID: 2102714319}
   gridMap1: {fileID: 487298052}
-  gridMap2: {fileID: 0}
+  gridMap2: {fileID: 51682113}
   tilemap: {fileID: 1764547061}
   shopItemsSO:
   - {fileID: 11400000, guid: a397f1e0b0f47e444bb2f384498b596b, type: 2}
