@@ -17832,7 +17832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridInput: {fileID: 487298052}
-  gridInput1: {fileID: 0}
+  gridInput1: {fileID: 51682113}
   selectedObjectIndex: 0
   shopItemsSO:
   - {fileID: 11400000, guid: a397f1e0b0f47e444bb2f384498b596b, type: 2}
