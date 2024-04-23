@@ -23,6 +23,7 @@ public class PlacementSystem : MonoBehaviour
     public static bool isPlacement;
     public static bool isPreview;
     public static bool isRemoving;
+    public static bool isUpgrade;
     public static Vector3Int gridSize;
     public static GameObject newObject;
 
@@ -43,6 +44,7 @@ public class PlacementSystem : MonoBehaviour
         isPlacement = false;
         isPreview = false;
         isRemoving = false;
+        isUpgrade = false;
         StopPlacement();
         furnitureData = new();
         gridSize = tilemap.GetComponent<Tilemap>().size;
@@ -81,10 +83,10 @@ public class PlacementSystem : MonoBehaviour
             }
         }
         if (RemovingState.selectedRemoveIndex != -1)
-            {
-                DataManager.Refund(shopItemsSO[RemovingState.selectedRemoveIndex].basePrice);
-                RemovingState.selectedRemoveIndex = -1;
-            }
+        {
+            DataManager.Refund(shopItemsSO[RemovingState.selectedRemoveIndex].basePrice);
+            RemovingState.selectedRemoveIndex = -1;
+        }
         if (isPlacement && (Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.Escape)))
         {
             OnExit?.Invoke();

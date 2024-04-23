@@ -29,23 +29,33 @@ public class ShopManager : MonoBehaviour
         {
             if (isOpenShop)
             {
+                removeObjectButton.SetActive(true);
                 CloseShopMenu();
             }
             else
             {
+                removeObjectButton.SetActive(false);
                 OpenShopMenu();
             }
+        }
+        else if (Input.GetKeyDown(KeyCode.U) && isOpenShop)
+        {
+            isOpenShop = false;
+            removeObjectButton.SetActive(false);
+            CloseShopMenu();
         }
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (isOpenShop)
             {
+                removeObjectButton.SetActive(true);
                 CloseShopMenu();
             }
         }
 
         if (PlacementSystem.isRemoving)
         {
+            removeObjectButton.SetActive(true);
             CloseShopMenu();
         }
     }
@@ -53,7 +63,6 @@ public class ShopManager : MonoBehaviour
     public void OpenShopMenu()
     {
         shopMenu.SetActive(true);
-        removeObjectButton.SetActive(false);
         for (int i = 0; i < shopItemsSO.Length; i++)
         {
             shopPanelsGO[i].SetActive(true);
@@ -67,7 +76,6 @@ public class ShopManager : MonoBehaviour
     public void CloseShopMenu()
     {
         shopMenu.SetActive(false);
-        removeObjectButton.SetActive(true);
         for (int i = 0; i < shopItemsSO.Length; i++)
         {
             shopPanelsGO[i].SetActive(false);

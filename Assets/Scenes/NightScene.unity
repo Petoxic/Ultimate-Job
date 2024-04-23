@@ -24502,6 +24502,7 @@ MonoBehaviour:
   - {fileID: 1784272316}
   upgradeButtons:
   - {fileID: 2141106427}
+  removeObjectButton: {fileID: 630332734}
 --- !u!1 &1844331388
 GameObject:
   m_ObjectHideFlags: 0

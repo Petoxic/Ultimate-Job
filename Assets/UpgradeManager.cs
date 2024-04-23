@@ -10,6 +10,8 @@ public class UpgradeManager : MonoBehaviour
     public static bool isOpenUpgradeMenu;
     public UpgradeTemplate[] upgradePanels;
     public Button[] upgradeButtons;
+    public GameObject removeObjectButton;
+
     void Start()
     {
         upgradeMenu.SetActive(false);
@@ -25,19 +27,34 @@ public class UpgradeManager : MonoBehaviour
         {
             if (isOpenUpgradeMenu)
             {
+                removeObjectButton.SetActive(true);
                 CloseUpgradeMenu();
             }
             else
             {
+                removeObjectButton.SetActive(false);
                 OpenUpgradeMenu();
             }
+        }
+        else if (Input.GetKeyDown(KeyCode.B) && isOpenUpgradeMenu)
+        {
+            isOpenUpgradeMenu = false;
+            removeObjectButton.SetActive(false);
+            CloseUpgradeMenu();
         }
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (isOpenUpgradeMenu)
             {
+                removeObjectButton.SetActive(true);
                 CloseUpgradeMenu();
             }
+        }
+
+        if (PlacementSystem.isRemoving)
+        {
+            removeObjectButton.SetActive(true);
+            CloseUpgradeMenu();
         }
     }
 
@@ -45,12 +62,15 @@ public class UpgradeManager : MonoBehaviour
     {
         upgradeMenu.SetActive(true);
         isOpenUpgradeMenu = true;
+        Time.timeScale = 0f;
+        PlacementSystem.isRemoving = false;
         CheckPurchaseable();
     }
 
     public void CloseUpgradeMenu()
     {
         upgradeMenu.SetActive(false);
+        Time.timeScale = 1f;
         isOpenUpgradeMenu = false;
     }
 
