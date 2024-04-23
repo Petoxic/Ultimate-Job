@@ -142,6 +142,7 @@ public class PlayerScript : MonoBehaviour
     private void ShowFloatingText(String text)
     {
         var go = Instantiate(floatingTextPrefab, transform.position + new Vector3(0, 0.18f, 0), Quaternion.identity, transform);
+        go.layer = 5;
         go.GetComponent<TextMeshPro>().text = text;
     }
 
