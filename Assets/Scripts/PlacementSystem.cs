@@ -22,8 +22,8 @@ public class PlacementSystem : MonoBehaviour
     public static int kitchenGridPosition;
     public static bool isPlacement;
     public static bool isPreview;
-    public static bool isRemoving;
     public static bool isUpgrade;
+    public static bool isUndo;
     public static Vector3Int gridSize;
     public static GameObject newObject;
 
@@ -31,6 +31,7 @@ public class PlacementSystem : MonoBehaviour
     private GridData furnitureData;
     private Vector3Int lastDetectedPosition = Vector3Int.zero;
     private Grid grid;
+    public GameObject undoObjectButton;
 
     IBuildingState buildingState;
 
@@ -43,8 +44,8 @@ public class PlacementSystem : MonoBehaviour
         kitchenGridPosition = 22;
         isPlacement = false;
         isPreview = false;
-        isRemoving = false;
         isUpgrade = false;
+        isUndo = false;
         StopPlacement();
         furnitureData = new();
         gridSize = tilemap.GetComponent<Tilemap>().size;
@@ -67,7 +68,7 @@ public class PlacementSystem : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            if (!isRemoving && PlacementState.placementValidity)
+            if (PlacementState.placementValidity)
             {
                 if (DataManager.GetTotalMoney() < shopItemsSO[PlacementState.selectedObjectIndex].basePrice)
                 {
@@ -77,18 +78,11 @@ public class PlacementSystem : MonoBehaviour
                 DataManager.SubMoney(shopItemsSO[PlacementState.selectedObjectIndex].basePrice);
                 OnClicked?.Invoke();
             }
-            if (isRemoving && RemovingState.removingValidity)
-            {
-                OnClicked?.Invoke();
-            }
-        }
-        if (RemovingState.selectedRemoveIndex != -1)
-        {
-            DataManager.Refund(shopItemsSO[RemovingState.selectedRemoveIndex].basePrice);
-            RemovingState.selectedRemoveIndex = -1;
         }
         if (isPlacement && (Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.Escape)))
         {
+            isPlacement = false;
+            undoObjectButton.SetActive(false);
             OnExit?.Invoke();
         }
 
@@ -112,7 +106,6 @@ public class PlacementSystem : MonoBehaviour
         {
             return;
         }
-        isPlacement = false;
         buildingState.EndState();
         this.OnClicked -= PlaceStructure;
         this.OnExit -= StopPlacement;
@@ -123,8 +116,8 @@ public class PlacementSystem : MonoBehaviour
     public void StartPlacement(int ID)
     {
         StopPlacement();
+        undoObjectButton.SetActive(true);
         isPlacement = true;
-        isRemoving = false;
         buildingState = new PlacementState(ID,
                                         grid,
                                         preview,
@@ -135,17 +128,33 @@ public class PlacementSystem : MonoBehaviour
         this.OnExit += StopPlacement;
     }
 
-    public void StartRemoving()
+    public void UndoPlacement()
     {
-        StopPlacement();
-        isRemoving = true;
-        isPlacement = false;
-        buildingState = new RemovingState(grid,
-                                        preview,
-                                        furnitureData,
-                                        objectPlacer);
-        this.OnClicked += PlaceStructure;
-        this.OnExit += StopPlacement;
+        isUndo = true;
+        List<int> placedObjectsDataKeys = new List<int>(DataManager.placedObjectsData.Keys);
+        List<Vector3Int> placedObjectsKeys = new List<Vector3Int>(DataManager.placedObjects.Keys);
+
+        int placedObjectsDataLastKey = placedObjectsDataKeys[placedObjectsDataKeys.Count - 1];
+        Vector3Int placedObjectsLastKeys = placedObjectsKeys[placedObjectsKeys.Count - 1];
+
+        List<Vector2Int> lastElement = DataManager.placedObjectsData[placedObjectsDataLastKey];
+        DataManager.Refund(shopItemsSO[lastElement[3].x].basePrice);
+
+        UndoObjectAt(DataManager.placedObjectsData.Count - 1);
+
+        DataManager.placedObjectsData.Remove(placedObjectsDataLastKey);
+        furnitureData.RemoveObjectAt(new Vector3Int(lastElement[2].x, lastElement[2].y, 0));
+    }
+
+    public void UndoObjectAt(int gameObjectIndex)
+    {
+        if (DataManager.placedGameObjects.Count <= gameObjectIndex || DataManager.placedGameObjects[gameObjectIndex] == null)
+        {
+            return;
+        }
+        Destroy(DataManager.placedGameObjects[gameObjectIndex]);
+        DataManager.placedGameObjects[gameObjectIndex] = null;
+        DataManager.placedGameObjects.RemoveAt(gameObjectIndex);
     }
 
     public void PlaceStructure()

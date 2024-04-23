@@ -6,8 +6,6 @@ using UnityEngine.Tilemaps;
 
 public class GridData
 {
-    public Dictionary<Vector3Int, PlacementData> placedObjects = new();
-
     public void AddObjectAt(Vector3Int gridPosition, Vector2Int objectSize, int ID, int placedObjectIndex, int selectedObjectIndex)
     {
         List<Vector3Int> positionToOccupy = CalculatePositions(gridPosition, objectSize);
@@ -23,11 +21,11 @@ public class GridData
 
         foreach (var pos in positionToOccupy)
         {
-            if (placedObjects.ContainsKey(pos))
+            if (DataManager.placedObjects.ContainsKey(pos))
             {
                 throw new Exception($"Dictionary already contains this cell position {pos}");
             }
-            placedObjects[pos] = placementData;
+            DataManager.placedObjects[pos] = placementData;
         }
     }
 
@@ -37,19 +35,6 @@ public class GridData
         for (int x = -1; x < objectSize.x; x++)
         {
             for (int y = -1; y < objectSize.y; y++)
-            {
-                returnVal.Add(gridPosition + new Vector3Int(x, y, 0));
-            }
-        }
-        return returnVal;
-    }
-
-    private List<Vector3Int> CalculateRemovePositions(Vector3Int gridPosition, Vector2Int objectSize)
-    {
-        List<Vector3Int> returnVal = new();
-        for (int x = -1; x < objectSize.x - 1; x++)
-        {
-            for (int y = 2; y < objectSize.y + 2; y++)
             {
                 returnVal.Add(gridPosition + new Vector3Int(x, y, 0));
             }
@@ -78,7 +63,7 @@ public class GridData
         List<Vector3Int> positionToOccupy = CalculatePositions(gridPosition, objectSizeRestrict);
         foreach (var pos in positionToOccupy)
         {
-            if (placedObjects.ContainsKey(pos))
+            if (DataManager.placedObjects.ContainsKey(pos))
             {
                 return false;
             }
@@ -86,31 +71,13 @@ public class GridData
         return true;
     }
 
-    public bool CanRemoveObjectAt(Vector3Int gridPosition, Vector2Int objectSize)
+    public int RemoveObjectAt(Vector3Int gridPosition)
     {
-        int xHalfGridSize = PlacementSystem.gridSize.x / 2;
-        int yHalfGridSize = PlacementSystem.gridSize.y / 2;
-        if (gridPosition.x + xHalfGridSize > PlacementSystem.gridSize.x - objectSize.x
-            || gridPosition.x + xHalfGridSize < PlacementSystem.leftWallGridPosition
-            || gridPosition.y + yHalfGridSize > PlacementSystem.gridSize.y
-            || gridPosition.y + yHalfGridSize < PlacementSystem.bottomWallGridPosition + objectSize.y
-            || gridPosition.y + yHalfGridSize > PlacementSystem.topWallGridPosition
-            || gridPosition.x + xHalfGridSize > PlacementSystem.rightWallGridPosition
-            || gridPosition.x + xHalfGridSize + objectSize.x > PlacementSystem.kitchenGridPosition)
+        foreach (var pos in DataManager.placedObjects[gridPosition].occupiedPositions)
         {
-            return true;
+            DataManager.placedObjects.Remove(pos);
         }
-
-        Vector2Int objectSizeRestrict = new Vector2Int(objectSize.x, objectSize.y);
-        List<Vector3Int> positionToOccupy = CalculateRemovePositions(gridPosition, objectSizeRestrict);
-        foreach (var pos in positionToOccupy)
-        {
-            if (placedObjects.ContainsKey(pos))
-            {
-                return false;
-            }
-        }
-        return true;
+        return -1;
     }
 
     public Vector2Int CalculateChairPositions(Vector3Int gridPosition, int xToChair, int yToChair)
@@ -121,20 +88,11 @@ public class GridData
 
     public int GetRepresentationIndex(Vector3Int gridPosition)
     {
-        if (!placedObjects.ContainsKey(gridPosition))
+        if (!DataManager.placedObjects.ContainsKey(gridPosition))
         {
             return -1;
         }
-        return placedObjects[gridPosition].PlacedObjectIndex;
-    }
-
-    public int RemoveObjectAt(Vector3Int gridPosition)
-    {
-        foreach (var pos in placedObjects[gridPosition].occupiedPositions)
-        {
-            placedObjects.Remove(pos);
-        }
-        return -1;
+        return DataManager.placedObjects[gridPosition].PlacedObjectIndex;
     }
 }
 

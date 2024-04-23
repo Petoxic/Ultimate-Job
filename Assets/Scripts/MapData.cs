@@ -40,11 +40,14 @@ public class MapData : MonoBehaviour
         queuePos = 0;
         for (int i = 0; i < DataManager.placedObjectsData.Count; i++)
         {
-            Vector3Int chairPos = new Vector3Int(DataManager.placedObjectsData[i][2].x,
+            Vector3Int tablePos = new Vector3Int(DataManager.placedObjectsData[i][2].x,
                                                 DataManager.placedObjectsData[i][2].y,
                                                 0);
+            Destroy(DataManager.placedGameObjects[i]);
+            DataManager.placedGameObjects[i] = null;
             GameObject newPlacedObject = Instantiate(shopItemsSO[DataManager.placedObjectsData[i][3].x].Prefab);
-            newPlacedObject.transform.position = grid.CellToWorld(chairPos);
+            newPlacedObject.transform.position = grid.CellToWorld(tablePos);
+            DataManager.placedGameObjects[i] = newPlacedObject;
         }
     }
 

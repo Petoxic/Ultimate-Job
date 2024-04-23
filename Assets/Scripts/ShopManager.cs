@@ -12,7 +12,7 @@ public class ShopManager : MonoBehaviour
     public ShopTemplate[] shopPanels;
     public Button[] myPurchaseButtons;
     public static bool isOpenShop;
-    public GameObject removeObjectButton;
+    public GameObject undoObjectButton;
 
     void Start()
     {
@@ -29,34 +29,28 @@ public class ShopManager : MonoBehaviour
         {
             if (isOpenShop)
             {
-                removeObjectButton.SetActive(true);
+                undoObjectButton.SetActive(true);
                 CloseShopMenu();
             }
             else
             {
-                removeObjectButton.SetActive(false);
+                undoObjectButton.SetActive(false);
                 OpenShopMenu();
             }
         }
         else if (Input.GetKeyDown(KeyCode.U) && isOpenShop)
         {
             isOpenShop = false;
-            removeObjectButton.SetActive(false);
+            undoObjectButton.SetActive(false);
             CloseShopMenu();
         }
         else if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (isOpenShop)
             {
-                removeObjectButton.SetActive(true);
+                undoObjectButton.SetActive(true);
                 CloseShopMenu();
             }
-        }
-
-        if (PlacementSystem.isRemoving)
-        {
-            removeObjectButton.SetActive(true);
-            CloseShopMenu();
         }
     }
 
@@ -69,7 +63,6 @@ public class ShopManager : MonoBehaviour
         }
         Time.timeScale = 0f;
         isOpenShop = true;
-        PlacementSystem.isRemoving = false;
         CheckPurchaseable();
     }
 
