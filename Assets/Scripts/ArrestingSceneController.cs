@@ -31,6 +31,7 @@ public class ArrestingSceneController : MonoBehaviour
                 StillNotSure();
             });
         }
+
         if (restartGameButton != null)
         {
             restartGameButton.onClick.AddListener(delegate
@@ -38,6 +39,7 @@ public class ArrestingSceneController : MonoBehaviour
                 DataManager.ResetCase();
             });
         }
+
         if (nextCaseButton != null)
         {
             nextCaseButton.onClick.AddListener(delegate
@@ -46,14 +48,22 @@ public class ArrestingSceneController : MonoBehaviour
                 DataManager.NextCase();
             });
         }
-        yesButton.onClick.AddListener(delegate
+
+        if (yesButton != null)
         {
-            YesClicked();
-        });
-        noButton.onClick.AddListener(delegate
+            yesButton.onClick.AddListener(delegate
+            {
+                YesClicked();
+            });
+        }
+
+        if (noButton != null)
         {
-            NoClicked();
-        });
+            noButton.onClick.AddListener(delegate
+            {
+                NoClicked();
+            });
+        }
 
         foreach (string name in DataManager.suspectList)
         {
