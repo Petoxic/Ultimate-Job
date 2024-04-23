@@ -58,7 +58,8 @@ public class CustomerData : MonoBehaviour
             {"name", "Mr. Oliver Ford - Suspicious-looking man"},
             {"dialogue", new string[][] {
                 new string[] {
-                    "Me? Oh, I'm just here for the food. Don't mind me. Say, you wouldn't happen to be looking for someone, would you? Maybe I can help.",
+                    "Me? Oh, I'm just here for the food. Don't mind me.",
+                    "Say, you wouldn't happen to be looking for someone, would you? Maybe I can help."
                 },
             }},
             {"foodAmount", 1},
@@ -136,7 +137,8 @@ public class CustomerData : MonoBehaviour
             {"name", "Ms. Victoria Artman - Art enthusiast"},
             {"dialogue", new string[][] {
                 new string[] {
-                    "Bank heists? Intriguing! Reminds me of those old Hollywood movies. If only I could witness one in real life! What a thrill it would be!"
+                    "Bank heists? Intriguing! Reminds me of those old Hollywood movies.",
+                    "If only I could witness one in real life! What a thrill it would be!"
                 },
             }},
             {"foodAmount", 1},
@@ -146,7 +148,8 @@ public class CustomerData : MonoBehaviour
             {"name", "Officer Johnson - Local law enforcement"},
             {"dialogue", new string[][] {
                 new string[] {
-                    "Another day, another robbery. This city's turning into a den of thieves. We've got eyes everywhere, but these crooks always slip through our fingers."
+                    "Another day, another robbery. This city's turning into a den of thieves.",
+                    "We've got eyes everywhere, but these crooks always slip through our fingers."
                 },
             }},
             {"foodAmount", 1},
@@ -156,7 +159,8 @@ public class CustomerData : MonoBehaviour
             {"name", "Mr. David Chase - Bank manager"},
             {"dialogue", new string[][] {
                 new string[] {
-                    "The robbery has shaken us to the core. Security measures were in place, but it seems the thieves were one step ahead. We're doing everything we can to catch them."
+                    "The robbery has shaken us to the core. Security measures were in place, but it seems the thieves were one step ahead.",
+                    "We're doing everything we can to catch them."
                 },
             }},
             {"foodAmount", 1},
@@ -166,7 +170,8 @@ public class CustomerData : MonoBehaviour
             {"name", "Ms. Olivia Fox - Suspicious individual"},
             {"dialogue", new string[][] {
                 new string[] {
-                    "Me? Just here for the coffee. Don't mind me. Say, need any help tracking down those robbers? I might know a thing or two."
+                    "Just here for my usual coffee fix. But you know, I can't help but wonder about those bank robbers.",
+                    "If you need any inside info, I might have a few leads."
                 },
             }},
             {"foodAmount", 1},
@@ -176,7 +181,8 @@ public class CustomerData : MonoBehaviour
             {"name", "Mr. Samuel Locke - Aspiring artist"},
             {"dialogue", new string[][] {
                 new string[] {
-                    "Robbing a bank? Disgraceful! Money belongs to everyone, not just the greedy. If I catch those thieves, they'll regret ever crossing me!"
+                    "Robbing a bank? Disgraceful! Money belongs to everyone, not just the greedy.",
+                    "If I catch those thieves, they'll regret ever crossing me!"
                 },
             }},
             {"foodAmount", 1},
@@ -196,7 +202,8 @@ public class CustomerData : MonoBehaviour
             {"name", "Mrs. Grace Parker - Local gossipmonger"},
             {"dialogue", new string[][] {
                 new string[] {
-                    "Oh, honey, the gossip about the bank robbery is wild! Some say it was an inside job! Can you believe it? A bank employee turned rogue? Outrageous!"
+                    "Oh, honey, the gossip about the bank robbery is wild!",
+                    "Some say it was an inside job! Can you believe it? A bank employee turned rogue? Outrageous!"
                 },
             }},
             {"foodAmount", 1},
@@ -206,7 +213,8 @@ public class CustomerData : MonoBehaviour
             {"name", "Mr. Robert Holmes - Retired detective"},
             {"dialogue", new string[][] {
                 new string[] {
-                    "I've investigated my fair share of cases, but this one's got me stumped. However, every criminal slips up eventually. It's just a matter of time."
+                    "I've investigated my fair share of cases, but this one's got me stumped.",
+                    "However, every criminal slips up eventually. It's just a matter of time."
                 },
             }},
             {"foodAmount", 1},
@@ -216,7 +224,8 @@ public class CustomerData : MonoBehaviour
             {"name", "Ms. Rachel Stone - Mystery enthusiast"},
             {"dialogue", new string[][] {
                 new string[] {
-                    "That robbery? More than meets the eye. It's not just about the money. There's a motive behind it all. But what could it be? That's the million-dollar question."
+                    "That robbery? More than meets the eye.",
+                    "It's not just about the money. There's a motive behind it all. But what could it be? That's the million-dollar question."
                 },
             }},
             {"foodAmount", 1},
