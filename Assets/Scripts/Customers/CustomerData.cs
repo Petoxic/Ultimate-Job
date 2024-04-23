@@ -159,8 +159,8 @@ public class CustomerData : MonoBehaviour
             {"name", "Mr. David Chase - Bank manager"},
             {"dialogue", new string[][] {
                 new string[] {
-                    "The robbery has shaken us to the core. Security measures were in place, but it seems the thieves were one step ahead.",
-                    "We're doing everything we can to catch them."
+                    "The robbery has indeed shaken us, but it's all quite fascinating, don't you think? Our security measures were supposed to be foolproof, yet somehow the thieves were one step ahead.",
+                    "It's almost as if... someone had inside information. But of course, we're doing everything we can to catch them, or should I say, to cover our tracks."
                 },
             }},
             {"foodAmount", 1},
