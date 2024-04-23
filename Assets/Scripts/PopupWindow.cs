@@ -28,7 +28,7 @@ public class PopupWindow : MonoBehaviour
             popupQueue.Clear();
             window.SetActive(false);
             queueChecker = null;
-            AddToQueue("Why you so dumb? Just buy at least 1 table!");
+            AddToQueue("At least one table must be purchased to start the day.");
         }
         if (ShopManager.isOpenShop || UpgradeManager.isOpenUpgradeMenu)
         {
