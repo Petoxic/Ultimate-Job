@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1dc508abff11414b9251ee92a1833b0, type: 3}
   m_Name: DarkTable
   m_EditorClassIdentifier: 
-  ID: 3
+  ID: 4
   title: Dark Table
   description: Chinese people would love this
   basePrice: 10
-  size: {x: 10, y: 6}
+  size: {x: 8, y: 4}
   Prefab: {fileID: 4662883880217847802, guid: 6123670d5384ac74f990ae9666b61f8d, type: 3}

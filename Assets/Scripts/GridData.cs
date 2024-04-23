@@ -36,7 +36,7 @@ public class GridData
         {
             for (int y = -1; y < objectSize.y; y++)
             {
-                returnVal.Add(gridPosition + new Vector3Int(x, y, 0));
+                returnVal.Add(gridPosition + new Vector3Int(x, -y, 0));
             }
         }
         return returnVal;
@@ -72,9 +72,7 @@ public class GridData
             if (DataManager.placedObjects.ContainsKey(pos)
                 || PlacementSystem.gridPlayerPosition == pos
                 || (PlacementSystem.gridPlayerPosition + new Vector3Int(0, 1, 0)) == pos
-                || (PlacementSystem.gridPlayerPosition + new Vector3Int(0, -1, 0)) == pos
-                || (PlacementSystem.gridPlayerPosition + new Vector3Int(1, 0, 0)) == pos
-                || (PlacementSystem.gridPlayerPosition + new Vector3Int(-1, 0, 0)) == pos)
+                || (PlacementSystem.gridPlayerPosition + new Vector3Int(0, -1, 0)) == pos)
             {
                 return false;
             }
