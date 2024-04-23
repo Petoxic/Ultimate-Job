@@ -26,6 +26,7 @@ public class PlacementSystem : MonoBehaviour
     public static bool isUndo;
     public static Vector3Int gridSize;
     public static GameObject newObject;
+    public static Vector3Int gridPlayerPosition;
 
     public event Action OnClicked, OnExit;
     private GridData furnitureData;
@@ -57,10 +58,13 @@ public class PlacementSystem : MonoBehaviour
         {
             grid = gridMap2;
         }
+        gridPlayerPosition = grid.WorldToCell(DataManager.playerPosition);
     }
 
     public void Update()
     {
+        gridPlayerPosition = grid.WorldToCell(DataManager.playerPosition);
+
         if (buildingState == null)
         {
             return;

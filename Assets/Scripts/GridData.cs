@@ -58,12 +58,23 @@ public class GridData
             return false;
         }
 
+        // Check if object occupied player
+        if (PlacementSystem.gridPlayerPosition == gridPosition)
+        {
+            return false;
+        }
+
         // Check if object will occupied by another object
         Vector2Int objectSizeRestrict = new Vector2Int(objectSize.x + 1, objectSize.y + 1);
         List<Vector3Int> positionToOccupy = CalculatePositions(gridPosition, objectSizeRestrict);
         foreach (var pos in positionToOccupy)
         {
-            if (DataManager.placedObjects.ContainsKey(pos))
+            if (DataManager.placedObjects.ContainsKey(pos)
+                || PlacementSystem.gridPlayerPosition == pos
+                || (PlacementSystem.gridPlayerPosition + new Vector3Int(0, 1, 0)) == pos
+                || (PlacementSystem.gridPlayerPosition + new Vector3Int(0, -1, 0)) == pos
+                || (PlacementSystem.gridPlayerPosition + new Vector3Int(1, 0, 0)) == pos
+                || (PlacementSystem.gridPlayerPosition + new Vector3Int(-1, 0, 0)) == pos)
             {
                 return false;
             }

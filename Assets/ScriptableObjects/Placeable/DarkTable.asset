@@ -16,5 +16,5 @@ MonoBehaviour:
   title: Dark Table
   description: Chinese people would love this
   basePrice: 10
-  size: {x: 8, y: 4}
+  size: {x: 10, y: 6}
   Prefab: {fileID: 4662883880217847802, guid: 6123670d5384ac74f990ae9666b61f8d, type: 3}
