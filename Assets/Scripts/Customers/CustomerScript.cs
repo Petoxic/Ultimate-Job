@@ -31,7 +31,7 @@ public class CustomerScript : MonoBehaviour
     private int foodId;
     public int foodAmount;
     private Sprite eatingSprite;
-    public int dialogueChoice = 0;
+    public int;
     private string[][] dialogueArray;
     public SpriteRenderer spriteRenderer;
     private Sprite[] sprites;
@@ -45,6 +45,7 @@ public class CustomerScript : MonoBehaviour
         isFoodReceived = false;
         isInteractable = false;
         isTalking = false;
+        dialogueChoice = 0
 
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
         GameObject canvas = GameObject.FindGameObjectWithTag("Canvas");
