@@ -19,13 +19,13 @@ public class CustomerScript : MonoBehaviour
     [SerializeField] private GameObject orderBubble;
     [SerializeField] private GameObject talkingImage;
     [SerializeField] private CustomerTimerScript customerTimerScript;
-    private int dialogueIndex = 0;
-    public float wordSpeed = 0.1f;
-    public bool isTalking = false;
-    public bool isFinishDialogue = false;
-    public bool isOrderReceived = false;
-    private bool isInteractable = false;
-    public bool isFoodReceived = false;
+    private int dialogueIndex;
+    public float wordSpeed;
+    public bool isTalking;
+    public bool isFinishDialogue;
+    public bool isOrderReceived;
+    private bool isInteractable;
+    public bool isFoodReceived;
     private PlayerScript player;
     private Sprite[] foodSprites;
     private int foodId;
@@ -38,6 +38,14 @@ public class CustomerScript : MonoBehaviour
 
     void Start()
     {
+        dialogueIndex = 0;
+        wordSpeed = 0.1f;
+        isFinishDialogue = false;
+        isOrderReceived = false;
+        isFoodReceived = false;
+        isInteractable = false;
+        isTalking = false;
+
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScript>();
         GameObject canvas = GameObject.FindGameObjectWithTag("Canvas");
         dialoguePanel = canvas.transform.Find("DialogPanel").gameObject;
