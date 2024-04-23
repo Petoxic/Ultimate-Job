@@ -5,11 +5,11 @@ using UnityEngine;
 public class CustomerSpawningScript : MonoBehaviour
 {
     private static readonly List<int> customerCountPerDay = new() { 3, 3, 4 };
-    private int customerCount;
+    private int remainingCustomerCount;
+    public static int customerCountInMap;
     private readonly float spawnDelay = 5.0f; // TODO: randomize this value
     private bool isReadyToSpawn = false;
     [SerializeField] private GameObject customerPrefab;
-    public static int customerCountInMap = 0;
 
     private IEnumerator SpawnDelay()
     {
@@ -19,20 +19,22 @@ public class CustomerSpawningScript : MonoBehaviour
 
     void Start()
     {
-        customerCount = customerCountPerDay[DataManager.GetDay()];
+        remainingCustomerCount = customerCountPerDay[DataManager.GetDay()];
+        customerCountInMap = 0;
         StartCoroutine(SpawnDelay());
     }
 
     void Update()
     {
         bool isFull = customerCountInMap == DataManager.placedGameObjects.Count * 2;
-        if (isReadyToSpawn && customerCount > 0 && !isFull)
+        if (isReadyToSpawn && remainingCustomerCount > 0 && !isFull)
         {
             isReadyToSpawn = false;
             Instantiate(customerPrefab, new Vector3((float)-0.231, (float)-1.266, 0), Quaternion.identity);
             customerCountInMap += 1;
             StartCoroutine(SpawnDelay());
-            customerCount -= 1;
+            remainingCustomerCount -= 1;
+            Debug.Log("remaining customers count " + remainingCustomerCount);
         }
     }
 
